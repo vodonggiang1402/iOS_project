@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'TMadeCrochet' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TMadeCrochet
+
+  target 'TMadeCrochetTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'TMadeCrochetUITests' do
+    # Pods for testing
+  end
+
+end
