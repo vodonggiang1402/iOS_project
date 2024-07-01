@@ -34,8 +34,7 @@ class SplashViewController: BaseViewController {
     }
     
     func handleFlowApp() {
-//        self.presenter?.navigateToRootHome()
-        TabbarRouter().setupRootView()
+        self.presenter?.navigateToRootMain()
     }
 }
 

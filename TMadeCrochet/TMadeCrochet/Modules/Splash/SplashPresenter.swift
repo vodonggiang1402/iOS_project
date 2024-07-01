@@ -9,6 +9,8 @@
 import Foundation
 
 class SplashPresenter: ViewToPresenterSplashProtocol {
+
+    
     // MARK: Properties
     weak var view: PresenterToViewSplashProtocol?
     var interactor: PresenterToInteractorSplashProtocol?
@@ -20,8 +22,8 @@ class SplashPresenter: ViewToPresenterSplashProtocol {
         self.router = nil
     }
     
-    func navigateToRootHome() {
-        self.router?.navigateToRootHome()
+    func navigateToRootMain() {
+        self.router?.navigateToRootMain()
     }
     
 }

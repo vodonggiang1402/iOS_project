@@ -19,7 +19,7 @@ protocol ViewToPresenterSplashProtocol {
     var view: PresenterToViewSplashProtocol? { get set }
     var interactor: PresenterToInteractorSplashProtocol? { get set }
     var router: PresenterToRouterSplashProtocol? { get set }
-    func navigateToRootHome()
+    func navigateToRootMain()
 }
 
 
@@ -37,7 +37,7 @@ protocol InteractorToPresenterSplashProtocol: AnyObject {
 
 // MARK: Router Input (Presenter -> Router)
 protocol PresenterToRouterSplashProtocol {
-    func navigateToRootHome()
+    func navigateToRootMain()
 }
 
 protocol InteractorToEntitySplashProtocol {

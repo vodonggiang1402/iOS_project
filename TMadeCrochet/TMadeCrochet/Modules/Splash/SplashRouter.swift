@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class SplashRouter: PresenterToRouterSplashProtocol {
+
     func showScreen() {
         let destinationVC = self.createModule()
         destinationVC.getRootViewController().navigationController?.pushViewController(destinationVC, animated: true)
@@ -39,9 +40,10 @@ class SplashRouter: PresenterToRouterSplashProtocol {
 
         return viewController
     }
-    
-    func navigateToRootHome() {
+
+    func navigateToRootMain() {
         TabbarRouter().setupRootView()
     }
+    
     
 }
