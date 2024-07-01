@@ -73,6 +73,7 @@
 		7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */; };
 		7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */; };
 		7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */; };
+		7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,7 @@
 		7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerInNavigation.swift; sourceTree = "<group>"; };
 		7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashStoryboard.storyboard; sourceTree = "<group>"; };
+		7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		8E703A5F3BEFCB44849A92EC /* Pods-TMadeCrochet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMadeCrochet.release.xcconfig"; path = "Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet.release.xcconfig"; sourceTree = "<group>"; };
 		8F01D6EEC97D787D255D7FE4 /* Pods_TMadeCrochetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMadeCrochetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8161D2FB1FE0FE07E1A8C66 /* Pods-TMadeCrochet-TMadeCrochetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMadeCrochet-TMadeCrochetUITests.debug.xcconfig"; path = "Target Support Files/Pods-TMadeCrochet-TMadeCrochetUITests/Pods-TMadeCrochet-TMadeCrochetUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				7B522E532C325C100034EE9D /* UIStoryboardExtension.swift */,
 				7B522E4A2C325AE10034EE9D /* UITabbarExtension.swift */,
 				7B522E512C325BAF0034EE9D /* UIViewControllerExtension.swift */,
+				7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */,
 			);
 			path = UIKitExtension;
 			sourceTree = "<group>";
@@ -677,6 +680,7 @@
 				7B522E742C32626E0034EE9D /* MainInteractor.swift in Sources */,
 				7B522E762C32626E0034EE9D /* MainPresenter.swift in Sources */,
 				7B522E562C325C290034EE9D /* ObjectExtension.swift in Sources */,
+				7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */,
 				7B522EAA2C3262930034EE9D /* SymbolPresenter.swift in Sources */,
 				7B522E502C325B680034EE9D /* IntExtension.swift in Sources */,
 				7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */,

@@ -67,9 +67,9 @@ class TabbarViewController: UITabBarController {
                           tabName: String,
                           image: UIImage?,
                           selectedImage: UIImage?) {
-        let selectedAttributes = [NSAttributedString.Key.foregroundColor: UIColor.colorTabbarItemGreen,
+        let selectedAttributes = [NSAttributedString.Key.foregroundColor: UIColor.color_232323_fafafa,
                                   NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12, weight: .medium)]
-        let normalAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray,
+        let normalAttributes = [NSAttributedString.Key.foregroundColor: UIColor.color_989898_868686,
                                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12, weight: .regular)]
         tabBar.unselectedItemTintColor = UIColor.gray
         
