@@ -15,14 +15,9 @@ class SplashPresenter: ViewToPresenterSplashProtocol {
     weak var view: PresenterToViewSplashProtocol?
     var interactor: PresenterToInteractorSplashProtocol?
     var router: PresenterToRouterSplashProtocol?
-    
-    deinit {
-        self.view = nil
-        self.interactor = nil
-        self.router = nil
-    }
-    
+
     func navigateToRootMain() {
+        print("self.router?.navigateToRootMain()")
         self.router?.navigateToRootMain()
     }
     

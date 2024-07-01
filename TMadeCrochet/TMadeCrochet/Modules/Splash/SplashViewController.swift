@@ -18,10 +18,6 @@ class SplashViewController: BaseViewController {
         super.viewDidLoad()
     }
     
-    deinit {
-        self.presenter = nil
-    }
-
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
     }
@@ -34,6 +30,7 @@ class SplashViewController: BaseViewController {
     }
     
     func handleFlowApp() {
+        print("self.presenter?.navigateToRootMain()")
         self.presenter?.navigateToRootMain()
     }
 }

@@ -27,7 +27,7 @@ class SplashRouter: PresenterToRouterSplashProtocol {
     
     // MARK: Static methods
     func createModule() -> UIViewController {
-        let storyboard = UIStoryboard(name: "Splash", bundle: nil)
+        let storyboard = UIStoryboard(name: "SplashStoryboard", bundle: nil)
         let viewController = storyboard.instantiateViewController(viewControllerType: SplashViewController.self)
         let presenter: ViewToPresenterSplashProtocol & InteractorToPresenterSplashProtocol = SplashPresenter()
         let entity: InteractorToEntitySplashProtocol = SplashEntity()
@@ -40,9 +40,9 @@ class SplashRouter: PresenterToRouterSplashProtocol {
 
         return viewController
     }
-
     
     func navigateToRootMain() {
+        print("TabbarRouter().setupRootView()")
         TabbarRouter().setupRootView()
     }
     
