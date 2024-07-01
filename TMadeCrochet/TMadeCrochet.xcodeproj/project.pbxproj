@@ -71,7 +71,6 @@
 		7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B522EA62C3262930034EE9D /* SymbolStoryboard.storyboard */; };
 		7B522EAE2C3262930034EE9D /* SymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EA72C3262930034EE9D /* SymbolViewController.swift */; };
 		7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */; };
-		7BF32A092C326E3E00CD8F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A072C326E3E00CD8F18 /* Main.storyboard */; };
 		7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */; };
 		7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */; };
 /* End PBXBuildFile section */
@@ -164,7 +163,6 @@
 		7B522EA62C3262930034EE9D /* SymbolStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SymbolStoryboard.storyboard; sourceTree = "<group>"; };
 		7B522EA72C3262930034EE9D /* SymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolViewController.swift; sourceTree = "<group>"; };
 		7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerInNavigation.swift; sourceTree = "<group>"; };
-		7BF32A072C326E3E00CD8F18 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashStoryboard.storyboard; sourceTree = "<group>"; };
 		8E703A5F3BEFCB44849A92EC /* Pods-TMadeCrochet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMadeCrochet.release.xcconfig"; path = "Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet.release.xcconfig"; sourceTree = "<group>"; };
@@ -276,7 +274,6 @@
 			isa = PBXGroup;
 			children = (
 				7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */,
-				7BF32A072C326E3E00CD8F18 /* Main.storyboard */,
 				7B522E0A2C32511C0034EE9D /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -566,7 +563,6 @@
 				7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */,
 				7B522E8E2C3262840034EE9D /* ProfileStoryboard.storyboard in Resources */,
 				7B522E7F2C3262740034EE9D /* KnittingStoryboard.storyboard in Resources */,
-				7BF32A092C326E3E00CD8F18 /* Main.storyboard in Resources */,
 				7B522E752C32626E0034EE9D /* MainStoryboard.storyboard in Resources */,
 				7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */,
 			);
@@ -880,7 +876,6 @@
 				INFOPLIST_FILE = TMadeCrochet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -912,7 +907,6 @@
 				INFOPLIST_FILE = TMadeCrochet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

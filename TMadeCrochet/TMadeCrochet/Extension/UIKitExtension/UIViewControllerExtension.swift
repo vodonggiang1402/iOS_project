@@ -57,13 +57,6 @@ extension UIViewController {
         return rootViewController.navigationController?.viewControllers.last ?? BaseViewController()
     }
     
-    // MARK: - Translation ViewController
-    func pushTo<T: UIViewController>(desVC: T.Type, from storyboard: UIStoryboard = UIStoryboard.Splash, animated: Bool = true) -> T {
-        let viewController = storyboard.instantiateViewController(viewControllerType: desVC.self)
-        getRootViewController().navigationController?.pushViewController(viewController, animated: animated)
-        return viewController
-    }
-    
     func pop(isAnimated: Bool = true) {
         self.navigationController?.popViewController(animated: isAnimated)
     }

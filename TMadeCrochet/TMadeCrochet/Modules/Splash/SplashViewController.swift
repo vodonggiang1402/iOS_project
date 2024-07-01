@@ -16,6 +16,7 @@ class SplashViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideNavigationBar(isHide: true)
     }
     
     override func viewDidDisappear(_ animated: Bool) {

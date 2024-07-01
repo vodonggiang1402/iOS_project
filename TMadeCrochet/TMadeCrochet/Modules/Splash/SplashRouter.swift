@@ -21,6 +21,7 @@ class SplashRouter: PresenterToRouterSplashProtocol {
               let window = appdelegate.window
         else { return }
         let destinationVC = self.createModule()
+        destinationVC.hidesBottomBarWhenPushed = true
         window.rootViewController = UINavigationController.init(rootViewController: destinationVC)
         window.makeKeyAndVisible()
     }

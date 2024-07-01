@@ -51,4 +51,12 @@ class BaseViewController: UIViewController {
         super.viewWillDisappear(animated)
 
     }
+    
+    // MARK: - Navigation Bar
+    func hideNavigationBar(isHide: Bool = true) {
+        self.navigationController?.navigationBar.isHidden = isHide
+        if !isHide {
+            self.navigationController?.navigationBar.isTranslucent = false
+        }
+    }
 }

@@ -8,10 +8,6 @@
 import UIKit
 
 extension UIStoryboard {
-    static let Splash = UIStoryboard(name: "Main", bundle: nil)
-}
-
-extension UIStoryboard {
     func instantiateViewController<T: UIViewController>(viewControllerType: T.Type) -> T {
         guard let viewController =
                 instantiateViewController(withIdentifier: String(describing: viewControllerType)) as? T else {
