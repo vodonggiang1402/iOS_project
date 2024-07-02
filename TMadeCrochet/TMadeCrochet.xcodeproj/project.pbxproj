@@ -73,6 +73,20 @@
 		7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */; };
 		7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */; };
 		7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */; };
+		7BF32A182C33CCD500CD8F18 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A162C33CCD500CD8F18 /* BaseTableView.swift */; };
+		7BF32A192C33CCD500CD8F18 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A172C33CCD500CD8F18 /* BaseTableViewCell.swift */; };
+		7BF32A1B2C33CE5500CD8F18 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A1A2C33CE5500CD8F18 /* UITableViewExtension.swift */; };
+		7BF32A242C33CF0A00CD8F18 /* CRRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A1D2C33CF0A00CD8F18 /* CRRefreshHeaderView.swift */; };
+		7BF32A252C33CF0A00CD8F18 /* CRRefreshBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A1E2C33CF0A00CD8F18 /* CRRefreshBundle.swift */; };
+		7BF32A262C33CF0A00CD8F18 /* CRRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A1F2C33CF0A00CD8F18 /* CRRefreshFooterView.swift */; };
+		7BF32A272C33CF0A00CD8F18 /* CRRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A202C33CF0A00CD8F18 /* CRRefreshComponent.swift */; };
+		7BF32A282C33CF0A00CD8F18 /* CRRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A212C33CF0A00CD8F18 /* CRRefreshExtension.swift */; };
+		7BF32A292C33CF0A00CD8F18 /* CRRefreshProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A222C33CF0A00CD8F18 /* CRRefreshProtocol.swift */; };
+		7BF32A2A2C33CF0A00CD8F18 /* CRRefreshAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A232C33CF0A00CD8F18 /* CRRefreshAnimator.swift */; };
+		7BF32A302C33CF2100CD8F18 /* SlackLoadingAnimator in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A2C2C33CF2000CD8F18 /* SlackLoadingAnimator */; };
+		7BF32A312C33CF2100CD8F18 /* FastAnimator in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A2D2C33CF2100CD8F18 /* FastAnimator */; };
+		7BF32A322C33CF2100CD8F18 /* NormalAnimator in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A2E2C33CF2100CD8F18 /* NormalAnimator */; };
+		7BF32A332C33CF2100CD8F18 /* RamotionAnimator in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A2F2C33CF2100CD8F18 /* RamotionAnimator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +179,20 @@
 		7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashStoryboard.storyboard; sourceTree = "<group>"; };
 		7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		7BF32A162C33CCD500CD8F18 /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
+		7BF32A172C33CCD500CD8F18 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		7BF32A1A2C33CE5500CD8F18 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		7BF32A1D2C33CF0A00CD8F18 /* CRRefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshHeaderView.swift; sourceTree = "<group>"; };
+		7BF32A1E2C33CF0A00CD8F18 /* CRRefreshBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshBundle.swift; sourceTree = "<group>"; };
+		7BF32A1F2C33CF0A00CD8F18 /* CRRefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshFooterView.swift; sourceTree = "<group>"; };
+		7BF32A202C33CF0A00CD8F18 /* CRRefreshComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshComponent.swift; sourceTree = "<group>"; };
+		7BF32A212C33CF0A00CD8F18 /* CRRefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshExtension.swift; sourceTree = "<group>"; };
+		7BF32A222C33CF0A00CD8F18 /* CRRefreshProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshProtocol.swift; sourceTree = "<group>"; };
+		7BF32A232C33CF0A00CD8F18 /* CRRefreshAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshAnimator.swift; sourceTree = "<group>"; };
+		7BF32A2C2C33CF2000CD8F18 /* SlackLoadingAnimator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SlackLoadingAnimator; sourceTree = "<group>"; };
+		7BF32A2D2C33CF2100CD8F18 /* FastAnimator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FastAnimator; sourceTree = "<group>"; };
+		7BF32A2E2C33CF2100CD8F18 /* NormalAnimator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NormalAnimator; sourceTree = "<group>"; };
+		7BF32A2F2C33CF2100CD8F18 /* RamotionAnimator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RamotionAnimator; sourceTree = "<group>"; };
 		8E703A5F3BEFCB44849A92EC /* Pods-TMadeCrochet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMadeCrochet.release.xcconfig"; path = "Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet.release.xcconfig"; sourceTree = "<group>"; };
 		8F01D6EEC97D787D255D7FE4 /* Pods_TMadeCrochetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMadeCrochetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8161D2FB1FE0FE07E1A8C66 /* Pods-TMadeCrochet-TMadeCrochetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMadeCrochet-TMadeCrochetUITests.debug.xcconfig"; path = "Target Support Files/Pods-TMadeCrochet-TMadeCrochetUITests/Pods-TMadeCrochet-TMadeCrochetUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -224,7 +252,7 @@
 		7B522E002C32511B0034EE9D /* TMadeCrochet */ = {
 			isa = PBXGroup;
 			children = (
-				7BF32A142C33CC8900CD8F18 /* Views */,
+				7BF32A142C33CC8900CD8F18 /* CustomView */,
 				7B522E382C3253490034EE9D /* Modules */,
 				7B522E372C3253350034EE9D /* Configs */,
 				7B522E362C3253270034EE9D /* Extension */,
@@ -340,6 +368,7 @@
 		7B522E3C2C3253E00034EE9D /* UIKitExtension */ = {
 			isa = PBXGroup;
 			children = (
+				7BF32A1A2C33CE5500CD8F18 /* UITableViewExtension.swift */,
 				7B522E532C325C100034EE9D /* UIStoryboardExtension.swift */,
 				7B522E4A2C325AE10034EE9D /* UITabbarExtension.swift */,
 				7B522E512C325BAF0034EE9D /* UIViewControllerExtension.swift */,
@@ -427,11 +456,48 @@
 			path = Knitting;
 			sourceTree = "<group>";
 		};
-		7BF32A142C33CC8900CD8F18 /* Views */ = {
+		7BF32A142C33CC8900CD8F18 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				7BF32A1C2C33CED900CD8F18 /* Refresh */,
+				7BF32A152C33CCCD00CD8F18 /* TableView */,
 			);
-			path = Views;
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		7BF32A152C33CCCD00CD8F18 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				7BF32A162C33CCD500CD8F18 /* BaseTableView.swift */,
+				7BF32A172C33CCD500CD8F18 /* BaseTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		7BF32A1C2C33CED900CD8F18 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				7BF32A2B2C33CF1200CD8F18 /* Animators */,
+				7BF32A232C33CF0A00CD8F18 /* CRRefreshAnimator.swift */,
+				7BF32A1E2C33CF0A00CD8F18 /* CRRefreshBundle.swift */,
+				7BF32A202C33CF0A00CD8F18 /* CRRefreshComponent.swift */,
+				7BF32A212C33CF0A00CD8F18 /* CRRefreshExtension.swift */,
+				7BF32A1F2C33CF0A00CD8F18 /* CRRefreshFooterView.swift */,
+				7BF32A1D2C33CF0A00CD8F18 /* CRRefreshHeaderView.swift */,
+				7BF32A222C33CF0A00CD8F18 /* CRRefreshProtocol.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		7BF32A2B2C33CF1200CD8F18 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				7BF32A2D2C33CF2100CD8F18 /* FastAnimator */,
+				7BF32A2E2C33CF2100CD8F18 /* NormalAnimator */,
+				7BF32A2F2C33CF2100CD8F18 /* RamotionAnimator */,
+				7BF32A2C2C33CF2000CD8F18 /* SlackLoadingAnimator */,
+			);
+			path = Animators;
 			sourceTree = "<group>";
 		};
 		A3FE2062CC6DAFEE0C9637C4 /* Pods */ = {
@@ -566,10 +632,14 @@
 			files = (
 				7B522E462C325A950034EE9D /* Tabbar.storyboard in Resources */,
 				7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */,
+				7BF32A322C33CF2100CD8F18 /* NormalAnimator in Resources */,
 				7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */,
+				7BF32A302C33CF2100CD8F18 /* SlackLoadingAnimator in Resources */,
 				7B522E9F2C3262890034EE9D /* SaveStoryboard.storyboard in Resources */,
 				7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */,
+				7BF32A312C33CF2100CD8F18 /* FastAnimator in Resources */,
 				7B522E8E2C3262840034EE9D /* ProfileStoryboard.storyboard in Resources */,
+				7BF32A332C33CF2100CD8F18 /* RamotionAnimator in Resources */,
 				7B522E7F2C3262740034EE9D /* KnittingStoryboard.storyboard in Resources */,
 				7B522E752C32626E0034EE9D /* MainStoryboard.storyboard in Resources */,
 				7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */,
@@ -674,9 +744,11 @@
 				7B522E832C3262740034EE9D /* KnittingPresenter.swift in Sources */,
 				7B522E732C32626E0034EE9D /* MainRouter.swift in Sources */,
 				7B522E902C3262840034EE9D /* ProfileContract.swift in Sources */,
+				7BF32A292C33CF0A00CD8F18 /* CRRefreshProtocol.swift in Sources */,
 				7B522EA92C3262930034EE9D /* SymbolEntity.swift in Sources */,
 				7B522EAE2C3262930034EE9D /* SymbolViewController.swift in Sources */,
 				7B522E492C325A950034EE9D /* TabbarContract.swift in Sources */,
+				7BF32A2A2C33CF0A00CD8F18 /* CRRefreshAnimator.swift in Sources */,
 				7B522E452C325A950034EE9D /* TabbarRouter.swift in Sources */,
 				7B522E702C32626E0034EE9D /* MainViewController.swift in Sources */,
 				7B522E802C3262740034EE9D /* KnittingInteractor.swift in Sources */,
@@ -686,7 +758,9 @@
 				7B522E762C32626E0034EE9D /* MainPresenter.swift in Sources */,
 				7B522E562C325C290034EE9D /* ObjectExtension.swift in Sources */,
 				7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */,
+				7BF32A192C33CCD500CD8F18 /* BaseTableViewCell.swift in Sources */,
 				7B522EAA2C3262930034EE9D /* SymbolPresenter.swift in Sources */,
+				7BF32A282C33CF0A00CD8F18 /* CRRefreshExtension.swift in Sources */,
 				7B522E502C325B680034EE9D /* IntExtension.swift in Sources */,
 				7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */,
 				7B522E542C325C100034EE9D /* UIStoryboardExtension.swift in Sources */,
@@ -698,8 +772,12 @@
 				7B522E922C3262840034EE9D /* ProfileViewController.swift in Sources */,
 				7B522E9B2C3262890034EE9D /* SaveContract.swift in Sources */,
 				7B522E332C3252EA0034EE9D /* BaseViewController.swift in Sources */,
+				7BF32A1B2C33CE5500CD8F18 /* UITableViewExtension.swift in Sources */,
 				7B522E7E2C3262740034EE9D /* KnittingEntity.swift in Sources */,
 				7B522E5E2C3260AC0034EE9D /* SplashRouter.swift in Sources */,
+				7BF32A242C33CF0A00CD8F18 /* CRRefreshHeaderView.swift in Sources */,
+				7BF32A262C33CF0A00CD8F18 /* CRRefreshFooterView.swift in Sources */,
+				7BF32A272C33CF0A00CD8F18 /* CRRefreshComponent.swift in Sources */,
 				7B522E442C325A950034EE9D /* TabbarPresenter.swift in Sources */,
 				7B522E722C32626E0034EE9D /* MainContract.swift in Sources */,
 				7B522EA02C3262890034EE9D /* SaveViewController.swift in Sources */,
@@ -709,7 +787,9 @@
 				7B522E522C325BAF0034EE9D /* UIViewControllerExtension.swift in Sources */,
 				7B522E8D2C3262840034EE9D /* ProfilePresenter.swift in Sources */,
 				7B522E622C3260AC0034EE9D /* SplashViewController.swift in Sources */,
+				7BF32A252C33CF0A00CD8F18 /* CRRefreshBundle.swift in Sources */,
 				7B522E9A2C3262890034EE9D /* SavePresenter.swift in Sources */,
+				7BF32A182C33CCD500CD8F18 /* BaseTableView.swift in Sources */,
 				7B522E8F2C3262840034EE9D /* ProfileEntity.swift in Sources */,
 				7B522E912C3262840034EE9D /* ProfileInteractor.swift in Sources */,
 				7B522E4E2C325B3C0034EE9D /* StringExtension.swift in Sources */,
