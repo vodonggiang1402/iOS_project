@@ -125,7 +125,7 @@ extension TabbarViewController {
                                                  image: item.unselectedImage,
                                                  selectedImage: item.selectedImage)
                 listViewControllers.append(controller)
-            case .profile:
+            case .setting:
                 let controller = setupController(ProfileRouter().createModule(),
                                                  tabName: item.title,
                                                  image: item.unselectedImage,
