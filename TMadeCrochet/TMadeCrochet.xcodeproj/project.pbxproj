@@ -22,6 +22,8 @@
 		7B3419FE2C33D0060069BD02 /* NormalFooterAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419FA2C33D0060069BD02 /* NormalFooterAnimator.swift */; };
 		7B3419FF2C33D0060069BD02 /* NormalHeader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B3419FB2C33D0060069BD02 /* NormalHeader.bundle */; };
 		7B341A012C33D0C60069BD02 /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341A002C33D0C60069BD02 /* ErrorExtension.swift */; };
+		7B341A052C33D1B90069BD02 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341A032C33D1B90069BD02 /* BaseCollectionView.swift */; };
+		7B341A062C33D1B90069BD02 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341A042C33D1B90069BD02 /* BaseCollectionViewCell.swift */; };
 		7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E012C32511B0034EE9D /* AppDelegate.swift */; };
 		7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B522E0A2C32511C0034EE9D /* Assets.xcassets */; };
 		7B522E192C32511C0034EE9D /* TMadeCrochetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E182C32511C0034EE9D /* TMadeCrochetTests.swift */; };
@@ -132,6 +134,8 @@
 		7B3419FA2C33D0060069BD02 /* NormalFooterAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalFooterAnimator.swift; sourceTree = "<group>"; };
 		7B3419FB2C33D0060069BD02 /* NormalHeader.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NormalHeader.bundle; sourceTree = "<group>"; };
 		7B341A002C33D0C60069BD02 /* ErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorExtension.swift; sourceTree = "<group>"; };
+		7B341A032C33D1B90069BD02 /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		7B341A042C33D1B90069BD02 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMadeCrochet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B522E012C32511B0034EE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B522E0A2C32511C0034EE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -280,6 +284,15 @@
 				7B3419E32C33CFD30069BD02 /* WCLLoadingView.swift */,
 			);
 			path = SlackLoadingAnimator;
+			sourceTree = "<group>";
+		};
+		7B341A022C33D1AF0069BD02 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				7B341A032C33D1B90069BD02 /* BaseCollectionView.swift */,
+				7B341A042C33D1B90069BD02 /* BaseCollectionViewCell.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		7B522DF52C32511B0034EE9D = {
@@ -515,6 +528,7 @@
 		7BF32A142C33CC8900CD8F18 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				7B341A022C33D1AF0069BD02 /* CollectionView */,
 				7BF32A1C2C33CED900CD8F18 /* Refresh */,
 				7BF32A152C33CCCD00CD8F18 /* TableView */,
 			);
@@ -795,6 +809,7 @@
 				7B522E482C325A950034EE9D /* TabbarViewController.swift in Sources */,
 				7B522EAC2C3262930034EE9D /* SymbolRouter.swift in Sources */,
 				7B522E642C3260AC0034EE9D /* SplashInteractor.swift in Sources */,
+				7B341A052C33D1B90069BD02 /* BaseCollectionView.swift in Sources */,
 				7B522E9C2C3262890034EE9D /* SaveEntity.swift in Sources */,
 				7B522E832C3262740034EE9D /* KnittingPresenter.swift in Sources */,
 				7B3419FD2C33D0060069BD02 /* NormalHeaderAnimator.swift in Sources */,
@@ -818,6 +833,7 @@
 				7B3419FE2C33D0060069BD02 /* NormalFooterAnimator.swift in Sources */,
 				7BF32A192C33CCD500CD8F18 /* BaseTableViewCell.swift in Sources */,
 				7B522EAA2C3262930034EE9D /* SymbolPresenter.swift in Sources */,
+				7B341A062C33D1B90069BD02 /* BaseCollectionViewCell.swift in Sources */,
 				7B3419EB2C33CFDC0069BD02 /* FastCheckLayer.swift in Sources */,
 				7BF32A282C33CF0A00CD8F18 /* CRRefreshExtension.swift in Sources */,
 				7B522E502C325B680034EE9D /* IntExtension.swift in Sources */,
