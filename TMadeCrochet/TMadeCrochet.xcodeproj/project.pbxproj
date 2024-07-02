@@ -30,6 +30,7 @@
 		7B341A212C33FDE70069BD02 /* MainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B341A202C33FDE70069BD02 /* MainTableCell.xib */; };
 		7B341A242C340B040069BD02 /* TitleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341A232C340B040069BD02 /* TitleSection.swift */; };
 		7B341A262C340B0C0069BD02 /* TitleSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B341A252C340B0C0069BD02 /* TitleSection.xib */; };
+		7B341AA42C34103D0069BD02 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AA32C34103D0069BD02 /* UIFontExtension.swift */; };
 		7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E012C32511B0034EE9D /* AppDelegate.swift */; };
 		7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B522E0A2C32511C0034EE9D /* Assets.xcassets */; };
 		7B522E192C32511C0034EE9D /* TMadeCrochetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E182C32511C0034EE9D /* TMadeCrochetTests.swift */; };
@@ -271,6 +272,7 @@
 		7B341AA02C340DF40069BD02 /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
 		7B341AA12C340DF40069BD02 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
 		7B341AA22C340DF40069BD02 /* NotoSansThai-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansThai-SemiBold.ttf"; sourceTree = "<group>"; };
+		7B341AA32C34103D0069BD02 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMadeCrochet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B522E012C32511B0034EE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B522E0A2C32511C0034EE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -757,6 +759,7 @@
 		7B522E4C2C325B2E0034EE9D /* DataTypeExtension */ = {
 			isa = PBXGroup;
 			children = (
+				7B341AA32C34103D0069BD02 /* UIFontExtension.swift */,
 				7B341A002C33D0C60069BD02 /* ErrorExtension.swift */,
 				7B522E552C325C290034EE9D /* ObjectExtension.swift */,
 				7B522E4D2C325B3C0034EE9D /* StringExtension.swift */,
@@ -1166,6 +1169,7 @@
 				7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */,
 				7B522E522C325BAF0034EE9D /* UIViewControllerExtension.swift in Sources */,
 				7B522E8D2C3262840034EE9D /* ProfilePresenter.swift in Sources */,
+				7B341AA42C34103D0069BD02 /* UIFontExtension.swift in Sources */,
 				7B522E622C3260AC0034EE9D /* SplashViewController.swift in Sources */,
 				7BF32A252C33CF0A00CD8F18 /* CRRefreshBundle.swift in Sources */,
 				7B3419EC2C33CFDC0069BD02 /* FastAnimator.swift in Sources */,
