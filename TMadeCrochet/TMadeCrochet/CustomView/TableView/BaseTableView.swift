@@ -36,10 +36,10 @@ class BaseTableView: UITableView {
     var emptyType: TableEmptyType = .normal
     var noDataDes: String?
     var noDataIcon: String?
-    var titleColor: UIColor? = UIColor.color_4231c8_6f6ff7
-    var messageColor: UIColor? = UIColor.color_7b7b7b_fafafa
-    var titleFont: UIFont? = UIFont.localizableFont(style: .regular, size: 20)
-    var messageFont: UIFont? = UIFont.localizableFont(style: .regular, size: 12)
+    var titleColor: UIColor? = UIColor.black
+    var messageColor: UIColor? = UIColor.black
+    var titleFont: UIFont?
+    var messageFont: UIFont?
     var tableCellClassName: String?
     var sectionHeaderView: [UIView]?
     var sectionFooterView: [UIView]?

@@ -54,7 +54,7 @@ class BaseTableViewCell: UITableViewCell {
                            delay: 0.0,
                            options: .curveLinear,
                            animations: {
-                self.backgroundColor = self.highlightType.backgroundColor
+                self.backgroundColor = UIColor.gray
             }, completion: nil)
         }
     }
@@ -65,7 +65,7 @@ class BaseTableViewCell: UITableViewCell {
         guard isApplyHover else { return }
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-            self.backgroundColor = self.highlightType.backgroundColor
+            self.backgroundColor = UIColor.gray
             UIView.animate(withDuration: 0.2,
                            delay: 0.0,
                            options: .curveLinear,
@@ -81,7 +81,7 @@ class BaseTableViewCell: UITableViewCell {
         guard isApplyHover else { return }
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-            self.backgroundColor = self.highlightType.backgroundColor
+            self.backgroundColor = UIColor.gray
             UIView.animate(withDuration: 0.2,
                            delay: 0.0,
                            options: .curveLinear,

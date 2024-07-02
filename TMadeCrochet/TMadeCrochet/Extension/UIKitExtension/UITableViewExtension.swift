@@ -126,7 +126,7 @@ extension UITableView {
         self.scrollToIndexPath(row: 0, section: 0, animated)
     }
     
-    func setEmptyView(title: String, message: String, messageImage: String, titleColor: UIColor? = UIColor.color_4231c8_6f6ff7, messageColor: UIColor? = UIColor.color_7b7b7b_fafafa, titleFont: UIFont? = UIFont(name: "SF Pro", size: 20), messageFont: UIFont? = UIFont(name: "SF Pro", size: 14)) {
+    func setEmptyView(title: String, message: String, messageImage: String, titleColor: UIColor?, messageColor: UIColor?, titleFont: UIFont? = UIFont(name: "SF Pro", size: 20), messageFont: UIFont? = UIFont(name: "SF Pro", size: 14)) {
         
         let emptyView = UIView(frame: CGRect(x: 16, y: 0, width: self.bounds.size.width - 32, height: self.bounds.size.height))
         let messageImageView = UIImageView()
