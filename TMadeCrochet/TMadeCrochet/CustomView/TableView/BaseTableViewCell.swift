@@ -49,12 +49,12 @@ class BaseTableViewCell: UITableViewCell {
         guard isApplyHover else { return }
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-            self.backgroundColor = self.bgColor
+            self.backgroundColor = UIColor.clear
             UIView.animate(withDuration: 0.2,
                            delay: 0.0,
                            options: .curveLinear,
                            animations: {
-                self.backgroundColor = UIColor.gray
+                self.backgroundColor =  UIColor.clear
             }, completion: nil)
         }
     }
@@ -65,12 +65,12 @@ class BaseTableViewCell: UITableViewCell {
         guard isApplyHover else { return }
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-            self.backgroundColor = UIColor.gray
+            self.backgroundColor = UIColor.clear
             UIView.animate(withDuration: 0.2,
                            delay: 0.0,
                            options: .curveLinear,
                            animations: {
-                self.backgroundColor = self.bgColor
+                self.backgroundColor =  UIColor.clear
             }, completion: nil)
         }
     }
@@ -81,12 +81,12 @@ class BaseTableViewCell: UITableViewCell {
         guard isApplyHover else { return }
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-            self.backgroundColor = UIColor.gray
+            self.backgroundColor = UIColor.clear
             UIView.animate(withDuration: 0.2,
                            delay: 0.0,
                            options: .curveLinear,
                            animations: {
-                self.backgroundColor = self.bgColor
+                self.backgroundColor =  UIColor.clear
             }, completion: nil)
         }
     }

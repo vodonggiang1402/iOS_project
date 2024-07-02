@@ -26,6 +26,8 @@ class MainViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.setContentOffset(.zero, animated: false)
+        tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
         
         let header = StrechyHeaderView(frame: CGRect(x: 0, y: 0,
                                               width: UIScreen.main.bounds.width,
@@ -78,7 +80,12 @@ extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView,
                    heightForHeaderInSection section: Int) -> CGFloat {
-        return UITableView.automaticDimension
+        switch section {
+        case 0:
+            return 0
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView,
