@@ -15,7 +15,7 @@ enum TabBarItem {
     case symbol
     case knitting
     case save
-    case profile
+    case setting
     
     var selectedImage: UIImage? {
         switch self {
@@ -27,7 +27,7 @@ enum TabBarItem {
             return UIImage(named: "ico_history_active")
         case .save:
             return UIImage(named: "ico_wallet_active")
-        case .profile:
+        case .setting:
             return UIImage(named: "ico_setting_active")
         }
     }
@@ -42,7 +42,7 @@ enum TabBarItem {
             return UIImage(named: "ico_history")
         case .save:
             return UIImage(named: "ico_wallet")
-        case .profile:
+        case .setting:
             return UIImage(named: "ico_setting")
         }
     }
@@ -57,8 +57,8 @@ enum TabBarItem {
             return "Knitting"
         case .save:
             return "Save"
-        case .profile:
-            return "Profile"
+        case .setting:
+            return "Setting"
         }
     }
     
@@ -72,7 +72,7 @@ enum TabBarItem {
             return 2
         case .save:
             return 3
-        case .profile:
+        case .setting:
             return 4
         }
     }
