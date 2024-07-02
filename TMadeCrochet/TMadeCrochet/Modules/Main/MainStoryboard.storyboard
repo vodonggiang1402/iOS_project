@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,18 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="glL-an-qUS" customClass="BaseTableView" customModule="TMadeCrochet" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="glL-an-qUS" customClass="BaseTableView" customModule="TMadeCrochet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="color_f5f5f5_282828"/>
                         <constraints>
-                            <constraint firstItem="glL-an-qUS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="170-4f-3CY"/>
-                            <constraint firstItem="glL-an-qUS" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="2i2-jz-eIT"/>
-                            <constraint firstItem="glL-an-qUS" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="eT2-zq-YEK"/>
-                            <constraint firstItem="glL-an-qUS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="esq-Wn-jnL"/>
+                            <constraint firstItem="glL-an-qUS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="170-4f-3CY"/>
+                            <constraint firstItem="glL-an-qUS" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" id="2i2-jz-eIT"/>
+                            <constraint firstItem="glL-an-qUS" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="eT2-zq-YEK"/>
+                            <constraint firstItem="glL-an-qUS" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="esq-Wn-jnL"/>
                         </constraints>
                     </view>
                     <connections>

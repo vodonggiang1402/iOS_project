@@ -32,7 +32,9 @@ class MainViewController: BaseViewController {
                                               height: 200))
         header.imageView.image = UIImage(named: "banner_crochet")
         tableView.tableHeaderView = header
+        
         if #available(iOS 15.0, *) { tableView.sectionHeaderTopPadding = 0.0 }
+        tableView.register(cellType: MainTableCell.self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,7 +70,7 @@ extension MainViewController: UITableViewDelegate {
                    viewForHeaderInSection section: Int) -> UIView? {
         switch section {
         case 0:
-            return bannerSection
+            return nil
         default:
             return nil
         }
@@ -87,15 +89,21 @@ extension MainViewController: UITableViewDelegate {
 
 extension MainViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 0
+       return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return BaseTableViewCell()
+        do {
+            let cell = try tableView.dequeueReusableCell(MainTableCell.self)
+            return cell
+        } catch (let error) {
+            print("error", error)
+        }
+        return MainTableCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
