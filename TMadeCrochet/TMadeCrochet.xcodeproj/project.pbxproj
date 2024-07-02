@@ -24,6 +24,10 @@
 		7B341A012C33D0C60069BD02 /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341A002C33D0C60069BD02 /* ErrorExtension.swift */; };
 		7B341A052C33D1B90069BD02 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341A032C33D1B90069BD02 /* BaseCollectionView.swift */; };
 		7B341A062C33D1B90069BD02 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341A042C33D1B90069BD02 /* BaseCollectionViewCell.swift */; };
+		7B341A0F2C33D49D0069BD02 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341A0E2C33D49D0069BD02 /* BaseView.swift */; };
+		7B341A162C33D6EB0069BD02 /* BannerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341A152C33D6EB0069BD02 /* BannerSection.swift */; };
+		7B341A182C33D6F20069BD02 /* BannerSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B341A172C33D6F20069BD02 /* BannerSection.xib */; };
+		7B341A1B2C33F06C0069BD02 /* StrechyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341A1A2C33F06C0069BD02 /* StrechyHeaderView.swift */; };
 		7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E012C32511B0034EE9D /* AppDelegate.swift */; };
 		7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B522E0A2C32511C0034EE9D /* Assets.xcassets */; };
 		7B522E192C32511C0034EE9D /* TMadeCrochetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E182C32511C0034EE9D /* TMadeCrochetTests.swift */; };
@@ -136,6 +140,10 @@
 		7B341A002C33D0C60069BD02 /* ErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorExtension.swift; sourceTree = "<group>"; };
 		7B341A032C33D1B90069BD02 /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		7B341A042C33D1B90069BD02 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B341A0E2C33D49D0069BD02 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		7B341A152C33D6EB0069BD02 /* BannerSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerSection.swift; sourceTree = "<group>"; };
+		7B341A172C33D6F20069BD02 /* BannerSection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerSection.xib; sourceTree = "<group>"; };
+		7B341A1A2C33F06C0069BD02 /* StrechyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechyHeaderView.swift; sourceTree = "<group>"; };
 		7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMadeCrochet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B522E012C32511B0034EE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B522E0A2C32511C0034EE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -295,6 +303,44 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		7B341A112C33D6230069BD02 /* CarouselSection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CarouselSection;
+			sourceTree = "<group>";
+		};
+		7B341A122C33D6610069BD02 /* SymbolSection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SymbolSection;
+			sourceTree = "<group>";
+		};
+		7B341A132C33D66C0069BD02 /* PatternSection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PatternSection;
+			sourceTree = "<group>";
+		};
+		7B341A142C33D6A10069BD02 /* BannerSection */ = {
+			isa = PBXGroup;
+			children = (
+				7B341A152C33D6EB0069BD02 /* BannerSection.swift */,
+				7B341A172C33D6F20069BD02 /* BannerSection.xib */,
+			);
+			path = BannerSection;
+			sourceTree = "<group>";
+		};
+		7B341A192C33F0560069BD02 /* StrechyHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				7B341A1A2C33F06C0069BD02 /* StrechyHeaderView.swift */,
+			);
+			path = StrechyHeaderView;
+			sourceTree = "<group>";
+		};
 		7B522DF52C32511B0034EE9D = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +399,7 @@
 		7B522E312C3252C70034EE9D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				7B341A0E2C33D49D0069BD02 /* BaseView.swift */,
 				7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */,
 				7B522E322C3252EA0034EE9D /* BaseViewController.swift */,
 			);
@@ -422,6 +469,11 @@
 		7B522E3A2C3253790034EE9D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7B341A192C33F0560069BD02 /* StrechyHeaderView */,
+				7B341A142C33D6A10069BD02 /* BannerSection */,
+				7B341A132C33D66C0069BD02 /* PatternSection */,
+				7B341A122C33D6610069BD02 /* SymbolSection */,
+				7B341A112C33D6230069BD02 /* CarouselSection */,
 				7B522E6B2C32626E0034EE9D /* MainContract.swift */,
 				7B522E6A2C32626E0034EE9D /* MainEntity.swift */,
 				7B522E6D2C32626E0034EE9D /* MainInteractor.swift */,
@@ -709,6 +761,7 @@
 				7B522E8E2C3262840034EE9D /* ProfileStoryboard.storyboard in Resources */,
 				7B3419FF2C33D0060069BD02 /* NormalHeader.bundle in Resources */,
 				7B522E7F2C3262740034EE9D /* KnittingStoryboard.storyboard in Resources */,
+				7B341A182C33D6F20069BD02 /* BannerSection.xib in Resources */,
 				7B522E752C32626E0034EE9D /* MainStoryboard.storyboard in Resources */,
 				7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */,
 			);
@@ -816,6 +869,7 @@
 				7B522E732C32626E0034EE9D /* MainRouter.swift in Sources */,
 				7B522E902C3262840034EE9D /* ProfileContract.swift in Sources */,
 				7BF32A292C33CF0A00CD8F18 /* CRRefreshProtocol.swift in Sources */,
+				7B341A0F2C33D49D0069BD02 /* BaseView.swift in Sources */,
 				7B522EA92C3262930034EE9D /* SymbolEntity.swift in Sources */,
 				7B522EAE2C3262930034EE9D /* SymbolViewController.swift in Sources */,
 				7B522E492C325A950034EE9D /* TabbarContract.swift in Sources */,
@@ -847,9 +901,11 @@
 				7B522E712C32626E0034EE9D /* MainEntity.swift in Sources */,
 				7B522E5F2C3260AC0034EE9D /* SplashEntity.swift in Sources */,
 				7B522E922C3262840034EE9D /* ProfileViewController.swift in Sources */,
+				7B341A1B2C33F06C0069BD02 /* StrechyHeaderView.swift in Sources */,
 				7B522E9B2C3262890034EE9D /* SaveContract.swift in Sources */,
 				7B522E332C3252EA0034EE9D /* BaseViewController.swift in Sources */,
 				7BF32A1B2C33CE5500CD8F18 /* UITableViewExtension.swift in Sources */,
+				7B341A162C33D6EB0069BD02 /* BannerSection.swift in Sources */,
 				7B522E7E2C3262740034EE9D /* KnittingEntity.swift in Sources */,
 				7B522E5E2C3260AC0034EE9D /* SplashRouter.swift in Sources */,
 				7BF32A242C33CF0A00CD8F18 /* CRRefreshHeaderView.swift in Sources */,
