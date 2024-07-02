@@ -41,19 +41,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLK-Ny-GMO">
                                 <rect key="frame" x="70" y="10" width="312" height="70"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hướng dẫn móc mẫu trái bơ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJg-6Z-XR8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hướng dẫn móc mẫu trái bơ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJg-6Z-XR8">
                                         <rect key="frame" x="0.0" y="0.0" width="312" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="PS8-C3-sI0"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpV-o1-ypl">
-                                        <rect key="frame" x="0.0" y="20" width="312" height="53"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpV-o1-ypl">
+                                        <rect key="frame" x="0.0" y="25" width="312" height="53"/>
                                         <string key="text">Học cách tự tạo túi đựng điện thoại quả bơ thông qua video hướng dẫn móc từ Mimi Handmade. Bắt tay vào thực hiện ngay hôm nay và tạo nên món quà độc đáo</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -63,10 +63,10 @@
                                     <constraint firstItem="wJg-6Z-XR8" firstAttribute="top" secondItem="kLK-Ny-GMO" secondAttribute="top" id="20H-fD-qzI"/>
                                     <constraint firstItem="wJg-6Z-XR8" firstAttribute="leading" secondItem="kLK-Ny-GMO" secondAttribute="leading" id="CSu-BS-TCB"/>
                                     <constraint firstAttribute="trailing" secondItem="wJg-6Z-XR8" secondAttribute="trailing" id="E0z-6w-iQm"/>
-                                    <constraint firstItem="BpV-o1-ypl" firstAttribute="top" secondItem="wJg-6Z-XR8" secondAttribute="bottom" id="XEF-Pi-tKS"/>
+                                    <constraint firstItem="BpV-o1-ypl" firstAttribute="top" secondItem="wJg-6Z-XR8" secondAttribute="bottom" constant="5" id="XEF-Pi-tKS"/>
                                     <constraint firstItem="BpV-o1-ypl" firstAttribute="leading" secondItem="kLK-Ny-GMO" secondAttribute="leading" id="gth-ec-Ggc"/>
                                     <constraint firstAttribute="trailing" secondItem="BpV-o1-ypl" secondAttribute="trailing" id="uLb-7W-tez"/>
-                                    <constraint firstAttribute="bottom" secondItem="BpV-o1-ypl" secondAttribute="bottom" constant="-3" id="zU5-tT-092"/>
+                                    <constraint firstAttribute="bottom" secondItem="BpV-o1-ypl" secondAttribute="bottom" constant="-8" id="zU5-tT-092"/>
                                 </constraints>
                             </view>
                         </subviews>

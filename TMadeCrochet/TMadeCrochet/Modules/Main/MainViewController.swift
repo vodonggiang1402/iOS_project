@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController: BaseViewController {
     
-    private let bannerSection = BannerSection()
+    private let titleSection = TitleSection()
     
     var presenter: ViewToPresenterMainProtocol?
     @IBOutlet weak var tableView: BaseTableView!
@@ -72,7 +72,7 @@ extension MainViewController: UITableViewDelegate {
                    viewForHeaderInSection section: Int) -> UIView? {
         switch section {
         case 0:
-            return nil
+            return titleSection
         default:
             return nil
         }
@@ -82,7 +82,7 @@ extension MainViewController: UITableViewDelegate {
                    heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
         case 0:
-            return 0
+            return UITableView.automaticDimension
         default:
             return 0
         }
@@ -96,11 +96,18 @@ extension MainViewController: UITableViewDelegate {
 
 extension MainViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 10
+        switch section {
+        case 0:
+            return 0
+        case 1:
+            return 5
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
