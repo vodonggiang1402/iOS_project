@@ -27,6 +27,7 @@ class SymbolViewController: BaseViewController {
     func setupDataForCollectionView() {
         let itemSize = CGSize(width: size, height: size)
         self.collectionView.dataArray = self.list
+        self.collectionView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         self.collectionView.configure(hasPull: false,
                                  hasLoadMore: false,
                                  lineSpacing: lineSpacing,
