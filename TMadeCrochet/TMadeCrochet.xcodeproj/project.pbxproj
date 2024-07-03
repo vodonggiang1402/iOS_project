@@ -34,6 +34,8 @@
 		7B341AA72C3512880069BD02 /* symbols.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B341AA62C3512880069BD02 /* symbols.json */; };
 		7B341AAB2C3532EA0069BD02 /* SymbolResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AAA2C3532EA0069BD02 /* SymbolResponse.swift */; };
 		7B341AAD2C3535F10069BD02 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AAC2C3535F10069BD02 /* DataManager.swift */; };
+		7B341AB02C355B520069BD02 /* SymbolCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AAF2C355B520069BD02 /* SymbolCollectionCell.swift */; };
+		7B341AB22C355B590069BD02 /* SymbolCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B341AB12C355B590069BD02 /* SymbolCollectionCell.xib */; };
 		7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E012C32511B0034EE9D /* AppDelegate.swift */; };
 		7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B522E0A2C32511C0034EE9D /* Assets.xcassets */; };
 		7B522E192C32511C0034EE9D /* TMadeCrochetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E182C32511C0034EE9D /* TMadeCrochetTests.swift */; };
@@ -279,6 +281,8 @@
 		7B341AA62C3512880069BD02 /* symbols.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = symbols.json; sourceTree = "<group>"; };
 		7B341AAA2C3532EA0069BD02 /* SymbolResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolResponse.swift; sourceTree = "<group>"; };
 		7B341AAC2C3535F10069BD02 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		7B341AAF2C355B520069BD02 /* SymbolCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCollectionCell.swift; sourceTree = "<group>"; };
+		7B341AB12C355B590069BD02 /* SymbolCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymbolCollectionCell.xib; sourceTree = "<group>"; };
 		7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMadeCrochet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B522E012C32511B0034EE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B522E0A2C32511C0034EE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -618,6 +622,15 @@
 			path = Symbol;
 			sourceTree = "<group>";
 		};
+		7B341AAE2C355B3B0069BD02 /* SymbolCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				7B341AAF2C355B520069BD02 /* SymbolCollectionCell.swift */,
+				7B341AB12C355B590069BD02 /* SymbolCollectionCell.xib */,
+			);
+			path = SymbolCollectionCell;
+			sourceTree = "<group>";
+		};
 		7B522DF52C32511B0034EE9D = {
 			isa = PBXGroup;
 			children = (
@@ -804,6 +817,7 @@
 		7B522E652C32621D0034EE9D /* Symbol */ = {
 			isa = PBXGroup;
 			children = (
+				7B341AAE2C355B3B0069BD02 /* SymbolCollectionCell */,
 				7B522EA12C3262920034EE9D /* SymbolContract.swift */,
 				7B522EA22C3262920034EE9D /* SymbolEntity.swift */,
 				7B522EA42C3262920034EE9D /* SymbolInteractor.swift */,
@@ -1041,6 +1055,7 @@
 				7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */,
 				7B522E8E2C3262840034EE9D /* ProfileStoryboard.storyboard in Resources */,
 				7B3419FF2C33D0060069BD02 /* NormalHeader.bundle in Resources */,
+				7B341AB22C355B590069BD02 /* SymbolCollectionCell.xib in Resources */,
 				7B341AA72C3512880069BD02 /* symbols.json in Resources */,
 				7B522E7F2C3262740034EE9D /* KnittingStoryboard.storyboard in Resources */,
 				7B522E752C32626E0034EE9D /* MainStoryboard.storyboard in Resources */,
@@ -1194,6 +1209,7 @@
 				7B522E7E2C3262740034EE9D /* KnittingEntity.swift in Sources */,
 				7B522E5E2C3260AC0034EE9D /* SplashRouter.swift in Sources */,
 				7BF32A242C33CF0A00CD8F18 /* CRRefreshHeaderView.swift in Sources */,
+				7B341AB02C355B520069BD02 /* SymbolCollectionCell.swift in Sources */,
 				7BF32A262C33CF0A00CD8F18 /* CRRefreshFooterView.swift in Sources */,
 				7BF32A272C33CF0A00CD8F18 /* CRRefreshComponent.swift in Sources */,
 				7B522E442C325A950034EE9D /* TabbarPresenter.swift in Sources */,
