@@ -13,21 +13,24 @@ class SymbolViewController: BaseViewController {
 
     @IBOutlet weak var collectionView: BaseCollectionView!
     
-    private let heightItem: CGFloat = 70
-    private let widthItem: CGFloat = (UIScreen.main.bounds.width - 32)/3
-    private let lineSpacing: CGFloat = 10
-//    private let interitemSpacing: CGFloat = 10
+    private let size: CGFloat = (UIScreen.main.bounds.width - 32 - 10)/3
+    private let lineSpacing: CGFloat = 5
+    private let interitemSpacing: CGFloat = 5
+    var list: [Symbol] = []
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupDataForCollectionView()
     }
     
     func setupDataForCollectionView() {
-        let itemSize = CGSize(width: widthItem, height: heightItem)
+        let itemSize = CGSize(width: size, height: size)
+        self.collectionView.dataArray = self.list
         self.collectionView.configure(hasPull: false,
                                  hasLoadMore: false,
                                  lineSpacing: lineSpacing,
+                                 interitemSpacing: interitemSpacing,
                                  itemSize: itemSize,
                                  scrollDirection: .vertical,
                                  collectionCellClassName: SymbolCollectionCell.className,
@@ -36,20 +39,21 @@ class SymbolViewController: BaseViewController {
     
     func loadData() {
         DataManager.shared.readJSONFromFile(fileName: "symbols", type: SymbolResponseData.self) { result in
-            self.collectionView.dataArray = result?.data ?? []
-            self.collectionView.reloadData()
+            if let array = result?.data, array.count > 0 {
+                self.list = array
+                self.collectionView.dataArray = self.list
+                self.collectionView.reloadData()
+            }
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.setupDataForCollectionView()
-        self.loadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        self.loadData()
     }
 
     override func viewDidDisappear(_ animated: Bool) {

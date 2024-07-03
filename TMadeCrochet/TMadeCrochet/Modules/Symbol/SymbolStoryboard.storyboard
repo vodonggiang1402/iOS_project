@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-0q-zW6" customClass="BaseCollectionView" customModule="Probit" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <rect key="frame" x="16" y="48" width="382" height="814"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="V45-TY-URy">
                                     <size key="itemSize" width="128" height="128"/>
@@ -32,10 +32,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="color_f5f5f5_282828"/>
                         <constraints>
-                            <constraint firstItem="0vx-0q-zW6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2EI-bz-na2"/>
+                            <constraint firstItem="0vx-0q-zW6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="2EI-bz-na2"/>
                             <constraint firstItem="0vx-0q-zW6" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="AwN-jS-mx2"/>
                             <constraint firstItem="0vx-0q-zW6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="d2l-5z-rIz"/>
-                            <constraint firstItem="0vx-0q-zW6" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qAO-Sf-M9L"/>
+                            <constraint firstItem="0vx-0q-zW6" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-16" id="qAO-Sf-M9L"/>
                         </constraints>
                     </view>
                     <connections>
