@@ -14,6 +14,13 @@ class SymbolViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadData()
+    }
+    
+    func loadData() {
+        DataManager.shared.readJSONFromFile(fileName: "symbols", type: SymbolResponseData.self) { result in
+            print(result?.data ?? [])
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

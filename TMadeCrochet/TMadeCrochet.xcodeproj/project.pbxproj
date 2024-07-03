@@ -31,6 +31,9 @@
 		7B341A242C340B040069BD02 /* TitleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341A232C340B040069BD02 /* TitleSection.swift */; };
 		7B341A262C340B0C0069BD02 /* TitleSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B341A252C340B0C0069BD02 /* TitleSection.xib */; };
 		7B341AA42C34103D0069BD02 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AA32C34103D0069BD02 /* UIFontExtension.swift */; };
+		7B341AA72C3512880069BD02 /* symbols.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B341AA62C3512880069BD02 /* symbols.json */; };
+		7B341AAB2C3532EA0069BD02 /* SymbolResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AAA2C3532EA0069BD02 /* SymbolResponse.swift */; };
+		7B341AAD2C3535F10069BD02 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AAC2C3535F10069BD02 /* DataManager.swift */; };
 		7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E012C32511B0034EE9D /* AppDelegate.swift */; };
 		7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B522E0A2C32511C0034EE9D /* Assets.xcassets */; };
 		7B522E192C32511C0034EE9D /* TMadeCrochetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E182C32511C0034EE9D /* TMadeCrochetTests.swift */; };
@@ -273,6 +276,9 @@
 		7B341AA12C340DF40069BD02 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
 		7B341AA22C340DF40069BD02 /* NotoSansThai-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansThai-SemiBold.ttf"; sourceTree = "<group>"; };
 		7B341AA32C34103D0069BD02 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		7B341AA62C3512880069BD02 /* symbols.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = symbols.json; sourceTree = "<group>"; };
+		7B341AAA2C3532EA0069BD02 /* SymbolResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolResponse.swift; sourceTree = "<group>"; };
+		7B341AAC2C3535F10069BD02 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMadeCrochet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B522E012C32511B0034EE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B522E0A2C32511C0034EE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -588,6 +594,30 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		7B341AA52C35127E0069BD02 /* JsonFile */ = {
+			isa = PBXGroup;
+			children = (
+				7B341AA62C3512880069BD02 /* symbols.json */,
+			);
+			path = JsonFile;
+			sourceTree = "<group>";
+		};
+		7B341AA82C3532B40069BD02 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7B341AA92C3532BD0069BD02 /* Symbol */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7B341AA92C3532BD0069BD02 /* Symbol */ = {
+			isa = PBXGroup;
+			children = (
+				7B341AAA2C3532EA0069BD02 /* SymbolResponse.swift */,
+			);
+			path = Symbol;
+			sourceTree = "<group>";
+		};
 		7B522DF52C32511B0034EE9D = {
 			isa = PBXGroup;
 			children = (
@@ -613,6 +643,7 @@
 		7B522E002C32511B0034EE9D /* TMadeCrochet */ = {
 			isa = PBXGroup;
 			children = (
+				7B341AA82C3532B40069BD02 /* Services */,
 				7BF32A142C33CC8900CD8F18 /* CustomView */,
 				7B522E382C3253490034EE9D /* Modules */,
 				7B522E372C3253350034EE9D /* Configs */,
@@ -649,6 +680,7 @@
 				7B341A0E2C33D49D0069BD02 /* BaseView.swift */,
 				7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */,
 				7B522E322C3252EA0034EE9D /* BaseViewController.swift */,
+				7B341AAC2C3535F10069BD02 /* DataManager.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -663,6 +695,7 @@
 		7B522E352C3253170034EE9D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7B341AA52C35127E0069BD02 /* JsonFile */,
 				7B341A272C340DDA0069BD02 /* Font */,
 				7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */,
 				7B522E0A2C32511C0034EE9D /* Assets.xcassets */,
@@ -1008,6 +1041,7 @@
 				7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */,
 				7B522E8E2C3262840034EE9D /* ProfileStoryboard.storyboard in Resources */,
 				7B3419FF2C33D0060069BD02 /* NormalHeader.bundle in Resources */,
+				7B341AA72C3512880069BD02 /* symbols.json in Resources */,
 				7B522E7F2C3262740034EE9D /* KnittingStoryboard.storyboard in Resources */,
 				7B522E752C32626E0034EE9D /* MainStoryboard.storyboard in Resources */,
 				7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */,
@@ -1113,6 +1147,7 @@
 				7B341A052C33D1B90069BD02 /* BaseCollectionView.swift in Sources */,
 				7B522E9C2C3262890034EE9D /* SaveEntity.swift in Sources */,
 				7B522E832C3262740034EE9D /* KnittingPresenter.swift in Sources */,
+				7B341AAD2C3535F10069BD02 /* DataManager.swift in Sources */,
 				7B3419FD2C33D0060069BD02 /* NormalHeaderAnimator.swift in Sources */,
 				7B522E732C32626E0034EE9D /* MainRouter.swift in Sources */,
 				7B522E902C3262840034EE9D /* ProfileContract.swift in Sources */,
@@ -1144,6 +1179,7 @@
 				7B522E542C325C100034EE9D /* UIStoryboardExtension.swift in Sources */,
 				7B522E842C3262740034EE9D /* KnittingViewController.swift in Sources */,
 				7B522E822C3262740034EE9D /* KnittingContract.swift in Sources */,
+				7B341AAB2C3532EA0069BD02 /* SymbolResponse.swift in Sources */,
 				7B3419EE2C33CFDC0069BD02 /* FastLayer.swift in Sources */,
 				7B3419E52C33CFD30069BD02 /* WCLLoadingView.swift in Sources */,
 				7B522EA82C3262930034EE9D /* SymbolContract.swift in Sources */,
