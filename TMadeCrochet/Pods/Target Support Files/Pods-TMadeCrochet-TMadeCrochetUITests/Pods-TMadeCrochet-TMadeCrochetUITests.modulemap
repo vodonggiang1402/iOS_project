@@ -1,6 +1,0 @@
-framework module Pods_TMadeCrochet_TMadeCrochetUITests {
-  umbrella header "Pods-TMadeCrochet-TMadeCrochetUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
