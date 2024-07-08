@@ -89,13 +89,20 @@
 		7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B522EA62C3262930034EE9D /* SymbolStoryboard.storyboard */; };
 		7B522EAE2C3262930034EE9D /* SymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EA72C3262930034EE9D /* SymbolViewController.swift */; };
 		7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */; };
-		7BB994F32C3B95E1008EF04B /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994EC2C3B95E1008EF04B /* SettingPresenter.swift */; };
-		7BB994F42C3B95E1008EF04B /* SettingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB994ED2C3B95E1008EF04B /* SettingStoryboard.storyboard */; };
-		7BB994F52C3B95E1008EF04B /* SettingContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994EE2C3B95E1008EF04B /* SettingContract.swift */; };
-		7BB994F62C3B95E1008EF04B /* SettingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994EF2C3B95E1008EF04B /* SettingEntity.swift */; };
-		7BB994F72C3B95E1008EF04B /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994F02C3B95E1008EF04B /* SettingRouter.swift */; };
-		7BB994F82C3B95E1008EF04B /* SettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994F12C3B95E1008EF04B /* SettingInteractor.swift */; };
-		7BB994F92C3B95E1008EF04B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994F22C3B95E1008EF04B /* SettingViewController.swift */; };
+		7BB995012C3B96CF008EF04B /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */; };
+		7BB995022C3B96CF008EF04B /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */; };
+		7BB995032C3B96CF008EF04B /* SettingContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FC2C3B96CF008EF04B /* SettingContract.swift */; };
+		7BB995042C3B96CF008EF04B /* SettingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB994FD2C3B96CF008EF04B /* SettingStoryboard.storyboard */; };
+		7BB995052C3B96CF008EF04B /* SettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FE2C3B96CF008EF04B /* SettingInteractor.swift */; };
+		7BB995062C3B96CF008EF04B /* SettingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FF2C3B96CF008EF04B /* SettingEntity.swift */; };
+		7BB995072C3B96CF008EF04B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB995002C3B96CF008EF04B /* SettingViewController.swift */; };
+		7BB9950F2C3B96DC008EF04B /* CountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB995082C3B96DC008EF04B /* CountPresenter.swift */; };
+		7BB995102C3B96DC008EF04B /* CountContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB995092C3B96DC008EF04B /* CountContract.swift */; };
+		7BB995112C3B96DC008EF04B /* CountEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9950A2C3B96DC008EF04B /* CountEntity.swift */; };
+		7BB995122C3B96DC008EF04B /* CountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9950B2C3B96DC008EF04B /* CountRouter.swift */; };
+		7BB995132C3B96DC008EF04B /* CountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9950C2C3B96DC008EF04B /* CountInteractor.swift */; };
+		7BB995142C3B96DC008EF04B /* CountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9950D2C3B96DC008EF04B /* CountViewController.swift */; };
+		7BB995152C3B96DC008EF04B /* CountStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB9950E2C3B96DC008EF04B /* CountStoryboard.storyboard */; };
 		7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */; };
 		7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */; };
 		7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */; };
@@ -340,13 +347,20 @@
 		7B522EA62C3262930034EE9D /* SymbolStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SymbolStoryboard.storyboard; sourceTree = "<group>"; };
 		7B522EA72C3262930034EE9D /* SymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolViewController.swift; sourceTree = "<group>"; };
 		7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerInNavigation.swift; sourceTree = "<group>"; };
-		7BB994EC2C3B95E1008EF04B /* SettingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingPresenter.swift; path = ../../../../../Desktop/base_code/SettingPresenter.swift; sourceTree = "<group>"; };
-		7BB994ED2C3B95E1008EF04B /* SettingStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SettingStoryboard.storyboard; path = ../../../../../Desktop/base_code/SettingStoryboard.storyboard; sourceTree = "<group>"; };
-		7BB994EE2C3B95E1008EF04B /* SettingContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingContract.swift; path = ../../../../../Desktop/base_code/SettingContract.swift; sourceTree = "<group>"; };
-		7BB994EF2C3B95E1008EF04B /* SettingEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingEntity.swift; path = ../../../../../Desktop/base_code/SettingEntity.swift; sourceTree = "<group>"; };
-		7BB994F02C3B95E1008EF04B /* SettingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingRouter.swift; path = ../../../../../Desktop/base_code/SettingRouter.swift; sourceTree = "<group>"; };
-		7BB994F12C3B95E1008EF04B /* SettingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingInteractor.swift; path = ../../../../../Desktop/base_code/SettingInteractor.swift; sourceTree = "<group>"; };
-		7BB994F22C3B95E1008EF04B /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = ../../../../../Desktop/base_code/SettingViewController.swift; sourceTree = "<group>"; };
+		7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
+		7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
+		7BB994FC2C3B96CF008EF04B /* SettingContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingContract.swift; sourceTree = "<group>"; };
+		7BB994FD2C3B96CF008EF04B /* SettingStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingStoryboard.storyboard; sourceTree = "<group>"; };
+		7BB994FE2C3B96CF008EF04B /* SettingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingInteractor.swift; sourceTree = "<group>"; };
+		7BB994FF2C3B96CF008EF04B /* SettingEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingEntity.swift; sourceTree = "<group>"; };
+		7BB995002C3B96CF008EF04B /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		7BB995082C3B96DC008EF04B /* CountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountPresenter.swift; sourceTree = "<group>"; };
+		7BB995092C3B96DC008EF04B /* CountContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountContract.swift; sourceTree = "<group>"; };
+		7BB9950A2C3B96DC008EF04B /* CountEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountEntity.swift; sourceTree = "<group>"; };
+		7BB9950B2C3B96DC008EF04B /* CountRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountRouter.swift; sourceTree = "<group>"; };
+		7BB9950C2C3B96DC008EF04B /* CountInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountInteractor.swift; sourceTree = "<group>"; };
+		7BB9950D2C3B96DC008EF04B /* CountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
+		7BB9950E2C3B96DC008EF04B /* CountStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CountStoryboard.storyboard; sourceTree = "<group>"; };
 		7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashStoryboard.storyboard; sourceTree = "<group>"; };
 		7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -739,7 +753,6 @@
 				7BB994CE2C3B9501008EF04B /* Count */,
 				7B522E682C3262320034EE9D /* Knitting */,
 				7B522E672C32622A0034EE9D /* Profile */,
-				7B522E662C3262250034EE9D /* Save */,
 				7B522E652C32621D0034EE9D /* Symbol */,
 				7B522E3D2C325A730034EE9D /* Tabbar */,
 				7B522E3A2C3253790034EE9D /* Main */,
@@ -831,20 +844,6 @@
 			path = Symbol;
 			sourceTree = "<group>";
 		};
-		7B522E662C3262250034EE9D /* Save */ = {
-			isa = PBXGroup;
-			children = (
-				7BB994EE2C3B95E1008EF04B /* SettingContract.swift */,
-				7BB994EF2C3B95E1008EF04B /* SettingEntity.swift */,
-				7BB994F12C3B95E1008EF04B /* SettingInteractor.swift */,
-				7BB994EC2C3B95E1008EF04B /* SettingPresenter.swift */,
-				7BB994F02C3B95E1008EF04B /* SettingRouter.swift */,
-				7BB994ED2C3B95E1008EF04B /* SettingStoryboard.storyboard */,
-				7BB994F22C3B95E1008EF04B /* SettingViewController.swift */,
-			);
-			path = Save;
-			sourceTree = "<group>";
-		};
 		7B522E672C32622A0034EE9D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -876,6 +875,13 @@
 		7BB994CE2C3B9501008EF04B /* Count */ = {
 			isa = PBXGroup;
 			children = (
+				7BB995092C3B96DC008EF04B /* CountContract.swift */,
+				7BB9950A2C3B96DC008EF04B /* CountEntity.swift */,
+				7BB9950C2C3B96DC008EF04B /* CountInteractor.swift */,
+				7BB995082C3B96DC008EF04B /* CountPresenter.swift */,
+				7BB9950B2C3B96DC008EF04B /* CountRouter.swift */,
+				7BB9950E2C3B96DC008EF04B /* CountStoryboard.storyboard */,
+				7BB9950D2C3B96DC008EF04B /* CountViewController.swift */,
 			);
 			path = Count;
 			sourceTree = "<group>";
@@ -883,6 +889,13 @@
 		7BB994CF2C3B9549008EF04B /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				7BB994FC2C3B96CF008EF04B /* SettingContract.swift */,
+				7BB994FF2C3B96CF008EF04B /* SettingEntity.swift */,
+				7BB994FE2C3B96CF008EF04B /* SettingInteractor.swift */,
+				7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */,
+				7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */,
+				7BB994FD2C3B96CF008EF04B /* SettingStoryboard.storyboard */,
+				7BB995002C3B96CF008EF04B /* SettingViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1063,6 +1076,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B522E462C325A950034EE9D /* Tabbar.storyboard in Resources */,
+				7BB995152C3B96DC008EF04B /* CountStoryboard.storyboard in Resources */,
 				7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */,
 				7B341A262C340B0C0069BD02 /* TitleSection.xib in Resources */,
 				7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */,
@@ -1071,7 +1085,7 @@
 				7B522E8E2C3262840034EE9D /* ProfileStoryboard.storyboard in Resources */,
 				7B3419FF2C33D0060069BD02 /* NormalHeader.bundle in Resources */,
 				7B341AB22C355B590069BD02 /* SymbolCollectionCell.xib in Resources */,
-				7BB994F42C3B95E1008EF04B /* SettingStoryboard.storyboard in Resources */,
+				7BB995042C3B96CF008EF04B /* SettingStoryboard.storyboard in Resources */,
 				7B341AA72C3512880069BD02 /* symbols.json in Resources */,
 				7B522E7F2C3262740034EE9D /* KnittingStoryboard.storyboard in Resources */,
 				7B522E752C32626E0034EE9D /* MainStoryboard.storyboard in Resources */,
@@ -1181,30 +1195,35 @@
 				7B522E732C32626E0034EE9D /* MainRouter.swift in Sources */,
 				7B522E902C3262840034EE9D /* ProfileContract.swift in Sources */,
 				7BF32A292C33CF0A00CD8F18 /* CRRefreshProtocol.swift in Sources */,
+				7BB995062C3B96CF008EF04B /* SettingEntity.swift in Sources */,
 				7B341A0F2C33D49D0069BD02 /* BaseView.swift in Sources */,
 				7B522EA92C3262930034EE9D /* SymbolEntity.swift in Sources */,
-				7BB994F52C3B95E1008EF04B /* SettingContract.swift in Sources */,
+				7BB995052C3B96CF008EF04B /* SettingInteractor.swift in Sources */,
 				7B522EAE2C3262930034EE9D /* SymbolViewController.swift in Sources */,
+				7BB995112C3B96DC008EF04B /* CountEntity.swift in Sources */,
+				7BB995022C3B96CF008EF04B /* SettingRouter.swift in Sources */,
+				7BB995132C3B96DC008EF04B /* CountInteractor.swift in Sources */,
 				7B522E492C325A950034EE9D /* TabbarContract.swift in Sources */,
 				7BF32A2A2C33CF0A00CD8F18 /* CRRefreshAnimator.swift in Sources */,
 				7B522E452C325A950034EE9D /* TabbarRouter.swift in Sources */,
 				7B522E702C32626E0034EE9D /* MainViewController.swift in Sources */,
 				7B522E802C3262740034EE9D /* KnittingInteractor.swift in Sources */,
 				7B522E472C325A950034EE9D /* TabbarInteractor.swift in Sources */,
+				7BB995142C3B96DC008EF04B /* CountViewController.swift in Sources */,
 				7B3419EF2C33CFDC0069BD02 /* FastCircleLayer.swift in Sources */,
 				7B522E8C2C3262840034EE9D /* ProfileRouter.swift in Sources */,
 				7B522E742C32626E0034EE9D /* MainInteractor.swift in Sources */,
 				7B522E762C32626E0034EE9D /* MainPresenter.swift in Sources */,
 				7B522E562C325C290034EE9D /* ObjectExtension.swift in Sources */,
+				7BB995072C3B96CF008EF04B /* SettingViewController.swift in Sources */,
 				7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */,
 				7B3419FE2C33D0060069BD02 /* NormalFooterAnimator.swift in Sources */,
-				7BB994F92C3B95E1008EF04B /* SettingViewController.swift in Sources */,
 				7B341A242C340B040069BD02 /* TitleSection.swift in Sources */,
 				7BF32A192C33CCD500CD8F18 /* BaseTableViewCell.swift in Sources */,
 				7B522EAA2C3262930034EE9D /* SymbolPresenter.swift in Sources */,
 				7B341A062C33D1B90069BD02 /* BaseCollectionViewCell.swift in Sources */,
 				7B3419EB2C33CFDC0069BD02 /* FastCheckLayer.swift in Sources */,
-				7BB994F72C3B95E1008EF04B /* SettingRouter.swift in Sources */,
+				7BB9950F2C3B96DC008EF04B /* CountPresenter.swift in Sources */,
 				7BF32A282C33CF0A00CD8F18 /* CRRefreshExtension.swift in Sources */,
 				7B522E502C325B680034EE9D /* IntExtension.swift in Sources */,
 				7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */,
@@ -1217,10 +1236,13 @@
 				7B522EA82C3262930034EE9D /* SymbolContract.swift in Sources */,
 				7B522E712C32626E0034EE9D /* MainEntity.swift in Sources */,
 				7B341A1F2C33FDDF0069BD02 /* MainTableCell.swift in Sources */,
+				7BB995102C3B96DC008EF04B /* CountContract.swift in Sources */,
+				7BB995032C3B96CF008EF04B /* SettingContract.swift in Sources */,
 				7B522E5F2C3260AC0034EE9D /* SplashEntity.swift in Sources */,
 				7B522E922C3262840034EE9D /* ProfileViewController.swift in Sources */,
 				7B341A1B2C33F06C0069BD02 /* StrechyHeaderView.swift in Sources */,
 				7B522E332C3252EA0034EE9D /* BaseViewController.swift in Sources */,
+				7BB995122C3B96DC008EF04B /* CountRouter.swift in Sources */,
 				7BF32A1B2C33CE5500CD8F18 /* UITableViewExtension.swift in Sources */,
 				7B522E7E2C3262740034EE9D /* KnittingEntity.swift in Sources */,
 				7B522E5E2C3260AC0034EE9D /* SplashRouter.swift in Sources */,
@@ -1231,8 +1253,7 @@
 				7B522E442C325A950034EE9D /* TabbarPresenter.swift in Sources */,
 				7B522E722C32626E0034EE9D /* MainContract.swift in Sources */,
 				7B3419E42C33CFD30069BD02 /* SlackLoadingAnimator.swift in Sources */,
-				7BB994F32C3B95E1008EF04B /* SettingPresenter.swift in Sources */,
-				7BB994F62C3B95E1008EF04B /* SettingEntity.swift in Sources */,
+				7BB995012C3B96CF008EF04B /* SettingPresenter.swift in Sources */,
 				7B522E632C3260AC0034EE9D /* SplashContract.swift in Sources */,
 				7B522E812C3262740034EE9D /* KnittingRouter.swift in Sources */,
 				7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */,
@@ -1250,7 +1271,6 @@
 				7B522E612C3260AC0034EE9D /* SplashPresenter.swift in Sources */,
 				7B522EAB2C3262930034EE9D /* SymbolInteractor.swift in Sources */,
 				7B3419ED2C33CFDC0069BD02 /* FastArrowLayer.swift in Sources */,
-				7BB994F82C3B95E1008EF04B /* SettingInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
