@@ -21,6 +21,7 @@ class SymbolViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavigationBar(title: "Mũi móc cơ bản", isShowLeft: false)
         self.setupDataForCollectionView()
     }
     

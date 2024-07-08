@@ -59,4 +59,79 @@ class BaseViewController: UIViewController {
             self.navigationController?.navigationBar.isTranslucent = false
         }
     }
+    
+    func setupNavigationBar(title: String = "", isShowLeft: Bool) {
+        let titleView = TitleViewNavigationBar()
+        titleView.setupTitleView(title: title)
+        titleView.backgroundColor = .clear
+        self.navigationItem.titleView = titleView
+        if isShowLeft {
+            self.addLeftBarItem()
+        } else {
+            self.removeLeftBarButton()
+        }
+        setupNavigationBarColor()
+    }
+    
+    private func setupNavigationBarColor() {
+        guard let navigationBar = navigationController?.navigationBar else { return }
+        let navColor = UIColor.color_fafafa_1818181
+        let underLineColor = UIColor.gray
+        let navImage = navColor.navBarImage()
+        if #available(iOS 15.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+//            appearance.shadowImage = underLineImage
+            appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+            appearance.backgroundColor = navColor
+            navigationItem.standardAppearance = appearance
+            navigationItem.scrollEdgeAppearance = appearance
+            navigationBar.backgroundColor = navColor
+        } else {
+            navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+            navigationBar.setBackgroundImage(navImage, for: .default)
+//            navigationBar.shadowImage = underLineImage
+            navigationBar.backgroundColor = navColor
+        }
+    }
+    
+    func addLeftBarItem() {
+        lazy var leftButton: BarButton = {
+            let button = BarButton(type: .custom)
+            button.addedTouchArea = 16
+            button.frame = CGRect.init(x: 0, y: 0, width: 44, height: 44)
+            button.widthAnchor.constraint(equalToConstant: 44).isActive = true
+            button.heightAnchor.constraint(equalToConstant: 44).isActive = true
+            button.translatesAutoresizingMaskIntoConstraints = false
+            
+            button.imageView?.contentMode = .center
+            button.backgroundColor = UIColor.clear
+            button.isExclusiveTouch = true
+            button.isSelected       = false
+            button.addTarget(self, action: #selector(tappedLeftBarButton(sender:)), for: UIControl.Event.touchUpInside)
+            button.contentHorizontalAlignment = .left
+            button.titleLabel?.lineBreakMode = .byTruncatingTail
+            
+            button.setImage(UIImage(named: ""), for: UIControl.State.normal)
+            button.setImage(UIImage(named: ""), for: UIControl.State.selected)
+            
+            button.imageEdgeInsets = UIEdgeInsets(top: 0,
+                                                  left: 0, bottom: 0,
+                                                  right: 0)
+            return button
+        }()
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: leftButton)
+    }
+    
+    func removeLeftBarButton() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init()
+    }
+    
+    
+    
+    // MARK: - NavigationBar Action
+    @objc func tappedLeftBarButton(sender : UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
