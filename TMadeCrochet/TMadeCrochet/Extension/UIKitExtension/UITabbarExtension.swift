@@ -49,9 +49,9 @@ enum TabBarItem {
         case .symbol:
             return "Mũi"
         case .pattern:
-            return "Knitting"
+            return "Dạng"
         case .setting:
-            return "Setting"
+            return "Cài đặt"
         }
     }
     

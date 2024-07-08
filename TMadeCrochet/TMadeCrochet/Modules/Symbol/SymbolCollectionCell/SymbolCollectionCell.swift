@@ -23,5 +23,6 @@ class SymbolCollectionCell: BaseCollectionViewCell {
         guard let model = object as? Symbol else { return }
         self.titleLabel.text = model.symbolName
         self.imageView.image = UIImage.init(named: model.iconName ?? "")
+        self.containView.backgroundColor = UIColor(hexString: model.backgroundColor ?? "")
     }
 }
