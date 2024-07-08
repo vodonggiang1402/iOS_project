@@ -1,5 +1,5 @@
 //
-//  SaveRouter.swift
+//  CountRouter.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SaveRouter: PresenterToRouterSaveProtocol {
+class CountRouter: PresenterToRouterCountProtocol {
     func showScreen() {
         let destinationVC = self.createModule()
         destinationVC.hidesBottomBarWhenPushed = true
@@ -26,15 +26,15 @@ class SaveRouter: PresenterToRouterSaveProtocol {
 
     // MARK: Static methods
     func createModule() -> UIViewController {
-        let storyboard = UIStoryboard(name: "SaveStoryboard", bundle: nil)
-        let viewController = storyboard.instantiateViewController(viewControllerType:SaveViewController.self)
+        let storyboard = UIStoryboard(name: "CountStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateViewController(viewControllerType:CountViewController.self)
 
-        let presenter: ViewToPresenterSaveProtocol & InteractorToPresenterSaveProtocol = SavePresenter()
-        let entity: InteractorToEntitySaveProtocol = SaveEntity()
+        let presenter: ViewToPresenterCountProtocol & InteractorToPresenterCountProtocol = CountPresenter()
+        let entity: InteractorToEntityCountProtocol = CountEntity()
         viewController.presenter = presenter
-        viewController.presenter?.router = SaveRouter()
+        viewController.presenter?.router = CountRouter()
         viewController.presenter?.view = viewController
-        viewController.presenter?.interactor = SaveInteractor()
+        viewController.presenter?.interactor = CountInteractor()
         viewController.presenter?.interactor?.entity = entity
 
         return viewController

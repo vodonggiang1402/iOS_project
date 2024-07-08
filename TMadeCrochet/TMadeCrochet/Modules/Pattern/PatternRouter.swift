@@ -1,5 +1,5 @@
 //
-//  KnittingRouter.swift
+//  PatternRouter.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class KnittingRouter: PresenterToRouterKnittingProtocol {
+class PatternRouter: PresenterToRouterPatternProtocol {
     func showScreen() {
         let destinationVC = self.createModule()
         destinationVC.hidesBottomBarWhenPushed = true
@@ -26,15 +26,15 @@ class KnittingRouter: PresenterToRouterKnittingProtocol {
 
     // MARK: Static methods
     func createModule() -> UIViewController {
-        let storyboard = UIStoryboard(name: "KnittingStoryboard", bundle: nil)
-        let viewController = storyboard.instantiateViewController(viewControllerType:KnittingViewController.self)
+        let storyboard = UIStoryboard(name: "PatternStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateViewController(viewControllerType:PatternViewController.self)
 
-        let presenter: ViewToPresenterKnittingProtocol & InteractorToPresenterKnittingProtocol = KnittingPresenter()
-        let entity: InteractorToEntityKnittingProtocol = KnittingEntity()
+        let presenter: ViewToPresenterPatternProtocol & InteractorToPresenterPatternProtocol = PatternPresenter()
+        let entity: InteractorToEntityPatternProtocol = PatternEntity()
         viewController.presenter = presenter
-        viewController.presenter?.router = KnittingRouter()
+        viewController.presenter?.router = PatternRouter()
         viewController.presenter?.view = viewController
-        viewController.presenter?.interactor = KnittingInteractor()
+        viewController.presenter?.interactor = PatternInteractor()
         viewController.presenter?.interactor?.entity = entity
 
         return viewController

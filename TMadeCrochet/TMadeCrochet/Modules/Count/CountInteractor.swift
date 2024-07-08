@@ -1,5 +1,5 @@
 //
-//  SaveInteractor.swift
+//  CountInteractor.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-class SaveInteractor: PresenterToInteractorSaveProtocol {
-    var presenter: InteractorToPresenterSaveProtocol?
-    var entity: InteractorToEntitySaveProtocol?
+class CountInteractor: PresenterToInteractorCountProtocol {
+    var presenter: InteractorToPresenterCountProtocol?
+    var entity: InteractorToEntityCountProtocol?
     
 }

@@ -1,5 +1,5 @@
 //
-//  SaveTfaContract.swift
+//  SettingTfaContract.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -8,33 +8,33 @@
 import Foundation
 
 // MARK: View Output (Presenter -> View)
-protocol PresenterToViewSaveProtocol: AnyObject {
+protocol PresenterToViewSettingProtocol: AnyObject {
 
 }
 
 // MARK: View Input (View -> Presenter)
-protocol ViewToPresenterSaveProtocol {
-    var view: PresenterToViewSaveProtocol? { get set }
-    var interactor: PresenterToInteractorSaveProtocol? { get set }
-    var router: PresenterToRouterSaveProtocol? { get set }
+protocol ViewToPresenterSettingProtocol {
+    var view: PresenterToViewSettingProtocol? { get set }
+    var interactor: PresenterToInteractorSettingProtocol? { get set }
+    var router: PresenterToRouterSettingProtocol? { get set }
 }
 
 // MARK: Interactor Input (Presenter -> Interactor)
-protocol PresenterToInteractorSaveProtocol {
-    var entity: InteractorToEntitySaveProtocol? { get set }
+protocol PresenterToInteractorSettingProtocol {
+    var entity: InteractorToEntitySettingProtocol? { get set }
 }
 
 // MARK: Interactor Output (Interactor -> Presenter)
-protocol InteractorToPresenterSaveProtocol {
+protocol InteractorToPresenterSettingProtocol {
 
 }
 
 // MARK: Router Input (Presenter -> Router)
-protocol PresenterToRouterSaveProtocol {
+protocol PresenterToRouterSettingProtocol {
 
 }
 
-protocol InteractorToEntitySaveProtocol {
+protocol InteractorToEntitySettingProtocol {
     
 }
 

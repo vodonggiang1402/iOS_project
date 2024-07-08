@@ -1,5 +1,5 @@
 //
-//  SaveRouter.swift
+//  SettingRouter.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SaveRouter: PresenterToRouterSaveProtocol {
+class SettingRouter: PresenterToRouterSettingProtocol {
     func showScreen() {
         let destinationVC = self.createModule()
         destinationVC.hidesBottomBarWhenPushed = true
@@ -26,15 +26,15 @@ class SaveRouter: PresenterToRouterSaveProtocol {
 
     // MARK: Static methods
     func createModule() -> UIViewController {
-        let storyboard = UIStoryboard(name: "SaveStoryboard", bundle: nil)
-        let viewController = storyboard.instantiateViewController(viewControllerType:SaveViewController.self)
+        let storyboard = UIStoryboard(name: "SettingStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateViewController(viewControllerType:SettingViewController.self)
 
-        let presenter: ViewToPresenterSaveProtocol & InteractorToPresenterSaveProtocol = SavePresenter()
-        let entity: InteractorToEntitySaveProtocol = SaveEntity()
+        let presenter: ViewToPresenterSettingProtocol & InteractorToPresenterSettingProtocol = SettingPresenter()
+        let entity: InteractorToEntitySettingProtocol = SettingEntity()
         viewController.presenter = presenter
-        viewController.presenter?.router = SaveRouter()
+        viewController.presenter?.router = SettingRouter()
         viewController.presenter?.view = viewController
-        viewController.presenter?.interactor = SaveInteractor()
+        viewController.presenter?.interactor = SettingInteractor()
         viewController.presenter?.interactor?.entity = entity
 
         return viewController

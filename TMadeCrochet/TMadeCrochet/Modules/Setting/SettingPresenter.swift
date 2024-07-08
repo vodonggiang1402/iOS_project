@@ -1,5 +1,5 @@
 //
-//  SavePresenter.swift
+//  SettingPresenter.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -7,15 +7,15 @@
 
 import Foundation
 
-class SavePresenter: ViewToPresenterSaveProtocol {
+class SettingPresenter: ViewToPresenterSettingProtocol {
     
-    var view: PresenterToViewSaveProtocol?
-    var interactor: PresenterToInteractorSaveProtocol?
-    var router: PresenterToRouterSaveProtocol?
+    var view: PresenterToViewSettingProtocol?
+    var interactor: PresenterToInteractorSettingProtocol?
+    var router: PresenterToRouterSettingProtocol?
     
 }
 
 
-extension SavePresenter: InteractorToPresenterSaveProtocol {
+extension SettingPresenter: InteractorToPresenterSettingProtocol {
     
 }

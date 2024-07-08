@@ -101,8 +101,8 @@ extension TabbarViewController {
         var listViewControllers = [UINavigationController]()
         for item in tabbarItems {
             switch item {
-            case .home:
-                let controller = setupController(MainRouter().createModule(),
+            case .count:
+                let controller = setupController(CountRouter().createModule(),
                                                  tabName: item.title,
                                                  image: item.unselectedImage,
                                                  selectedImage: item.selectedImage)
@@ -113,14 +113,8 @@ extension TabbarViewController {
                                                  image: item.unselectedImage,
                                                  selectedImage: item.selectedImage)
                 listViewControllers.append(controller)
-            case .knitting:
-                let controller = setupController(KnittingRouter().createModule(),
-                                                 tabName: item.title,
-                                                 image: item.unselectedImage,
-                                                 selectedImage: item.selectedImage)
-                listViewControllers.append(controller)
-            case .save:
-                let controller = setupController(SaveRouter().createModule(),
+            case .pattern:
+                let controller = setupController(PatternRouter().createModule(),
                                                  tabName: item.title,
                                                  image: item.unselectedImage,
                                                  selectedImage: item.selectedImage)

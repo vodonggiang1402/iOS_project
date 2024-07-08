@@ -2,7 +2,157 @@
   "data": [
     {
       "symbol_id": "1",
+      "symbol_name": "Mũi gút",
+      "symbol_des": "Trong các hướng dẫn của chart móc thì Mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên",
+      "icon_name": "",
+      "video_name": "",
+       "is_ads": false,
+      "steps": [
+        {
+          "step_name": "Bước 1",
+          "content": "",
+          "image_name": "image_step_1"
+        },
+        {
+          "step_name": "Bước 2",
+          "content": "abc",
+          "image_name": "image_step_2"
+        },
+        {
+          "step_name": "Bước 3",
+          "content": "abc",
+          "image_name": "image_step_3"
+        }
+      ]
+    },
+    {
+      "symbol_id": "2",
+      "symbol_name": "Mũi trượt",
+      "symbol_des": "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng...",
+      "icon_name": "",
+      "video_name": "",
+      "is_ads": false,
+      "steps": [
+        {
+          "step_name": "Bước 1",
+          "content": "",
+          "image_name": "image_step_1"
+        },
+        {
+          "step_name": "Bước 2",
+          "content": "abc",
+          "image_name": "image_step_2"
+        },
+        {
+          "step_name": "Bước 3",
+          "content": "abc",
+          "image_name": "image_step_3"
+        }
+      ]
+    },
+    {
+      "symbol_id": "3",
       "symbol_name": "Mũi bính",
+      "symbol_des": "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.",
+      "icon_name": "",
+      "video_name": "",
+       "is_ads": false,
+      "steps": [
+        {
+          "step_name": "Bước 1",
+          "content": "",
+          "image_name": "image_step_1"
+        },
+        {
+          "step_name": "Bước 2",
+          "content": "abc",
+          "image_name": "image_step_2"
+        },
+        {
+          "step_name": "Bước 3",
+          "content": "abc",
+          "image_name": "image_step_3"
+        }
+      ]
+    },
+    {
+      "symbol_id": "4",
+      "symbol_name": "Mũi đơn",
+      "symbol_des": "Mũi móc đơn có độ cao bằng một mũi bính. Đẻ có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.",
+      "icon_name": "",
+      "video_name": "",
+      "is_ads": false,
+      "steps": [
+        {
+          "step_name": "Bước 1",
+          "content": "",
+          "image_name": "image_step_1"
+        },
+        {
+          "step_name": "Bước 2",
+          "content": "abc",
+          "image_name": "image_step_2"
+        },
+        {
+          "step_name": "Bước 3",
+          "content": "abc",
+          "image_name": "image_step_3"
+        }
+      ]
+    },
+    {
+      "symbol_id": "5",
+      "symbol_name": "Mũi nữa kép",
+      "symbol_des": "Mũi nữa kép có độ cao bằng 2 lần mũi bính. Mũi kép đơn đầu tiên sẽ được móc vào chân bính thứ 4 của dây bính",
+      "icon_name": "",
+      "video_name": "",
+       "is_ads": false,
+      "steps": [
+        {
+          "step_name": "Bước 1",
+          "content": "",
+          "image_name": "image_step_1"
+        },
+        {
+          "step_name": "Bước 2",
+          "content": "abc",
+          "image_name": "image_step_2"
+        },
+        {
+          "step_name": "Bước 3",
+          "content": "abc",
+          "image_name": "image_step_3"
+        }
+      ]
+    },
+    {
+      "symbol_id": "6",
+      "symbol_name": "Mũi kép đơn",
+      "symbol_des": "Mũi kép đơn có độ cao bằng 3 lần mũi bính.",
+      "icon_name": "",
+      "video_name": "",
+      "is_ads": false,
+      "steps": [
+        {
+          "step_name": "Bước 1",
+          "content": "",
+          "image_name": "image_step_1"
+        },
+        {
+          "step_name": "Bước 2",
+          "content": "abc",
+          "image_name": "image_step_2"
+        },
+        {
+          "step_name": "Bước 3",
+          "content": "abc",
+          "image_name": "image_step_3"
+        }
+      ]
+    },
+    {
+      "symbol_id": "1",
+      "symbol_name": "",
       "symbol_des": "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
       "icon_name": "",
       "video_name": "",
@@ -27,7 +177,7 @@
     },
     {
       "symbol_id": "2",
-      "symbol_name": "Mũi móc đơn ",
+      "symbol_name": "",
       "symbol_des": "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
       "icon_name": "",
       "video_name": "",
@@ -52,7 +202,7 @@
     },
     {
       "symbol_id": "1",
-      "symbol_name": "Mũi bính",
+      "symbol_name": "",
       "symbol_des": "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
       "icon_name": "",
       "video_name": "",
@@ -77,7 +227,7 @@
     },
     {
       "symbol_id": "2",
-      "symbol_name": "Mũi móc đơn ",
+      "symbol_name": "",
       "symbol_des": "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
       "icon_name": "",
       "video_name": "",
@@ -102,7 +252,7 @@
     },
     {
       "symbol_id": "1",
-      "symbol_name": "Mũi bính",
+      "symbol_name": "",
       "symbol_des": "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
       "icon_name": "",
       "video_name": "",
@@ -127,7 +277,7 @@
     },
     {
       "symbol_id": "2",
-      "symbol_name": "Mũi móc đơn ",
+      "symbol_name": "",
       "symbol_des": "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
       "icon_name": "",
       "video_name": "",
@@ -152,7 +302,7 @@
     },
     {
       "symbol_id": "1",
-      "symbol_name": "Mũi bính",
+      "symbol_name": "",
       "symbol_des": "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
       "icon_name": "",
       "video_name": "",
@@ -177,7 +327,7 @@
     },
     {
       "symbol_id": "2",
-      "symbol_name": "Mũi móc đơn ",
+      "symbol_name": "",
       "symbol_des": "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
       "icon_name": "",
       "video_name": "",
@@ -202,7 +352,7 @@
     },
     {
       "symbol_id": "1",
-      "symbol_name": "Mũi bính",
+      "symbol_name": "",
       "symbol_des": "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
       "icon_name": "",
       "video_name": "",
@@ -227,157 +377,7 @@
     },
     {
       "symbol_id": "2",
-      "symbol_name": "Mũi móc đơn ",
-      "symbol_des": "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
-      "icon_name": "",
-      "video_name": "",
-      "is_ads": false,
-      "steps": [
-        {
-          "step_name": "Bước 1",
-          "content": "",
-          "image_name": "image_step_1"
-        },
-        {
-          "step_name": "Bước 2",
-          "content": "abc",
-          "image_name": "image_step_2"
-        },
-        {
-          "step_name": "Bước 3",
-          "content": "abc",
-          "image_name": "image_step_3"
-        }
-      ]
-    },
-    {
-      "symbol_id": "1",
-      "symbol_name": "Mũi bính",
-      "symbol_des": "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
-      "icon_name": "",
-      "video_name": "",
-       "is_ads": false,
-      "steps": [
-        {
-          "step_name": "Bước 1",
-          "content": "",
-          "image_name": "image_step_1"
-        },
-        {
-          "step_name": "Bước 2",
-          "content": "abc",
-          "image_name": "image_step_2"
-        },
-        {
-          "step_name": "Bước 3",
-          "content": "abc",
-          "image_name": "image_step_3"
-        }
-      ]
-    },
-    {
-      "symbol_id": "2",
-      "symbol_name": "Mũi móc đơn ",
-      "symbol_des": "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
-      "icon_name": "",
-      "video_name": "",
-      "is_ads": false,
-      "steps": [
-        {
-          "step_name": "Bước 1",
-          "content": "",
-          "image_name": "image_step_1"
-        },
-        {
-          "step_name": "Bước 2",
-          "content": "abc",
-          "image_name": "image_step_2"
-        },
-        {
-          "step_name": "Bước 3",
-          "content": "abc",
-          "image_name": "image_step_3"
-        }
-      ]
-    },
-    {
-      "symbol_id": "1",
-      "symbol_name": "Mũi bính",
-      "symbol_des": "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
-      "icon_name": "",
-      "video_name": "",
-       "is_ads": false,
-      "steps": [
-        {
-          "step_name": "Bước 1",
-          "content": "",
-          "image_name": "image_step_1"
-        },
-        {
-          "step_name": "Bước 2",
-          "content": "abc",
-          "image_name": "image_step_2"
-        },
-        {
-          "step_name": "Bước 3",
-          "content": "abc",
-          "image_name": "image_step_3"
-        }
-      ]
-    },
-    {
-      "symbol_id": "2",
-      "symbol_name": "Mũi móc đơn ",
-      "symbol_des": "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
-      "icon_name": "",
-      "video_name": "",
-      "is_ads": false,
-      "steps": [
-        {
-          "step_name": "Bước 1",
-          "content": "",
-          "image_name": "image_step_1"
-        },
-        {
-          "step_name": "Bước 2",
-          "content": "abc",
-          "image_name": "image_step_2"
-        },
-        {
-          "step_name": "Bước 3",
-          "content": "abc",
-          "image_name": "image_step_3"
-        }
-      ]
-    },
-    {
-      "symbol_id": "1",
-      "symbol_name": "Mũi bính",
-      "symbol_des": "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
-      "icon_name": "",
-      "video_name": "",
-       "is_ads": false,
-      "steps": [
-        {
-          "step_name": "Bước 1",
-          "content": "",
-          "image_name": "image_step_1"
-        },
-        {
-          "step_name": "Bước 2",
-          "content": "abc",
-          "image_name": "image_step_2"
-        },
-        {
-          "step_name": "Bước 3",
-          "content": "abc",
-          "image_name": "image_step_3"
-        }
-      ]
-    },
-    {
-      "symbol_id": "2",
-      "symbol_name": "Mũi móc đơn ",
+      "symbol_name": "",
       "symbol_des": "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
       "icon_name": "",
       "video_name": "",

@@ -1,5 +1,5 @@
 //
-//  SavePresenter.swift
+//  CountPresenter.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -7,15 +7,15 @@
 
 import Foundation
 
-class SavePresenter: ViewToPresenterSaveProtocol {
+class CountPresenter: ViewToPresenterCountProtocol {
     
-    var view: PresenterToViewSaveProtocol?
-    var interactor: PresenterToInteractorSaveProtocol?
-    var router: PresenterToRouterSaveProtocol?
+    var view: PresenterToViewCountProtocol?
+    var interactor: PresenterToInteractorCountProtocol?
+    var router: PresenterToRouterCountProtocol?
     
 }
 
 
-extension SavePresenter: InteractorToPresenterSaveProtocol {
+extension CountPresenter: InteractorToPresenterCountProtocol {
     
 }
