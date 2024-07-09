@@ -2,15 +2,9 @@
   "data": [
     {
       "symbol_id": "1",
-<<<<<<< HEAD
-      "symbol_name": "Mũi bính",
-      "symbol_des": "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
-      "icon_name": "chain",
-=======
       "symbol_name": "Mũi gút",
       "symbol_des": "Trong các hướng dẫn của chart móc thì Mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên",
       "icon_name": "",
->>>>>>> 8c2e4b557964b03a8f97dc11eb6a6d3bf10bda14
       "video_name": "",
       "background_color": "FED1B2",
        "is_ads": false,
