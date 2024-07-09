@@ -659,10 +659,8 @@
 				7B341AA82C3532B40069BD02 /* Services */,
 				7BF32A142C33CC8900CD8F18 /* CustomView */,
 				7B522E382C3253490034EE9D /* Modules */,
-				7B522E372C3253350034EE9D /* Configs */,
 				7B522E362C3253270034EE9D /* Extension */,
 				7B522E352C3253170034EE9D /* Resources */,
-				7B522E342C32530E0034EE9D /* Managers */,
 				7B522E312C3252C70034EE9D /* Base */,
 				7B522E012C32511B0034EE9D /* AppDelegate.swift */,
 				7B522E0F2C32511C0034EE9D /* Info.plist */,
@@ -698,13 +696,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		7B522E342C32530E0034EE9D /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		7B522E352C3253170034EE9D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,13 +714,6 @@
 				7B522E3C2C3253E00034EE9D /* UIKitExtension */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		7B522E372C3253350034EE9D /* Configs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Configs;
 			sourceTree = "<group>";
 		};
 		7B522E382C3253490034EE9D /* Modules */ = {
