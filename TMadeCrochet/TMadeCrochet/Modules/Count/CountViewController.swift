@@ -1,5 +1,5 @@
 //
-//  SaveViewController.swift
+//  CountViewController.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-class SaveViewController: BaseViewController {
-    var presenter: ViewToPresenterSaveProtocol?
+class CountViewController: BaseViewController {
+    var presenter: ViewToPresenterCountProtocol?
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -38,6 +38,6 @@ class SaveViewController: BaseViewController {
 }
     
 
-extension SaveViewController: PresenterToViewSaveProtocol {
+extension CountViewController: PresenterToViewCountProtocol {
     
 }

@@ -11,22 +11,19 @@ import UIKit
 let defaultTabbarHeight: CGFloat = 60.0
 
 enum TabBarItem {
-    case home
+    case count
     case symbol
-    case knitting
-    case save
+    case pattern
     case setting
     
     var selectedImage: UIImage? {
         switch self {
-        case .home:
+        case .count:
             return UIImage(named: "ico_home_active")
         case .symbol:
             return UIImage(named: "ico_exchange_active")
-        case .knitting:
+        case .pattern:
             return UIImage(named: "ico_history_active")
-        case .save:
-            return UIImage(named: "ico_wallet_active")
         case .setting:
             return UIImage(named: "ico_setting_active")
         }
@@ -34,14 +31,12 @@ enum TabBarItem {
     
     var unselectedImage: UIImage? {
         switch self {
-        case .home:
-            return UIImage(named: "ico_home")
+        case .count:
+            return UIImage(named: "ico_home_active")
         case .symbol:
             return UIImage(named: "ico_exchange")
-        case .knitting:
+        case .pattern:
             return UIImage(named: "ico_history")
-        case .save:
-            return UIImage(named: "ico_wallet")
         case .setting:
             return UIImage(named: "ico_setting")
         }
@@ -49,31 +44,27 @@ enum TabBarItem {
     
     var title: String {
         switch self {
-        case .home:
-            return "Home"
+        case .count:
+            return "Đếm"
         case .symbol:
-            return "Symbol"
-        case .knitting:
-            return "Knitting"
-        case .save:
-            return "Save"
+            return "Mũi"
+        case .pattern:
+            return "Dạng"
         case .setting:
-            return "Setting"
+            return "Cài đặt"
         }
     }
     
     var rawIndex: Int {
         switch self {
-        case .home:
+        case .count:
             return 0
         case .symbol:
             return 1
-        case .knitting:
+        case .pattern:
             return 2
-        case .save:
-            return 3
         case .setting:
-            return 4
+            return 3
         }
     }
 }

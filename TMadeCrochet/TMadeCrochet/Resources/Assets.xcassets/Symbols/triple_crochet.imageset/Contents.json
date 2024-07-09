@@ -1,0 +1,30 @@
+{
+  "images" : [
+    {
+<<<<<<< HEAD:TMadeCrochet/TMadeCrochet/Resources/Assets.xcassets/ico_plash.imageset/Contents.json
+      "filename" : "ico_plash 1.svg",
+=======
+      "filename" : "triple_crochet.svg",
+>>>>>>> 8c2e4b557964b03a8f97dc11eb6a6d3bf10bda14:TMadeCrochet/TMadeCrochet/Resources/Assets.xcassets/Symbols/triple_crochet.imageset/Contents.json
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+<<<<<<< HEAD:TMadeCrochet/TMadeCrochet/Resources/Assets.xcassets/ico_plash.imageset/Contents.json
+      "filename" : "ico_plash.svg",
+=======
+      "filename" : "triple_crochet 1.svg",
+>>>>>>> 8c2e4b557964b03a8f97dc11eb6a6d3bf10bda14:TMadeCrochet/TMadeCrochet/Resources/Assets.xcassets/Symbols/triple_crochet.imageset/Contents.json
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

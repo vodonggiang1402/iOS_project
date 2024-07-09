@@ -1,5 +1,5 @@
 //
-//  KnittingEntity.swift
+//  PatternEntity.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -7,6 +7,6 @@
 
 import Foundation
 
-class KnittingEntity: InteractorToEntityKnittingProtocol {
+class PatternEntity: InteractorToEntityPatternProtocol {
    
 }

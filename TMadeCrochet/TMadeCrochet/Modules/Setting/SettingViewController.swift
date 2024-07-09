@@ -1,5 +1,5 @@
 //
-//  KnittingViewController.swift
+//  SettingViewController.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-class KnittingViewController: BaseViewController {
-    var presenter: ViewToPresenterKnittingProtocol?
+class SettingViewController: BaseViewController {
+    var presenter: ViewToPresenterSettingProtocol?
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -35,10 +35,9 @@ class KnittingViewController: BaseViewController {
         super.viewWillDisappear(animated)
 
     }
-
 }
     
 
-extension KnittingViewController: PresenterToViewKnittingProtocol {
+extension SettingViewController: PresenterToViewSettingProtocol {
     
 }

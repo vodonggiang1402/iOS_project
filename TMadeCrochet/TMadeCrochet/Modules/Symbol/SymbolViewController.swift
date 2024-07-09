@@ -21,13 +21,14 @@ class SymbolViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavigationBar(title: "Mũi móc cơ bản", isShowLeft: false)
         self.setupDataForCollectionView()
     }
     
     func setupDataForCollectionView() {
         let itemSize = CGSize(width: size, height: size)
         self.collectionView.dataArray = self.list
-        self.collectionView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
+        self.collectionView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
         self.collectionView.configure(hasPull: false,
                                  hasLoadMore: false,
                                  lineSpacing: lineSpacing,
