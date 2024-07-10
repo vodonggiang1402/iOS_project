@@ -52,10 +52,13 @@ class BaseCollectionView: UICollectionView {
         layout.scrollDirection = scrollDirection
         layout.minimumInteritemSpacing = interitemSpacing
         self.collectionViewLayout = layout
+        
+        self.register(UINib(nibName: "HeaderViewCV", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderViewCV")
+        
         self.itemSize = itemSize
         self.collectionCellClassName = collectionCellClassName
         self.baseDelegate = baseDelegate
-        
+         
         if let data = data {
             self.dataArray = data
         }
@@ -124,13 +127,44 @@ extension BaseCollectionView: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return dataArray.count
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+       switch kind {
+                case UICollectionView.elementKindSectionHeader:
+//                if dataArray.count > 0 {
+//                    let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderViewCV", for: indexPath)  as! HeaderViewCV
+////                    headerView.titleLabel.text = "Mũi cơ bản"
+//                    return headerView
+//                }
+           
+           if dataArray.count > 0, kind == UICollectionView.elementKindSectionHeader, let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderViewCV", for: indexPath) as?  HeaderViewCV {
+               headerView.titleLabel.text = "Mũi cơ bản"
+                headerView.setNeedsUpdateConstraints()
+                headerView.updateConstraintsIfNeeded()
+
+                headerView.setNeedsLayout()
+                headerView.layoutIfNeeded()
+               return headerView
+           }
+           
+                return UICollectionReusableView()
+             default:
+                return UICollectionReusableView()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: self.frame.width, height: 70)
+    }
+
 }
 
 extension BaseCollectionView: UICollectionViewDelegate {
     // MARK: UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) else { return }
-        let data = dataArray[indexPath.row]
+        let data = self.dataArray[indexPath.section][indexPath.row]
         if let didSelectItem = self.baseDelegate?.didSelectItem {
             didSelectItem(indexPath, data, cell)
         }
