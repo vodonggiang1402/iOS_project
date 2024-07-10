@@ -131,24 +131,13 @@ extension BaseCollectionView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
        switch kind {
-                case UICollectionView.elementKindSectionHeader:
-//                if dataArray.count > 0 {
-//                    let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderViewCV", for: indexPath)  as! HeaderViewCV
-////                    headerView.titleLabel.text = "Mũi cơ bản"
-//                    return headerView
-//                }
-           
-           if dataArray.count > 0, kind == UICollectionView.elementKindSectionHeader, let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderViewCV", for: indexPath) as?  HeaderViewCV {
-               headerView.titleLabel.text = "Mũi cơ bản"
-                headerView.setNeedsUpdateConstraints()
-                headerView.updateConstraintsIfNeeded()
+            case UICollectionView.elementKindSectionHeader:
+            if dataArray.count > 0, kind == UICollectionView.elementKindSectionHeader, let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderViewCV", for: indexPath) as?  HeaderViewCV {
+                headerView.titleLabel.text = "Mũi cơ bản"
+                return headerView
+            }
 
-                headerView.setNeedsLayout()
-                headerView.layoutIfNeeded()
-               return headerView
-           }
-           
-                return UICollectionReusableView()
+            return UICollectionReusableView()
              default:
                 return UICollectionReusableView()
         }

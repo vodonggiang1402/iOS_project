@@ -8,11 +8,13 @@
 import Foundation
 
 class SymbolPresenter: ViewToPresenterSymbolProtocol {
-    
     var view: PresenterToViewSymbolProtocol?
     var interactor: PresenterToInteractorSymbolProtocol?
     var router: PresenterToRouterSymbolProtocol?
     
+    func navigateToDetail() {
+        self.router?.navigateToDetail()
+    }
 }
 
 

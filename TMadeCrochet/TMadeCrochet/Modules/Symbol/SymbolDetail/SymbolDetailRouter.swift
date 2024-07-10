@@ -1,5 +1,5 @@
 //
-//  SymbolRouter.swift
+//  SymbolDetailRouter.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -8,11 +8,17 @@
 import Foundation
 import UIKit
 
-class SymbolRouter: PresenterToRouterSymbolProtocol {
+class SymbolDetailRouter: PresenterToRouterSymbolDetailProtocol {
     func showScreen() {
         let destinationVC = self.createModule()
         destinationVC.hidesBottomBarWhenPushed = true
         UIViewController().getRootTabbarViewController().pushViewController(destinationVC, animated: true)
+    }
+    
+    func showScreenAsModal() {
+        let destinationVC = createModule()
+        destinationVC.getRootTabbarViewController().topViewController?.modalPresentationStyle = .pageSheet
+        destinationVC.getRootTabbarViewController().topViewController?.present(destinationVC, animated: true)
     }
 
     func setupRootView() {
@@ -26,22 +32,19 @@ class SymbolRouter: PresenterToRouterSymbolProtocol {
 
     // MARK: Static methods
     func createModule() -> UIViewController {
-        let storyboard = UIStoryboard(name: "SymbolStoryboard", bundle: nil)
-        let viewController = storyboard.instantiateViewController(viewControllerType:SymbolViewController.self)
+        let storyboard = UIStoryboard(name: "SymbolDetailStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateViewController(viewControllerType:SymbolDetailViewController.self)
 
-        let presenter: ViewToPresenterSymbolProtocol & InteractorToPresenterSymbolProtocol = SymbolPresenter()
-        let entity: InteractorToEntitySymbolProtocol = SymbolEntity()
+        let presenter: ViewToPresenterSymbolDetailProtocol & InteractorToPresenterSymbolDetailProtocol = SymbolDetailPresenter()
+        let entity: InteractorToEntitySymbolDetailProtocol = SymbolDetailEntity()
         viewController.presenter = presenter
-        viewController.presenter?.router = SymbolRouter()
+        viewController.presenter?.router = SymbolDetailRouter()
         viewController.presenter?.view = viewController
-        viewController.presenter?.interactor = SymbolInteractor()
+        viewController.presenter?.interactor = SymbolDetailInteractor()
         viewController.presenter?.interactor?.entity = entity
 
         return viewController
     }
 
-    func navigateToDetail() {
-        SymbolDetailRouter().showScreenAsModal()
-    }
 }
 

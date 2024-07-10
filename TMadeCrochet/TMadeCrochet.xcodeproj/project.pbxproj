@@ -38,6 +38,13 @@
 		7B4E34912C3D04630059167A /* SymbolCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E34902C3D04630059167A /* SymbolCollectionCell.xib */; };
 		7B4E34942C3E35180059167A /* HeaderViewCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E34932C3E35180059167A /* HeaderViewCV.xib */; };
 		7B4E34962C3E35200059167A /* HeaderViewCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34952C3E35200059167A /* HeaderViewCV.swift */; };
+		7B4E349F2C3E46F60059167A /* SymbolDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34982C3E46F60059167A /* SymbolDetailViewController.swift */; };
+		7B4E34A02C3E46F60059167A /* SymbolDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34992C3E46F60059167A /* SymbolDetailEntity.swift */; };
+		7B4E34A12C3E46F60059167A /* SymbolDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E349A2C3E46F60059167A /* SymbolDetailInteractor.swift */; };
+		7B4E34A22C3E46F60059167A /* SymbolDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E349B2C3E46F60059167A /* SymbolDetailContract.swift */; };
+		7B4E34A32C3E46F60059167A /* SymbolDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E349C2C3E46F60059167A /* SymbolDetailPresenter.swift */; };
+		7B4E34A42C3E46F60059167A /* SymbolDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E349D2C3E46F60059167A /* SymbolDetailRouter.swift */; };
+		7B4E34A52C3E46F60059167A /* SymbolDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E349E2C3E46F60059167A /* SymbolDetailStoryboard.storyboard */; };
 		7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E012C32511B0034EE9D /* AppDelegate.swift */; };
 		7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B522E0A2C32511C0034EE9D /* Assets.xcassets */; };
 		7B522E192C32511C0034EE9D /* TMadeCrochetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E182C32511C0034EE9D /* TMadeCrochetTests.swift */; };
@@ -297,6 +304,13 @@
 		7B4E34902C3D04630059167A /* SymbolCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymbolCollectionCell.xib; sourceTree = "<group>"; };
 		7B4E34932C3E35180059167A /* HeaderViewCV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderViewCV.xib; sourceTree = "<group>"; };
 		7B4E34952C3E35200059167A /* HeaderViewCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCV.swift; sourceTree = "<group>"; };
+		7B4E34982C3E46F60059167A /* SymbolDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolDetailViewController.swift; sourceTree = "<group>"; };
+		7B4E34992C3E46F60059167A /* SymbolDetailEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolDetailEntity.swift; sourceTree = "<group>"; };
+		7B4E349A2C3E46F60059167A /* SymbolDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolDetailInteractor.swift; sourceTree = "<group>"; };
+		7B4E349B2C3E46F60059167A /* SymbolDetailContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolDetailContract.swift; sourceTree = "<group>"; };
+		7B4E349C2C3E46F60059167A /* SymbolDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolDetailPresenter.swift; sourceTree = "<group>"; };
+		7B4E349D2C3E46F60059167A /* SymbolDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolDetailRouter.swift; sourceTree = "<group>"; };
+		7B4E349E2C3E46F60059167A /* SymbolDetailStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SymbolDetailStoryboard.storyboard; sourceTree = "<group>"; };
 		7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMadeCrochet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B522E012C32511B0034EE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B522E0A2C32511C0034EE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -665,6 +679,20 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		7B4E34972C3E46070059167A /* SymbolDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7B4E349B2C3E46F60059167A /* SymbolDetailContract.swift */,
+				7B4E34992C3E46F60059167A /* SymbolDetailEntity.swift */,
+				7B4E349A2C3E46F60059167A /* SymbolDetailInteractor.swift */,
+				7B4E349C2C3E46F60059167A /* SymbolDetailPresenter.swift */,
+				7B4E349D2C3E46F60059167A /* SymbolDetailRouter.swift */,
+				7B4E349E2C3E46F60059167A /* SymbolDetailStoryboard.storyboard */,
+				7B4E34982C3E46F60059167A /* SymbolDetailViewController.swift */,
+			);
+			path = SymbolDetail;
+			sourceTree = "<group>";
+		};
 		7B522DF52C32511B0034EE9D = {
 			isa = PBXGroup;
 			children = (
@@ -837,6 +865,7 @@
 		7B522E652C32621D0034EE9D /* Symbol */ = {
 			isa = PBXGroup;
 			children = (
+				7B4E34972C3E46070059167A /* SymbolDetail */,
 				7B341AAE2C355B3B0069BD02 /* SymbolCollectionCell */,
 				7B522EA12C3262920034EE9D /* SymbolContract.swift */,
 				7B522EA22C3262920034EE9D /* SymbolEntity.swift */,
@@ -1101,6 +1130,7 @@
 				7B522E462C325A950034EE9D /* Tabbar.storyboard in Resources */,
 				7BB995152C3B96DC008EF04B /* CountStoryboard.storyboard in Resources */,
 				7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */,
+				7B4E34A52C3E46F60059167A /* SymbolDetailStoryboard.storyboard in Resources */,
 				7B341A262C340B0C0069BD02 /* TitleSection.xib in Resources */,
 				7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */,
 				7B3419FC2C33D0060069BD02 /* NormalFooter.bundle in Resources */,
@@ -1248,6 +1278,8 @@
 				7BB995182C3BDA19008EF04B /* BarButton.swift in Sources */,
 				7BF32A192C33CCD500CD8F18 /* BaseTableViewCell.swift in Sources */,
 				7B522EAA2C3262930034EE9D /* SymbolPresenter.swift in Sources */,
+				7B4E34A32C3E46F60059167A /* SymbolDetailPresenter.swift in Sources */,
+				7B4E34A42C3E46F60059167A /* SymbolDetailRouter.swift in Sources */,
 				7B341A062C33D1B90069BD02 /* BaseCollectionViewCell.swift in Sources */,
 				7B3419EB2C33CFDC0069BD02 /* FastCheckLayer.swift in Sources */,
 				7BB9950F2C3B96DC008EF04B /* CountPresenter.swift in Sources */,
@@ -1265,11 +1297,14 @@
 				7B341A1F2C33FDDF0069BD02 /* MainTableCell.swift in Sources */,
 				7BB995102C3B96DC008EF04B /* CountContract.swift in Sources */,
 				7BB995032C3B96CF008EF04B /* SettingContract.swift in Sources */,
+				7B4E34A02C3E46F60059167A /* SymbolDetailEntity.swift in Sources */,
 				7B522E5F2C3260AC0034EE9D /* SplashEntity.swift in Sources */,
 				7B522E922C3262840034EE9D /* ProfileViewController.swift in Sources */,
 				7B341A1B2C33F06C0069BD02 /* StrechyHeaderView.swift in Sources */,
 				7B522E332C3252EA0034EE9D /* BaseViewController.swift in Sources */,
+				7B4E349F2C3E46F60059167A /* SymbolDetailViewController.swift in Sources */,
 				7BB995122C3B96DC008EF04B /* CountRouter.swift in Sources */,
+				7B4E34A22C3E46F60059167A /* SymbolDetailContract.swift in Sources */,
 				7BF32A1B2C33CE5500CD8F18 /* UITableViewExtension.swift in Sources */,
 				7B522E7E2C3262740034EE9D /* PatternEntity.swift in Sources */,
 				7B522E5E2C3260AC0034EE9D /* SplashRouter.swift in Sources */,
@@ -1297,6 +1332,7 @@
 				7B522E4E2C325B3C0034EE9D /* StringExtension.swift in Sources */,
 				7B522E4B2C325AE10034EE9D /* UITabbarExtension.swift in Sources */,
 				7B522E612C3260AC0034EE9D /* SplashPresenter.swift in Sources */,
+				7B4E34A12C3E46F60059167A /* SymbolDetailInteractor.swift in Sources */,
 				7B522EAB2C3262930034EE9D /* SymbolInteractor.swift in Sources */,
 				7B3419ED2C33CFDC0069BD02 /* FastArrowLayer.swift in Sources */,
 			);
