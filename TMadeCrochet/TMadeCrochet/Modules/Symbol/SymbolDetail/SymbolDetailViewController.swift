@@ -9,11 +9,13 @@ import Foundation
 import UIKit
 
 class SymbolDetailViewController: BaseViewController {
+    @IBOutlet weak var closeButton: UIButton!
     var presenter: ViewToPresenterSymbolDetailProtocol?
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.closeButton.setTitle("", for: .normal)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +38,9 @@ class SymbolDetailViewController: BaseViewController {
 
     }
 
+    @IBAction func closeButtonAction(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
 }
     
 
