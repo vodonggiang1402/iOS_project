@@ -16,7 +16,6 @@ class SymbolViewController: BaseViewController {
     private let size: CGFloat = (UIScreen.main.bounds.width - 32 - 10)/3
     private let lineSpacing: CGFloat = 5
     private let interitemSpacing: CGFloat = 5
-    var list: [Symbol] = []
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -27,7 +26,7 @@ class SymbolViewController: BaseViewController {
     
     func setupDataForCollectionView() {
         let itemSize = CGSize(width: size, height: size)
-        self.collectionView.dataArray = self.list
+        self.collectionView.dataArray = [[]]
         self.collectionView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
         self.collectionView.configure(hasPull: false,
                                  hasLoadMore: false,
@@ -42,8 +41,7 @@ class SymbolViewController: BaseViewController {
     func loadData() {
         DataManager.shared.readJSONFromFile(fileName: "symbols", type: SymbolResponseData.self) { result in
             if let array = result?.data, array.count > 0 {
-                self.list = array
-                self.collectionView.dataArray = self.list
+                self.collectionView.dataArray = array
                 self.collectionView.reloadData()
             }
         }

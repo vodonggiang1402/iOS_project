@@ -35,6 +35,7 @@
 		7B341AAB2C3532EA0069BD02 /* SymbolResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AAA2C3532EA0069BD02 /* SymbolResponse.swift */; };
 		7B341AAD2C3535F10069BD02 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AAC2C3535F10069BD02 /* DataManager.swift */; };
 		7B341AB02C355B520069BD02 /* SymbolCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AAF2C355B520069BD02 /* SymbolCollectionCell.swift */; };
+		7B4E34912C3D04630059167A /* SymbolCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E34902C3D04630059167A /* SymbolCollectionCell.xib */; };
 		7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E012C32511B0034EE9D /* AppDelegate.swift */; };
 		7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B522E0A2C32511C0034EE9D /* Assets.xcassets */; };
 		7B522E192C32511C0034EE9D /* TMadeCrochetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E182C32511C0034EE9D /* TMadeCrochetTests.swift */; };
@@ -291,6 +292,7 @@
 		7B341AAA2C3532EA0069BD02 /* SymbolResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolResponse.swift; sourceTree = "<group>"; };
 		7B341AAC2C3535F10069BD02 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7B341AAF2C355B520069BD02 /* SymbolCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCollectionCell.swift; sourceTree = "<group>"; };
+		7B4E34902C3D04630059167A /* SymbolCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymbolCollectionCell.xib; sourceTree = "<group>"; };
 		7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMadeCrochet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B522E012C32511B0034EE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B522E0A2C32511C0034EE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -644,6 +646,7 @@
 			isa = PBXGroup;
 			children = (
 				7B341AAF2C355B520069BD02 /* SymbolCollectionCell.swift */,
+				7B4E34902C3D04630059167A /* SymbolCollectionCell.xib */,
 			);
 			path = SymbolCollectionCell;
 			sourceTree = "<group>";
@@ -1096,6 +1099,7 @@
 				7B522E7F2C3262740034EE9D /* PatternStoryboard.storyboard in Resources */,
 				7B522E752C32626E0034EE9D /* MainStoryboard.storyboard in Resources */,
 				7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */,
+				7B4E34912C3D04630059167A /* SymbolCollectionCell.xib in Resources */,
 				7B341A212C33FDE70069BD02 /* MainTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

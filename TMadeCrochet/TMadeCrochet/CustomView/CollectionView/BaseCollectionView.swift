@@ -26,8 +26,8 @@ class BaseCollectionView: UICollectionView {
     var interitemSpacing: CGFloat = 0
     var collectionCellClassName: String?
     
-    var dataArray: [Any] = [] {
-        didSet { 
+    var dataArray: [[Any]] = [[]] {
+        didSet {
             self.reloadData()
             self.collectionViewLayout.invalidateLayout()
             self.layoutIfNeeded()
@@ -39,7 +39,7 @@ class BaseCollectionView: UICollectionView {
     func configure(hasPull: Bool = true,
                    hasLoadMore: Bool = true,
                    isFromNib: Bool = true,
-                   data: [Any]? = nil,
+                   data: [[Any]]? = nil,
                    lineSpacing: CGFloat = 0,
                    interitemSpacing: CGFloat = 0,
                    itemSize: CGSize = .zero,
@@ -110,19 +110,19 @@ extension BaseCollectionView: UICollectionViewDataSource {
         let currentCell = collectionCellClassName ?? ""
         let cell = self.dequeueReusableCell(withReuseIdentifier: currentCell, for: indexPath)
         if let baseCell = cell as? BaseCollectionViewCell,
-           self.dataArray.count > indexPath.row {
-            self.baseDelegate?.setupCell(indexPath, dataArray[indexPath.row], baseCell)
+           self.dataArray.count > indexPath.section && self.dataArray[indexPath.section].count > indexPath.row {
+            self.baseDelegate?.setupCell(indexPath, self.dataArray[indexPath.section][indexPath.row], baseCell)
             return baseCell
         }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataArray.count
+        return dataArray.count > section ? dataArray[section].count : 0
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return dataArray.count
     }
 }
 
