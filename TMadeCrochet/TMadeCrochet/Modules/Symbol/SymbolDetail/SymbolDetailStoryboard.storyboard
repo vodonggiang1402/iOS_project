@@ -68,12 +68,48 @@
                                                     <constraint firstAttribute="trailing" secondItem="Mpo-cD-TSN" secondAttribute="trailing" id="zOA-Xb-deB"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RwU-pc-YmU">
+                                                <rect key="frame" x="0.0" y="64" width="414" height="150"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crochet_all_step" translatesAutoresizingMaskIntoConstraints="NO" id="Rtf-kr-9lh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="3iz-ub-r8O"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Rtf-kr-9lh" secondAttribute="bottom" id="IKH-Zz-6Pa"/>
+                                                    <constraint firstItem="Rtf-kr-9lh" firstAttribute="leading" secondItem="RwU-pc-YmU" secondAttribute="leading" id="IUR-du-rwI"/>
+                                                    <constraint firstItem="Rtf-kr-9lh" firstAttribute="top" secondItem="RwU-pc-YmU" secondAttribute="top" id="bn2-QP-Sje"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Rtf-kr-9lh" secondAttribute="trailing" id="vW6-5V-f85"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tt0-8q-NmH">
+                                                <rect key="frame" x="0.0" y="214" width="414" height="400"/>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z86-2l-rxb">
+                                                <rect key="frame" x="0.0" y="614" width="414" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="pjT-Bx-oQh"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="RwU-pc-YmU" firstAttribute="leading" secondItem="HCv-Ek-EsO" secondAttribute="leading" id="5sp-2s-S4a"/>
                                             <constraint firstItem="Gsc-mX-zcS" firstAttribute="leading" secondItem="HCv-Ek-EsO" secondAttribute="leading" id="7P8-b9-Q7h"/>
+                                            <constraint firstAttribute="trailing" secondItem="RwU-pc-YmU" secondAttribute="trailing" id="8By-RG-RdM"/>
+                                            <constraint firstItem="tt0-8q-NmH" firstAttribute="top" secondItem="RwU-pc-YmU" secondAttribute="bottom" id="8rH-gZ-NvT"/>
+                                            <constraint firstAttribute="bottom" secondItem="Z86-2l-rxb" secondAttribute="bottom" id="8zQ-gy-oqj"/>
                                             <constraint firstAttribute="trailing" secondItem="Gsc-mX-zcS" secondAttribute="trailing" id="BuL-Rb-1hy"/>
+                                            <constraint firstItem="RwU-pc-YmU" firstAttribute="top" secondItem="Gsc-mX-zcS" secondAttribute="bottom" id="GRs-Mz-z5B"/>
+                                            <constraint firstItem="tt0-8q-NmH" firstAttribute="leading" secondItem="HCv-Ek-EsO" secondAttribute="leading" id="aSN-NM-Vzj"/>
+                                            <constraint firstAttribute="trailing" secondItem="tt0-8q-NmH" secondAttribute="trailing" id="aae-4S-3RL"/>
+                                            <constraint firstAttribute="trailing" secondItem="Z86-2l-rxb" secondAttribute="trailing" id="bO5-lf-D9c"/>
+                                            <constraint firstItem="Z86-2l-rxb" firstAttribute="top" secondItem="tt0-8q-NmH" secondAttribute="bottom" id="f9N-95-bxx"/>
                                             <constraint firstItem="Gsc-mX-zcS" firstAttribute="top" secondItem="HCv-Ek-EsO" secondAttribute="top" id="qFQ-K0-9X4"/>
+                                            <constraint firstItem="Z86-2l-rxb" firstAttribute="leading" secondItem="HCv-Ek-EsO" secondAttribute="leading" id="zuW-ZZ-Aej"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -98,6 +134,9 @@
                     </view>
                     <connections>
                         <outlet property="closeButton" destination="Mpo-cD-TSN" id="Nt9-5S-ieP"/>
+                        <outlet property="imageView" destination="Rtf-kr-9lh" id="ZsT-eC-pol"/>
+                        <outlet property="stackView" destination="tt0-8q-NmH" id="pOb-5R-m5X"/>
+                        <outlet property="titleLabel" destination="qzg-FX-NwZ" id="mdR-zx-Wha"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -106,6 +145,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="crochet_all_step" width="414" height="150"/>
         <image name="ico_x_close_button" width="24" height="24"/>
         <namedColor name="color_f5f5f5_282828">
             <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

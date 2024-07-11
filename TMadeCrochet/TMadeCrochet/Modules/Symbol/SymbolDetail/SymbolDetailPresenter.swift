@@ -8,6 +8,7 @@
 import Foundation
 
 class SymbolDetailPresenter: ViewToPresenterSymbolDetailProtocol {
+    var symbol: Symbol?
     
     var view: PresenterToViewSymbolDetailProtocol?
     var interactor: PresenterToInteractorSymbolDetailProtocol?

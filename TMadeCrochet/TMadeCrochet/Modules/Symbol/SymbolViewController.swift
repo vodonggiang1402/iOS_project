@@ -87,6 +87,6 @@ extension SymbolViewController: BaseCollectionViewProtocol {
     
     @objc func didSelectItem(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UICollectionViewCell) {
         guard let data = dataItem as? Symbol else { return }
-        self.presenter?.navigateToDetail()
+        self.presenter?.navigateToDetail(symbol: data)
     }
 }

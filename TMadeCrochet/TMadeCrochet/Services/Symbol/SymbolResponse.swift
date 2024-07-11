@@ -37,7 +37,7 @@ struct Symbol : Codable {
         case iconName = "icon_name"
         case videoName = "video_name"
         case isAds = "is_ads"
-        case steps = "case"
+        case steps = "steps"
         case backgroundColor = "background_color"
     }
     

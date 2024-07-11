@@ -40,8 +40,8 @@ class SymbolRouter: PresenterToRouterSymbolProtocol {
         return viewController
     }
 
-    func navigateToDetail() {
-        SymbolDetailRouter().showScreenAsModal()
+    func navigateToDetail(symbol: Symbol) {
+        SymbolDetailRouter().showScreenAsModal(symbol: symbol)
     }
 }
 

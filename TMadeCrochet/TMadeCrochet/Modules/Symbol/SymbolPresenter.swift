@@ -12,8 +12,8 @@ class SymbolPresenter: ViewToPresenterSymbolProtocol {
     var interactor: PresenterToInteractorSymbolProtocol?
     var router: PresenterToRouterSymbolProtocol?
     
-    func navigateToDetail() {
-        self.router?.navigateToDetail()
+    func navigateToDetail(symbol: Symbol) {
+        self.router?.navigateToDetail(symbol: symbol)
     }
 }
 

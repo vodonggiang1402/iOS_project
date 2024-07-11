@@ -45,6 +45,9 @@
 		7B4E34A32C3E46F60059167A /* SymbolDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E349C2C3E46F60059167A /* SymbolDetailPresenter.swift */; };
 		7B4E34A42C3E46F60059167A /* SymbolDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E349D2C3E46F60059167A /* SymbolDetailRouter.swift */; };
 		7B4E34A52C3E46F60059167A /* SymbolDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E349E2C3E46F60059167A /* SymbolDetailStoryboard.storyboard */; };
+		7B4E34A82C3F81150059167A /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34A72C3F81150059167A /* StepView.swift */; };
+		7B4E34AA2C3F811C0059167A /* StepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E34A92C3F811C0059167A /* StepView.xib */; };
+		7B4E34AC2C3F86A60059167A /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34AB2C3F86A60059167A /* UIStackView.swift */; };
 		7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E012C32511B0034EE9D /* AppDelegate.swift */; };
 		7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B522E0A2C32511C0034EE9D /* Assets.xcassets */; };
 		7B522E192C32511C0034EE9D /* TMadeCrochetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E182C32511C0034EE9D /* TMadeCrochetTests.swift */; };
@@ -311,6 +314,9 @@
 		7B4E349C2C3E46F60059167A /* SymbolDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolDetailPresenter.swift; sourceTree = "<group>"; };
 		7B4E349D2C3E46F60059167A /* SymbolDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolDetailRouter.swift; sourceTree = "<group>"; };
 		7B4E349E2C3E46F60059167A /* SymbolDetailStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SymbolDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		7B4E34A72C3F81150059167A /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
+		7B4E34A92C3F811C0059167A /* StepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepView.xib; sourceTree = "<group>"; };
+		7B4E34AB2C3F86A60059167A /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMadeCrochet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B522E012C32511B0034EE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B522E0A2C32511C0034EE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -693,6 +699,15 @@
 			path = SymbolDetail;
 			sourceTree = "<group>";
 		};
+		7B4E34A62C3F80F80059167A /* StepView */ = {
+			isa = PBXGroup;
+			children = (
+				7B4E34A72C3F81150059167A /* StepView.swift */,
+				7B4E34A92C3F811C0059167A /* StepView.xib */,
+			);
+			path = StepView;
+			sourceTree = "<group>";
+		};
 		7B522DF52C32511B0034EE9D = {
 			isa = PBXGroup;
 			children = (
@@ -828,6 +843,7 @@
 		7B522E3C2C3253E00034EE9D /* UIKitExtension */ = {
 			isa = PBXGroup;
 			children = (
+				7B4E34AB2C3F86A60059167A /* UIStackView.swift */,
 				7BF32A1A2C33CE5500CD8F18 /* UITableViewExtension.swift */,
 				7B522E532C325C100034EE9D /* UIStoryboardExtension.swift */,
 				7B522E4A2C325AE10034EE9D /* UITabbarExtension.swift */,
@@ -865,6 +881,7 @@
 		7B522E652C32621D0034EE9D /* Symbol */ = {
 			isa = PBXGroup;
 			children = (
+				7B4E34A62C3F80F80059167A /* StepView */,
 				7B4E34972C3E46070059167A /* SymbolDetail */,
 				7B341AAE2C355B3B0069BD02 /* SymbolCollectionCell */,
 				7B522EA12C3262920034EE9D /* SymbolContract.swift */,
@@ -1127,6 +1144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4E34AA2C3F811C0059167A /* StepView.xib in Resources */,
 				7B522E462C325A950034EE9D /* Tabbar.storyboard in Resources */,
 				7BB995152C3B96DC008EF04B /* CountStoryboard.storyboard in Resources */,
 				7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */,
@@ -1262,6 +1280,7 @@
 				7B522E492C325A950034EE9D /* TabbarContract.swift in Sources */,
 				7BF32A2A2C33CF0A00CD8F18 /* CRRefreshAnimator.swift in Sources */,
 				7B522E452C325A950034EE9D /* TabbarRouter.swift in Sources */,
+				7B4E34AC2C3F86A60059167A /* UIStackView.swift in Sources */,
 				7B522E702C32626E0034EE9D /* MainViewController.swift in Sources */,
 				7B522E802C3262740034EE9D /* PatternInteractor.swift in Sources */,
 				7B522E472C325A950034EE9D /* TabbarInteractor.swift in Sources */,
@@ -1300,6 +1319,7 @@
 				7B4E34A02C3E46F60059167A /* SymbolDetailEntity.swift in Sources */,
 				7B522E5F2C3260AC0034EE9D /* SplashEntity.swift in Sources */,
 				7B522E922C3262840034EE9D /* ProfileViewController.swift in Sources */,
+				7B4E34A82C3F81150059167A /* StepView.swift in Sources */,
 				7B341A1B2C33F06C0069BD02 /* StrechyHeaderView.swift in Sources */,
 				7B522E332C3252EA0034EE9D /* BaseViewController.swift in Sources */,
 				7B4E349F2C3E46F60059167A /* SymbolDetailViewController.swift in Sources */,

@@ -9,19 +9,34 @@
         "icon_name" : "",
         "steps" : [
           {
-            "content" : "",
+            "content" : "abc",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 4",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 5",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 6",
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -37,17 +52,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -63,17 +78,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -89,17 +104,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -115,17 +130,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -141,17 +156,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -167,17 +182,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -193,17 +208,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -221,17 +236,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -247,17 +262,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -273,17 +288,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -299,17 +314,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -325,17 +340,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -351,17 +366,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -377,17 +392,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",
@@ -403,17 +418,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "image_step_1"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "image_step_2"
+            "image_name" : "crochet_step"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "image_step_3"
+            "image_name" : "crochet_step"
           }
         ],
         "background_color" : "FED1B2",

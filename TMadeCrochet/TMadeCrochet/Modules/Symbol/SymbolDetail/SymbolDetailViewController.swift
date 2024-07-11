@@ -10,12 +10,21 @@ import UIKit
 
 class SymbolDetailViewController: BaseViewController {
     @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var stackView: UIStackView!
+    
     var presenter: ViewToPresenterSymbolDetailProtocol?
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.closeButton.setTitle("", for: .normal)
+        if let steps = self.presenter?.symbol?.steps, steps.count > 0 {
+            self.setupStackView(steps: steps)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +49,15 @@ class SymbolDetailViewController: BaseViewController {
 
     @IBAction func closeButtonAction(_ sender: Any) {
         self.dismiss(animated: true)
+    }
+    
+    func setupStackView(steps: [SymbolStep]) {
+        if steps.count > 0 {
+            stackView.removeFullyAllArrangedSubviews()
+            steps.forEach { step in
+                stackView.addArrangedSubview(StepView.init(title: step.stepName ?? "", imageName: step.imageName ?? ""))
+            }
+        }
     }
 }
     
