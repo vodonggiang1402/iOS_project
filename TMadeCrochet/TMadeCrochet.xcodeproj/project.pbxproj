@@ -102,6 +102,7 @@
 		7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B522EA62C3262930034EE9D /* SymbolStoryboard.storyboard */; };
 		7B522EAE2C3262930034EE9D /* SymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EA72C3262930034EE9D /* SymbolViewController.swift */; };
 		7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */; };
+		7BAC04312C40ED22006CE1DE /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC04302C40ED22006CE1DE /* AppConstant.swift */; };
 		7BB995012C3B96CF008EF04B /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */; };
 		7BB995022C3B96CF008EF04B /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */; };
 		7BB995032C3B96CF008EF04B /* SettingContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FC2C3B96CF008EF04B /* SettingContract.swift */; };
@@ -376,6 +377,7 @@
 		7B522EA62C3262930034EE9D /* SymbolStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SymbolStoryboard.storyboard; sourceTree = "<group>"; };
 		7B522EA72C3262930034EE9D /* SymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolViewController.swift; sourceTree = "<group>"; };
 		7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerInNavigation.swift; sourceTree = "<group>"; };
+		7BAC04302C40ED22006CE1DE /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
 		7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
 		7BB994FC2C3B96CF008EF04B /* SettingContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingContract.swift; sourceTree = "<group>"; };
@@ -959,6 +961,7 @@
 			children = (
 				7BB995192C3BDB4D008EF04B /* TitleViewNavigationBar */,
 				7BB995172C3BDA19008EF04B /* BarButton.swift */,
+				7BAC04302C40ED22006CE1DE /* AppConstant.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1306,6 +1309,7 @@
 				7B341A062C33D1B90069BD02 /* BaseCollectionViewCell.swift in Sources */,
 				7B3419EB2C33CFDC0069BD02 /* FastCheckLayer.swift in Sources */,
 				7BB9950F2C3B96DC008EF04B /* CountPresenter.swift in Sources */,
+				7BAC04312C40ED22006CE1DE /* AppConstant.swift in Sources */,
 				7BF32A282C33CF0A00CD8F18 /* CRRefreshExtension.swift in Sources */,
 				7B522E502C325B680034EE9D /* IntExtension.swift in Sources */,
 				7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */,

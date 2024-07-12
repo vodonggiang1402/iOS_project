@@ -32,6 +32,7 @@ class SplashViewController: BaseViewController {
     
     func handleFlowApp() {
         print("self.presenter?.navigateToRootMain()")
+        AppConstant.isFirstTime = true
         self.presenter?.navigateToRootMain()
     }
 }

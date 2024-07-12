@@ -26,6 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setRootScreen() {
+        guard AppConstant.isFirstTime else {
+            DataManager.shared.readJSONFromFile(fileName: "symbols", type: SymbolResponseData.self) { result in
+                AppConstant.symbolResponseData = result
+                SplashRouter().setupRootView()
+            }
+            return
+        }
         SplashRouter().setupRootView()
     }
 

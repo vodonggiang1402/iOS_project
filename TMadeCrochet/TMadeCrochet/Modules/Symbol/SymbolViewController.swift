@@ -39,11 +39,9 @@ class SymbolViewController: BaseViewController {
     }
     
     func loadData() {
-        DataManager.shared.readJSONFromFile(fileName: "symbols", type: SymbolResponseData.self) { result in
-            if let array = result?.data, array.count > 0 {
-                self.collectionView.dataArray = array
-                self.collectionView.reloadData()
-            }
+        if let symbolResponseData = AppConstant.symbolResponseData, let array = symbolResponseData.data, array.count > 0 {
+            self.collectionView.dataArray = array
+            self.collectionView.reloadData()
         }
     }
     
