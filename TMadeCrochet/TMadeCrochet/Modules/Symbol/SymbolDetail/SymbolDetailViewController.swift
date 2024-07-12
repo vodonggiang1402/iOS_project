@@ -7,13 +7,12 @@
 
 import Foundation
 import UIKit
+import AVKit
 
 class SymbolDetailViewController: BaseViewController {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
-    
-    @IBOutlet weak var imageView: UIImageView!
-    
+    @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
     
     var presenter: ViewToPresenterSymbolDetailProtocol?
@@ -22,6 +21,9 @@ class SymbolDetailViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.closeButton.setTitle("", for: .normal)
+        if let content = self.presenter?.symbol?.symbolDes {
+            self.setupContentLabel(content: content)
+        }
         if let steps = self.presenter?.symbol?.steps, steps.count > 0 {
             self.setupStackView(steps: steps)
         }
@@ -51,6 +53,10 @@ class SymbolDetailViewController: BaseViewController {
         self.dismiss(animated: true)
     }
     
+    func setupContentLabel(content: String) {
+        self.contentLabel.text = content
+    }
+    
     func setupStackView(steps: [SymbolStep]) {
         if steps.count > 0 {
             stackView.removeFullyAllArrangedSubviews()
@@ -59,6 +65,21 @@ class SymbolDetailViewController: BaseViewController {
             }
         }
     }
+    
+    @IBAction func playLocalVideo(_ sender: Any) {
+           guard let path = Bundle.main.path(forResource: "SampleVideo", ofType: "mp4") else {
+               return
+           }
+           let videoURL = NSURL(fileURLWithPath: path)
+
+           // Create an AVPlayer, passing it the local video url path
+           let player = AVPlayer(url: videoURL as URL)
+           let controller = AVPlayerViewController()
+           controller.player = player
+           present(controller, animated: true) {
+               player.play()
+           }
+       }
 }
     
 

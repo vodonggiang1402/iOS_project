@@ -48,6 +48,7 @@
 		7B4E34A82C3F81150059167A /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34A72C3F81150059167A /* StepView.swift */; };
 		7B4E34AA2C3F811C0059167A /* StepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E34A92C3F811C0059167A /* StepView.xib */; };
 		7B4E34AC2C3F86A60059167A /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34AB2C3F86A60059167A /* UIStackView.swift */; };
+		7B4E34AE2C3FD8A70059167A /* SampleVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E34AD2C3FD6C40059167A /* SampleVideo.mp4 */; };
 		7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E012C32511B0034EE9D /* AppDelegate.swift */; };
 		7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B522E0A2C32511C0034EE9D /* Assets.xcassets */; };
 		7B522E192C32511C0034EE9D /* TMadeCrochetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E182C32511C0034EE9D /* TMadeCrochetTests.swift */; };
@@ -317,6 +318,7 @@
 		7B4E34A72C3F81150059167A /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
 		7B4E34A92C3F811C0059167A /* StepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepView.xib; sourceTree = "<group>"; };
 		7B4E34AB2C3F86A60059167A /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		7B4E34AD2C3FD6C40059167A /* SampleVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleVideo.mp4; sourceTree = "<group>"; };
 		7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMadeCrochet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B522E012C32511B0034EE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B522E0A2C32511C0034EE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -777,6 +779,7 @@
 		7B522E352C3253170034EE9D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7B4E34AD2C3FD6C40059167A /* SampleVideo.mp4 */,
 				7B341AA52C35127E0069BD02 /* JsonFile */,
 				7B341A272C340DDA0069BD02 /* Font */,
 				7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */,
@@ -1144,6 +1147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4E34AE2C3FD8A70059167A /* SampleVideo.mp4 in Resources */,
 				7B4E34AA2C3F811C0059167A /* StepView.xib in Resources */,
 				7B522E462C325A950034EE9D /* Tabbar.storyboard in Resources */,
 				7BB995152C3B96DC008EF04B /* CountStoryboard.storyboard in Resources */,
