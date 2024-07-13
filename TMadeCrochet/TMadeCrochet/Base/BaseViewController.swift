@@ -76,12 +76,12 @@ class BaseViewController: UIViewController {
     private func setupNavigationBarColor() {
         guard let navigationBar = navigationController?.navigationBar else { return }
         let navColor = UIColor.color_fafafa_1818181
-        let underLineColor = UIColor.gray
         let navImage = navColor.navBarImage()
+        let underLineImage = UIColor.clear.as1ptImage()
         if #available(iOS 15.0, *) {
             let appearance = UINavigationBarAppearance()
             appearance.configureWithOpaqueBackground()
-//            appearance.shadowImage = underLineImage
+            appearance.shadowImage = underLineImage
             appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
             appearance.backgroundColor = navColor
             navigationItem.standardAppearance = appearance
@@ -90,7 +90,7 @@ class BaseViewController: UIViewController {
         } else {
             navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
             navigationBar.setBackgroundImage(navImage, for: .default)
-//            navigationBar.shadowImage = underLineImage
+            navigationBar.shadowImage = underLineImage
             navigationBar.backgroundColor = navColor
         }
     }

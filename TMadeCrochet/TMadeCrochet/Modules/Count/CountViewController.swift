@@ -14,6 +14,7 @@ class CountViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavigationBar(title: "Bộ đếm", isShowLeft: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {

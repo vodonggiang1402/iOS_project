@@ -13,7 +13,7 @@
         <!--Symbol Detail View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="SymbolDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SymbolDetailViewController" customModule="TMadeCrochet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SymbolDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SymbolDetailViewController" customModule="Móc_Đan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,7 +160,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" name="color_f5f5f5_282828"/>
+                        <color key="backgroundColor" name="color_fafafa_181818"/>
                         <constraints>
                             <constraint firstItem="Gsc-mX-zcS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1W0-CN-AXt"/>
                             <constraint firstItem="3kK-Ct-hJU" firstAttribute="top" secondItem="Gsc-mX-zcS" secondAttribute="bottom" id="5Yg-s2-Zta"/>
@@ -186,8 +186,8 @@
     </scenes>
     <resources>
         <image name="ico_x_close_button" width="24" height="24"/>
-        <namedColor name="color_f5f5f5_282828">
-            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="color_fafafa_181818">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

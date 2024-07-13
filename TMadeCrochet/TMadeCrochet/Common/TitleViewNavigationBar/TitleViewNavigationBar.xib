@@ -5,11 +5,10 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleViewNavigationBar" customModule="TMadeCrochet" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleViewNavigationBar" customModule="Móc_Đan" customModuleProvider="target">
             <connections>
                 <outlet property="titleLabel" destination="fsg-Oj-wbP" id="BBg-bQ-oMy"/>
             </connections>
@@ -27,7 +26,7 @@
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="ely-Yh-Cfo"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="fsg-Oj-wbP" secondAttribute="bottom" id="Byv-Gd-25Q"/>
                 <constraint firstItem="fsg-Oj-wbP" firstAttribute="leading" secondItem="ely-Yh-Cfo" secondAttribute="leading" id="LOV-xP-4FB"/>
@@ -38,9 +37,4 @@
             <point key="canvasLocation" x="126.08695652173914" y="19.419642857142858"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
