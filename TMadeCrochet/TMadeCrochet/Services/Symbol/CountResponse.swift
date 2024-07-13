@@ -8,7 +8,7 @@
 import Foundation
 
 struct CountResponseData: Codable {
-    var data: [Count]?
+    var data: [[Count]]?
     
     enum CodingKeys: String, CodingKey {
         case data
@@ -16,7 +16,7 @@ struct CountResponseData: Codable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        data = try? container.decodeIfPresent([Count].self, forKey: .data)
+        data = try? container.decodeIfPresent([[Count]].self, forKey: .data)
     }
 }
 
