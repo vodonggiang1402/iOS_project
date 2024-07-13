@@ -25,18 +25,23 @@ class SplashViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.handleFlowApp()
+        guard AppConstant.isFirstTime else {
+            self.presenter?.getData()
+            return
         }
+        self.handleFlowApp()
     }
     
     func handleFlowApp() {
-        print("self.presenter?.navigateToRootMain()")
-        AppConstant.isFirstTime = true
-        self.presenter?.navigateToRootMain()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            AppConstant.isFirstTime = true
+            self.presenter?.navigateToRootMain()
+        }
     }
 }
 
 extension SplashViewController: PresenterToViewSplashProtocol{
-    // TODO: Implement View Output Methods
+    func saveDataComplete() {
+        self.handleFlowApp()
+    }
 }

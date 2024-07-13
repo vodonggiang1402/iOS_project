@@ -37,13 +37,13 @@ class SplashRouter: PresenterToRouterSplashProtocol {
         viewController.presenter?.router = SplashRouter()
         viewController.presenter?.view = viewController
         viewController.presenter?.interactor = SplashInteractor()
+        viewController.presenter?.interactor?.presenter = presenter
         viewController.presenter?.interactor?.entity = entity
 
         return viewController
     }
     
     func navigateToRootMain() {
-        print("TabbarRouter().setupRootView()")
         TabbarRouter().setupRootView()
     }
     

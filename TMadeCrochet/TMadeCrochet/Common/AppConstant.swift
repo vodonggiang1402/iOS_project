@@ -26,4 +26,16 @@ struct AppConstant {
             UserDefaults.standard.setValue(data, forKey: "symbol-response-data")
         }
     }
+    
+    static var countResponseData: CountResponseData? {
+        get {
+            guard let data = UserDefaults.standard.value(forKey: "count-response-data") as? Data,
+                  let tfaListResponse = try? PropertyListDecoder().decode(CountResponseData.self, from: data) else { return nil }
+            return tfaListResponse
+        }
+        set {
+            guard let data = try? PropertyListEncoder().encode(newValue) else { return }
+            UserDefaults.standard.setValue(data, forKey: "count-response-data")
+        }
+    }
 }

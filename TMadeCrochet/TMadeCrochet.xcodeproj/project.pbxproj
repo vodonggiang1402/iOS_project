@@ -102,6 +102,8 @@
 		7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B522EA62C3262930034EE9D /* SymbolStoryboard.storyboard */; };
 		7B522EAE2C3262930034EE9D /* SymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EA72C3262930034EE9D /* SymbolViewController.swift */; };
 		7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */; };
+		7B7686812C4285FC00DBE001 /* count.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686802C4285FC00DBE001 /* count.json */; };
+		7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686822C42874B00DBE001 /* CountResponse.swift */; };
 		7BAC04312C40ED22006CE1DE /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC04302C40ED22006CE1DE /* AppConstant.swift */; };
 		7BB995012C3B96CF008EF04B /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */; };
 		7BB995022C3B96CF008EF04B /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */; };
@@ -377,6 +379,8 @@
 		7B522EA62C3262930034EE9D /* SymbolStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SymbolStoryboard.storyboard; sourceTree = "<group>"; };
 		7B522EA72C3262930034EE9D /* SymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolViewController.swift; sourceTree = "<group>"; };
 		7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerInNavigation.swift; sourceTree = "<group>"; };
+		7B7686802C4285FC00DBE001 /* count.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = count.json; sourceTree = "<group>"; };
+		7B7686822C42874B00DBE001 /* CountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountResponse.swift; sourceTree = "<group>"; };
 		7BAC04302C40ED22006CE1DE /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
 		7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
@@ -650,6 +654,7 @@
 		7B341AA52C35127E0069BD02 /* JsonFile */ = {
 			isa = PBXGroup;
 			children = (
+				7B7686802C4285FC00DBE001 /* count.json */,
 				7B341AA62C3512880069BD02 /* symbols.json */,
 			);
 			path = JsonFile;
@@ -667,6 +672,7 @@
 			isa = PBXGroup;
 			children = (
 				7B341AAA2C3532EA0069BD02 /* SymbolResponse.swift */,
+				7B7686822C42874B00DBE001 /* CountResponse.swift */,
 			);
 			path = Symbol;
 			sourceTree = "<group>";
@@ -1161,6 +1167,7 @@
 				7B3419FC2C33D0060069BD02 /* NormalFooter.bundle in Resources */,
 				7B4E34942C3E35180059167A /* HeaderViewCV.xib in Resources */,
 				7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */,
+				7B7686812C4285FC00DBE001 /* count.json in Resources */,
 				7B522E8E2C3262840034EE9D /* ProfileStoryboard.storyboard in Resources */,
 				7B3419FF2C33D0060069BD02 /* NormalHeader.bundle in Resources */,
 				7BB995042C3B96CF008EF04B /* SettingStoryboard.storyboard in Resources */,
@@ -1350,6 +1357,7 @@
 				7B522E522C325BAF0034EE9D /* UIViewControllerExtension.swift in Sources */,
 				7B522E8D2C3262840034EE9D /* ProfilePresenter.swift in Sources */,
 				7B341AA42C34103D0069BD02 /* UIFontExtension.swift in Sources */,
+				7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */,
 				7B522E622C3260AC0034EE9D /* SplashViewController.swift in Sources */,
 				7BF32A252C33CF0A00CD8F18 /* CRRefreshBundle.swift in Sources */,
 				7B3419EC2C33CFDC0069BD02 /* FastAnimator.swift in Sources */,

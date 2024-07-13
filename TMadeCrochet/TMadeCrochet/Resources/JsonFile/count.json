@@ -1,0 +1,9 @@
+{
+    "data" : [
+        {
+            "is_global" : true,
+            "count_name" : "Bộ đếm chính",
+            "count": 1
+        }
+    ]
+}

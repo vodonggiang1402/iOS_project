@@ -9,11 +9,18 @@
 import Foundation
 
 class SplashInteractor: PresenterToInteractorSplashProtocol {
-
-    // MARK: Properties
+    weak var presenter: InteractorToPresenterSplashProtocol?
     var entity: InteractorToEntitySplashProtocol?
     
-    deinit {
-        self.entity = nil
+    func getData() {
+        DataManager.shared.readJSONFromFile(fileName: "symbols", type: SymbolResponseData.self) { result in
+            AppConstant.symbolResponseData = result
+            DataManager.shared.readJSONFromFile(fileName: "count", type: CountResponseData.self) { result in
+                AppConstant.countResponseData = result
+                self.presenter?.saveDataComplete()
+            }
+        }
+
     }
+    
 }
