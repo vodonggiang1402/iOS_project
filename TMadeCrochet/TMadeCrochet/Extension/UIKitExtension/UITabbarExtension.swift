@@ -32,7 +32,7 @@ enum TabBarItem {
     var unselectedImage: UIImage? {
         switch self {
         case .count:
-            return UIImage(named: "ico_home_active")
+            return UIImage(named: "ico_home")
         case .symbol:
             return UIImage(named: "ico_exchange")
         case .pattern:
@@ -45,9 +45,9 @@ enum TabBarItem {
     var title: String {
         switch self {
         case .count:
-            return "Đếm"
+            return "Bộ Đếm"
         case .symbol:
-            return "Mũi"
+            return "Mũi móc"
         case .pattern:
             return "Dạng"
         case .setting:

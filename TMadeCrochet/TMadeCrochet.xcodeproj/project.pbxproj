@@ -320,7 +320,7 @@
 		7B4E34A92C3F811C0059167A /* StepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepView.xib; sourceTree = "<group>"; };
 		7B4E34AB2C3F86A60059167A /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		7B4E34AD2C3FD6C40059167A /* SampleVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleVideo.mp4; sourceTree = "<group>"; };
-		7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMadeCrochet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B522DFE2C32511B0034EE9D /* Móc&Đan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Móc&Đan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B522E012C32511B0034EE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B522E0A2C32511C0034EE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B522E0F2C32511C0034EE9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -727,7 +727,7 @@
 		7B522DFF2C32511B0034EE9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */,
+				7B522DFE2C32511B0034EE9D /* Móc&Đan.app */,
 				7B522E142C32511C0034EE9D /* TMadeCrochetTests.xctest */,
 				7B522E1E2C32511C0034EE9D /* TMadeCrochetUITests.xctest */,
 			);
@@ -1061,7 +1061,7 @@
 			);
 			name = TMadeCrochet;
 			productName = TMadeCrochet;
-			productReference = 7B522DFE2C32511B0034EE9D /* TMadeCrochet.app */;
+			productReference = 7B522DFE2C32511B0034EE9D /* Móc&Đan.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7B522E132C32511C0034EE9D /* TMadeCrochetTests */ = {
@@ -1540,7 +1540,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmadecrochet.TMadeCrochet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Móc&Đan";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1574,7 +1574,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmadecrochet.TMadeCrochet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Móc&Đan";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
