@@ -61,7 +61,7 @@ class SymbolDetailViewController: BaseViewController {
         if steps.count > 0 {
             stackView.removeFullyAllArrangedSubviews()
             steps.forEach { step in
-                stackView.addArrangedSubview(StepView.init(title: step.stepName ?? "", imageName: step.imageName ?? ""))
+                stackView.addArrangedSubview(StepView.init(title: String.init(format: "%@: %@", step.stepName ?? "", step.content ?? ""), imageName: step.imageName ?? ""))
             }
         }
     }

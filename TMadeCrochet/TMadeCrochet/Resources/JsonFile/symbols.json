@@ -9,34 +9,19 @@
         "icon_name" : "",
         "steps" : [
           {
-            "content" : "abc",
+            "content" : "Đặt kim móc sau sợi len.",
             "step_name" : "Bước 1",
-            "image_name" : "crochet_step"
+            "image_name" : "slip_knot_step_1"
           },
           {
-            "content" : "abc",
+            "content" : "Vòng kim ra phía trước sợi len và ngoặc kim lên để tạo thành 1 vòng tròn.",
             "step_name" : "Bước 2",
-            "image_name" : "crochet_step"
+            "image_name" : "slip_knot_step_2"
           },
           {
-            "content" : "abc",
+            "content" : "Dùng kim lấy len và kéo qua vòng tròn vừa tạo. Kéo sợi len thừa để thắt chặt mũi gút.",
             "step_name" : "Bước 3",
-            "image_name" : "crochet_step"
-          },
-          {
-            "content" : "abc",
-            "step_name" : "Bước 4",
-            "image_name" : "crochet_step"
-          },
-          {
-            "content" : "abc",
-            "step_name" : "Bước 5",
-            "image_name" : "crochet_step"
-          },
-          {
-            "content" : "abc",
-            "step_name" : "Bước 6",
-            "image_name" : "crochet_step"
+            "image_name" : "slip_knot_step_2"
           }
         ],
         "background_color" : "FED1B2",
@@ -76,7 +61,7 @@
         "icon_name" : "chain_crochet",
         "steps" : [
           {
-            "content" : "",
+            "content" : "Dùng kim móc lấy len",
             "step_name" : "Bước 1",
             "image_name" : "chain_step_1"
           },
