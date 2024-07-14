@@ -21,7 +21,12 @@
           {
             "content" : "Dùng kim lấy len và kéo qua vòng tròn vừa tạo. Kéo sợi len thừa để thắt chặt mũi gút.",
             "step_name" : "Bước 3",
-            "image_name" : "slip_knot_step_2"
+            "image_name" : "slip_knot_step_3"
+          },
+          {
+            "content" : "Kéo sợi len thừa để thắt chặt mũi gút.",
+            "step_name" : "Bước 4",
+            "image_name" : "slip_knot_step_3"
           }
         ],
         "background_color" : "FED1B2",
