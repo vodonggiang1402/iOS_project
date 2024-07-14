@@ -78,17 +78,17 @@
           {
             "content" : "",
             "step_name" : "Bước 1",
-            "image_name" : "crochet_step"
+            "image_name" : "chain_step_1"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 2",
-            "image_name" : "crochet_step"
+            "image_name" : "chain_step_2"
           },
           {
             "content" : "abc",
             "step_name" : "Bước 3",
-            "image_name" : "crochet_step"
+            "image_name" : "chain_step_3"
           }
         ],
         "background_color" : "FED1B2",
