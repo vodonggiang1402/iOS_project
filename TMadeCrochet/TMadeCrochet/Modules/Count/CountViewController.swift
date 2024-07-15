@@ -33,6 +33,8 @@ class CountViewController: BaseViewController {
                                  hasLoadMore: false,
                                  lineSpacing: lineSpacing,
                                  interitemSpacing: interitemSpacing,
+                                 headerHeight: 0,
+                                 footerHeight: 0,
                                  itemSize: itemSize,
                                  scrollDirection: .vertical,
                                  collectionCellClassName: CountCollectionCell.className,

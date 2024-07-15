@@ -32,6 +32,8 @@ class SymbolViewController: BaseViewController {
                                  hasLoadMore: false,
                                  lineSpacing: lineSpacing,
                                  interitemSpacing: interitemSpacing,
+                                 headerHeight: 70,
+                                 footerHeight: 0,
                                  itemSize: itemSize,
                                  scrollDirection: .vertical,
                                  collectionCellClassName: SymbolCollectionCell.className,

@@ -25,7 +25,8 @@ class BaseCollectionView: UICollectionView {
     var lineSpacing: CGFloat = 0
     var interitemSpacing: CGFloat = 0
     var collectionCellClassName: String?
-    
+    var headerHeight: CGFloat = 0
+    var footerHeight: CGFloat = 0
     var dataArray: [[Any]] = [[]] {
         didSet {
             self.reloadData()
@@ -42,6 +43,8 @@ class BaseCollectionView: UICollectionView {
                    data: [[Any]]? = nil,
                    lineSpacing: CGFloat = 0,
                    interitemSpacing: CGFloat = 0,
+                   headerHeight: CGFloat = 0,
+                   footerHeight: CGFloat = 0,
                    itemSize: CGSize = .zero,
                    scrollDirection: UICollectionView.ScrollDirection = .horizontal,
                    collectionCellClassName: String,
@@ -56,6 +59,8 @@ class BaseCollectionView: UICollectionView {
         self.register(UINib(nibName: "HeaderViewCV", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderViewCV")
         
         self.itemSize = itemSize
+        self.headerHeight = headerHeight
+        self.footerHeight = footerHeight
         self.collectionCellClassName = collectionCellClassName
         self.baseDelegate = baseDelegate
          
@@ -144,7 +149,7 @@ extension BaseCollectionView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: self.frame.width, height: 70)
+        return CGSize(width: self.frame.width, height: self.headerHeight)
     }
 
 }
