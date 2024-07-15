@@ -8,5 +8,7 @@
 import Foundation
 
 extension String {
-    
+    var asTrimmed: String {
+        trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
 }

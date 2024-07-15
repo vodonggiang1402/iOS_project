@@ -8,13 +8,17 @@
 import Foundation
 import UIKit
 
+protocol CountHeaderViewDelegate: AnyObject {
+    func refreshButtonAction(indexPath: IndexPath)
+}
+
 class CountHeaderView: BaseCollectionReusableView {
     @IBOutlet weak var containView: UIView!
     @IBOutlet weak var refreshButton: UIButton!
-    
     @IBOutlet weak var refreshImageView: UIImageView!
-    
     @IBOutlet weak var titleLabel: UILabel!
+    
+    weak var delegate: CountHeaderViewDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,5 +27,8 @@ class CountHeaderView: BaseCollectionReusableView {
     
     override func setupView(text: String) {
         self.titleLabel.text = text
+    }
+    @IBAction func refreshButtonAction(_ sender: Any) {
+        self.delegate?.refreshButtonAction(indexPath: IndexPath(row: 0, section: 0))
     }
 }

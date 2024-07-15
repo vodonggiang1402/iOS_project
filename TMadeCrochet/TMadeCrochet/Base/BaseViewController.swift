@@ -128,7 +128,36 @@ class BaseViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init()
     }
     
+    func addObserverKeyBoard() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillShowNotification),
+                                               name: UIResponder.keyboardWillShowNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHideNotification),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
+    }
     
+    @objc
+    func keyboardWillShowNotification(_ notification: Notification) {
+        guard let userInfo = notification.userInfo,
+              let keyboardFrame: NSValue = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
+        let heightSafeArea = UIApplication.shared.mainKeyWindow?.safeAreaInsets.bottom ?? 0.0
+        
+        let keyboardRectangle = keyboardFrame.cgRectValue
+        let keyboardHeight = keyboardRectangle.height
+        updateLayoutWhenKeyboardChanged(height: keyboardHeight - heightSafeArea + 5)
+    }
+    
+    @objc
+    func keyboardWillHideNotification(_ notification: Notification) {
+        updateLayoutWhenKeyboardChanged(height: 0)
+    }
+    
+    func updateLayoutWhenKeyboardChanged(height: CGFloat) {
+        
+    }
     
     // MARK: - NavigationBar Action
     @objc func tappedLeftBarButton(sender : UIButton) {

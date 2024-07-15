@@ -8,10 +8,15 @@
 import Foundation
 import UIKit
 
+protocol CountFooterViewDelegate: AnyObject {
+    func addButtonAction()
+}
+
 class CountFooterView: BaseCollectionReusableView {
     @IBOutlet weak var containView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var addButton: UIButton!
+    weak var delegate: CountFooterViewDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +25,8 @@ class CountFooterView: BaseCollectionReusableView {
     override func setupView(text: String) {
         self.addButton.setTitle("Thêm", for: .normal)
         self.titleLabel.text = text
+    }
+    @IBAction func addButtonAction(_ sender: Any) {
+        self.delegate?.addButtonAction()
     }
 }

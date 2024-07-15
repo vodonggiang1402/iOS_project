@@ -97,6 +97,7 @@ extension CountViewController: BaseCollectionViewProtocol {
     
     func setupHeader(_ indexPath: IndexPath, _ view: BaseCollectionReusableView) {
         if let view = view as? CountHeaderView {
+            view.delegate = self
             switch indexPath.section {
             case 0:
                 view.setupView(text: "Bộ đếm chính")
@@ -119,6 +120,7 @@ extension CountViewController: BaseCollectionViewProtocol {
     
     func setupFooter(_ indexPath: IndexPath, _ view: BaseCollectionReusableView) {
         if let view = view as? CountFooterView {
+            view.delegate = self
             switch indexPath.section {
             case 0:
                 view.setupView(text: "Bộ đếm phụ")
@@ -140,10 +142,30 @@ extension CountViewController: BaseCollectionViewProtocol {
     }
 }
 
+extension CountViewController: CountHeaderViewDelegate {
+    func refreshButtonAction(indexPath: IndexPath) {
+        if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
+            self.data[indexPath.section][indexPath.row].count = 1
+            AppConstant.countResponseData = CountResponseData.init(newData: self.data)
+            self.loadData()
+        }
+    }
+}
+
+extension CountViewController: CountFooterViewDelegate {
+    func addButtonAction() {
+        PopupHelper.shared.showCommonPopup(baseViewController: self, titleHeader: "Nhập thông tin", activeTitle: "Đồng ý", activeAction: {_ in
+            
+        }, cancelTitle: "Bỏ qua") {
+            
+        }
+    }
+}
+
 extension CountViewController: CountCollectionCellDelegate {
     func minusTap(indexPath: IndexPath) {
         if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
-            var itemSlected = self.data[indexPath.section][indexPath.row]
+            let itemSlected = self.data[indexPath.section][indexPath.row]
             if let count = itemSlected.count, count > 1 {
                 self.data[indexPath.section][indexPath.row].count = count - 1
                 AppConstant.countResponseData = CountResponseData.init(newData: self.data)

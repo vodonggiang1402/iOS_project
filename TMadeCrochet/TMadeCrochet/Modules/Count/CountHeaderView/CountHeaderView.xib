@@ -33,6 +33,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain"/>
+                                            <connections>
+                                                <action selector="refreshButtonAction:" destination="fsW-uY-bHj" eventType="touchUpInside" id="d5B-Bc-wYi"/>
+                                            </connections>
                                         </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_refresh" translatesAutoresizingMaskIntoConstraints="NO" id="P3q-7S-amR">
                                             <rect key="frame" x="30" y="15" width="20" height="20"/>

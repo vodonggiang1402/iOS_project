@@ -10,6 +10,15 @@
 		0A5369580940F3346DF2A967 /* Pods_TMadeCrochet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C3FD00628C5FBC643B9097 /* Pods_TMadeCrochet.framework */; };
 		585DAF1E1AAEE212C5DB79AF /* Pods_TMadeCrochetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F01D6EEC97D787D255D7FE4 /* Pods_TMadeCrochetTests.framework */; };
 		79428E943F8C0A28B7C5C944 /* Pods_TMadeCrochet_TMadeCrochetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D94C6B84B66F8CC5D4A52A4 /* Pods_TMadeCrochet_TMadeCrochetUITests.framework */; };
+		7B153E522C453EDC00F6718A /* PopupHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E512C453EDC00F6718A /* PopupHelper.swift */; };
+		7B153E562C453F6700F6718A /* CommonPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E542C453F6700F6718A /* CommonPopup.swift */; };
+		7B153E572C453F6700F6718A /* CommonPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B153E552C453F6700F6718A /* CommonPopup.xib */; };
+		7B153E592C453FBF00F6718A /* StyleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E582C453FBF00F6718A /* StyleButton.swift */; };
+		7B153E5B2C45408800F6718A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E5A2C45408800F6718A /* UIViewExtension.swift */; };
+		7B153E602C45411500F6718A /* InLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E5E2C45411500F6718A /* InLineTextField.swift */; };
+		7B153E612C45411500F6718A /* InLineTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B153E5F2C45411500F6718A /* InLineTextField.xib */; };
+		7B153E642C45415000F6718A /* RTLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E632C45415000F6718A /* RTLTextField.swift */; };
+		7B153E662C4541A900F6718A /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E652C4541A900F6718A /* UITextFieldExtension.swift */; };
 		7B3419E42C33CFD30069BD02 /* SlackLoadingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E22C33CFD30069BD02 /* SlackLoadingAnimator.swift */; };
 		7B3419E52C33CFD30069BD02 /* WCLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E32C33CFD30069BD02 /* WCLLoadingView.swift */; };
 		7B3419EB2C33CFDC0069BD02 /* FastCheckLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E62C33CFDC0069BD02 /* FastCheckLayer.swift */; };
@@ -167,6 +176,15 @@
 		5D94C6B84B66F8CC5D4A52A4 /* Pods_TMadeCrochet_TMadeCrochetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMadeCrochet_TMadeCrochetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7140EC522ECB5C060DFFA4BA /* Pods-TMadeCrochetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMadeCrochetTests.debug.xcconfig"; path = "Target Support Files/Pods-TMadeCrochetTests/Pods-TMadeCrochetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77D76805490F645A008EC3D8 /* Pods-TMadeCrochetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMadeCrochetTests.release.xcconfig"; path = "Target Support Files/Pods-TMadeCrochetTests/Pods-TMadeCrochetTests.release.xcconfig"; sourceTree = "<group>"; };
+		7B153E512C453EDC00F6718A /* PopupHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupHelper.swift; sourceTree = "<group>"; };
+		7B153E542C453F6700F6718A /* CommonPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonPopup.swift; sourceTree = "<group>"; };
+		7B153E552C453F6700F6718A /* CommonPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonPopup.xib; sourceTree = "<group>"; };
+		7B153E582C453FBF00F6718A /* StyleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleButton.swift; sourceTree = "<group>"; };
+		7B153E5A2C45408800F6718A /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		7B153E5E2C45411500F6718A /* InLineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InLineTextField.swift; sourceTree = "<group>"; };
+		7B153E5F2C45411500F6718A /* InLineTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InLineTextField.xib; sourceTree = "<group>"; };
+		7B153E632C45415000F6718A /* RTLTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTLTextField.swift; sourceTree = "<group>"; };
+		7B153E652C4541A900F6718A /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		7B3419E22C33CFD30069BD02 /* SlackLoadingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackLoadingAnimator.swift; sourceTree = "<group>"; };
 		7B3419E32C33CFD30069BD02 /* WCLLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
 		7B3419E62C33CFDC0069BD02 /* FastCheckLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastCheckLayer.swift; sourceTree = "<group>"; };
@@ -460,6 +478,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B153E502C453ECF00F6718A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7B153E532C453F3B00F6718A /* CommonPopup */,
+				7B153E512C453EDC00F6718A /* PopupHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7B153E532C453F3B00F6718A /* CommonPopup */ = {
+			isa = PBXGroup;
+			children = (
+				7B153E542C453F6700F6718A /* CommonPopup.swift */,
+				7B153E552C453F6700F6718A /* CommonPopup.xib */,
+			);
+			path = CommonPopup;
+			sourceTree = "<group>";
+		};
+		7B153E5C2C45410300F6718A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				7B153E622C45414800F6718A /* RTLTextField */,
+				7B153E5D2C45410B00F6718A /* InlineTextField */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		7B153E5D2C45410B00F6718A /* InlineTextField */ = {
+			isa = PBXGroup;
+			children = (
+				7B153E5E2C45411500F6718A /* InLineTextField.swift */,
+				7B153E5F2C45411500F6718A /* InLineTextField.xib */,
+			);
+			path = InlineTextField;
+			sourceTree = "<group>";
+		};
+		7B153E622C45414800F6718A /* RTLTextField */ = {
+			isa = PBXGroup;
+			children = (
+				7B153E632C45415000F6718A /* RTLTextField.swift */,
+			);
+			path = RTLTextField;
+			sourceTree = "<group>";
+		};
 		7B3419DE2C33CFAC0069BD02 /* FastAnimator */ = {
 			isa = PBXGroup;
 			children = (
@@ -868,6 +930,8 @@
 		7B522E3C2C3253E00034EE9D /* UIKitExtension */ = {
 			isa = PBXGroup;
 			children = (
+				7B153E652C4541A900F6718A /* UITextFieldExtension.swift */,
+				7B153E5A2C45408800F6718A /* UIViewExtension.swift */,
 				7B4E34AB2C3F86A60059167A /* UIStackView.swift */,
 				7BF32A1A2C33CE5500CD8F18 /* UITableViewExtension.swift */,
 				7B522E532C325C100034EE9D /* UIStoryboardExtension.swift */,
@@ -1010,9 +1074,12 @@
 		7BB995162C3BDA11008EF04B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7B153E5C2C45410300F6718A /* CustomView */,
+				7B153E502C453ECF00F6718A /* Helper */,
 				7BB995192C3BDB4D008EF04B /* TitleViewNavigationBar */,
 				7BB995172C3BDA19008EF04B /* BarButton.swift */,
 				7BAC04302C40ED22006CE1DE /* AppConstant.swift */,
+				7B153E582C453FBF00F6718A /* StyleButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1204,6 +1271,7 @@
 				7B4E34AE2C3FD8A70059167A /* SampleVideo.mp4 in Resources */,
 				7B4E34AA2C3F811C0059167A /* StepView.xib in Resources */,
 				7B522E462C325A950034EE9D /* Tabbar.storyboard in Resources */,
+				7B153E572C453F6700F6718A /* CommonPopup.xib in Resources */,
 				7BB995152C3B96DC008EF04B /* CountStoryboard.storyboard in Resources */,
 				7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */,
 				7B4E34A52C3E46F60059167A /* SymbolDetailStoryboard.storyboard in Resources */,
@@ -1217,6 +1285,7 @@
 				7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */,
 				7B7686812C4285FC00DBE001 /* count.json in Resources */,
 				7B522E8E2C3262840034EE9D /* ProfileStoryboard.storyboard in Resources */,
+				7B153E612C45411500F6718A /* InLineTextField.xib in Resources */,
 				7B3419FF2C33D0060069BD02 /* NormalHeader.bundle in Resources */,
 				7BB995042C3B96CF008EF04B /* SettingStoryboard.storyboard in Resources */,
 				7B341AA72C3512880069BD02 /* symbols.json in Resources */,
@@ -1328,7 +1397,9 @@
 				7B341AAD2C3535F10069BD02 /* DataManager.swift in Sources */,
 				7B3419FD2C33D0060069BD02 /* NormalHeaderAnimator.swift in Sources */,
 				7B522E732C32626E0034EE9D /* MainRouter.swift in Sources */,
+				7B153E602C45411500F6718A /* InLineTextField.swift in Sources */,
 				7B522E902C3262840034EE9D /* ProfileContract.swift in Sources */,
+				7B153E592C453FBF00F6718A /* StyleButton.swift in Sources */,
 				7BF32A292C33CF0A00CD8F18 /* CRRefreshProtocol.swift in Sources */,
 				7BB995062C3B96CF008EF04B /* SettingEntity.swift in Sources */,
 				7B341A0F2C33D49D0069BD02 /* BaseView.swift in Sources */,
@@ -1342,6 +1413,7 @@
 				7B522E492C325A950034EE9D /* TabbarContract.swift in Sources */,
 				7BF32A2A2C33CF0A00CD8F18 /* CRRefreshAnimator.swift in Sources */,
 				7B522E452C325A950034EE9D /* TabbarRouter.swift in Sources */,
+				7B153E662C4541A900F6718A /* UITextFieldExtension.swift in Sources */,
 				7B4E34AC2C3F86A60059167A /* UIStackView.swift in Sources */,
 				7B522E702C32626E0034EE9D /* MainViewController.swift in Sources */,
 				7B522E802C3262740034EE9D /* PatternInteractor.swift in Sources */,
@@ -1349,6 +1421,7 @@
 				7B522E472C325A950034EE9D /* TabbarInteractor.swift in Sources */,
 				7BB995142C3B96DC008EF04B /* CountViewController.swift in Sources */,
 				7B3419EF2C33CFDC0069BD02 /* FastCircleLayer.swift in Sources */,
+				7B153E642C45415000F6718A /* RTLTextField.swift in Sources */,
 				7B522E8C2C3262840034EE9D /* ProfileRouter.swift in Sources */,
 				7B522E742C32626E0034EE9D /* MainInteractor.swift in Sources */,
 				7B522E762C32626E0034EE9D /* MainPresenter.swift in Sources */,
@@ -1360,6 +1433,7 @@
 				7BB995182C3BDA19008EF04B /* BarButton.swift in Sources */,
 				7BF32A192C33CCD500CD8F18 /* BaseTableViewCell.swift in Sources */,
 				7B522EAA2C3262930034EE9D /* SymbolPresenter.swift in Sources */,
+				7B153E5B2C45408800F6718A /* UIViewExtension.swift in Sources */,
 				7B4E34A32C3E46F60059167A /* SymbolDetailPresenter.swift in Sources */,
 				7B4E34A42C3E46F60059167A /* SymbolDetailRouter.swift in Sources */,
 				7B341A062C33D1B90069BD02 /* BaseCollectionViewCell.swift in Sources */,
@@ -1378,6 +1452,7 @@
 				7B522EA82C3262930034EE9D /* SymbolContract.swift in Sources */,
 				7B522E712C32626E0034EE9D /* MainEntity.swift in Sources */,
 				7B341A1F2C33FDDF0069BD02 /* MainTableCell.swift in Sources */,
+				7B153E562C453F6700F6718A /* CommonPopup.swift in Sources */,
 				7BB995102C3B96DC008EF04B /* CountContract.swift in Sources */,
 				7BB995032C3B96CF008EF04B /* SettingContract.swift in Sources */,
 				7B4E34A02C3E46F60059167A /* SymbolDetailEntity.swift in Sources */,
@@ -1406,6 +1481,7 @@
 				7B522E812C3262740034EE9D /* PatternRouter.swift in Sources */,
 				7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */,
 				7B522E522C325BAF0034EE9D /* UIViewControllerExtension.swift in Sources */,
+				7B153E522C453EDC00F6718A /* PopupHelper.swift in Sources */,
 				7B522E8D2C3262840034EE9D /* ProfilePresenter.swift in Sources */,
 				7B341AA42C34103D0069BD02 /* UIFontExtension.swift in Sources */,
 				7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */,

@@ -37,6 +37,9 @@
                                     <state key="normal" title="Thêm">
                                         <color key="titleColor" name="color_background_main"/>
                                     </state>
+                                    <connections>
+                                        <action selector="addButtonAction:" destination="x7P-c8-LE5" eventType="touchUpInside" id="C8Z-G3-t6g"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
