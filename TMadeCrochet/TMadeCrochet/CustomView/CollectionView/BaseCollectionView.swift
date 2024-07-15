@@ -17,6 +17,9 @@ import Foundation
     @objc optional func layoutSize(_ collectionView: UICollectionView,
                                    _ layout : UICollectionViewLayout,
                                    _ indexPath: IndexPath) -> CGSize
+    @objc optional func setupHeader(_ indexPath: IndexPath, _ view: BaseCollectionReusableView)
+    @objc optional func headerSize(_ section: Int) -> CGSize
+    @objc optional func footerSize(_ section: Int) -> CGSize
 }
 
 class BaseCollectionView: UICollectionView {
@@ -25,8 +28,7 @@ class BaseCollectionView: UICollectionView {
     var lineSpacing: CGFloat = 0
     var interitemSpacing: CGFloat = 0
     var collectionCellClassName: String?
-    var headerHeight: CGFloat = 0
-    var footerHeight: CGFloat = 0
+    var collectionReusableHeaderName: String?
     var dataArray: [[Any]] = [[]] {
         didSet {
             self.reloadData()
@@ -43,11 +45,10 @@ class BaseCollectionView: UICollectionView {
                    data: [[Any]]? = nil,
                    lineSpacing: CGFloat = 0,
                    interitemSpacing: CGFloat = 0,
-                   headerHeight: CGFloat = 0,
-                   footerHeight: CGFloat = 0,
                    itemSize: CGSize = .zero,
                    scrollDirection: UICollectionView.ScrollDirection = .horizontal,
                    collectionCellClassName: String,
+                   collectionReusableHeaderName: String,
                    baseDelegate: BaseCollectionViewProtocol?) {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = itemSize
@@ -59,9 +60,8 @@ class BaseCollectionView: UICollectionView {
         self.register(UINib(nibName: "HeaderViewCV", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderViewCV")
         
         self.itemSize = itemSize
-        self.headerHeight = headerHeight
-        self.footerHeight = footerHeight
         self.collectionCellClassName = collectionCellClassName
+        self.collectionReusableHeaderName = collectionReusableHeaderName
         self.baseDelegate = baseDelegate
          
         if let data = data {
@@ -137,10 +137,13 @@ extension BaseCollectionView: UICollectionViewDataSource {
         
        switch kind {
             case UICollectionView.elementKindSectionHeader:
-            if dataArray.count > 0, kind == UICollectionView.elementKindSectionHeader, let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderViewCV", for: indexPath) as?  HeaderViewCV {
-                headerView.titleLabel.text = "Mũi cơ bản"
-                return headerView
-            }
+           if dataArray.count > 0, kind == UICollectionView.elementKindSectionHeader {
+               let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: self.collectionReusableHeaderName ?? "", for: indexPath)
+               if let headerView = headerView as? BaseCollectionReusableView {
+                   self.baseDelegate?.setupHeader?(indexPath, headerView)
+               }
+               return headerView
+           }
 
             return UICollectionReusableView()
              default:
@@ -149,7 +152,7 @@ extension BaseCollectionView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: self.frame.width, height: self.headerHeight)
+        return self.baseDelegate?.headerSize?(section) ?? CGSize(width: 0, height: 0)
     }
 
 }

@@ -106,6 +106,7 @@
 		7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686822C42874B00DBE001 /* CountResponse.swift */; };
 		7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686852C42913B00DBE001 /* CountCollectionCell.swift */; };
 		7B7686882C42914300DBE001 /* CountCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686872C42914300DBE001 /* CountCollectionCell.xib */; };
+		7B76868A2C44D4B000DBE001 /* BaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686892C44D4B000DBE001 /* BaseCollectionReusableView.swift */; };
 		7BAC04312C40ED22006CE1DE /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC04302C40ED22006CE1DE /* AppConstant.swift */; };
 		7BB995012C3B96CF008EF04B /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */; };
 		7BB995022C3B96CF008EF04B /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */; };
@@ -385,6 +386,7 @@
 		7B7686822C42874B00DBE001 /* CountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountResponse.swift; sourceTree = "<group>"; };
 		7B7686852C42913B00DBE001 /* CountCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionCell.swift; sourceTree = "<group>"; };
 		7B7686872C42914300DBE001 /* CountCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountCollectionCell.xib; sourceTree = "<group>"; };
+		7B7686892C44D4B000DBE001 /* BaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionReusableView.swift; sourceTree = "<group>"; };
 		7BAC04302C40ED22006CE1DE /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
 		7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
@@ -492,9 +494,9 @@
 		7B341A022C33D1AF0069BD02 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				7B4E34922C3E35040059167A /* Header */,
 				7B341A032C33D1B90069BD02 /* BaseCollectionView.swift */,
 				7B341A042C33D1B90069BD02 /* BaseCollectionViewCell.swift */,
+				7B7686892C44D4B000DBE001 /* BaseCollectionReusableView.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -896,6 +898,7 @@
 		7B522E652C32621D0034EE9D /* Symbol */ = {
 			isa = PBXGroup;
 			children = (
+				7B4E34922C3E35040059167A /* Header */,
 				7B4E34A62C3F80F80059167A /* StepView */,
 				7B4E34972C3E46070059167A /* SymbolDetail */,
 				7B341AAE2C355B3B0069BD02 /* SymbolCollectionCell */,
@@ -1312,6 +1315,7 @@
 				7B4E34AC2C3F86A60059167A /* UIStackView.swift in Sources */,
 				7B522E702C32626E0034EE9D /* MainViewController.swift in Sources */,
 				7B522E802C3262740034EE9D /* PatternInteractor.swift in Sources */,
+				7B76868A2C44D4B000DBE001 /* BaseCollectionReusableView.swift in Sources */,
 				7B522E472C325A950034EE9D /* TabbarInteractor.swift in Sources */,
 				7BB995142C3B96DC008EF04B /* CountViewController.swift in Sources */,
 				7B3419EF2C33CFDC0069BD02 /* FastCircleLayer.swift in Sources */,

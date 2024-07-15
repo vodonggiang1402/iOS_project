@@ -8,11 +8,15 @@
 import Foundation
 import UIKit
 
-class HeaderViewCV: UICollectionReusableView {
+class HeaderViewCV: BaseCollectionReusableView {
     @IBOutlet weak var containView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    override func setupView(text: String) {
+        self.titleLabel.text = text
     }
 }

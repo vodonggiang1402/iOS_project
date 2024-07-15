@@ -163,7 +163,7 @@
         "video_name" : ""
       },
       {
-        "is_ads" : fase,
+        "is_ads" : false,
         "symbol_id" : "7",
         "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
         "symbol_name" : "Mũi kép đôi",

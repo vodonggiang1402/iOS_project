@@ -27,16 +27,15 @@ class SymbolViewController: BaseViewController {
     func setupDataForCollectionView() {
         let itemSize = CGSize(width: size, height: size)
         self.collectionView.dataArray = [[]]
-        self.collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 16, right: 0)
+        self.collectionView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 16, right: 0)
         self.collectionView.configure(hasPull: false,
                                  hasLoadMore: false,
                                  lineSpacing: lineSpacing,
                                  interitemSpacing: interitemSpacing,
-                                 headerHeight: 70,
-                                 footerHeight: 0,
                                  itemSize: itemSize,
                                  scrollDirection: .vertical,
                                  collectionCellClassName: SymbolCollectionCell.className,
+                                      collectionReusableHeaderName: HeaderViewCV.className,
                                  baseDelegate: self)
     }
     
@@ -88,5 +87,25 @@ extension SymbolViewController: BaseCollectionViewProtocol {
     @objc func didSelectItem(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UICollectionViewCell) {
         guard let data = dataItem as? Symbol else { return }
         self.presenter?.navigateToDetail(symbol: data)
+    }
+    
+    func setupHeader(_ indexPath: IndexPath, _ view: BaseCollectionReusableView) {
+        if let view = view as? HeaderViewCV {
+            switch indexPath.section {
+            case 0:
+                view.setupView(text: "Mũi cơ bản")
+                break
+            case 1:
+                view.setupView(text: "Mũi hạt bắp")
+                break
+            default:
+                view.setupView(text: "Mũi cơ bản")
+            }
+
+        }
+    }
+    
+    func headerSize(_ section: Int) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width - 32, height: 70)
     }
 }
