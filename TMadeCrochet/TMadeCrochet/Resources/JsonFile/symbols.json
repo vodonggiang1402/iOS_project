@@ -66,17 +66,17 @@
         "icon_name" : "chain_crochet",
         "steps" : [
           {
-            "content" : "Dùng kim móc lấy len",
+            "content" : "Dùng kim móc lấy len.",
             "step_name" : "Bước 1",
             "image_name" : "chain_step_1"
           },
           {
-            "content" : "abc",
+            "content" : "Kéo lên qua vòng tròn mũi gút.",
             "step_name" : "Bước 2",
             "image_name" : "chain_step_2"
           },
           {
-            "content" : "abc",
+            "content" : "Tiếp tục lặp lại 2 bước trên để có được dây bính với số mũi bính cần thiết.",
             "step_name" : "Bước 3",
             "image_name" : "chain_step_3"
           }
@@ -163,7 +163,7 @@
         "video_name" : ""
       },
       {
-        "is_ads" : true,
+        "is_ads" : fase,
         "symbol_id" : "7",
         "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
         "symbol_name" : "Mũi kép đôi",
@@ -189,7 +189,7 @@
         "video_name" : ""
       },
       {
-        "is_ads" : true,
+        "is_ads" : false,
         "symbol_id" : "8",
         "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
         "symbol_name" : "Mũi kép ba",
