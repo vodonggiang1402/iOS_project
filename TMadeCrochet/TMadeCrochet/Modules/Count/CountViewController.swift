@@ -17,6 +17,7 @@ class CountViewController: BaseViewController {
     private let height: CGFloat = 200
     private let lineSpacing: CGFloat = 5
     private let interitemSpacing: CGFloat = 5
+    var data: [[Count]] = [[]]
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -39,11 +40,11 @@ class CountViewController: BaseViewController {
                                  collectionReusableHeaderName: CountHeaderView.className,
                                  collectionReusableFooterName: CountFooterView.className,
                                  baseDelegate: self)
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -63,7 +64,8 @@ class CountViewController: BaseViewController {
     
     func loadData() {
         if let countResponseData = AppConstant.countResponseData, let array = countResponseData.data, array.count > 0 {
-            self.collectionView.dataArray = array
+            self.data = array
+            self.collectionView.dataArray = self.data
             self.collectionView.reloadData()
         }
     }
@@ -81,13 +83,15 @@ extension CountViewController: BaseCollectionViewProtocol {
     }
     
     @objc func setupCell(_ indexPath: IndexPath, _ dataItem: Any, _ cell: BaseCollectionViewCell) {
-        if let cell = cell as? SymbolCollectionCell {
+        if let cell = cell as? CountCollectionCell {
+            cell.currentIndexPath = indexPath
+            cell.delegate = self
             cell.setupCell(object: dataItem)
         }
     }
     
     @objc func didSelectItem(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UICollectionViewCell) {
-        guard let data = dataItem as? Symbol else { return }
+        guard let data = dataItem as? Count else { return }
         
     }
     
@@ -132,6 +136,30 @@ extension CountViewController: BaseCollectionViewProtocol {
             return CGSize(width: UIScreen.main.bounds.width - 32, height: 100)
         default:
             return CGSize(width: 0, height: 0)
+        }
+    }
+}
+
+extension CountViewController: CountCollectionCellDelegate {
+    func minusTap(indexPath: IndexPath) {
+        if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
+            var itemSlected = self.data[indexPath.section][indexPath.row]
+            if let count = itemSlected.count, count > 1 {
+                self.data[indexPath.section][indexPath.row].count = count - 1
+                AppConstant.countResponseData = CountResponseData.init(newData: self.data)
+                self.loadData()
+            }
+        }
+    }
+    
+    func plusTap(indexPath: IndexPath) {
+        if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
+            let itemSlected = self.data[indexPath.section][indexPath.row]
+            if let count = itemSlected.count {
+                self.data[indexPath.section][indexPath.row].count = count + 1
+                AppConstant.countResponseData = CountResponseData.init(newData: self.data)
+                self.loadData()
+            }
         }
     }
 }

@@ -8,6 +8,11 @@
 import Foundation
 import UIKit
 
+protocol CountCollectionCellDelegate: AnyObject {
+    func minusTap(indexPath: IndexPath)
+    func plusTap(indexPath: IndexPath)
+}
+
 class CountCollectionCell: BaseCollectionViewCell {
     
     @IBOutlet weak var containView: UIView!
@@ -16,7 +21,8 @@ class CountCollectionCell: BaseCollectionViewCell {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var minusButton: UIButton!
     @IBOutlet weak var plusButton: UIButton!
-    
+    weak var delegate: CountCollectionCellDelegate?
+    var currentIndexPath: IndexPath?
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -30,4 +36,22 @@ class CountCollectionCell: BaseCollectionViewCell {
         self.containView.layer.masksToBounds = true
     }
     
+    override func setupCell(object: Any) {
+        guard let model = object as? Count else { return }
+        self.titleLabel.text = model.countName 
+        self.countLabel.text = model.count?.asString()
+    }
+    
+    @IBAction func minusAction(_ sender: Any) {
+        if let indexPath = self.currentIndexPath {
+            self.delegate?.minusTap(indexPath: indexPath)
+        }
+    }
+    
+    
+    @IBAction func plusAction(_ sender: Any) {
+        if let indexPath = self.currentIndexPath {
+            self.delegate?.plusTap(indexPath: indexPath)
+        }
+    }
 }

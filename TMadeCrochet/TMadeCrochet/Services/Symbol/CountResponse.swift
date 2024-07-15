@@ -18,6 +18,10 @@ struct CountResponseData: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         data = try? container.decodeIfPresent([[Count]].self, forKey: .data)
     }
+    
+    init(newData: [[Count]]) {
+        self.data = newData
+    }
 }
 
 struct Count : Codable {
