@@ -109,6 +109,8 @@
 		7B76868A2C44D4B000DBE001 /* BaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686892C44D4B000DBE001 /* BaseCollectionReusableView.swift */; };
 		7B76868D2C44DAFC00DBE001 /* CountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B76868C2C44DAFC00DBE001 /* CountHeaderView.swift */; };
 		7B76868F2C44DB0400DBE001 /* CountHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B76868E2C44DB0400DBE001 /* CountHeaderView.xib */; };
+		7B7686972C4501CF00DBE001 /* CountFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686962C4501CF00DBE001 /* CountFooterView.swift */; };
+		7B7686992C4501D600DBE001 /* CountFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686982C4501D600DBE001 /* CountFooterView.xib */; };
 		7BAC04312C40ED22006CE1DE /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC04302C40ED22006CE1DE /* AppConstant.swift */; };
 		7BB995012C3B96CF008EF04B /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */; };
 		7BB995022C3B96CF008EF04B /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */; };
@@ -391,6 +393,8 @@
 		7B7686892C44D4B000DBE001 /* BaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionReusableView.swift; sourceTree = "<group>"; };
 		7B76868C2C44DAFC00DBE001 /* CountHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountHeaderView.swift; sourceTree = "<group>"; };
 		7B76868E2C44DB0400DBE001 /* CountHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountHeaderView.xib; sourceTree = "<group>"; };
+		7B7686962C4501CF00DBE001 /* CountFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountFooterView.swift; sourceTree = "<group>"; };
+		7B7686982C4501D600DBE001 /* CountFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountFooterView.xib; sourceTree = "<group>"; };
 		7BAC04302C40ED22006CE1DE /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
 		7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
@@ -963,9 +967,19 @@
 			path = CountHeaderView;
 			sourceTree = "<group>";
 		};
+		7B7686952C4501BA00DBE001 /* CountFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				7B7686962C4501CF00DBE001 /* CountFooterView.swift */,
+				7B7686982C4501D600DBE001 /* CountFooterView.xib */,
+			);
+			path = CountFooterView;
+			sourceTree = "<group>";
+		};
 		7BB994CE2C3B9501008EF04B /* Count */ = {
 			isa = PBXGroup;
 			children = (
+				7B7686952C4501BA00DBE001 /* CountFooterView */,
 				7B76868B2C44DAEB00DBE001 /* CountHeaderView */,
 				7B7686842C42912500DBE001 /* CountCollectionCell */,
 				7BB995092C3B96DC008EF04B /* CountContract.swift */,
@@ -1193,6 +1207,7 @@
 				7BB995152C3B96DC008EF04B /* CountStoryboard.storyboard in Resources */,
 				7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */,
 				7B4E34A52C3E46F60059167A /* SymbolDetailStoryboard.storyboard in Resources */,
+				7B7686992C4501D600DBE001 /* CountFooterView.xib in Resources */,
 				7B341A262C340B0C0069BD02 /* TitleSection.xib in Resources */,
 				7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */,
 				7B7686882C42914300DBE001 /* CountCollectionCell.xib in Resources */,
@@ -1370,6 +1385,7 @@
 				7B522E922C3262840034EE9D /* ProfileViewController.swift in Sources */,
 				7B4E34A82C3F81150059167A /* StepView.swift in Sources */,
 				7B341A1B2C33F06C0069BD02 /* StrechyHeaderView.swift in Sources */,
+				7B7686972C4501CF00DBE001 /* CountFooterView.swift in Sources */,
 				7B522E332C3252EA0034EE9D /* BaseViewController.swift in Sources */,
 				7B4E349F2C3E46F60059167A /* SymbolDetailViewController.swift in Sources */,
 				7BB995122C3B96DC008EF04B /* CountRouter.swift in Sources */,

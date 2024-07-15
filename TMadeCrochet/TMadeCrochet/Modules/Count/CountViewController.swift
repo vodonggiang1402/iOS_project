@@ -13,7 +13,7 @@ class CountViewController: BaseViewController {
     
     @IBOutlet weak var collectionView: BaseCollectionView!
     
-    private let width: CGFloat = (UIScreen.main.bounds.width - 32)
+    private let width: CGFloat = UIScreen.main.bounds.width
     private let height: CGFloat = 200
     private let lineSpacing: CGFloat = 5
     private let interitemSpacing: CGFloat = 5
@@ -36,7 +36,8 @@ class CountViewController: BaseViewController {
                                  itemSize: itemSize,
                                  scrollDirection: .vertical,
                                  collectionCellClassName: CountCollectionCell.className,
-                                      collectionReusableHeaderName: CountHeaderView.className,
+                                 collectionReusableHeaderName: CountHeaderView.className,
+                                 collectionReusableFooterName: CountFooterView.className,
                                  baseDelegate: self)
     }
     
@@ -91,22 +92,46 @@ extension CountViewController: BaseCollectionViewProtocol {
     }
     
     func setupHeader(_ indexPath: IndexPath, _ view: BaseCollectionReusableView) {
-        if let view = view as? SymbolHeaderView {
+        if let view = view as? CountHeaderView {
             switch indexPath.section {
             case 0:
-                view.setupView(text: "Mũi cơ bản")
-                break
-            case 1:
-                view.setupView(text: "Mũi hạt bắp")
+                view.setupView(text: "Bộ đếm chính")
                 break
             default:
-                view.setupView(text: "Mũi cơ bản")
+                view.setupView(text: "Bộ đếm")
             }
 
         }
     }
     
     func headerSize(_ section: Int) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width - 32, height: 70)
+        switch section {
+        case 0:
+            return CGSize(width: UIScreen.main.bounds.width - 32, height: 100)
+        default:
+            return CGSize(width: 0, height: 0)
+        }
+    }
+    
+    func setupFooter(_ indexPath: IndexPath, _ view: BaseCollectionReusableView) {
+        if let view = view as? CountFooterView {
+            switch indexPath.section {
+            case 0:
+                view.setupView(text: "Bộ đếm phụ")
+                break
+            default:
+                view.setupView(text: "Bộ đếm")
+            }
+
+        }
+    }
+    
+    func footerSize(_ section: Int) -> CGSize {
+        switch section {
+        case 0:
+            return CGSize(width: UIScreen.main.bounds.width - 32, height: 100)
+        default:
+            return CGSize(width: 0, height: 0)
+        }
     }
 }

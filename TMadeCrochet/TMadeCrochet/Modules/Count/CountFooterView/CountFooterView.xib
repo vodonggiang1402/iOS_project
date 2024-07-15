@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CountFooterView" id="x7P-c8-LE5" customClass="CountFooterView" customModule="Móc_Đan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhX-dh-KMz">
+                    <rect key="frame" x="16" y="0.0" width="382" height="100"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQQ-Yj-kmS">
+                            <rect key="frame" x="0.0" y="30" width="382" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bộ đếm phụ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OF0-Ba-XCW">
+                                    <rect key="frame" x="0.0" y="0.0" width="332" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gY-Ei-YxK">
+                                    <rect key="frame" x="332" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="RfD-4B-0yd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Thêm">
+                                        <color key="titleColor" name="color_background_main"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="eQQ-Yj-kmS" secondAttribute="trailing" id="51y-IQ-ZuI"/>
+                        <constraint firstAttribute="bottom" secondItem="eQQ-Yj-kmS" secondAttribute="bottom" constant="20" symbolic="YES" id="9qw-Cm-GUi"/>
+                        <constraint firstItem="eQQ-Yj-kmS" firstAttribute="leading" secondItem="WhX-dh-KMz" secondAttribute="leading" id="JhG-Qc-bg5"/>
+                        <constraint firstItem="eQQ-Yj-kmS" firstAttribute="top" secondItem="WhX-dh-KMz" secondAttribute="top" constant="30" id="mPe-H7-7sB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="TIG-Wv-VI8"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WhX-dh-KMz" secondAttribute="bottom" id="1IA-UN-6Jd"/>
+                <constraint firstItem="WhX-dh-KMz" firstAttribute="top" secondItem="x7P-c8-LE5" secondAttribute="top" id="AqW-5m-KSg"/>
+                <constraint firstItem="WhX-dh-KMz" firstAttribute="leading" secondItem="TIG-Wv-VI8" secondAttribute="leading" constant="16" id="h6I-Xa-cZe"/>
+                <constraint firstItem="TIG-Wv-VI8" firstAttribute="trailing" secondItem="WhX-dh-KMz" secondAttribute="trailing" constant="16" id="rq3-l5-2cB"/>
+            </constraints>
+            <connections>
+                <outlet property="addButton" destination="8gY-Ei-YxK" id="8Jx-s3-jJd"/>
+                <outlet property="containView" destination="WhX-dh-KMz" id="LIg-mI-MC4"/>
+                <outlet property="titleLabel" destination="OF0-Ba-XCW" id="EgW-wd-NbV"/>
+            </connections>
+            <point key="canvasLocation" x="18.840579710144929" y="32.8125"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="color_background_main">
+            <color red="0.96862745098039216" green="0.41568627450980394" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

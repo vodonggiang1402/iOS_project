@@ -36,6 +36,7 @@ class SymbolViewController: BaseViewController {
                                  scrollDirection: .vertical,
                                  collectionCellClassName: SymbolCollectionCell.className,
                                  collectionReusableHeaderName: SymbolHeaderView.className,
+                                 collectionReusableFooterName: CountFooterView.className,
                                  baseDelegate: self)
     }
     

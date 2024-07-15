@@ -18,6 +18,7 @@ import Foundation
                                    _ layout : UICollectionViewLayout,
                                    _ indexPath: IndexPath) -> CGSize
     @objc optional func setupHeader(_ indexPath: IndexPath, _ view: BaseCollectionReusableView)
+    @objc optional func setupFooter(_ indexPath: IndexPath, _ view: BaseCollectionReusableView)
     @objc optional func headerSize(_ section: Int) -> CGSize
     @objc optional func footerSize(_ section: Int) -> CGSize
 }
@@ -29,6 +30,7 @@ class BaseCollectionView: UICollectionView {
     var interitemSpacing: CGFloat = 0
     var collectionCellClassName: String?
     var collectionReusableHeaderName: String?
+    var collectionReusableFooterName: String?
     var dataArray: [[Any]] = [[]] {
         didSet {
             self.reloadData()
@@ -49,6 +51,7 @@ class BaseCollectionView: UICollectionView {
                    scrollDirection: UICollectionView.ScrollDirection = .horizontal,
                    collectionCellClassName: String,
                    collectionReusableHeaderName: String,
+                   collectionReusableFooterName: String,
                    baseDelegate: BaseCollectionViewProtocol?) {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = itemSize
@@ -61,9 +64,14 @@ class BaseCollectionView: UICollectionView {
             self.register(UINib(nibName: collectionReusableHeaderName, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: collectionReusableHeaderName)
         }
         
+        if collectionReusableFooterName.count > 0 {
+            self.register(UINib(nibName: collectionReusableFooterName, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: collectionReusableFooterName)
+        }
+        
         self.itemSize = itemSize
         self.collectionCellClassName = collectionCellClassName
         self.collectionReusableHeaderName = collectionReusableHeaderName
+        self.collectionReusableFooterName = collectionReusableFooterName
         self.baseDelegate = baseDelegate
          
         if let data = data {
@@ -139,15 +147,23 @@ extension BaseCollectionView: UICollectionViewDataSource {
         
        switch kind {
             case UICollectionView.elementKindSectionHeader:
-           if dataArray.count > 0, kind == UICollectionView.elementKindSectionHeader {
-               let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: self.collectionReusableHeaderName ?? "", for: indexPath)
-               if let headerView = headerView as? BaseCollectionReusableView {
-                   self.baseDelegate?.setupHeader?(indexPath, headerView)
+               if dataArray.count > 0, kind == UICollectionView.elementKindSectionHeader, let name = self.collectionReusableHeaderName {
+                   let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: name, for: indexPath)
+                   if let headerView = headerView as? BaseCollectionReusableView {
+                       self.baseDelegate?.setupHeader?(indexPath, headerView)
+                   }
+                   return headerView
                }
-               return headerView
-           }
-
-            return UICollectionReusableView()
+                return UICollectionReusableView()
+            case UICollectionView.elementKindSectionFooter:
+              if dataArray.count > 0, kind == UICollectionView.elementKindSectionFooter, let name = self.collectionReusableFooterName {
+                  let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: name, for: indexPath)
+                  if let footerView = footerView as? BaseCollectionReusableView {
+                      self.baseDelegate?.setupFooter?(indexPath, footerView)
+                  }
+                  return footerView
+              }
+               return UICollectionReusableView()
              default:
                 return UICollectionReusableView()
         }
@@ -157,6 +173,9 @@ extension BaseCollectionView: UICollectionViewDataSource {
         return self.baseDelegate?.headerSize?(section) ?? CGSize(width: 0, height: 0)
     }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return self.baseDelegate?.footerSize?(section) ?? CGSize(width: 0, height: 0)
+    }
 }
 
 extension BaseCollectionView: UICollectionViewDelegate {
