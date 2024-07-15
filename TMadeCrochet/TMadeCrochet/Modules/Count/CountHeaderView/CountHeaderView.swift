@@ -1,14 +1,14 @@
 //
-//  HeaderViewCV.swift
+//  CountHeaderView.swift
 //  TMadeCrochet
 //
-//  Created by Ly Nguyen Xuan Thao on 10/7/24.
+//  Created by Ly Nguyen Xuan Thao on 15/7/24.
 //
 
 import Foundation
 import UIKit
 
-class HeaderViewCV: BaseCollectionReusableView {
+class CountHeaderView: BaseCollectionReusableView {
     @IBOutlet weak var containView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     

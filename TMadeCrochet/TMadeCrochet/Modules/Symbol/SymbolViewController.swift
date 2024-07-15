@@ -35,7 +35,7 @@ class SymbolViewController: BaseViewController {
                                  itemSize: itemSize,
                                  scrollDirection: .vertical,
                                  collectionCellClassName: SymbolCollectionCell.className,
-                                      collectionReusableHeaderName: HeaderViewCV.className,
+                                 collectionReusableHeaderName: SymbolHeaderView.className,
                                  baseDelegate: self)
     }
     
@@ -90,7 +90,7 @@ extension SymbolViewController: BaseCollectionViewProtocol {
     }
     
     func setupHeader(_ indexPath: IndexPath, _ view: BaseCollectionReusableView) {
-        if let view = view as? HeaderViewCV {
+        if let view = view as? SymbolHeaderView {
             switch indexPath.section {
             case 0:
                 view.setupView(text: "Mũi cơ bản")

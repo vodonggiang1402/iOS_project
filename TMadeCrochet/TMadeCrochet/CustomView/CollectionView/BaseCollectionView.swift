@@ -57,7 +57,9 @@ class BaseCollectionView: UICollectionView {
         layout.minimumInteritemSpacing = interitemSpacing
         self.collectionViewLayout = layout
         
-        self.register(UINib(nibName: "HeaderViewCV", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderViewCV")
+        if collectionReusableHeaderName.count > 0 {
+            self.register(UINib(nibName: collectionReusableHeaderName, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: collectionReusableHeaderName)
+        }
         
         self.itemSize = itemSize
         self.collectionCellClassName = collectionCellClassName

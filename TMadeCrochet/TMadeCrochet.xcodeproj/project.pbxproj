@@ -36,8 +36,8 @@
 		7B341AAD2C3535F10069BD02 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AAC2C3535F10069BD02 /* DataManager.swift */; };
 		7B341AB02C355B520069BD02 /* SymbolCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B341AAF2C355B520069BD02 /* SymbolCollectionCell.swift */; };
 		7B4E34912C3D04630059167A /* SymbolCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E34902C3D04630059167A /* SymbolCollectionCell.xib */; };
-		7B4E34942C3E35180059167A /* HeaderViewCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E34932C3E35180059167A /* HeaderViewCV.xib */; };
-		7B4E34962C3E35200059167A /* HeaderViewCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34952C3E35200059167A /* HeaderViewCV.swift */; };
+		7B4E34942C3E35180059167A /* SymbolHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E34932C3E35180059167A /* SymbolHeaderView.xib */; };
+		7B4E34962C3E35200059167A /* SymbolHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34952C3E35200059167A /* SymbolHeaderView.swift */; };
 		7B4E349F2C3E46F60059167A /* SymbolDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34982C3E46F60059167A /* SymbolDetailViewController.swift */; };
 		7B4E34A02C3E46F60059167A /* SymbolDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34992C3E46F60059167A /* SymbolDetailEntity.swift */; };
 		7B4E34A12C3E46F60059167A /* SymbolDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E349A2C3E46F60059167A /* SymbolDetailInteractor.swift */; };
@@ -107,6 +107,8 @@
 		7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686852C42913B00DBE001 /* CountCollectionCell.swift */; };
 		7B7686882C42914300DBE001 /* CountCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686872C42914300DBE001 /* CountCollectionCell.xib */; };
 		7B76868A2C44D4B000DBE001 /* BaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686892C44D4B000DBE001 /* BaseCollectionReusableView.swift */; };
+		7B76868D2C44DAFC00DBE001 /* CountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B76868C2C44DAFC00DBE001 /* CountHeaderView.swift */; };
+		7B76868F2C44DB0400DBE001 /* CountHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B76868E2C44DB0400DBE001 /* CountHeaderView.xib */; };
 		7BAC04312C40ED22006CE1DE /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC04302C40ED22006CE1DE /* AppConstant.swift */; };
 		7BB995012C3B96CF008EF04B /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */; };
 		7BB995022C3B96CF008EF04B /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */; };
@@ -312,8 +314,8 @@
 		7B341AAC2C3535F10069BD02 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7B341AAF2C355B520069BD02 /* SymbolCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCollectionCell.swift; sourceTree = "<group>"; };
 		7B4E34902C3D04630059167A /* SymbolCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymbolCollectionCell.xib; sourceTree = "<group>"; };
-		7B4E34932C3E35180059167A /* HeaderViewCV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderViewCV.xib; sourceTree = "<group>"; };
-		7B4E34952C3E35200059167A /* HeaderViewCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCV.swift; sourceTree = "<group>"; };
+		7B4E34932C3E35180059167A /* SymbolHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymbolHeaderView.xib; sourceTree = "<group>"; };
+		7B4E34952C3E35200059167A /* SymbolHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolHeaderView.swift; sourceTree = "<group>"; };
 		7B4E34982C3E46F60059167A /* SymbolDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolDetailViewController.swift; sourceTree = "<group>"; };
 		7B4E34992C3E46F60059167A /* SymbolDetailEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolDetailEntity.swift; sourceTree = "<group>"; };
 		7B4E349A2C3E46F60059167A /* SymbolDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolDetailInteractor.swift; sourceTree = "<group>"; };
@@ -387,6 +389,8 @@
 		7B7686852C42913B00DBE001 /* CountCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionCell.swift; sourceTree = "<group>"; };
 		7B7686872C42914300DBE001 /* CountCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountCollectionCell.xib; sourceTree = "<group>"; };
 		7B7686892C44D4B000DBE001 /* BaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionReusableView.swift; sourceTree = "<group>"; };
+		7B76868C2C44DAFC00DBE001 /* CountHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountHeaderView.swift; sourceTree = "<group>"; };
+		7B76868E2C44DB0400DBE001 /* CountHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountHeaderView.xib; sourceTree = "<group>"; };
 		7BAC04302C40ED22006CE1DE /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		7BB994FA2C3B96CE008EF04B /* SettingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
 		7BB994FB2C3B96CF008EF04B /* SettingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
@@ -695,8 +699,8 @@
 		7B4E34922C3E35040059167A /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				7B4E34952C3E35200059167A /* HeaderViewCV.swift */,
-				7B4E34932C3E35180059167A /* HeaderViewCV.xib */,
+				7B4E34952C3E35200059167A /* SymbolHeaderView.swift */,
+				7B4E34932C3E35180059167A /* SymbolHeaderView.xib */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -950,9 +954,19 @@
 			path = CountCollectionCell;
 			sourceTree = "<group>";
 		};
+		7B76868B2C44DAEB00DBE001 /* CountHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				7B76868C2C44DAFC00DBE001 /* CountHeaderView.swift */,
+				7B76868E2C44DB0400DBE001 /* CountHeaderView.xib */,
+			);
+			path = CountHeaderView;
+			sourceTree = "<group>";
+		};
 		7BB994CE2C3B9501008EF04B /* Count */ = {
 			isa = PBXGroup;
 			children = (
+				7B76868B2C44DAEB00DBE001 /* CountHeaderView */,
 				7B7686842C42912500DBE001 /* CountCollectionCell */,
 				7BB995092C3B96DC008EF04B /* CountContract.swift */,
 				7BB9950A2C3B96DC008EF04B /* CountEntity.swift */,
@@ -1182,8 +1196,9 @@
 				7B341A262C340B0C0069BD02 /* TitleSection.xib in Resources */,
 				7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */,
 				7B7686882C42914300DBE001 /* CountCollectionCell.xib in Resources */,
+				7B76868F2C44DB0400DBE001 /* CountHeaderView.xib in Resources */,
 				7B3419FC2C33D0060069BD02 /* NormalFooter.bundle in Resources */,
-				7B4E34942C3E35180059167A /* HeaderViewCV.xib in Resources */,
+				7B4E34942C3E35180059167A /* SymbolHeaderView.xib in Resources */,
 				7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */,
 				7B7686812C4285FC00DBE001 /* count.json in Resources */,
 				7B522E8E2C3262840034EE9D /* ProfileStoryboard.storyboard in Resources */,
@@ -1384,7 +1399,8 @@
 				7BF32A182C33CCD500CD8F18 /* BaseTableView.swift in Sources */,
 				7B522E8F2C3262840034EE9D /* ProfileEntity.swift in Sources */,
 				7B522E912C3262840034EE9D /* ProfileInteractor.swift in Sources */,
-				7B4E34962C3E35200059167A /* HeaderViewCV.swift in Sources */,
+				7B4E34962C3E35200059167A /* SymbolHeaderView.swift in Sources */,
+				7B76868D2C44DAFC00DBE001 /* CountHeaderView.swift in Sources */,
 				7B522E4E2C325B3C0034EE9D /* StringExtension.swift in Sources */,
 				7B522E4B2C325AE10034EE9D /* UITabbarExtension.swift in Sources */,
 				7B522E612C3260AC0034EE9D /* SplashPresenter.swift in Sources */,

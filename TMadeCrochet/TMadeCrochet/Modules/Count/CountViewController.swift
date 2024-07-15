@@ -36,7 +36,7 @@ class CountViewController: BaseViewController {
                                  itemSize: itemSize,
                                  scrollDirection: .vertical,
                                  collectionCellClassName: CountCollectionCell.className,
-                                 collectionReusableHeaderName: "",
+                                      collectionReusableHeaderName: CountHeaderView.className,
                                  baseDelegate: self)
     }
     
@@ -88,5 +88,25 @@ extension CountViewController: BaseCollectionViewProtocol {
     @objc func didSelectItem(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UICollectionViewCell) {
         guard let data = dataItem as? Symbol else { return }
         
+    }
+    
+    func setupHeader(_ indexPath: IndexPath, _ view: BaseCollectionReusableView) {
+        if let view = view as? SymbolHeaderView {
+            switch indexPath.section {
+            case 0:
+                view.setupView(text: "Mũi cơ bản")
+                break
+            case 1:
+                view.setupView(text: "Mũi hạt bắp")
+                break
+            default:
+                view.setupView(text: "Mũi cơ bản")
+            }
+
+        }
+    }
+    
+    func headerSize(_ section: Int) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width - 32, height: 70)
     }
 }
