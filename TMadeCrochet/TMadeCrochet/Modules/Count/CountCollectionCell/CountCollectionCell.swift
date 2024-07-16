@@ -32,8 +32,8 @@ class CountCollectionCell: BaseCollectionViewCell {
         self.minusButton.setTitle("", for: .normal)
         self.plusButton.setTitle("", for: .normal)
         
-        self.containView.layer.cornerRadius = 15
-        self.containView.layer.borderWidth = 0.5
+        self.containView.layer.cornerRadius = 5
+        self.containView.layer.borderWidth = 1
         self.containView.layer.masksToBounds = true
     }
     

@@ -46,18 +46,19 @@ class CommonPopup: BaseViewController {
     
     @IBAction func okButtonAction(_ sender: Any) {
         self.view.endEditing(true)
-       let text = self.pinInputView.getInputText()
-        if !text.isEmpty {
-            self.dismissView()
-            self.activeAction?(text)
+       var text = self.pinInputView.getInputText()
+        if text.isEmpty {
+            text = "Bộ đếm"
         }
+        self.dismissView()
+        self.activeAction?(text)
     }
     
     func setupTextField() {
         pinInputView.delegate = self
         pinInputView.inputTextField.delegate = self
         pinInputView.title = ""
-        pinInputView.placeHolder = ""
+        pinInputView.placeHolder = "Nhập"
         pinInputView.inputTextField.font = UIFont.systemFont(ofSize: 14)
         pinInputView.isSecureTextEntry = false
         pinInputView.textFieldType = .normal

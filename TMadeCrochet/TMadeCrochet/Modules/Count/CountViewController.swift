@@ -112,7 +112,7 @@ extension CountViewController: BaseCollectionViewProtocol {
     func headerSize(_ section: Int) -> CGSize {
         switch section {
         case 0:
-            return CGSize(width: UIScreen.main.bounds.width - 32, height: 100)
+            return CGSize(width: UIScreen.main.bounds.width - 32, height: 80)
         default:
             return CGSize(width: 0, height: 0)
         }
@@ -161,15 +161,22 @@ extension CountViewController: CountFooterViewDelegate {
     
     func addNewCount(text: String) {
         if self.data.count > 1 {
-            self.data[1].append(Count.init(isGlobal: false, countName: text, count: 1, color: "DFD8AB"))
+            self.data[1].append(Count.init(isGlobal: false, countName: text, count: 1, color: self.getRamdomColor()))
             AppConstant.countResponseData = CountResponseData.init(newData: self.data)
         } else {
             var array: [Count] = []
-            array.append(Count.init(isGlobal: false, countName: text, count: 1, color: "DFD8AB"))
+            array.append(Count.init(isGlobal: false, countName: text, count: 1, color: self.getRamdomColor()))
             self.data.append(array)
             AppConstant.countResponseData = CountResponseData.init(newData: self.data)
         }
         self.loadData()
+    }
+    
+    func getRamdomColor()-> String {
+        let array = ["CE9C9D", "80ADBC", "#1B4F93",
+                     "DFD8AB", "CAB08B", "E54646",
+                     "F9F400", "489620", "008C5E"]
+        return array.randomElement()!
     }
 }
 

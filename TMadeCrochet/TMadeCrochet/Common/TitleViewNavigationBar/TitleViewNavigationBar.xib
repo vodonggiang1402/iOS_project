@@ -20,7 +20,7 @@
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsg-Oj-wbP">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>

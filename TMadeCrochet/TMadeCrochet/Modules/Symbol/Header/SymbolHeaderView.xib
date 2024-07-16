@@ -23,7 +23,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="fiw-iw-H7L"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
