@@ -22,6 +22,7 @@ class PopupHelper {
                                   cancelAction: Action? ) {
         let popupVC = CommonPopup.init(nibName: "CommonPopup", bundle: nil)
         popupVC.load()
+        popupVC.setTitleHeader(titleHeader)
         popupVC.setActiveButton(activeTitle)
         popupVC.setActiveButton(activeAction)
         popupVC.setCancelButton(cancelTitle)

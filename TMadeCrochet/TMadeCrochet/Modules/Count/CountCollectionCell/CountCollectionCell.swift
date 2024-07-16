@@ -30,9 +30,8 @@ class CountCollectionCell: BaseCollectionViewCell {
         self.minusButton.setTitle("", for: .normal)
         self.plusButton.setTitle("", for: .normal)
         
-        self.containView.layer.cornerRadius = 10
-        self.containView.layer.borderWidth = 1
-        self.containView.layer.borderColor = UIColor.gray.cgColor
+        self.containView.layer.cornerRadius = 15
+        self.containView.layer.borderWidth = 0.5
         self.containView.layer.masksToBounds = true
     }
     
@@ -40,6 +39,10 @@ class CountCollectionCell: BaseCollectionViewCell {
         guard let model = object as? Count else { return }
         self.titleLabel.text = model.countName 
         self.countLabel.text = model.count?.asString()
+        if let isGlobal = model.isGlobal, isGlobal {
+            self.moreButton.isHidden = isGlobal ? true : false
+        }
+        self.containView.layer.borderColor = UIColor(hexString: model.color ?? "").cgColor
     }
     
     @IBAction func minusAction(_ sender: Any) {

@@ -18,10 +18,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFc-be-D9H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1y-cm-4aI">
-                                <rect key="frame" x="16" y="0.0" width="382" height="190"/>
+                                <rect key="frame" x="16" y="5" width="382" height="190"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxC-w0-YMS">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
@@ -181,8 +181,8 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="V1y-cm-4aI" secondAttribute="bottom" id="7dn-wB-ieW"/>
-                            <constraint firstItem="V1y-cm-4aI" firstAttribute="top" secondItem="GFc-be-D9H" secondAttribute="top" id="GRZ-QD-9xJ"/>
+                            <constraint firstAttribute="bottom" secondItem="V1y-cm-4aI" secondAttribute="bottom" constant="5" id="7dn-wB-ieW"/>
+                            <constraint firstItem="V1y-cm-4aI" firstAttribute="top" secondItem="GFc-be-D9H" secondAttribute="top" constant="5" id="GRZ-QD-9xJ"/>
                             <constraint firstItem="V1y-cm-4aI" firstAttribute="leading" secondItem="GFc-be-D9H" secondAttribute="leading" constant="16" id="UAJ-7J-FAo"/>
                             <constraint firstAttribute="trailing" secondItem="V1y-cm-4aI" secondAttribute="trailing" constant="16" id="UBz-LQ-0Lg"/>
                         </constraints>

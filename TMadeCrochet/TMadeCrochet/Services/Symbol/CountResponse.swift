@@ -28,11 +28,13 @@ struct Count : Codable {
     var isGlobal: Bool?
     var countName: String?
     var count: Int?
+    var color: String?
     
     enum CodingKeys: String, CodingKey {
         case isGlobal = "is_global"
         case countName = "count_name"
         case count = "count"
+        case color = "color"
     }
     
     init(from decoder: Decoder) throws {
@@ -40,5 +42,13 @@ struct Count : Codable {
         isGlobal = try? container.decodeIfPresent(Bool.self, forKey: .isGlobal)
         countName = try? container.decodeIfPresent(String.self, forKey: .countName)
         count = try? container.decodeIfPresent(Int.self, forKey: .count)
+        color = try? container.decodeIfPresent(String.self, forKey: .color)
+    }
+    
+    init(isGlobal: Bool, countName: String, count: Int, color: String) {
+        self.isGlobal = isGlobal
+        self.countName = countName
+        self.count = count
+        self.color = color
     }
 }

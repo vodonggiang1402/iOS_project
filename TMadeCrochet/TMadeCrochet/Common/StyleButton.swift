@@ -24,63 +24,63 @@ enum StyleBtn {
     var borderColorDisable: UIColor {
         switch self {
         case .style_cancel:
-            return .clear
+            return .color_main_app_gray
         case .style_ok:
-            return .clear
+            return .color_main_app_pink
         }
     }
     
     var borderColorEnable: UIColor {
         switch self {
         case .style_cancel:
-            return .clear
+            return .color_main_app_gray
         case .style_ok:
-            return .clear
+            return .color_main_app_pink
         }
     }
     
     var borderColorSelected: UIColor {
         switch self {
         case .style_cancel:
-            return .clear
+            return .color_main_app_gray
         case .style_ok:
-            return .clear
+            return .color_main_app_pink
         }
     }
     
     var textColorEnable: UIColor {
         switch self {
         case .style_cancel:
-            return .clear
+            return .color_main_app_gray
         case .style_ok:
-            return .clear
+            return .color_main_app_gray
         }
     }
     
     var textColorSelected: UIColor {
         switch self {
         case .style_cancel:
-            return .clear
+            return .color_main_app_gray
         case .style_ok:
-            return .clear
+            return .color_main_app_gray
         }
     }
     
     var textColorDisable: UIColor {
         switch self {
         case .style_cancel:
-            return .clear
+            return .color_main_app_gray
         case .style_ok:
-            return .clear
+            return .color_main_app_gray
         }
     }
     
     var textColorHightLight: UIColor {
         switch self {
         case .style_cancel:
-            return .clear
+            return .color_main_app_gray
         case .style_ok:
-            return .clear
+            return .color_main_app_gray
         }
     }
     
@@ -89,7 +89,7 @@ enum StyleBtn {
         case .style_cancel:
             return .clear
         case .style_ok:
-            return .clear
+            return .color_main_app_pink
         }
     }
     
@@ -98,7 +98,7 @@ enum StyleBtn {
         case .style_cancel:
             return .clear
         case .style_ok:
-            return .clear
+            return .color_main_app_pink
         }
     }
     
@@ -107,7 +107,7 @@ enum StyleBtn {
         case .style_cancel:
             return .clear
         case .style_ok:
-            return .clear
+            return .color_main
         }
     }
     
@@ -116,7 +116,7 @@ enum StyleBtn {
         case .style_cancel:
             return .clear
         case .style_ok:
-            return .clear
+            return .color_main_app_pink
         }
     }
 }

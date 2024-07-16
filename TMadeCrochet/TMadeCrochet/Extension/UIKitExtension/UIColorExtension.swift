@@ -80,6 +80,8 @@ extension UIColor {
     static let color_232323_fafafa = UIColor().generateThemeColor(name: "color_232323_fafafa")
     static let color_main = UIColor().generateThemeColor(name: "color_main")
     static let color_background_main = UIColor().generateThemeColor(name: "color_background_main")
+    static let color_main_app_gray = UIColor().generateThemeColor(name: "color_main_app_gray")
+    static let color_main_app_pink = UIColor().generateThemeColor(name: "color_main_app_pink")
 }
 
 extension UIColor {

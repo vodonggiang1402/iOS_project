@@ -154,8 +154,8 @@ extension CountViewController: CountHeaderViewDelegate {
 
 extension CountViewController: CountFooterViewDelegate {
     func addButtonAction() {
-        PopupHelper.shared.showCommonPopup(baseViewController: self, titleHeader: "Nhập thông tin", activeTitle: "Đồng ý", activeAction: {_ in
-            
+        PopupHelper.shared.showCommonPopup(baseViewController: self, titleHeader: "Nhập thông tin", activeTitle: "Đồng ý", activeAction: { text in
+            print("Đồng ý", text)
         }, cancelTitle: "Bỏ qua") {
             
         }

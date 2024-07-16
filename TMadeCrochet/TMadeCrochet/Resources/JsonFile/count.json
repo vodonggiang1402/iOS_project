@@ -4,7 +4,8 @@
             {
             "is_global" : true,
             "count_name" : "Đếm chính",
-            "count": 1
+            "count": 1,
+            "color" : "F76A89"
             }
         ]
     ]

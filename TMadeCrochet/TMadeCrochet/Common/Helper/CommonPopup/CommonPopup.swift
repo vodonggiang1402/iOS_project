@@ -30,18 +30,26 @@ class CommonPopup: BaseViewController {
     private var activeAction: ((String) -> Void)?
     private var cancelAction: Action?
     
+    @objc func dismissPopup(gesture: UITapGestureRecognizer) {
+        self.dismissView()
+    }
+        
+    func dismissView() {
+        self.dismiss(animated: true)
+    }
 
     @IBAction func cancelButtonAction(_ sender: Any) {
         self.view.endEditing(true)
-        self.cancelAction?()
+        self.dismissView()
     }
     
     
     @IBAction func okButtonAction(_ sender: Any) {
         self.view.endEditing(true)
-       let pin = self.pinInputView.getInputText()
-        if !pin.isEmpty {
-            self.activeAction?(pin)
+       let text = self.pinInputView.getInputText()
+        if !text.isEmpty {
+            self.dismissView()
+            self.activeAction?(text)
         }
     }
     
@@ -78,12 +86,6 @@ class CommonPopup: BaseViewController {
         }
     }
     
-    func validateNextButton() {
-        let pin = self.pinInputView.getInputText()
-        let validate = !pin.isEmpty && self.pinInputView.getErrorMessage().isEmpty
-        self.enableNextButton(validate)
-    }
-    
     func enableNextButton(_ enable: Bool) {
         activeButton.setEnable(isEnable: enable)
     }
@@ -95,6 +97,11 @@ class CommonPopup: BaseViewController {
         setupTheme()
         addObserverKeyBoard()
         self.view.hideKeyboard()
+        let tapGesture = UITapGestureRecognizer(target: self,
+                                                action: #selector(dismissPopup(gesture:)))
+        tapGesture.cancelsTouchesInView = true
+        backView.addGestureRecognizer(tapGesture)
+        
         return self
     }
     
@@ -142,10 +149,6 @@ class CommonPopup: BaseViewController {
 // MARK: - InLineDelegate
 extension CommonPopup: InLineDelegate {
     func didValidateTextField(_ inlineTextfield: InLineTextField) {
-        if inlineTextfield == pinInputView {
-            heightTextFieldConstraint.constant = pinInputView.inputTextValid() ? 78 : 105
-        }
-        self.validateNextButton()
     }
     
     func didBeginEdittingTextField(_ inlineTextfield: InLineTextField) {
@@ -157,16 +160,9 @@ extension CommonPopup: InLineDelegate {
     }
     
     func edittingTextField(_ inlineTextfield: InLineTextField) {
-        if inlineTextfield == pinInputView {
-            heightTextFieldConstraint.constant = pinInputView.inputTextValid() ? 78 : 105
-        }
-        self.validateNextButton()
     }
     
     func returnErrorTextField(_ inlineTextfield: InLineTextField, isError: Bool) {
-        if inlineTextfield == pinInputView {
-            heightTextFieldConstraint.constant = isError ? 105 : 78
-        }
     }
 }
 
