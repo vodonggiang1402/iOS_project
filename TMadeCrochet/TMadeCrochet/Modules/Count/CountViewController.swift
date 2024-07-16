@@ -112,7 +112,7 @@ extension CountViewController: BaseCollectionViewProtocol {
     func headerSize(_ section: Int) -> CGSize {
         switch section {
         case 0:
-            return CGSize(width: UIScreen.main.bounds.width - 32, height: 80)
+            return CGSize(width: UIScreen.main.bounds.width, height: 80)
         default:
             return CGSize(width: 0, height: 0)
         }
@@ -135,7 +135,7 @@ extension CountViewController: BaseCollectionViewProtocol {
     func footerSize(_ section: Int) -> CGSize {
         switch section {
         case 0:
-            return CGSize(width: UIScreen.main.bounds.width - 32, height: 100)
+            return CGSize(width: UIScreen.main.bounds.width, height: 100)
         default:
             return CGSize(width: 0, height: 0)
         }

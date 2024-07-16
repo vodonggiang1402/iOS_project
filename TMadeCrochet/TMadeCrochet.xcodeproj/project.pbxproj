@@ -20,6 +20,8 @@
 		7B153E642C45415000F6718A /* RTLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E632C45415000F6718A /* RTLTextField.swift */; };
 		7B153E662C4541A900F6718A /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E652C4541A900F6718A /* UITextFieldExtension.swift */; };
 		7B153E682C46342400F6718A /* CACornerMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E672C46342400F6718A /* CACornerMask.swift */; };
+		7B153E6C2C464CFC00F6718A /* AddCountFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E6B2C464CFC00F6718A /* AddCountFooterView.swift */; };
+		7B153E6E2C464D0800F6718A /* AddCountFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B153E6D2C464D0800F6718A /* AddCountFooterView.xib */; };
 		7B3419E42C33CFD30069BD02 /* SlackLoadingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E22C33CFD30069BD02 /* SlackLoadingAnimator.swift */; };
 		7B3419E52C33CFD30069BD02 /* WCLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E32C33CFD30069BD02 /* WCLLoadingView.swift */; };
 		7B3419EB2C33CFDC0069BD02 /* FastCheckLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E62C33CFDC0069BD02 /* FastCheckLayer.swift */; };
@@ -187,6 +189,8 @@
 		7B153E632C45415000F6718A /* RTLTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTLTextField.swift; sourceTree = "<group>"; };
 		7B153E652C4541A900F6718A /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		7B153E672C46342400F6718A /* CACornerMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACornerMask.swift; sourceTree = "<group>"; };
+		7B153E6B2C464CFC00F6718A /* AddCountFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCountFooterView.swift; sourceTree = "<group>"; };
+		7B153E6D2C464D0800F6718A /* AddCountFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCountFooterView.xib; sourceTree = "<group>"; };
 		7B3419E22C33CFD30069BD02 /* SlackLoadingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackLoadingAnimator.swift; sourceTree = "<group>"; };
 		7B3419E32C33CFD30069BD02 /* WCLLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
 		7B3419E62C33CFDC0069BD02 /* FastCheckLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastCheckLayer.swift; sourceTree = "<group>"; };
@@ -522,6 +526,15 @@
 				7B153E632C45415000F6718A /* RTLTextField.swift */,
 			);
 			path = RTLTextField;
+			sourceTree = "<group>";
+		};
+		7B153E6A2C464CED00F6718A /* AddCountFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				7B153E6B2C464CFC00F6718A /* AddCountFooterView.swift */,
+				7B153E6D2C464D0800F6718A /* AddCountFooterView.xib */,
+			);
+			path = AddCountFooterView;
 			sourceTree = "<group>";
 		};
 		7B3419DE2C33CFAC0069BD02 /* FastAnimator */ = {
@@ -1046,6 +1059,7 @@
 		7BB994CE2C3B9501008EF04B /* Count */ = {
 			isa = PBXGroup;
 			children = (
+				7B153E6A2C464CED00F6718A /* AddCountFooterView */,
 				7B7686952C4501BA00DBE001 /* CountFooterView */,
 				7B76868B2C44DAEB00DBE001 /* CountHeaderView */,
 				7B7686842C42912500DBE001 /* CountCollectionCell */,
@@ -1286,6 +1300,7 @@
 				7B3419FC2C33D0060069BD02 /* NormalFooter.bundle in Resources */,
 				7B4E34942C3E35180059167A /* SymbolHeaderView.xib in Resources */,
 				7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */,
+				7B153E6E2C464D0800F6718A /* AddCountFooterView.xib in Resources */,
 				7B7686812C4285FC00DBE001 /* count.json in Resources */,
 				7B522E8E2C3262840034EE9D /* ProfileStoryboard.storyboard in Resources */,
 				7B153E612C45411500F6718A /* InLineTextField.xib in Resources */,
@@ -1480,6 +1495,7 @@
 				7B3419E42C33CFD30069BD02 /* SlackLoadingAnimator.swift in Sources */,
 				7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */,
 				7BB995012C3B96CF008EF04B /* SettingPresenter.swift in Sources */,
+				7B153E6C2C464CFC00F6718A /* AddCountFooterView.swift in Sources */,
 				7B522E632C3260AC0034EE9D /* SplashContract.swift in Sources */,
 				7B522E812C3262740034EE9D /* PatternRouter.swift in Sources */,
 				7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */,

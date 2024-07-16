@@ -37,6 +37,9 @@
                                     <state key="normal" title="Thêm">
                                         <color key="titleColor" name="color_background_main"/>
                                     </state>
+                                    <connections>
+                                        <action selector="addButtonAction:" destination="x7P-c8-LE5" eventType="touchUpInside" id="Z5B-oP-exc"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
