@@ -4,20 +4,38 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="suk-55-rRv" customClass="AddCountFooterView" customModule="Móc_Đan" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Em6-50-d6K">
-                    <rect key="frame" x="16" y="0.0" width="382" height="50"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <rect key="frame" x="16" y="0.0" width="382" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdy-fZ-IhT">
+                            <rect key="frame" x="0.0" y="20" width="382" height="50"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Thêm" image="ico_add">
+                                <color key="titleColor" name="color_background_main"/>
+                            </state>
+                            <connections>
+                                <action selector="addButtonAction:" destination="suk-55-rRv" eventType="touchUpInside" id="eFN-3z-8bh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="mdy-fZ-IhT" secondAttribute="bottom" constant="30" id="7FY-tc-5TJ"/>
+                        <constraint firstAttribute="trailing" secondItem="mdy-fZ-IhT" secondAttribute="trailing" id="Qzb-cI-iAq"/>
+                        <constraint firstItem="mdy-fZ-IhT" firstAttribute="top" secondItem="Em6-50-d6K" secondAttribute="top" constant="20" symbolic="YES" id="g38-4c-CQH"/>
+                        <constraint firstItem="mdy-fZ-IhT" firstAttribute="leading" secondItem="Em6-50-d6K" secondAttribute="leading" id="uiR-nS-BL5"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="DGR-Tc-4jV"/>
@@ -27,12 +45,16 @@
                 <constraint firstItem="Em6-50-d6K" firstAttribute="leading" secondItem="DGR-Tc-4jV" secondAttribute="leading" constant="16" id="XJf-AM-XQU"/>
                 <constraint firstItem="Em6-50-d6K" firstAttribute="top" secondItem="suk-55-rRv" secondAttribute="top" id="dBF-7v-xKu"/>
             </constraints>
+            <connections>
+                <outlet property="addButton" destination="mdy-fZ-IhT" id="AL3-VZ-EZx"/>
+            </connections>
             <point key="canvasLocation" x="64.492753623188406" y="19.419642857142858"/>
         </collectionReusableView>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="ico_add" width="50" height="50"/>
+        <namedColor name="color_background_main">
+            <color red="0.96862745098039216" green="0.41568627450980394" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

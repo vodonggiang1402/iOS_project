@@ -35,9 +35,8 @@ class SymbolViewController: BaseViewController {
                                  itemSize: itemSize,
                                  scrollDirection: .vertical,
                                  collectionCellClassName: SymbolCollectionCell.className,
-                                 collectionReusableHeaderName: SymbolHeaderView.className,
-                                 collectionReusableFooterName: CountFooterView.className,
                                  baseDelegate: self)
+        self.collectionView.register(UINib(nibName: SymbolHeaderView.className, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SymbolHeaderView.className)
     }
     
     func loadData() {
@@ -90,19 +89,28 @@ extension SymbolViewController: BaseCollectionViewProtocol {
         self.presenter?.navigateToDetail(symbol: data)
     }
     
-    func setupHeader(_ indexPath: IndexPath, _ view: BaseCollectionReusableView) {
-        if let view = view as? SymbolHeaderView {
-            switch indexPath.section {
-            case 0:
-                view.setupView(text: "Mũi cơ bản")
-                break
-            case 1:
-                view.setupView(text: "Mũi hạt bắp")
-                break
-            default:
-                view.setupView(text: "Mũi cơ bản")
-            }
-
+    func collectionReusableView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+       switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            if kind == UICollectionView.elementKindSectionHeader {
+               let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SymbolHeaderView.className, for: indexPath)
+                if let headerView = headerView as? SymbolHeaderView {
+                    switch indexPath.section {
+                    case 0:
+                        headerView.setupView(text: "Mũi cơ bản")
+                        break
+                    case 1:
+                        headerView.setupView(text: "Mũi hạt bắp")
+                        break
+                    default:
+                        headerView.setupView(text: "Mũi cơ bản")
+                    }
+                }
+               return headerView
+           }
+            return UICollectionReusableView()
+         default:
+            return UICollectionReusableView()
         }
     }
     

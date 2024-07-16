@@ -37,9 +37,12 @@ class CountViewController: BaseViewController {
                                  itemSize: itemSize,
                                  scrollDirection: .vertical,
                                  collectionCellClassName: CountCollectionCell.className,
-                                 collectionReusableHeaderName: CountHeaderView.className,
-                                 collectionReusableFooterName: CountFooterView.className,
                                  baseDelegate: self)
+        self.collectionView.register(UINib(nibName: CountHeaderView.className, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CountHeaderView.className)
+        
+        self.collectionView.register(UINib(nibName: CountFooterView.className, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: CountFooterView.className)
+        
+        self.collectionView.register(UINib(nibName: AddCountFooterView.className, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: AddCountFooterView.className)
 
     }
     
@@ -69,6 +72,16 @@ class CountViewController: BaseViewController {
             self.collectionView.reloadData()
         }
     }
+    
+    func isEmptySection() -> Bool {
+        if self.data.count > 1 {
+            let list = self.data[1]
+            if list.count > 0 {
+                return true
+            }
+        }
+        return false
+    }
 }
     
 
@@ -95,20 +108,6 @@ extension CountViewController: BaseCollectionViewProtocol {
         
     }
     
-    func setupHeader(_ indexPath: IndexPath, _ view: BaseCollectionReusableView) {
-        if let view = view as? CountHeaderView {
-            view.delegate = self
-            switch indexPath.section {
-            case 0:
-                view.setupView(text: "Bộ đếm chính")
-                break
-            default:
-                view.setupView(text: "Bộ đếm")
-            }
-
-        }
-    }
-    
     func headerSize(_ section: Int) -> CGSize {
         switch section {
         case 0:
@@ -118,26 +117,63 @@ extension CountViewController: BaseCollectionViewProtocol {
         }
     }
     
-    func setupFooter(_ indexPath: IndexPath, _ view: BaseCollectionReusableView) {
-        if let view = view as? CountFooterView {
-            view.delegate = self
-            switch indexPath.section {
-            case 0:
-                view.setupView(text: "Bộ đếm phụ")
-                break
-            default:
-                view.setupView(text: "Bộ đếm")
-            }
-
-        }
-    }
-    
     func footerSize(_ section: Int) -> CGSize {
         switch section {
         case 0:
             return CGSize(width: UIScreen.main.bounds.width, height: 100)
+        case 1:
+            return CGSize(width: UIScreen.main.bounds.width, height: isEmptySection() ? 80 : 0)
         default:
             return CGSize(width: 0, height: 0)
+        }
+    }
+    
+    func collectionReusableView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+       switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            if self.data.count > 0, kind == UICollectionView.elementKindSectionHeader {
+               let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CountHeaderView.className, for: indexPath)
+                if let headerView = headerView as? CountHeaderView {
+                    headerView.delegate = self
+                    switch indexPath.section {
+                    case 0:
+                        headerView.setupView(text: "Bộ đếm chính")
+                        break
+                    default:
+                        headerView.setupView(text: "Bộ đếm")
+                    }
+
+                }
+               return headerView
+           }
+            return UICollectionReusableView()
+        case UICollectionView.elementKindSectionFooter:
+           switch indexPath.section {
+           case 0:
+                 let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CountFooterView.className, for: indexPath)
+                   if let footerView = footerView as? CountFooterView {
+                       footerView.delegate = self
+                       switch indexPath.section {
+                       case 0:
+                           footerView.setupView(text: "Bộ đếm phụ")
+                           break
+                       default:
+                           footerView.setupView(text: "Bộ đếm")
+                       }
+
+                   }
+                 return footerView
+           case 1:
+               let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: AddCountFooterView.className, for: indexPath)
+               if let footerView = footerView as? AddCountFooterView {
+                   footerView.delegate = self
+               }
+               return footerView
+           default:
+               return UICollectionReusableView()
+           }
+         default:
+            return UICollectionReusableView()
         }
     }
 }
@@ -170,6 +206,14 @@ extension CountViewController: CountFooterViewDelegate {
             AppConstant.countResponseData = CountResponseData.init(newData: self.data)
         }
         self.loadData()
+        self.scrollToBottom()
+    }
+    
+    func scrollToBottom() {
+        let section = self.collectionView.numberOfSections - 1
+        let item = self.collectionView.numberOfItems(inSection: section) - 1
+        let indexPath = IndexPath(item: item, section: section)
+        self.collectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)
     }
     
     func getRamdomColor()-> String {
@@ -180,6 +224,9 @@ extension CountViewController: CountFooterViewDelegate {
     }
 }
 
+extension CountViewController: AddCountFooterViewDelegate {
+    
+}
 
 extension CountViewController: CountCollectionCellDelegate {
     func minusButtonTap(indexPath: IndexPath) {
