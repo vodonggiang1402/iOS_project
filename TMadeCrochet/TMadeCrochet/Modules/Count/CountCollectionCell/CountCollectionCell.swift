@@ -9,8 +9,9 @@ import Foundation
 import UIKit
 
 protocol CountCollectionCellDelegate: AnyObject {
-    func minusTap(indexPath: IndexPath)
-    func plusTap(indexPath: IndexPath)
+    func minusButtonTap(indexPath: IndexPath)
+    func plusButtonTap(indexPath: IndexPath)
+    func moreButtonTap(indexPath: IndexPath)
 }
 
 class CountCollectionCell: BaseCollectionViewCell {
@@ -23,6 +24,7 @@ class CountCollectionCell: BaseCollectionViewCell {
     @IBOutlet weak var plusButton: UIButton!
     weak var delegate: CountCollectionCellDelegate?
     var currentIndexPath: IndexPath?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -39,22 +41,26 @@ class CountCollectionCell: BaseCollectionViewCell {
         guard let model = object as? Count else { return }
         self.titleLabel.text = model.countName 
         self.countLabel.text = model.count?.asString()
-        if let isGlobal = model.isGlobal, isGlobal {
-            self.moreButton.isHidden = isGlobal ? true : false
-        }
+        self.moreButton.isHidden = model.isGlobal ?? false ? true : false
         self.containView.layer.borderColor = UIColor(hexString: model.color ?? "").cgColor
     }
     
-    @IBAction func minusAction(_ sender: Any) {
+    @IBAction func minusButtonAction(_ sender: Any) {
         if let indexPath = self.currentIndexPath {
-            self.delegate?.minusTap(indexPath: indexPath)
+            self.delegate?.minusButtonTap(indexPath: indexPath)
         }
     }
     
     
-    @IBAction func plusAction(_ sender: Any) {
+    @IBAction func plusButtonAction(_ sender: Any) {
         if let indexPath = self.currentIndexPath {
-            self.delegate?.plusTap(indexPath: indexPath)
+            self.delegate?.plusButtonTap(indexPath: indexPath)
+        }
+    }
+    
+    @IBAction func moreButtonAction(_ sender: Any) {
+        if let indexPath = self.currentIndexPath {
+            self.delegate?.moreButtonTap(indexPath: indexPath)
         }
     }
 }

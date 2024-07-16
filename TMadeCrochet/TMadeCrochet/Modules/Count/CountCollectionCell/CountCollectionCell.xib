@@ -42,6 +42,9 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="ico_more"/>
+                                                        <connections>
+                                                            <action selector="moreButtonAction:" destination="2Yf-p2-a7Q" eventType="touchUpInside" id="trg-Rq-D55"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -75,7 +78,7 @@
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                                         <connections>
-                                                                            <action selector="minusAction:" destination="2Yf-p2-a7Q" eventType="touchUpInside" id="lOc-qX-BZP"/>
+                                                                            <action selector="minusButtonAction:" destination="2Yf-p2-a7Q" eventType="touchUpInside" id="QPn-R3-y6s"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -126,7 +129,7 @@
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                                         <connections>
-                                                                            <action selector="plusAction:" destination="2Yf-p2-a7Q" eventType="touchUpInside" id="rRA-zI-MWL"/>
+                                                                            <action selector="plusButtonAction:" destination="2Yf-p2-a7Q" eventType="touchUpInside" id="vpP-1H-MOb"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>

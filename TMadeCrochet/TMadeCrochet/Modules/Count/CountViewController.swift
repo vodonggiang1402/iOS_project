@@ -154,16 +154,28 @@ extension CountViewController: CountHeaderViewDelegate {
 
 extension CountViewController: CountFooterViewDelegate {
     func addButtonAction() {
-        PopupHelper.shared.showCommonPopup(baseViewController: self, titleHeader: "Nhập thông tin", activeTitle: "Đồng ý", activeAction: { text in
-            print("Đồng ý", text)
-        }, cancelTitle: "Bỏ qua") {
-            
+        PopupHelper.shared.showCommonPopup(baseViewController: self, titleHeader: "Nhập thông tin", activeTitle: "Đồng ý", activeAction: { title in
+            self.addNewCount(text: title)
+        }, cancelTitle: "Bỏ qua") {}
+    }
+    
+    func addNewCount(text: String) {
+        if self.data.count > 1 {
+            self.data[1].append(Count.init(isGlobal: false, countName: text, count: 1, color: "DFD8AB"))
+            AppConstant.countResponseData = CountResponseData.init(newData: self.data)
+        } else {
+            var array: [Count] = []
+            array.append(Count.init(isGlobal: false, countName: text, count: 1, color: "DFD8AB"))
+            self.data.append(array)
+            AppConstant.countResponseData = CountResponseData.init(newData: self.data)
         }
+        self.loadData()
     }
 }
 
+
 extension CountViewController: CountCollectionCellDelegate {
-    func minusTap(indexPath: IndexPath) {
+    func minusButtonTap(indexPath: IndexPath) {
         if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
             let itemSlected = self.data[indexPath.section][indexPath.row]
             if let count = itemSlected.count, count > 1 {
@@ -174,7 +186,7 @@ extension CountViewController: CountCollectionCellDelegate {
         }
     }
     
-    func plusTap(indexPath: IndexPath) {
+    func plusButtonTap(indexPath: IndexPath) {
         if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
             let itemSlected = self.data[indexPath.section][indexPath.row]
             if let count = itemSlected.count {
@@ -182,6 +194,70 @@ extension CountViewController: CountCollectionCellDelegate {
                 AppConstant.countResponseData = CountResponseData.init(newData: self.data)
                 self.loadData()
             }
+        }
+    }
+    
+    func moreButtonTap(indexPath: IndexPath) {
+        // create an actionSheet
+        let actionSheetController: UIAlertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+
+        // create an action
+        let editAction: UIAlertAction = UIAlertAction(title: "Chỉnh sửa", style: .default) { action -> Void in
+            self.editAction(indexPath: indexPath)
+        }
+
+        let resetAction: UIAlertAction = UIAlertAction(title: "Đặt lại", style: .default) { action -> Void in
+            self.resetAction(indexPath: indexPath)
+        }
+
+        let deleteAction: UIAlertAction = UIAlertAction(title: "Xoá", style: .destructive) { action -> Void in
+            self.deleteAction(indexPath: indexPath)
+        }
+        
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Bỏ qua", style: .cancel) { action -> Void in
+
+        }
+
+        // add actions
+        actionSheetController.addAction(editAction)
+        actionSheetController.addAction(resetAction)
+        actionSheetController.addAction(deleteAction)
+        actionSheetController.addAction(cancelAction)
+
+        present(actionSheetController, animated: true) {
+            print("option menu presented")
+        }
+    }
+    
+    func editAction(indexPath: IndexPath) {
+        PopupHelper.shared.showCommonPopup(baseViewController: self, titleHeader: "Nhập thông tin", activeTitle: "Đồng ý", activeAction: { title in
+            self.resetCount(indexPath: indexPath, text: title)
+        }, cancelTitle: "Bỏ qua") {}
+    }
+    
+    func resetCount(indexPath: IndexPath, text: String) {
+        if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
+            self.data[indexPath.section][indexPath.row].countName = text
+            AppConstant.countResponseData = CountResponseData.init(newData: self.data)
+            self.loadData()
+        }
+    }
+    
+    func resetAction(indexPath: IndexPath) {
+        if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
+            self.data[indexPath.section][indexPath.row].count = 1
+            AppConstant.countResponseData = CountResponseData.init(newData: self.data)
+            self.loadData()
+        }
+    }
+    
+    func deleteAction(indexPath: IndexPath) {
+        if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
+            var group = self.data[indexPath.section]
+            group.remove(at: indexPath.row)
+            self.data[indexPath.section] = group
+            AppConstant.countResponseData = CountResponseData.init(newData: self.data)
+            self.loadData()
         }
     }
 }
