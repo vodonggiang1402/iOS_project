@@ -69,6 +69,9 @@ class CommonPopup: BaseViewController {
         setupFont()
         cancelButton.style = .style_cancel
         activeButton.style = .style_ok
+        viewContainer.layer.cornerRadius = 12
+        viewContainer.layer.maskedCorners = [CACornerMask.topLeft, CACornerMask.topRight]
+        viewContainer.layer.masksToBounds = true
         setupTextField()
     }
     

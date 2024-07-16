@@ -19,6 +19,7 @@
 		7B153E612C45411500F6718A /* InLineTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B153E5F2C45411500F6718A /* InLineTextField.xib */; };
 		7B153E642C45415000F6718A /* RTLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E632C45415000F6718A /* RTLTextField.swift */; };
 		7B153E662C4541A900F6718A /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E652C4541A900F6718A /* UITextFieldExtension.swift */; };
+		7B153E682C46342400F6718A /* CACornerMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E672C46342400F6718A /* CACornerMask.swift */; };
 		7B3419E42C33CFD30069BD02 /* SlackLoadingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E22C33CFD30069BD02 /* SlackLoadingAnimator.swift */; };
 		7B3419E52C33CFD30069BD02 /* WCLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E32C33CFD30069BD02 /* WCLLoadingView.swift */; };
 		7B3419EB2C33CFDC0069BD02 /* FastCheckLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E62C33CFDC0069BD02 /* FastCheckLayer.swift */; };
@@ -185,6 +186,7 @@
 		7B153E5F2C45411500F6718A /* InLineTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InLineTextField.xib; sourceTree = "<group>"; };
 		7B153E632C45415000F6718A /* RTLTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTLTextField.swift; sourceTree = "<group>"; };
 		7B153E652C4541A900F6718A /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		7B153E672C46342400F6718A /* CACornerMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACornerMask.swift; sourceTree = "<group>"; };
 		7B3419E22C33CFD30069BD02 /* SlackLoadingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackLoadingAnimator.swift; sourceTree = "<group>"; };
 		7B3419E32C33CFD30069BD02 /* WCLLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
 		7B3419E62C33CFDC0069BD02 /* FastCheckLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastCheckLayer.swift; sourceTree = "<group>"; };
@@ -930,6 +932,7 @@
 		7B522E3C2C3253E00034EE9D /* UIKitExtension */ = {
 			isa = PBXGroup;
 			children = (
+				7B153E672C46342400F6718A /* CACornerMask.swift */,
 				7B153E652C4541A900F6718A /* UITextFieldExtension.swift */,
 				7B153E5A2C45408800F6718A /* UIViewExtension.swift */,
 				7B4E34AB2C3F86A60059167A /* UIStackView.swift */,
@@ -1490,6 +1493,7 @@
 				7B3419EC2C33CFDC0069BD02 /* FastAnimator.swift in Sources */,
 				7BF32A182C33CCD500CD8F18 /* BaseTableView.swift in Sources */,
 				7B522E8F2C3262840034EE9D /* ProfileEntity.swift in Sources */,
+				7B153E682C46342400F6718A /* CACornerMask.swift in Sources */,
 				7B522E912C3262840034EE9D /* ProfileInteractor.swift in Sources */,
 				7B4E34962C3E35200059167A /* SymbolHeaderView.swift in Sources */,
 				7B76868D2C44DAFC00DBE001 /* CountHeaderView.swift in Sources */,

@@ -206,11 +206,11 @@ extension CountViewController: CountCollectionCellDelegate {
             self.editAction(indexPath: indexPath)
         }
 
-        let resetAction: UIAlertAction = UIAlertAction(title: "Đặt lại", style: .default) { action -> Void in
+        let resetAction: UIAlertAction = UIAlertAction(title: "Đếm lại", style: .default) { action -> Void in
             self.resetAction(indexPath: indexPath)
         }
 
-        let deleteAction: UIAlertAction = UIAlertAction(title: "Xoá", style: .destructive) { action -> Void in
+        let deleteAction: UIAlertAction = UIAlertAction(title: "Xoá đếm", style: .destructive) { action -> Void in
             self.deleteAction(indexPath: indexPath)
         }
         
