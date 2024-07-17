@@ -82,13 +82,13 @@ class BaseViewController: UIViewController {
             let appearance = UINavigationBarAppearance()
             appearance.configureWithOpaqueBackground()
             appearance.shadowImage = underLineImage
-            appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+            appearance.titleTextAttributes = [.foregroundColor: UIColor.clear]
             appearance.backgroundColor = navColor
             navigationItem.standardAppearance = appearance
             navigationItem.scrollEdgeAppearance = appearance
             navigationBar.backgroundColor = navColor
         } else {
-            navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+            navigationBar.titleTextAttributes = [.foregroundColor: UIColor.clear]
             navigationBar.setBackgroundImage(navImage, for: .default)
             navigationBar.shadowImage = underLineImage
             navigationBar.backgroundColor = navColor

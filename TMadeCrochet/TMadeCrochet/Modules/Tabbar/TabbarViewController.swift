@@ -68,10 +68,10 @@ class TabbarViewController: UITabBarController {
                           image: UIImage?,
                           selectedImage: UIImage?) {
         let selectedAttributes = [NSAttributedString.Key.foregroundColor: UIColor.color_main_app_pink,
-                                  NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14, weight: .medium)]
-        let normalAttributes = [NSAttributedString.Key.foregroundColor: UIColor.color_main_app_gray,
-                                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14, weight: .regular)]
-        tabBar.unselectedItemTintColor = UIColor.gray
+                                  NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .regular)]
+        let normalAttributes = [NSAttributedString.Key.foregroundColor: UIColor.color_7f7f7f_565656,
+                                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .regular)]
+        tabBar.unselectedItemTintColor = UIColor.clear
         
         let tabbarItem = UITabBarItem(title: tabName,
                                       image: image?.withRenderingMode(.alwaysOriginal),
@@ -134,11 +134,11 @@ extension TabbarViewController {
                          tabName: String,
                          image: UIImage?,
                          selectedImage: UIImage?) -> UINavigationController {
-        let selectedAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
-                                  NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14, weight: .medium)]
-        let normalAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
-                                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14, weight: .regular)]
-        tabBar.unselectedItemTintColor = UIColor.gray
+        let selectedAttributes = [NSAttributedString.Key.foregroundColor: UIColor.color_main_app_pink,
+                                  NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .regular)]
+        let normalAttributes = [NSAttributedString.Key.foregroundColor: UIColor.color_7f7f7f_565656,
+                                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .regular)]
+        tabBar.unselectedItemTintColor = UIColor.clear
         
         let tabbarItem = UITabBarItem(title: tabName,
                                       image: image?.withRenderingMode(.alwaysOriginal),
