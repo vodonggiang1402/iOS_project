@@ -32,9 +32,9 @@ class TabbarViewController: UITabBarController {
     }
     
     private func setupCustomTabBar() {
-        tabBar.backgroundColor = UIColor.white
+        tabBar.backgroundColor = UIColor.color_fafafa_1818181
         let spacingTopView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tabBar.frame.width, height: 1))
-        spacingTopView.backgroundColor = UIColor.white
+        spacingTopView.backgroundColor = UIColor.color_fafafa_1818181
         view.addSubview(spacingTopView)
         tabBar.addSubview(spacingTopView)
     }
@@ -120,7 +120,7 @@ extension TabbarViewController {
                                                  selectedImage: item.selectedImage)
                 listViewControllers.append(controller)
             case .setting:
-                let controller = setupController(ProfileRouter().createModule(),
+                let controller = setupController(SettingRouter().createModule(),
                                                  tabName: item.title,
                                                  image: item.unselectedImage,
                                                  selectedImage: item.selectedImage)

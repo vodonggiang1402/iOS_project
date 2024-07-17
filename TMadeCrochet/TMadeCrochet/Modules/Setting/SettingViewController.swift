@@ -14,6 +14,7 @@ class SettingViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavigationBar(title: "Cài đặt", isShowLeft: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {

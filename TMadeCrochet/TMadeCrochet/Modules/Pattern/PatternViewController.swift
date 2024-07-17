@@ -14,6 +14,7 @@ class PatternViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavigationBar(title: "Mẫu móc", isShowLeft: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {
