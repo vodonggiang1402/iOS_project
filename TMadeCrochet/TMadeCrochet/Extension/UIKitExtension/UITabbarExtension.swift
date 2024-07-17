@@ -19,26 +19,26 @@ enum TabBarItem {
     var selectedImage: UIImage? {
         switch self {
         case .count:
-            return UIImage(named: "ico_home_active")
+            return UIImage(named: "ico_count_active")
         case .symbol:
-            return UIImage(named: "ico_exchange_active")
+            return UIImage(named: "ico_symbol_active")
         case .pattern:
-            return UIImage(named: "ico_history_active")
+            return UIImage(named: "ico_pattern_active")
         case .setting:
             return UIImage(named: "ico_setting_active")
         }
     }
     
     var unselectedImage: UIImage? {
-        switch self {
+        switch self {   
         case .count:
-            return UIImage(named: "ico_home")
+            return UIImage(named: "ico_count_inactive")
         case .symbol:
-            return UIImage(named: "ico_exchange")
+            return UIImage(named: "ico_symbol_inactive")
         case .pattern:
-            return UIImage(named: "ico_history")
+            return UIImage(named: "ico_pattern_inactive")
         case .setting:
-            return UIImage(named: "ico_setting")
+            return UIImage(named: "ico_setting_inactive")
         }
     }
     

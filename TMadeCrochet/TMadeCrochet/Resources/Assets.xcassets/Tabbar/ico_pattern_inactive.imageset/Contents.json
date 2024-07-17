@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "ico_setting_active.svg",
+      "filename" : "ico_pattern_inactive.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "ico_setting_active 1.svg",
+      "filename" : "ico_pattern_inactive 1.svg",
       "idiom" : "universal"
     }
   ],
