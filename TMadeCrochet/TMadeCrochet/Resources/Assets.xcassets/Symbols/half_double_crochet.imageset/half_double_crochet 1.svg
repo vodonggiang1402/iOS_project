@@ -4,8 +4,8 @@
 <path d="M30 0H0V30H30V0Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_40_1413)">
-<path d="M12.015 11.7109L19.015 8" stroke="#A3A3A3" stroke-width="1.55037"/>
-<path d="M15.515 9.85547V21" stroke="#A3A3A3" stroke-width="1.55037"/>
+<path d="M12 11.7109L19 8" stroke="#A3A3A3"/>
+<path d="M15.5 9.85547V21" stroke="#A3A3A3"/>
 </g>
 </g>
 <defs>
