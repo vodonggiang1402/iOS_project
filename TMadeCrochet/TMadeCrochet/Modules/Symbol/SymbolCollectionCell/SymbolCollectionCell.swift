@@ -23,6 +23,11 @@ class SymbolCollectionCell: BaseCollectionViewCell {
         self.adsImageView.layer.masksToBounds = true
     }
     
+    override func prepareForReuse() {
+        adsImageView.image = nil
+        imageView.image = nil
+    }
+    
     override func setupCell(object: Any) {
         guard let model = object as? Symbol else { return }
         self.titleLabel.text = model.symbolName
