@@ -1,8 +1,8 @@
 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M25.1852 35C28.6067 35 31.3805 30.1497 31.3805 24.1667C31.3805 18.1836 28.6067 13.3333 25.1852 13.3333C21.7636 13.3333 18.9899 18.1836 18.9899 24.1667C18.9899 30.1497 21.7636 35 25.1852 35Z" stroke="#484848" stroke-width="0.833333"/>
-<path d="M18.9899 13.3333H31.3805" stroke="#484848" stroke-width="0.833333"/>
-<path d="M25.1852 13.3333V35" stroke="#484848" stroke-width="0.833333"/>
-<path d="M16.7997 23.166L21.5841 20.6511" stroke="#484848" stroke-width="0.833333"/>
-<path d="M22.9949 23.166L27.7794 20.6511" stroke="#484848" stroke-width="0.833333"/>
-<path d="M28.4158 23.166L33.2003 20.6511" stroke="#484848" stroke-width="0.833333"/>
+<path d="M33 35L25.5 14.5L17 35" stroke="#484848" stroke-width="0.5"/>
+<path d="M30.0191 23L27 24.9163" stroke="#484848" stroke-width="0.5"/>
+<path d="M19.8034 24.493L23.2157 23.4233" stroke="#484848" stroke-width="0.5"/>
+<path d="M22 14H29" stroke="#484848" stroke-width="0.5"/>
+<path d="M25.5 14V35" stroke="#484848" stroke-width="0.5"/>
+<path d="M27.0191 23L24 24.9163" stroke="#484848" stroke-width="0.5"/>
 </svg>

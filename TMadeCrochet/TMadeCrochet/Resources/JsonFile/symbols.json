@@ -220,8 +220,8 @@
         "is_ads" : false,
         "symbol_id" : "1",
         "symbol_des" : "Trong các hướng dẫn của chart móc thì Mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên",
-        "symbol_name" : "hdc3tog",
-        "icon_name" : "ico_hdc3tog",
+        "symbol_name" : "ico_hdc3tog_into_same_st",
+        "icon_name" : "ico_hdc3tog_into_same_st",
         "steps" : [
           {
             "content" : "",
@@ -246,8 +246,8 @@
         "is_ads" : false,
         "symbol_id" : "2",
         "symbol_des" : "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…",
-        "symbol_name" : "dc3tog",
-        "icon_name" : "ico_dc3tog",
+        "symbol_name" : "ico_dc3tog_into_same_st",
+        "icon_name" : "ico_dc3tog_into_same_st",
         "steps" : [
           {
             "content" : "",
@@ -272,8 +272,8 @@
         "is_ads" : false,
         "symbol_id" : "3",
         "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.",
-        "symbol_name" : "dc5tog",
-        "icon_name" : "ico_dc5tog",
+        "symbol_name" : "ico_dc5tog_into_same_st",
+        "icon_name" : "ico_dc5tog_into_same_st",
         "steps" : [
           {
             "content" : "",
@@ -510,6 +510,164 @@
         "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
         "symbol_name" : "Mũi kép ba",
         "icon_name" : "ico_5dcs_into_same_st",
+        "steps" : [
+          {
+            "content" : "",
+            "step_name" : "Bước 1",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 2",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 3",
+            "image_name" : "crochet_step"
+          }
+        ],
+        "background_color" : "FED1B2",
+        "video_name" : ""
+      }
+    ],
+    [
+      {
+        "is_ads" : false,
+        "symbol_id" : "1",
+        "symbol_des" : "Trong các hướng dẫn của chart móc thì Mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên",
+        "symbol_name" : "hdc3tog",
+        "icon_name" : "ico_sc2tog",
+        "steps" : [
+          {
+            "content" : "",
+            "step_name" : "Bước 1",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 2",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 3",
+            "image_name" : "crochet_step"
+          }
+        ],
+        "background_color" : "FED1B2",
+        "video_name" : ""
+      },
+      {
+        "is_ads" : false,
+        "symbol_id" : "2",
+        "symbol_des" : "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…",
+        "symbol_name" : "ico_hdc2tog",
+        "icon_name" : "ico_hdc2tog",
+        "steps" : [
+          {
+            "content" : "",
+            "step_name" : "Bước 1",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 2",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 3",
+            "image_name" : "crochet_step"
+          }
+        ],
+        "background_color" : "FED1B2",
+        "video_name" : ""
+      },
+      {
+        "is_ads" : false,
+        "symbol_id" : "3",
+        "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.",
+        "symbol_name" : "ico_dc2tog",
+        "icon_name" : "ico_dc2tog",
+        "steps" : [
+          {
+            "content" : "",
+            "step_name" : "Bước 1",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 2",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 3",
+            "image_name" : "crochet_step"
+          }
+        ],
+        "background_color" : "FED1B2",
+        "video_name" : ""
+      },
+      {
+        "is_ads" : false,
+        "symbol_id" : "1",
+        "symbol_des" : "Trong các hướng dẫn của chart móc thì Mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên",
+        "symbol_name" : "ico_sc3tog",
+        "icon_name" : "ico_sc3tog",
+        "steps" : [
+          {
+            "content" : "",
+            "step_name" : "Bước 1",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 2",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 3",
+            "image_name" : "crochet_step"
+          }
+        ],
+        "background_color" : "FED1B2",
+        "video_name" : ""
+      },
+      {
+        "is_ads" : false,
+        "symbol_id" : "2",
+        "symbol_des" : "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…",
+        "symbol_name" : "ico_hdc3tog",
+        "icon_name" : "ico_hdc3tog",
+        "steps" : [
+          {
+            "content" : "",
+            "step_name" : "Bước 1",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 2",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 3",
+            "image_name" : "crochet_step"
+          }
+        ],
+        "background_color" : "FED1B2",
+        "video_name" : ""
+      },
+      {
+        "is_ads" : false,
+        "symbol_id" : "3",
+        "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.",
+        "symbol_name" : "ico_dc3tog",
+        "icon_name" : "ico_dc3tog",
         "steps" : [
           {
             "content" : "",
