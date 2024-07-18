@@ -220,8 +220,8 @@
         "is_ads" : false,
         "symbol_id" : "1",
         "symbol_des" : "Trong các hướng dẫn của chart móc thì Mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên",
-        "symbol_name" : "Mũi gút",
-        "icon_name" : "",
+        "symbol_name" : "hdc3tog",
+        "icon_name" : "ico_hdc3tog",
         "steps" : [
           {
             "content" : "",
@@ -246,8 +246,8 @@
         "is_ads" : false,
         "symbol_id" : "2",
         "symbol_des" : "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…",
-        "symbol_name" : "Mũi trượt",
-        "icon_name" : "slip_stich_crochet",
+        "symbol_name" : "dc3tog",
+        "icon_name" : "ico_dc3tog",
         "steps" : [
           {
             "content" : "",
@@ -272,8 +272,8 @@
         "is_ads" : false,
         "symbol_id" : "3",
         "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.",
-        "symbol_name" : "Mũi bính",
-        "icon_name" : "chain_crochet",
+        "symbol_name" : "dc5tog",
+        "icon_name" : "ico_dc5tog",
         "steps" : [
           {
             "content" : "",
@@ -293,13 +293,15 @@
         ],
         "background_color" : "FED1B2",
         "video_name" : ""
-      },
+      }
+    ],
+    [
       {
         "is_ads" : false,
         "symbol_id" : "4",
         "symbol_des" : "Mũi móc đơn có độ cao bằng một mũi bính. Đẻ có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.",
         "symbol_name" : "Mũi đơn",
-        "icon_name" : "single_crochet",
+        "icon_name" : "ico_sc",
         "steps" : [
           {
             "content" : "",
@@ -325,7 +327,7 @@
         "symbol_id" : "5",
         "symbol_des" : "Mũi nữa kép có độ cao bằng 2 lần mũi bính. Mũi kép đơn đầu tiên sẽ được móc vào chân bính thứ 4 của dây bính",
         "symbol_name" : "Mũi nữa kép",
-        "icon_name" : "half_double_crochet",
+        "icon_name" : "ico_1sc_1ch_1sc",
         "steps" : [
           {
             "content" : "",
@@ -351,7 +353,7 @@
         "symbol_id" : "6",
         "symbol_des" : "Mũi kép đơn có độ cao bằng 3 lần mũi bính.",
         "symbol_name" : "Mũi kép đơn",
-        "icon_name" : "double_crochet",
+        "icon_name" : "ico_3sc",
         "steps" : [
           {
             "content" : "",
@@ -377,7 +379,7 @@
         "symbol_id" : "7",
         "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
         "symbol_name" : "Mũi kép đôi",
-        "icon_name" : "triple_crochet",
+        "icon_name" : "ico_2hdcs_into_same_st",
         "steps" : [
           {
             "content" : "",
@@ -403,7 +405,111 @@
         "symbol_id" : "8",
         "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
         "symbol_name" : "Mũi kép ba",
-        "icon_name" : "double_triple",
+        "icon_name" : "ico_3hdcs",
+        "steps" : [
+          {
+            "content" : "",
+            "step_name" : "Bước 1",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 2",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 3",
+            "image_name" : "crochet_step"
+          }
+        ],
+        "background_color" : "FED1B2",
+        "video_name" : ""
+      },
+      {
+        "is_ads" : false,
+        "symbol_id" : "8",
+        "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
+        "symbol_name" : "Mũi kép ba",
+        "icon_name" : "ico_dcs",
+        "steps" : [
+          {
+            "content" : "",
+            "step_name" : "Bước 1",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 2",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 3",
+            "image_name" : "crochet_step"
+          }
+        ],
+        "background_color" : "FED1B2",
+        "video_name" : ""
+      },
+      {
+        "is_ads" : false,
+        "symbol_id" : "8",
+        "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
+        "symbol_name" : "Mũi kép ba",
+        "icon_name" : "ico_1dc_1ch_1dc",
+        "steps" : [
+          {
+            "content" : "",
+            "step_name" : "Bước 1",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 2",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 3",
+            "image_name" : "crochet_step"
+          }
+        ],
+        "background_color" : "FED1B2",
+        "video_name" : ""
+      },
+      {
+        "is_ads" : false,
+        "symbol_id" : "8",
+        "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
+        "symbol_name" : "Mũi kép ba",
+        "icon_name" : "ico_3dc_into_same_st",
+        "steps" : [
+          {
+            "content" : "",
+            "step_name" : "Bước 1",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 2",
+            "image_name" : "crochet_step"
+          },
+          {
+            "content" : "abc",
+            "step_name" : "Bước 3",
+            "image_name" : "crochet_step"
+          }
+        ],
+        "background_color" : "FED1B2",
+        "video_name" : ""
+      },
+      {
+        "is_ads" : false,
+        "symbol_id" : "8",
+        "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
+        "symbol_name" : "Mũi kép ba",
+        "icon_name" : "ico_5dcs_into_same_st",
         "steps" : [
           {
             "content" : "",

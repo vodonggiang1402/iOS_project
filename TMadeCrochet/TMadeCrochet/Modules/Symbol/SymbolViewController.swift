@@ -102,6 +102,9 @@ extension SymbolViewController: BaseCollectionViewProtocol {
                     case 1:
                         headerView.setupView(text: "Mũi hạt bắp")
                         break
+                    case 2:
+                        headerView.setupView(text: "Mũi tăng")
+                        break
                     default:
                         headerView.setupView(text: "Mũi cơ bản")
                     }

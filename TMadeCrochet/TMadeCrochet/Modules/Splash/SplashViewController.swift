@@ -25,10 +25,11 @@ class SplashViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        guard AppConstant.isFirstTime else {
-            self.presenter?.getData()
-            return
-        }
+//        guard AppConstant.isFirstTime else {
+//            self.presenter?.getData()
+//            return
+//        }
+        self.presenter?.getData()
         self.handleFlowApp()
     }
     
