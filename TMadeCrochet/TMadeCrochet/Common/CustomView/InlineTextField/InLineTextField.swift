@@ -175,7 +175,7 @@ class InLineTextField: BaseView {
         var errorMessage = "Trống"
         switch self.textFieldType {
         case .normal:
-            errorMessage = "Trống"
+            errorMessage = ""
         }
         inputTextField.text = String(inputText.prefix(maxLength))
         setupTextField(error: errorMessage)
@@ -186,7 +186,7 @@ class InLineTextField: BaseView {
         switch textFieldType {
         default:
             let isFocus = inputTextField.isEditing
-            let defaultColor = isFocus ? UIColor.blue : UIColor.gray
+            let defaultColor = isFocus ? UIColor.color_main_app_pink : UIColor.color_b6b6b6_7b7b7b
             let errorMessage = errorLabel.text ?? ""
             var borderColor = errorMessage.isEmpty ? defaultColor : UIColor.red
             borderColor = (!isFocus && errorMessage.isEmpty) ? defaultColor : borderColor

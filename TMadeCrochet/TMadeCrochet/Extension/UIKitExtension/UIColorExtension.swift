@@ -85,6 +85,7 @@ extension UIColor {
     static let color_a3a3a3_6e6e6e = UIColor().generateThemeColor(name: "color_a3a3a3_6e6e6e")
     static let color_7f7f7f_565656 = UIColor().generateThemeColor(name: "color_7f7f7f_565656")
     static let color_5b5b5b_dadada = UIColor().generateThemeColor(name: "color_5b5b5b_dadada")
+    static let color_b6b6b6_7b7b7b = UIColor().generateThemeColor(name: "color_b6b6b6_7b7b7b")
 }
 
 extension UIColor {
