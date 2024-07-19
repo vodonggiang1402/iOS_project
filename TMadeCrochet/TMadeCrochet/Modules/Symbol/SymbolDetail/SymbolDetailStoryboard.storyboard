@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -69,10 +68,10 @@
                                 <rect key="frame" x="0.0" y="112" width="414" height="766"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCv-Ek-EsO">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="826"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3ca-2f-aa0">
-                                                <rect key="frame" x="16" y="10" width="382" height="806"/>
+                                                <rect key="frame" x="16" y="10" width="382" height="696"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Na7-9j-3hz">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="21.5"/>
@@ -96,31 +95,71 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1a1-1v-BLt">
-                                                        <rect key="frame" x="0.0" y="82" width="382" height="200"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVu-CD-4o0">
+                                                        <rect key="frame" x="0.0" y="82" width="382" height="290"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syn-Yj-tTA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M45-gy-4As">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eeo-ie-4DA">
-                                                                        <rect key="frame" x="0.0" y="80" width="382" height="39"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xem video hướng dẫn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdF-nU-BXz">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="EdF-nU-BXz" firstAttribute="leading" secondItem="M45-gy-4As" secondAttribute="leading" id="3b6-bf-dHr"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="EdF-nU-BXz" secondAttribute="trailing" id="Ft6-ww-Qdr"/>
+                                                                    <constraint firstItem="EdF-nU-BXz" firstAttribute="top" secondItem="M45-gy-4As" secondAttribute="top" id="I7h-hv-DRd"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="EdF-nU-BXz" secondAttribute="bottom" constant="20" symbolic="YES" id="zDO-pd-vqj"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYV-Lo-MTi">
+                                                                <rect key="frame" x="0.0" y="40" width="382" height="250"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syn-Yj-tTA" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="250"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </view>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fr-sZ-p0D">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="250"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="ico_play"/>
                                                                         <connections>
-                                                                            <action selector="playLocalVideo:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Z9W-oD-Lih"/>
+                                                                            <action selector="playButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2HA-Ys-I9h"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="200" id="LWa-jX-7pu"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="syn-Yj-tTA" secondAttribute="bottom" id="3JK-6A-jaW"/>
+                                                                    <constraint firstItem="syn-Yj-tTA" firstAttribute="leading" secondItem="UYV-Lo-MTi" secondAttribute="leading" id="DVe-cd-a5t"/>
+                                                                    <constraint firstItem="2fr-sZ-p0D" firstAttribute="leading" secondItem="UYV-Lo-MTi" secondAttribute="leading" id="Gn3-2C-51e"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="2fr-sZ-p0D" secondAttribute="trailing" id="LRj-yQ-JUa"/>
+                                                                    <constraint firstItem="2fr-sZ-p0D" firstAttribute="top" secondItem="UYV-Lo-MTi" secondAttribute="top" id="LvU-9O-Yo0"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="2fr-sZ-p0D" secondAttribute="bottom" id="MmB-Vt-r0L"/>
+                                                                    <constraint firstItem="syn-Yj-tTA" firstAttribute="top" secondItem="UYV-Lo-MTi" secondAttribute="top" id="NjP-Vn-Rhx"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="syn-Yj-tTA" secondAttribute="trailing" id="YZl-Qs-rOf"/>
+                                                                    <constraint firstAttribute="height" constant="250" id="fRf-TJ-VX2"/>
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                    </stackView>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="M45-gy-4As" firstAttribute="leading" secondItem="eVu-CD-4o0" secondAttribute="leading" id="00G-Dp-cfX"/>
+                                                            <constraint firstAttribute="trailing" secondItem="UYV-Lo-MTi" secondAttribute="trailing" id="5fV-os-MP0"/>
+                                                            <constraint firstAttribute="trailing" secondItem="M45-gy-4As" secondAttribute="trailing" id="7pm-U7-85O"/>
+                                                            <constraint firstAttribute="height" constant="290" id="7qq-iX-rTX"/>
+                                                            <constraint firstItem="UYV-Lo-MTi" firstAttribute="top" secondItem="M45-gy-4As" secondAttribute="bottom" id="Mkn-eL-pa5"/>
+                                                            <constraint firstItem="UYV-Lo-MTi" firstAttribute="leading" secondItem="eVu-CD-4o0" secondAttribute="leading" id="rYI-vi-4vU"/>
+                                                            <constraint firstAttribute="bottom" secondItem="UYV-Lo-MTi" secondAttribute="bottom" id="uUs-ai-xxZ"/>
+                                                            <constraint firstItem="M45-gy-4As" firstAttribute="top" secondItem="eVu-CD-4o0" secondAttribute="top" id="xC5-au-79O"/>
+                                                        </constraints>
+                                                    </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EdH-fU-QMf">
-                                                        <rect key="frame" x="0.0" y="302" width="382" height="504"/>
+                                                        <rect key="frame" x="0.0" y="392" width="382" height="304"/>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
@@ -160,8 +199,11 @@
                     <connections>
                         <outlet property="closeButton" destination="Mpo-cD-TSN" id="Nt9-5S-ieP"/>
                         <outlet property="contentLabel" destination="Mp3-vX-B24" id="eCs-nU-Az1"/>
+                        <outlet property="playButton" destination="2fr-sZ-p0D" id="yYd-Vo-Y15"/>
                         <outlet property="stackView" destination="5j6-nG-dDE" id="LWH-TB-Cze"/>
                         <outlet property="titleLabel" destination="qzg-FX-NwZ" id="mdR-zx-Wha"/>
+                        <outlet property="videoContainView" destination="UYV-Lo-MTi" id="Olp-Nm-WHe"/>
+                        <outlet property="videoPlayer" destination="syn-Yj-tTA" id="jrx-vY-iUP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -170,12 +212,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ico_play" width="50" height="50"/>
         <image name="ico_x_close_button" width="24" height="24"/>
         <namedColor name="color_fafafa_181818">
             <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

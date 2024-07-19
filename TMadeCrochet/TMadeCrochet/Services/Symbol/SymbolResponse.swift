@@ -25,7 +25,7 @@ struct Symbol : Codable {
     var symbolName: String?
     var symbolDes: String?
     var iconName: String?
-    var videoName: String?
+    var videoUrl: String?
     var backgroundColor: String?
     var isAds: Bool?
     var steps: [SymbolStep]?
@@ -35,7 +35,7 @@ struct Symbol : Codable {
         case symbolName = "symbol_name"
         case symbolDes = "symbol_des"
         case iconName = "icon_name"
-        case videoName = "video_name"
+        case videoUrl = "video_url"
         case isAds = "is_ads"
         case steps = "steps"
         case backgroundColor = "background_color"
@@ -47,7 +47,7 @@ struct Symbol : Codable {
         symbolName = try? container.decodeIfPresent(String.self, forKey: .symbolName)
         symbolDes = try? container.decodeIfPresent(String.self, forKey: .symbolDes)
         iconName = try? container.decodeIfPresent(String.self, forKey: .iconName)
-        videoName = try? container.decodeIfPresent(String.self, forKey: .videoName)
+        videoUrl = try? container.decodeIfPresent(String.self, forKey: .videoUrl)
         isAds = try? container.decodeIfPresent(Bool.self, forKey: .isAds)
         steps = try? container.decodeIfPresent([SymbolStep].self, forKey: .steps)
         backgroundColor = try? container.decodeIfPresent(String.self, forKey: .backgroundColor)
