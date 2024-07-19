@@ -163,4 +163,16 @@ class BaseViewController: UIViewController {
     @objc func tappedLeftBarButton(sender : UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    func getRamdomColor(colors: [String])-> String {
+        let array = ["FFBF00", "9966CC", "7FFFD4", "007FFF", "993300",
+                     "F0DC82", "CC5500", "C41E3A", "960018", "ACE1AF",
+                     "DE3163", "007BA7", "7FFF00", "0047AB", "B87333",
+                     "FF7F50", "FFFDD0", "DC143C", "00FFFF", "50C878",
+                     "FFD700", "808080", "008000", "DF73FF", "4B0082",
+                     "00A86B", "C3B091", "B57EDC", "CCFF00", "FF00FF",
+                     "40826D"]
+        let filterArray = array.filter { colors.contains($0) == false }
+        return filterArray.count > 0 ? filterArray.randomElement()! : "F76A89"
+    }
 }

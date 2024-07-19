@@ -197,11 +197,11 @@ extension CountViewController: CountFooterViewDelegate {
     
     func addNewCount(text: String) {
         if self.data.count > 1 {
-            self.data[1].append(Count.init(isGlobal: false, countName: text, count: 1, color: self.getRamdomColor()))
+            self.data[1].append(Count.init(isGlobal: false, countName: text, count: 1, color: self.getRamdomColor(colors: self.getColorArray())))
             AppConstant.countResponseData = CountResponseData.init(newData: self.data)
         } else {
             var array: [Count] = []
-            array.append(Count.init(isGlobal: false, countName: text, count: 1, color: self.getRamdomColor()))
+            array.append(Count.init(isGlobal: false, countName: text, count: 1, color: self.getRamdomColor(colors: self.getColorArray())))
             self.data.append(array)
             AppConstant.countResponseData = CountResponseData.init(newData: self.data)
         }
@@ -216,11 +216,14 @@ extension CountViewController: CountFooterViewDelegate {
         self.collectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)
     }
     
-    func getRamdomColor()-> String {
-        let array = ["CE9C9D", "80ADBC", "#1B4F93",
-                     "DFD8AB", "CAB08B", "E54646",
-                     "F9F400", "489620", "008C5E"]
-        return array.randomElement()!
+    func getColorArray() -> [String] {
+        var list: [String] = []
+        for item in self.data[1] {
+            if let color = item.color {
+                list.append(color)
+            }
+        }
+        return list
     }
 }
 

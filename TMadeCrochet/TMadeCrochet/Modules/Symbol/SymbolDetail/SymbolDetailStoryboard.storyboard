@@ -23,6 +23,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chi tiết" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzg-FX-NwZ">
                                         <rect key="frame" x="16" y="0.0" width="382" height="64"/>
+                                        <color key="backgroundColor" name="color_fafafa_181818"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -49,7 +50,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="color_fafafa_181818"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Mpo-cD-TSN" secondAttribute="trailing" id="CfB-z9-mf2"/>
                                     <constraint firstAttribute="bottom" secondItem="Mpo-cD-TSN" secondAttribute="bottom" id="FtN-fr-C7n"/>
