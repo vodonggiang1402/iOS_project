@@ -181,10 +181,24 @@ extension CountViewController: BaseCollectionViewProtocol {
 extension CountViewController: CountHeaderViewDelegate {
     func refreshButtonAction(indexPath: IndexPath) {
         if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
-            self.data[indexPath.section][indexPath.row].count = 1
+            self.data = self.resetData()
             AppConstant.countResponseData = CountResponseData.init(newData: self.data)
             self.loadData()
         }
+    }
+    
+    func resetData() -> [[Count]] {
+        var list: [[Count]] = []
+        for array in self.data {
+            var arrayTemp: [Count] = []
+            for var item in array {
+                item.count = 1
+                arrayTemp.append(item)
+            }
+            list.append(arrayTemp)
+        }
+        return list
+        
     }
 }
 
