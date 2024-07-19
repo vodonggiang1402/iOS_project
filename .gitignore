@@ -29,3 +29,25 @@ TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochetTests/Pods-TMadeCrochetT
 TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochetTests/Pods-TMadeCrochetTests.debug.xcconfig
 TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochetTests/Pods-TMadeCrochetTests.modulemap
 TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochetTests/Pods-TMadeCrochetTests.release.xcconfig
+TMadeCrochet/Pods/Pods.xcodeproj/xcuserdata/xuanthao070593.xcuserdatad/xcschemes/YouTubePlayer.xcscheme
+TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet-frameworks-Debug-input-files.xcfilelist
+TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet-frameworks-Debug-output-files.xcfilelist
+TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet-frameworks-Release-input-files.xcfilelist
+TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet-frameworks-Release-output-files.xcfilelist
+TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet-frameworks.sh
+TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochet-TMadeCrochetUITests/Pods-TMadeCrochet-TMadeCrochetUITests-frameworks-Debug-input-files.xcfilelist
+TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochet-TMadeCrochetUITests/Pods-TMadeCrochet-TMadeCrochetUITests-frameworks-Debug-output-files.xcfilelist
+TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochet-TMadeCrochetUITests/Pods-TMadeCrochet-TMadeCrochetUITests-frameworks-Release-input-files.xcfilelist
+TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochet-TMadeCrochetUITests/Pods-TMadeCrochet-TMadeCrochetUITests-frameworks-Release-output-files.xcfilelist
+TMadeCrochet/Pods/Target Support Files/Pods-TMadeCrochet-TMadeCrochetUITests/Pods-TMadeCrochet-TMadeCrochetUITests-frameworks.sh
+TMadeCrochet/Pods/Target Support Files/YouTubePlayer/YouTubePlayer-dummy.m
+TMadeCrochet/Pods/Target Support Files/YouTubePlayer/YouTubePlayer-Info.plist
+TMadeCrochet/Pods/Target Support Files/YouTubePlayer/YouTubePlayer-prefix.pch
+TMadeCrochet/Pods/Target Support Files/YouTubePlayer/YouTubePlayer-umbrella.h
+TMadeCrochet/Pods/Target Support Files/YouTubePlayer/YouTubePlayer.debug.xcconfig
+TMadeCrochet/Pods/Target Support Files/YouTubePlayer/YouTubePlayer.modulemap
+TMadeCrochet/Pods/Target Support Files/YouTubePlayer/YouTubePlayer.release.xcconfig
+TMadeCrochet/Pods/YouTubePlayer/LICENSE
+TMadeCrochet/Pods/YouTubePlayer/README.md
+TMadeCrochet/Pods/YouTubePlayer/YouTubePlayer/YouTubePlayer/YouTubePlayer.swift
+TMadeCrochet/Pods/YouTubePlayer/YouTubePlayer/YouTubePlayer/YTPlayer.html

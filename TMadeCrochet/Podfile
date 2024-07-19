@@ -7,7 +7,6 @@ target 'TMadeCrochet' do
 
   # Pods for TMadeCrochet
   pod 'YouTubePlayer'
-  pod 'XCDYouTubeKit'
   
   target 'TMadeCrochetTests' do
     inherit! :search_paths
