@@ -7,8 +7,9 @@
 
 import Foundation
 import UIKit
+import GoogleMobileAds
 
-class SymbolViewController: BaseViewController {
+class SymbolViewController: BaseViewController, GADFullScreenContentDelegate {
     var presenter: ViewToPresenterSymbolProtocol?
 
     @IBOutlet weak var collectionView: BaseCollectionView!
@@ -17,11 +18,15 @@ class SymbolViewController: BaseViewController {
     private let lineSpacing: CGFloat = 5
     private let interitemSpacing: CGFloat = 5
     
+    private var interstitial: GADInterstitialAd?
+    
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar(title: "Mũi móc", isShowLeft: false)
         self.setupDataForCollectionView()
+        
+        self.startGoogleMobileAdsSDK()
     }
     
     func setupDataForCollectionView() {
@@ -37,6 +42,24 @@ class SymbolViewController: BaseViewController {
                                  collectionCellClassName: SymbolCollectionCell.className,
                                  baseDelegate: self)
         self.collectionView.register(UINib(nibName: SymbolHeaderView.className, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SymbolHeaderView.className)
+    }
+    
+    func startGoogleMobileAdsSDK() {
+        DispatchQueue.main.async {
+            Task {
+                await self.loadInterstitial()
+            }
+        }
+    }
+        
+    func loadInterstitial() async {
+        do {
+          interstitial = try await GADInterstitialAd.load(
+            withAdUnitID: AppConstant.symbolAdId, request: GADRequest())
+          interstitial?.fullScreenContentDelegate = self
+        } catch {
+          print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+        }
     }
     
     func loadData() {
@@ -65,6 +88,31 @@ class SymbolViewController: BaseViewController {
 
     }
     
+    func showAds() {
+        guard let interstitial = interstitial else {
+          return print("Ad wasn't ready.")
+        }
+        // The UIViewController parameter is an optional.
+        interstitial.present(fromRootViewController: self)
+    }
+    
+    /// Tells the delegate that the ad failed to present full screen content.
+    @objc func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+        print("Ad did fail to present full screen content.")
+    }
+
+    /// Tells the delegate that the ad will present full screen content.
+    @objc func adWillPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print("Ad will present full screen content.")
+    }
+
+    /// Tells the delegate that the ad dismissed full screen content.
+    @objc func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print("Ad did dismiss full screen content.")
+        Task {
+            await loadInterstitial()
+        }
+    }
 }
     
 
@@ -86,7 +134,8 @@ extension SymbolViewController: BaseCollectionViewProtocol {
     
     @objc func didSelectItem(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UICollectionViewCell) {
         guard let data = dataItem as? Symbol else { return }
-        self.presenter?.navigateToDetail(symbol: data)
+//        self.presenter?.navigateToDetail(symbol: data)
+        self.showAds()
     }
     
     func collectionReusableView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

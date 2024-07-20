@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 struct AppConstant {
+    static let openAppAdId = "ca-app-pub-3940256099942544/5575463023"
+    static let symbolAdId = "ca-app-pub-3940256099942544/4411468910"
     
     static var isFirstTime: Bool {
         get { UserDefaults.standard.bool(forKey: "is-first-time") }

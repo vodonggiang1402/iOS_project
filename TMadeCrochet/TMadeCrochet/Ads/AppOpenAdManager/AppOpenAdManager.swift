@@ -25,7 +25,7 @@ class AppOpenAdManager: NSObject, GADFullScreenContentDelegate {
 
       do {
         appOpenAd = try await GADAppOpenAd.load(
-          withAdUnitID: "ca-app-pub-3940256099942544/5575463023", request: GADRequest())
+            withAdUnitID: AppConstant.openAppAdId, request: GADRequest())
           appOpenAd?.fullScreenContentDelegate = self
       } catch {
         print("App open ad failed to load with error: \(error.localizedDescription)")

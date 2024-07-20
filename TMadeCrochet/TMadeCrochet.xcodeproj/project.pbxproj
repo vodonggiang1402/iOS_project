@@ -23,6 +23,7 @@
 		7B153E6C2C464CFC00F6718A /* AddCountFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E6B2C464CFC00F6718A /* AddCountFooterView.swift */; };
 		7B153E6E2C464D0800F6718A /* AddCountFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B153E6D2C464D0800F6718A /* AddCountFooterView.xib */; };
 		7B153E732C4B536A00F6718A /* AppOpenAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E722C4B536A00F6718A /* AppOpenAdManager.swift */; };
+		7B153E782C4B752300F6718A /* GoogleMobileAdsConsentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B153E772C4B752300F6718A /* GoogleMobileAdsConsentManager.swift */; };
 		7B3419E42C33CFD30069BD02 /* SlackLoadingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E22C33CFD30069BD02 /* SlackLoadingAnimator.swift */; };
 		7B3419E52C33CFD30069BD02 /* WCLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E32C33CFD30069BD02 /* WCLLoadingView.swift */; };
 		7B3419EB2C33CFDC0069BD02 /* FastCheckLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3419E62C33CFDC0069BD02 /* FastCheckLayer.swift */; };
@@ -186,6 +187,7 @@
 		7B153E6B2C464CFC00F6718A /* AddCountFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCountFooterView.swift; sourceTree = "<group>"; };
 		7B153E6D2C464D0800F6718A /* AddCountFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCountFooterView.xib; sourceTree = "<group>"; };
 		7B153E722C4B536A00F6718A /* AppOpenAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOpenAdManager.swift; sourceTree = "<group>"; };
+		7B153E772C4B752300F6718A /* GoogleMobileAdsConsentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMobileAdsConsentManager.swift; sourceTree = "<group>"; };
 		7B3419E22C33CFD30069BD02 /* SlackLoadingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackLoadingAnimator.swift; sourceTree = "<group>"; };
 		7B3419E32C33CFD30069BD02 /* WCLLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
 		7B3419E62C33CFDC0069BD02 /* FastCheckLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastCheckLayer.swift; sourceTree = "<group>"; };
@@ -536,6 +538,7 @@
 		7B153E702C4B535900F6718A /* Ads */ = {
 			isa = PBXGroup;
 			children = (
+				7B153E772C4B752300F6718A /* GoogleMobileAdsConsentManager.swift */,
 				7B153E712C4B535F00F6718A /* AppOpenAdManager */,
 			);
 			path = Ads;
@@ -1523,6 +1526,7 @@
 				7B4E34A42C3E46F60059167A /* SymbolDetailRouter.swift in Sources */,
 				7B341A062C33D1B90069BD02 /* BaseCollectionViewCell.swift in Sources */,
 				7B3419EB2C33CFDC0069BD02 /* FastCheckLayer.swift in Sources */,
+				7B153E782C4B752300F6718A /* GoogleMobileAdsConsentManager.swift in Sources */,
 				7BB9950F2C3B96DC008EF04B /* CountPresenter.swift in Sources */,
 				7BAC04312C40ED22006CE1DE /* AppConstant.swift in Sources */,
 				7BF32A282C33CF0A00CD8F18 /* CRRefreshExtension.swift in Sources */,
