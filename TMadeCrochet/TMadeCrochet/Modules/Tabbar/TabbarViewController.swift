@@ -7,18 +7,85 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class TabbarViewController: UITabBarController {
+class TabbarViewController: UITabBarController, AppOpenAdManagerDelegate {
     private var tabbarItems = [TabBarItem]()
+    
+    var secondsRemaining: Int = 3
+    var countdownTimer: Timer?
+    private var isMobileAdsStartCalled = false
+    
     // MARK: - Properties
     var presenter: ViewToPresenterTabbarProtocol?
+    
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
         presenter?.viewDidLoad()
+        loadAds()
     }
+    
+    func loadAds() {
+        AppOpenAdManager.shared.appOpenAdManagerDelegate = self
+        startTimer()
+
+        GoogleMobileAdsConsentManager.shared.gatherConsent(from: self) {
+          [weak self] consentError in
+          guard let self else { return }
+
+          if let consentError {
+            // Consent gathering failed.
+            print("Error: \(consentError.localizedDescription)")
+          }
+
+          if GoogleMobileAdsConsentManager.shared.canRequestAds {
+            self.startGoogleMobileAdsSDK()
+          }
+        }
+
+        // This sample attempts to load ads using consent obtained in the previous session.
+        if GoogleMobileAdsConsentManager.shared.canRequestAds {
+          startGoogleMobileAdsSDK()
+        }
+    }
+    
+    @objc func decrementCounter() {
+      secondsRemaining -= 1
+      guard secondsRemaining <= 0 else {
+        return
+      }
+      countdownTimer?.invalidate()
+      AppOpenAdManager.shared.showAdIfAvailable()
+    }
+
+    private func startGoogleMobileAdsSDK() {
+      DispatchQueue.main.async {
+        guard !self.isMobileAdsStartCalled else { return }
+
+        self.isMobileAdsStartCalled = true
+
+        // Initialize the Google Mobile Ads SDK.
+        GADMobileAds.sharedInstance().start()
+
+        // Load an ad.
+        Task {
+          await AppOpenAdManager.shared.loadAd()
+        }
+      }
+    }
+
+    func startTimer() {
+      countdownTimer = Timer.scheduledTimer(
+        timeInterval: 1.0,
+        target: self,
+        selector: #selector(TabbarViewController.decrementCounter),
+        userInfo: nil,
+        repeats: true)
+    }
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -83,6 +150,11 @@ class TabbarViewController: UITabBarController {
         tabbarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 1)
         
         viewController.tabBarItem = tabbarItem
+    }
+    
+    // MARK: AppOpenAdManagerDelegate
+    func appOpenAdManagerAdDidComplete(_ appOpenAdManager: AppOpenAdManager) {
+      
     }
 }
 

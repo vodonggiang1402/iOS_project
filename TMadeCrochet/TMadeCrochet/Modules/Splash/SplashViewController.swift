@@ -17,6 +17,11 @@ class SplashViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavigationBar(isHide: true)
+        guard AppConstant.isFirstTime else {
+            self.presenter?.getData()
+            return
+        }
+        self.handleFlowApp()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -25,15 +30,10 @@ class SplashViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        guard AppConstant.isFirstTime else {
-            self.presenter?.getData()
-            return
-        }
-        self.handleFlowApp()
     }
     
     func handleFlowApp() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
             AppConstant.isFirstTime = true
             self.presenter?.navigateToRootMain()
         }

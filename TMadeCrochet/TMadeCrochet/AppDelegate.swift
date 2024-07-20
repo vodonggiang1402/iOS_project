@@ -30,9 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Show the app open ad when the app is foregrounded.
-        AppOpenAdManager.shared.showAdIfAvailable()
-      }
+      // Show the app open ad when the app is foregrounded.
+    }
     
     func setRootScreen() {
         SplashRouter().setupRootView()
