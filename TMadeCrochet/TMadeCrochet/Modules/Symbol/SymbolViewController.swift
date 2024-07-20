@@ -25,7 +25,6 @@ class SymbolViewController: BaseViewController, GADFullScreenContentDelegate {
         super.viewDidLoad()
         self.setupNavigationBar(title: "Mũi móc", isShowLeft: false)
         self.setupDataForCollectionView()
-        
         self.startGoogleMobileAdsSDK()
     }
     
