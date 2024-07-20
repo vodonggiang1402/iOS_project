@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,8 +23,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.setRootScreen()
         
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [ "83e18d4b12a81912a807ce957ab91419" ]
+        
         return true
     }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        // Show the app open ad when the app is foregrounded.
+        AppOpenAdManager.shared.showAdIfAvailable()
+      }
     
     func setRootScreen() {
         SplashRouter().setupRootView()
