@@ -12,7 +12,7 @@ import GoogleMobileAds
 class TabbarViewController: UITabBarController, AppOpenAdManagerDelegate {
     private var tabbarItems = [TabBarItem]()
     
-    var secondsRemaining: Int = 3
+    var secondsRemaining: Int = 2
     var countdownTimer: Timer?
     private var isMobileAdsStartCalled = false
     
@@ -25,7 +25,17 @@ class TabbarViewController: UITabBarController, AppOpenAdManagerDelegate {
         super.viewDidLoad()
         self.delegate = self
         presenter?.viewDidLoad()
-        loadAds()
+        if let count = AppConstant.countShowAdsOpenApp, count > 0 {
+            if count == 3 {
+                loadAds()
+                AppConstant.countShowAdsOpenApp = 0
+            } else {
+                let newCount = count + 1
+                AppConstant.countShowAdsOpenApp = newCount
+            }
+        } else {
+            AppConstant.countShowAdsOpenApp = 0
+        }
     }
     
     func loadAds() {
