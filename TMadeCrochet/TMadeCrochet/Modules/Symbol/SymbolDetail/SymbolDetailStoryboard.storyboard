@@ -119,7 +119,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYV-Lo-MTi">
                                                                 <rect key="frame" x="0.0" y="40" width="382" height="250"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syn-Yj-tTA" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syn-Yj-tTA">
                                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="250"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </view>
@@ -203,7 +203,6 @@
                         <outlet property="stackView" destination="5j6-nG-dDE" id="LWH-TB-Cze"/>
                         <outlet property="titleLabel" destination="qzg-FX-NwZ" id="mdR-zx-Wha"/>
                         <outlet property="videoContainView" destination="UYV-Lo-MTi" id="Olp-Nm-WHe"/>
-                        <outlet property="videoPlayer" destination="syn-Yj-tTA" id="jrx-vY-iUP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

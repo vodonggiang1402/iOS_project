@@ -62,7 +62,6 @@
 		7B4E34A82C3F81150059167A /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34A72C3F81150059167A /* StepView.swift */; };
 		7B4E34AA2C3F811C0059167A /* StepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E34A92C3F811C0059167A /* StepView.xib */; };
 		7B4E34AC2C3F86A60059167A /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E34AB2C3F86A60059167A /* UIStackView.swift */; };
-		7B4E34AE2C3FD8A70059167A /* SampleVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7B4E34AD2C3FD6C40059167A /* SampleVideo.mp4 */; };
 		7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E012C32511B0034EE9D /* AppDelegate.swift */; };
 		7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B522E0A2C32511C0034EE9D /* Assets.xcassets */; };
 		7B522E192C32511C0034EE9D /* TMadeCrochetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522E182C32511C0034EE9D /* TMadeCrochetTests.swift */; };
@@ -188,6 +187,7 @@
 		7B153E6D2C464D0800F6718A /* AddCountFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCountFooterView.xib; sourceTree = "<group>"; };
 		7B153E772C4B752300F6718A /* GoogleMobileAdsConsentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMobileAdsConsentManager.swift; sourceTree = "<group>"; };
 		7B153E7B2C4B7CDC00F6718A /* AppOpenAdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOpenAdManager.swift; sourceTree = "<group>"; };
+		7B153E7D2C4BEB6000F6718A /* libswift_Concurrency.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswift_Concurrency.tbd; path = usr/lib/swift/libswift_Concurrency.tbd; sourceTree = SDKROOT; };
 		7B3419E22C33CFD30069BD02 /* SlackLoadingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackLoadingAnimator.swift; sourceTree = "<group>"; };
 		7B3419E32C33CFD30069BD02 /* WCLLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
 		7B3419E62C33CFDC0069BD02 /* FastCheckLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastCheckLayer.swift; sourceTree = "<group>"; };
@@ -350,7 +350,7 @@
 		7B4E34A92C3F811C0059167A /* StepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepView.xib; sourceTree = "<group>"; };
 		7B4E34AB2C3F86A60059167A /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		7B4E34AD2C3FD6C40059167A /* SampleVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleVideo.mp4; sourceTree = "<group>"; };
-		7B522DFE2C32511B0034EE9D /* Móc&Đan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Móc&Đan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B522DFE2C32511B0034EE9D /* Móc Đan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Móc Đan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B522E012C32511B0034EE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B522E0A2C32511C0034EE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B522E0F2C32511C0034EE9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -839,7 +839,7 @@
 		7B522DFF2C32511B0034EE9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B522DFE2C32511B0034EE9D /* Móc&Đan.app */,
+				7B522DFE2C32511B0034EE9D /* Móc Đan.app */,
 				7B522E142C32511C0034EE9D /* TMadeCrochetTests.xctest */,
 				7B522E1E2C32511C0034EE9D /* TMadeCrochetUITests.xctest */,
 			);
@@ -1172,6 +1172,7 @@
 		D99CB32B3F308EACAA1FBDC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B153E7D2C4BEB6000F6718A /* libswift_Concurrency.tbd */,
 				F0C3FD00628C5FBC643B9097 /* Pods_TMadeCrochet.framework */,
 				5D94C6B84B66F8CC5D4A52A4 /* Pods_TMadeCrochet_TMadeCrochetUITests.framework */,
 				8F01D6EEC97D787D255D7FE4 /* Pods_TMadeCrochetTests.framework */,
@@ -1190,7 +1191,6 @@
 				7B522DFA2C32511B0034EE9D /* Sources */,
 				7B522DFB2C32511B0034EE9D /* Frameworks */,
 				7B522DFC2C32511B0034EE9D /* Resources */,
-				0C596B64E756D1F5766A8E79 /* [CP] Embed Pods Frameworks */,
 				9448675EE955C651018D6472 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1199,7 +1199,7 @@
 			);
 			name = TMadeCrochet;
 			productName = TMadeCrochet;
-			productReference = 7B522DFE2C32511B0034EE9D /* Móc&Đan.app */;
+			productReference = 7B522DFE2C32511B0034EE9D /* Móc Đan.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7B522E132C32511C0034EE9D /* TMadeCrochetTests */ = {
@@ -1229,7 +1229,6 @@
 				7B522E1A2C32511C0034EE9D /* Sources */,
 				7B522E1B2C32511C0034EE9D /* Frameworks */,
 				7B522E1C2C32511C0034EE9D /* Resources */,
-				C5E45E810F02594A11C8DE9D /* [CP] Embed Pods Frameworks */,
 				CF7CC2AC6734633FA5C346BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1290,7 +1289,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B4E34AE2C3FD8A70059167A /* SampleVideo.mp4 in Resources */,
 				7B4E34AA2C3F811C0059167A /* StepView.xib in Resources */,
 				7B522E462C325A950034EE9D /* Tabbar.storyboard in Resources */,
 				7B153E572C453F6700F6718A /* CommonPopup.xib in Resources */,
@@ -1337,23 +1335,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C596B64E756D1F5766A8E79 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		14E1BEF5B75F9EB9F40065E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1435,23 +1416,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C5E45E810F02594A11C8DE9D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TMadeCrochet-TMadeCrochetUITests/Pods-TMadeCrochet-TMadeCrochetUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TMadeCrochet-TMadeCrochetUITests/Pods-TMadeCrochet-TMadeCrochetUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMadeCrochet-TMadeCrochetUITests/Pods-TMadeCrochet-TMadeCrochetUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF7CC2AC6734633FA5C346BA /* [CP] Copy Pods Resources */ = {
@@ -1746,6 +1710,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 592B236F10211DB249C1F94E /* Pods-TMadeCrochet.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1755,6 +1720,8 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TMadeCrochet/Configs/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Móc Đan";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1763,9 +1730,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmadecrochet.dev;
-				PRODUCT_NAME = "Móc&Đan";
+				PRODUCT_NAME = "Móc Đan";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1781,15 +1752,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E703A5F3BEFCB44849A92EC /* Pods-TMadeCrochet.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S3KCS74MJ4;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = S3KCS74MJ4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TMadeCrochet/Configs/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Móc Đan";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1798,10 +1774,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmadecrochet.release;
-				PRODUCT_NAME = "Móc&Đan";
+				PRODUCT_NAME = "Móc Đan";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Provisioning Tmade Release";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1922,7 +1903,7 @@
 				7B522E272C32511C0034EE9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		7B522E282C32511C0034EE9D /* Build configuration list for PBXNativeTarget "TMadeCrochet" */ = {
 			isa = XCConfigurationList;
@@ -1931,7 +1912,7 @@
 				7B522E2A2C32511C0034EE9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		7B522E2B2C32511C0034EE9D /* Build configuration list for PBXNativeTarget "TMadeCrochetTests" */ = {
 			isa = XCConfigurationList;
@@ -1940,7 +1921,7 @@
 				7B522E2D2C32511C0034EE9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		7B522E2E2C32511C0034EE9D /* Build configuration list for PBXNativeTarget "TMadeCrochetUITests" */ = {
 			isa = XCConfigurationList;
@@ -1949,7 +1930,7 @@
 				7B522E302C32511C0034EE9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
