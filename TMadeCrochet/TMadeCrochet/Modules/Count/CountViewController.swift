@@ -104,7 +104,7 @@ extension CountViewController: BaseCollectionViewProtocol {
     }
     
     @objc func didSelectItem(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UICollectionViewCell) {
-        guard let data = dataItem as? Count else { return }
+        guard dataItem is Count else { return }
         
     }
     

@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 struct AppConstant {
+    static let testDeviceIdentifiers = "83e18d4b12a81912a807ce957ab91419"
     static let openAppAdId = "ca-app-pub-3940256099942544/5575463023"
     static let symbolAdId = "ca-app-pub-3940256099942544/4411468910"
     

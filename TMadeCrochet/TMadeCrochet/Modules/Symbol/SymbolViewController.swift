@@ -13,11 +13,11 @@ class SymbolViewController: BaseViewController, GADFullScreenContentDelegate {
     var presenter: ViewToPresenterSymbolProtocol?
 
     @IBOutlet weak var collectionView: BaseCollectionView!
-    
+    var data: [[Symbol]] = []
     private let size: CGFloat = (UIScreen.main.bounds.width - 32 - 10)/3
     private let lineSpacing: CGFloat = 5
     private let interitemSpacing: CGFloat = 5
-    
+    var currentIndexPath: IndexPath = IndexPath.SubSequence(row: 0, section: 0)
     private var interstitial: GADInterstitialAd?
     
     // MARK: - Lifecycle Methods
@@ -64,7 +64,8 @@ class SymbolViewController: BaseViewController, GADFullScreenContentDelegate {
     
     func loadData() {
         if let symbolResponseData = AppConstant.symbolResponseData, let array = symbolResponseData.data, array.count > 0 {
-            self.collectionView.dataArray = array
+            self.data = array
+            self.collectionView.dataArray = self.data
             self.collectionView.reloadData()
         }
     }
@@ -109,6 +110,11 @@ class SymbolViewController: BaseViewController, GADFullScreenContentDelegate {
     /// Tells the delegate that the ad dismissed full screen content.
     @objc func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         print("Ad did dismiss full screen content.")
+        if self.data.count > 0, self.data.count > currentIndexPath.section && self.data[currentIndexPath.section].count > currentIndexPath.row {
+            self.data[currentIndexPath.section][currentIndexPath.row].isAds = false
+            AppConstant.symbolResponseData = SymbolResponseData.init(newData: self.data)
+            self.loadData()
+        }
         Task {
             await loadInterstitial()
         }
@@ -134,8 +140,12 @@ extension SymbolViewController: BaseCollectionViewProtocol {
     
     @objc func didSelectItem(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UICollectionViewCell) {
         guard let data = dataItem as? Symbol else { return }
-//        self.presenter?.navigateToDetail(symbol: data)
-        self.showAds()
+        if let isAds = data.isAds, isAds {
+            self.currentIndexPath = indexPath
+            self.showAds()
+        } else {
+            self.presenter?.navigateToDetail(symbol: data)
+        }
     }
     
     func collectionReusableView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

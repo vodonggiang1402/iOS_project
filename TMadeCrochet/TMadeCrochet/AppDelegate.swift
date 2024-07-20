@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.setRootScreen()
         
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [ "83e18d4b12a81912a807ce957ab91419" ]
+        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [AppConstant.testDeviceIdentifiers]
         
         return true
     }

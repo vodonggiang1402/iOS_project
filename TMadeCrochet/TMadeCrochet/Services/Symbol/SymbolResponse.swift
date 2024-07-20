@@ -18,6 +18,10 @@ struct SymbolResponseData: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         data = try? container.decodeIfPresent([[Symbol]].self, forKey: .data)
     }
+ 
+    init(newData: [[Symbol]]) {
+        self.data = newData
+    }
 }
 
 struct Symbol : Codable {

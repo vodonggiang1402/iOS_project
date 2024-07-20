@@ -44,7 +44,7 @@
                             <constraint firstAttribute="trailing" secondItem="JKD-2N-azX" secondAttribute="trailing" constant="25" id="yiC-NZ-TsB"/>
                         </constraints>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_clock" translatesAutoresizingMaskIntoConstraints="NO" id="iys-N2-MmE">
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_clock" translatesAutoresizingMaskIntoConstraints="NO" id="iys-N2-MmE">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                     </imageView>
                 </subviews>

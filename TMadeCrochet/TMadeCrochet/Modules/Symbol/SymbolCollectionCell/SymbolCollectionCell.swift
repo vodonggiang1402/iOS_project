@@ -21,6 +21,7 @@ class SymbolCollectionCell: BaseCollectionViewCell {
         
         self.adsImageView.layer.cornerRadius = 8.0
         self.adsImageView.layer.masksToBounds = true
+        
     }
     
     override func prepareForReuse() {
@@ -34,6 +35,7 @@ class SymbolCollectionCell: BaseCollectionViewCell {
         if let iconName = model.iconName, iconName.count > 0 {
             self.imageView.image = UIImage.init(named: iconName)
         }
+        self.adsImageView.image = UIImage.init(named: "ico_clock")
         if let isAds = model.isAds, isAds {
             self.adsImageView.isHidden = false
         } else {
