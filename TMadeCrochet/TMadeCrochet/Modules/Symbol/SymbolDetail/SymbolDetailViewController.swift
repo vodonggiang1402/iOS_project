@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 import AVKit
-//import YouTubePlayer
+import YouTubePlayer
 
 class SymbolDetailViewController: BaseViewController {
     @IBOutlet weak var closeButton: UIButton!
@@ -17,7 +17,7 @@ class SymbolDetailViewController: BaseViewController {
     @IBOutlet weak var stackView: UIStackView!
     
     @IBOutlet weak var videoContainView: UIView!
-//    @IBOutlet weak var videoPlayer: YouTubePlayerView!
+    @IBOutlet weak var videoPlayer: YouTubePlayerView!
     @IBOutlet weak var playButton: UIButton!
     
     var presenter: ViewToPresenterSymbolDetailProtocol?
@@ -38,33 +38,33 @@ class SymbolDetailViewController: BaseViewController {
     }
     
     func loadVideo() {
-//        if let videoUrl = self.presenter?.symbol?.videoUrl {
-//            videoPlayer.playerVars = [
-//                "controls" : "0",
-//                "showinfo" : "0",
-//                "autoplay": "0",
-//                "rel": "0",
-//                "modestbranding": "0",
-//                "iv_load_policy" : "3",
-//                "fs": "0",
-//                "playsinline" : "0"
-//                ] as YouTubePlayerView.YouTubePlayerParameters
-//            if let url = URL(string: videoUrl) {
-//                videoPlayer.loadVideoURL(url)
-//            }
-//        }
+        if let videoUrl = self.presenter?.symbol?.videoUrl {
+            videoPlayer.playerVars = [
+                "controls" : "0",
+                "showinfo" : "0",
+                "autoplay": "0",
+                "rel": "0",
+                "modestbranding": "0",
+                "iv_load_policy" : "3",
+                "fs": "0",
+                "playsinline" : "0"
+                ] as YouTubePlayerView.YouTubePlayerParameters
+            if let url = URL(string: videoUrl) {
+                videoPlayer.loadVideoURL(url)
+            }
+        }
     }
     
     @IBAction func playButtonAction(_ sender: Any) {
-//        if videoPlayer.ready {
-//            if videoPlayer.playerState != YouTubePlayerState.Playing {
-//                videoPlayer.play()
-//                self.playButton.isHidden = true
-//            } else {
-//                self.playButton.isHidden = false
-//                videoPlayer.pause()
-//            }
-//        }
+        if videoPlayer.ready {
+            if videoPlayer.playerState != YouTubePlayerState.Playing {
+                videoPlayer.play()
+                self.playButton.isHidden = true
+            } else {
+                self.playButton.isHidden = false
+                videoPlayer.pause()
+            }
+        }
     }
 
     
