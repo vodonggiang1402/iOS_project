@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol CountHeaderViewDelegate: AnyObject {
-    func refreshButtonAction(indexPath: IndexPath)
+    func refreshButtonAction()
 }
 
 class CountHeaderView: BaseCollectionReusableView {
@@ -29,6 +29,6 @@ class CountHeaderView: BaseCollectionReusableView {
         self.titleLabel.text = text
     }
     @IBAction func refreshButtonAction(_ sender: Any) {
-        self.delegate?.refreshButtonAction(indexPath: IndexPath(row: 0, section: 0))
+        self.delegate?.refreshButtonAction()
     }
 }

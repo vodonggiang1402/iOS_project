@@ -25,17 +25,6 @@ class TabbarViewController: UITabBarController, AppOpenAdManagerDelegate {
         super.viewDidLoad()
         self.delegate = self
         presenter?.viewDidLoad()
-        if let count = AppConstant.countShowAdsOpenApp, count > 0 {
-            if count >= 3 {
-                loadAds()
-                AppConstant.countShowAdsOpenApp = 1
-            } else {
-                let newCount = count + 1
-                AppConstant.countShowAdsOpenApp = newCount
-            }
-        } else {
-            AppConstant.countShowAdsOpenApp = 1
-        }
     }
     
     func loadAds() {

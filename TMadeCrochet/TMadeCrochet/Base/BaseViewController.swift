@@ -7,8 +7,12 @@
 
 import Foundation
 import UIKit
+import GoogleMobileAds
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, GADFullScreenContentDelegate {
+    
+    private var interstitial: GADInterstitialAd?
+    
     override init(nibName: String?, bundle: Bundle?) {
         super.init(nibName: nibName, bundle: bundle)
     }
@@ -174,5 +178,54 @@ class BaseViewController: UIViewController {
                      "40826D"]
         let filterArray = array.filter { colors.contains($0) == false }
         return filterArray.count > 0 ? filterArray.randomElement()! : "F76A89"
+    }
+    
+    func startGoogleMobileAdsSDK() {
+        DispatchQueue.main.async {
+            Task {
+                await self.loadInterstitial()
+            }
+        }
+    }
+        
+    func loadInterstitial() async {
+        do {
+          interstitial = try await GADInterstitialAd.load(
+            withAdUnitID: AppConstant.symbolAdId, request: GADRequest())
+          interstitial?.fullScreenContentDelegate = self
+        } catch {
+          print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+        }
+    }
+    
+    func showAds() {
+        guard let interstitial = interstitial else {
+          return print("Ad wasn't ready.")
+        }
+        // The UIViewController parameter is an optional.
+        interstitial.present(fromRootViewController: self)
+    }
+    
+    /// Tells the delegate that the ad failed to present full screen content.
+    @objc func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+        print("Ad did fail to present full screen content.")
+    }
+
+    /// Tells the delegate that the ad will present full screen content.
+    @objc func adWillPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print("Ad will present full screen content.")
+    }
+
+    /// Tells the delegate that the ad dismissed full screen content.
+    @objc func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print("Ad did dismiss full screen content.")
+        self.updateDataWhenAdsHiden()
+        Task {
+            await loadInterstitial()
+        }
+    }
+    
+    func updateDataWhenAdsHiden() {
+        
     }
 }

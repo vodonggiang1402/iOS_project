@@ -31,6 +31,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidBecomeActive(_ application: UIApplication) {
       // Show the app open ad when the app is foregrounded.
+        if let count = AppConstant.countShowAdsOpenApp, count > 0 {
+            if count >= AppConstant.globalCount {
+                tabbarViewController?.loadAds()
+                AppConstant.countShowAdsOpenApp = 1
+            } else {
+                let newCount = count + 1
+                AppConstant.countShowAdsOpenApp = newCount
+            }
+        } else {
+            AppConstant.countShowAdsOpenApp = 1
+        }
     }
     
     func setRootScreen() {

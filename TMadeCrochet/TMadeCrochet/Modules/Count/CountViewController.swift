@@ -24,6 +24,7 @@ class CountViewController: BaseViewController {
         super.viewDidLoad()
         self.setupNavigationBar(title: "Bộ đếm", isShowLeft: false)
         self.setupDataForCollectionView()
+        self.startGoogleMobileAdsSDK()
     }
     
     func setupDataForCollectionView() {
@@ -81,6 +82,11 @@ class CountViewController: BaseViewController {
             }
         }
         return false
+    }
+    
+    
+    override func updateDataWhenAdsHiden() {
+        self.resetData()
     }
 }
     
@@ -179,15 +185,25 @@ extension CountViewController: BaseCollectionViewProtocol {
 }
 
 extension CountViewController: CountHeaderViewDelegate {
-    func refreshButtonAction(indexPath: IndexPath) {
-        if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
-            self.data = self.resetData()
-            AppConstant.countResponseData = CountResponseData.init(newData: self.data)
-            self.loadData()
+    func refreshButtonAction() {
+        if self.data.count > 0, self.isCountChanged() {
+            if let count = AppConstant.countShowAdsWhenResetGlobalCount, count > 0 {
+                if count >= AppConstant.globalCount {
+                    self.showAds()
+                    AppConstant.countShowAdsWhenResetGlobalCount = 1
+                } else {
+                    let newCount = count + 1
+                    AppConstant.countShowAdsWhenResetGlobalCount = newCount
+                    self.resetData()
+                }
+            } else {
+                AppConstant.countShowAdsWhenResetGlobalCount = 1
+                self.resetData()
+            }
         }
     }
     
-    func resetData() -> [[Count]] {
+    func getResetData() -> [[Count]] {
         var list: [[Count]] = []
         for array in self.data {
             var arrayTemp: [Count] = []
@@ -198,7 +214,25 @@ extension CountViewController: CountHeaderViewDelegate {
             list.append(arrayTemp)
         }
         return list
-        
+    }
+    
+    func resetData() {
+        self.data = self.getResetData()
+        AppConstant.countResponseData = CountResponseData.init(newData: self.data)
+        self.loadData()
+    }
+    
+    func isCountChanged()-> Bool {
+        var result = false
+        for array in self.data {
+            for item in array {
+                if item.count ?? 1 > 1 {
+                    result = true
+                    break
+                }
+            }
+        }
+        return result
     }
 }
 

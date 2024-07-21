@@ -34,7 +34,8 @@ class SymbolDetailViewController: BaseViewController {
         }
         self.playButton.setTitle("", for: .normal)
         self.playButton.backgroundColor = UIColor.white.withAlphaComponent(0.8)
-//        self.loadVideo()
+        self.loadVideo()
+        self.startGoogleMobileAdsSDK()
     }
     
     func loadVideo() {
@@ -56,6 +57,10 @@ class SymbolDetailViewController: BaseViewController {
     }
     
     @IBAction func playButtonAction(_ sender: Any) {
+        self.showAds()
+    }
+
+    override func updateDataWhenAdsHiden() {
         if videoPlayer.ready {
             if videoPlayer.playerState != YouTubePlayerState.Playing {
                 videoPlayer.play()
@@ -66,7 +71,6 @@ class SymbolDetailViewController: BaseViewController {
             }
         }
     }
-
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
