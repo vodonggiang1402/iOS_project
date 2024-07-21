@@ -14,6 +14,11 @@ struct AppConstant {
     static let symbolAdId = "ca-app-pub-3940256099942544/4411468910"
     static let globalCount = 3
     
+    static var countShowAdsWhenAddMoreCount: Int? {
+        get { UserDefaults.standard.value(forKey: "count-show-ads-when-add-more-count") as? Int }
+        set { UserDefaults.standard.setValue(newValue, forKey: "count-show-ads-when-add-more-count") }
+    }
+    
     static var countShowAdsWhenResetGlobalCount: Int? {
         get { UserDefaults.standard.value(forKey: "count-show-ads-when-reset-global-count") as? Int }
         set { UserDefaults.standard.setValue(newValue, forKey: "count-show-ads-when-reset-global-count") }

@@ -8,6 +8,12 @@
 import Foundation
 import UIKit
 
+enum AdsFlow {
+    case nomal
+    case resetCount
+    case addMoreCount
+}
+
 class CountViewController: BaseViewController {
     var presenter: ViewToPresenterCountProtocol?
     
@@ -18,6 +24,7 @@ class CountViewController: BaseViewController {
     private let lineSpacing: CGFloat = 5
     private let interitemSpacing: CGFloat = 5
     var data: [[Count]] = [[]]
+    var currentFlow: AdsFlow = .nomal
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -86,7 +93,11 @@ class CountViewController: BaseViewController {
     
     
     override func updateDataWhenAdsHiden() {
-        self.resetData()
+        if self.currentFlow == .resetCount {
+            self.resetData()
+        } else if self.currentFlow == .addMoreCount {
+            self.showAddPopup()
+        }
     }
 }
     
@@ -189,6 +200,7 @@ extension CountViewController: CountHeaderViewDelegate {
         if self.data.count > 0, self.isCountChanged() {
             if let count = AppConstant.countShowAdsWhenResetGlobalCount, count > 0 {
                 if count >= AppConstant.globalCount {
+                    self.currentFlow = .resetCount
                     self.showAds()
                     AppConstant.countShowAdsWhenResetGlobalCount = 1
                 } else {
@@ -238,6 +250,23 @@ extension CountViewController: CountHeaderViewDelegate {
 
 extension CountViewController: CountFooterViewDelegate {
     func addButtonAction() {
+        if let count = AppConstant.countShowAdsWhenAddMoreCount, count > 0 {
+            if count >= AppConstant.globalCount {
+                self.currentFlow = .addMoreCount
+                self.showAds()
+                AppConstant.countShowAdsWhenAddMoreCount = 1
+            } else {
+                let newCount = count + 1
+                AppConstant.countShowAdsWhenAddMoreCount = newCount
+                showAddPopup()
+            }
+        } else {
+            AppConstant.countShowAdsWhenAddMoreCount = 1
+            showAddPopup()
+        }
+    }
+    
+    func showAddPopup() {
         PopupHelper.shared.showCommonPopup(baseViewController: self, titleHeader: "Nhập thông tin", activeTitle: "Đồng ý", activeAction: { title in
             self.addNewCount(text: title)
         }, cancelTitle: "Bỏ qua") {}

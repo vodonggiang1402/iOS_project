@@ -3,4 +3,52 @@
    uuid = "0FDF6EFA-57F7-4FF1-A0AF-7B3779770892"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1373EF85-E9D1-4396-8BB8-FA25FEA14AE6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMadeCrochet/Modules/Count/CountViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "addButtonAction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1373EF85-E9D1-4396-8BB8-FA25FEA14AE6 - 86d6b03738a77da7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Moc___Dan.CountViewController.addButtonAction() -&gt; ()"
+                  moduleName = "Moc &amp; Dan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xuanthao070593/iOS_project/TMadeCrochet/TMadeCrochet/Modules/Count/CountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "253"
+                  endingLineNumber = "253">
+               </Location>
+               <Location
+                  uuid = "1373EF85-E9D1-4396-8BB8-FA25FEA14AE6 - 86d6b03738a77da7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Moc___Dan.CountViewController.addButtonAction() -&gt; ()"
+                  moduleName = "Moc &amp; Dan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xuanthao070593/iOS_project/TMadeCrochet/TMadeCrochet/Modules/Count/CountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "253"
+                  endingLineNumber = "253">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
