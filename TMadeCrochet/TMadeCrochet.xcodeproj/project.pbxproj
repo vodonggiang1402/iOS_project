@@ -139,6 +139,27 @@
 		7BDB148F2C4DF14C0081676D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB148E2C4DF14C0081676D /* SettingView.swift */; };
 		7BDB14912C4DF16D0081676D /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDB14902C4DF16D0081676D /* SettingView.xib */; };
 		7BDB14932C4E09110081676D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14922C4E09110081676D /* UIImageViewExtension.swift */; };
+		7BDB149E2C4E19E10081676D /* ContactStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDB14972C4E19E00081676D /* ContactStoryboard.storyboard */; };
+		7BDB149F2C4E19E10081676D /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14982C4E19E00081676D /* ContactPresenter.swift */; };
+		7BDB14A02C4E19E10081676D /* ContactEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14992C4E19E00081676D /* ContactEntity.swift */; };
+		7BDB14A12C4E19E10081676D /* ContactContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB149A2C4E19E00081676D /* ContactContract.swift */; };
+		7BDB14A22C4E19E10081676D /* ContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB149B2C4E19E00081676D /* ContactInteractor.swift */; };
+		7BDB14A32C4E19E10081676D /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB149C2C4E19E00081676D /* ContactViewController.swift */; };
+		7BDB14A42C4E19E10081676D /* ContactRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB149D2C4E19E10081676D /* ContactRouter.swift */; };
+		7BDB14AC2C4E19E90081676D /* PolicyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14A52C4E19E80081676D /* PolicyEntity.swift */; };
+		7BDB14AD2C4E19E90081676D /* PolicyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14A62C4E19E80081676D /* PolicyInteractor.swift */; };
+		7BDB14AE2C4E19E90081676D /* PolicyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14A72C4E19E80081676D /* PolicyRouter.swift */; };
+		7BDB14AF2C4E19E90081676D /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14A82C4E19E80081676D /* PolicyViewController.swift */; };
+		7BDB14B02C4E19E90081676D /* PolicyContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14A92C4E19E90081676D /* PolicyContract.swift */; };
+		7BDB14B12C4E19E90081676D /* PolicyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDB14AA2C4E19E90081676D /* PolicyStoryboard.storyboard */; };
+		7BDB14B22C4E19E90081676D /* PolicyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14AB2C4E19E90081676D /* PolicyPresenter.swift */; };
+		7BDB14BA2C4E19EE0081676D /* TermPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14B32C4E19EE0081676D /* TermPresenter.swift */; };
+		7BDB14BB2C4E19EE0081676D /* TermInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14B42C4E19EE0081676D /* TermInteractor.swift */; };
+		7BDB14BC2C4E19EE0081676D /* TermEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14B52C4E19EE0081676D /* TermEntity.swift */; };
+		7BDB14BD2C4E19EE0081676D /* TermStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDB14B62C4E19EE0081676D /* TermStoryboard.storyboard */; };
+		7BDB14BE2C4E19EE0081676D /* TermRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14B72C4E19EE0081676D /* TermRouter.swift */; };
+		7BDB14BF2C4E19EE0081676D /* TermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14B82C4E19EE0081676D /* TermViewController.swift */; };
+		7BDB14C02C4E19EE0081676D /* TermContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14B92C4E19EE0081676D /* TermContract.swift */; };
 		7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */; };
 		7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */; };
 		7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */; };
@@ -435,6 +456,27 @@
 		7BDB148E2C4DF14C0081676D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		7BDB14902C4DF16D0081676D /* SettingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
 		7BDB14922C4E09110081676D /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		7BDB14972C4E19E00081676D /* ContactStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactStoryboard.storyboard; sourceTree = "<group>"; };
+		7BDB14982C4E19E00081676D /* ContactPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
+		7BDB14992C4E19E00081676D /* ContactEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactEntity.swift; sourceTree = "<group>"; };
+		7BDB149A2C4E19E00081676D /* ContactContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactContract.swift; sourceTree = "<group>"; };
+		7BDB149B2C4E19E00081676D /* ContactInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactInteractor.swift; sourceTree = "<group>"; };
+		7BDB149C2C4E19E00081676D /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		7BDB149D2C4E19E10081676D /* ContactRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRouter.swift; sourceTree = "<group>"; };
+		7BDB14A52C4E19E80081676D /* PolicyEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyEntity.swift; sourceTree = "<group>"; };
+		7BDB14A62C4E19E80081676D /* PolicyInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyInteractor.swift; sourceTree = "<group>"; };
+		7BDB14A72C4E19E80081676D /* PolicyRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyRouter.swift; sourceTree = "<group>"; };
+		7BDB14A82C4E19E80081676D /* PolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
+		7BDB14A92C4E19E90081676D /* PolicyContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyContract.swift; sourceTree = "<group>"; };
+		7BDB14AA2C4E19E90081676D /* PolicyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PolicyStoryboard.storyboard; sourceTree = "<group>"; };
+		7BDB14AB2C4E19E90081676D /* PolicyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyPresenter.swift; sourceTree = "<group>"; };
+		7BDB14B32C4E19EE0081676D /* TermPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermPresenter.swift; sourceTree = "<group>"; };
+		7BDB14B42C4E19EE0081676D /* TermInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermInteractor.swift; sourceTree = "<group>"; };
+		7BDB14B52C4E19EE0081676D /* TermEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermEntity.swift; sourceTree = "<group>"; };
+		7BDB14B62C4E19EE0081676D /* TermStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TermStoryboard.storyboard; sourceTree = "<group>"; };
+		7BDB14B72C4E19EE0081676D /* TermRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermRouter.swift; sourceTree = "<group>"; };
+		7BDB14B82C4E19EE0081676D /* TermViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermViewController.swift; sourceTree = "<group>"; };
+		7BDB14B92C4E19EE0081676D /* TermContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermContract.swift; sourceTree = "<group>"; };
 		7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashStoryboard.storyboard; sourceTree = "<group>"; };
 		7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -1087,6 +1129,9 @@
 		7BB994CF2C3B9549008EF04B /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				7BDB14962C4E19A00081676D /* Contact */,
+				7BDB14952C4E19970081676D /* Policy */,
+				7BDB14942C4E19870081676D /* Term */,
 				7BDB148D2C4DF13E0081676D /* SettingView */,
 				7BB994FC2C3B96CF008EF04B /* SettingContract.swift */,
 				7BB994FF2C3B96CF008EF04B /* SettingEntity.swift */,
@@ -1129,6 +1174,48 @@
 				7BDB14902C4DF16D0081676D /* SettingView.xib */,
 			);
 			path = SettingView;
+			sourceTree = "<group>";
+		};
+		7BDB14942C4E19870081676D /* Term */ = {
+			isa = PBXGroup;
+			children = (
+				7BDB14B92C4E19EE0081676D /* TermContract.swift */,
+				7BDB14B52C4E19EE0081676D /* TermEntity.swift */,
+				7BDB14B42C4E19EE0081676D /* TermInteractor.swift */,
+				7BDB14B32C4E19EE0081676D /* TermPresenter.swift */,
+				7BDB14B72C4E19EE0081676D /* TermRouter.swift */,
+				7BDB14B62C4E19EE0081676D /* TermStoryboard.storyboard */,
+				7BDB14B82C4E19EE0081676D /* TermViewController.swift */,
+			);
+			path = Term;
+			sourceTree = "<group>";
+		};
+		7BDB14952C4E19970081676D /* Policy */ = {
+			isa = PBXGroup;
+			children = (
+				7BDB14A92C4E19E90081676D /* PolicyContract.swift */,
+				7BDB14A52C4E19E80081676D /* PolicyEntity.swift */,
+				7BDB14A62C4E19E80081676D /* PolicyInteractor.swift */,
+				7BDB14AB2C4E19E90081676D /* PolicyPresenter.swift */,
+				7BDB14A72C4E19E80081676D /* PolicyRouter.swift */,
+				7BDB14AA2C4E19E90081676D /* PolicyStoryboard.storyboard */,
+				7BDB14A82C4E19E80081676D /* PolicyViewController.swift */,
+			);
+			path = Policy;
+			sourceTree = "<group>";
+		};
+		7BDB14962C4E19A00081676D /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				7BDB149A2C4E19E00081676D /* ContactContract.swift */,
+				7BDB14992C4E19E00081676D /* ContactEntity.swift */,
+				7BDB149B2C4E19E00081676D /* ContactInteractor.swift */,
+				7BDB14982C4E19E00081676D /* ContactPresenter.swift */,
+				7BDB149D2C4E19E10081676D /* ContactRouter.swift */,
+				7BDB14972C4E19E00081676D /* ContactStoryboard.storyboard */,
+				7BDB149C2C4E19E00081676D /* ContactViewController.swift */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 		7BF32A142C33CC8900CD8F18 /* CustomView */ = {
@@ -1311,11 +1398,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BDB14B12C4E19E90081676D /* PolicyStoryboard.storyboard in Resources */,
 				7B4E34AA2C3F811C0059167A /* StepView.xib in Resources */,
 				7B522E462C325A950034EE9D /* Tabbar.storyboard in Resources */,
 				7B153E572C453F6700F6718A /* CommonPopup.xib in Resources */,
 				7BB995152C3B96DC008EF04B /* CountStoryboard.storyboard in Resources */,
 				7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */,
+				7BDB149E2C4E19E10081676D /* ContactStoryboard.storyboard in Resources */,
 				7B4E34A52C3E46F60059167A /* SymbolDetailStoryboard.storyboard in Resources */,
 				7B7686992C4501D600DBE001 /* CountFooterView.xib in Resources */,
 				7B341A262C340B0C0069BD02 /* TitleSection.xib in Resources */,
@@ -1338,6 +1427,7 @@
 				7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */,
 				7B4E34912C3D04630059167A /* SymbolCollectionCell.xib in Resources */,
 				7B341A212C33FDE70069BD02 /* MainTableCell.xib in Resources */,
+				7BDB14BD2C4E19EE0081676D /* TermStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1505,11 +1595,13 @@
 				7B522E642C3260AC0034EE9D /* SplashInteractor.swift in Sources */,
 				7B341A052C33D1B90069BD02 /* BaseCollectionView.swift in Sources */,
 				7B522E832C3262740034EE9D /* PatternPresenter.swift in Sources */,
+				7BDB14A22C4E19E10081676D /* ContactInteractor.swift in Sources */,
 				7B341AAD2C3535F10069BD02 /* DataManager.swift in Sources */,
 				7B3419FD2C33D0060069BD02 /* NormalHeaderAnimator.swift in Sources */,
 				7B522E732C32626E0034EE9D /* MainRouter.swift in Sources */,
 				7B153E602C45411500F6718A /* InLineTextField.swift in Sources */,
 				7B153E592C453FBF00F6718A /* StyleButton.swift in Sources */,
+				7BDB14BB2C4E19EE0081676D /* TermInteractor.swift in Sources */,
 				7BF32A292C33CF0A00CD8F18 /* CRRefreshProtocol.swift in Sources */,
 				7BB995062C3B96CF008EF04B /* SettingEntity.swift in Sources */,
 				7B341A0F2C33D49D0069BD02 /* BaseView.swift in Sources */,
@@ -1519,6 +1611,7 @@
 				7B522EAE2C3262930034EE9D /* SymbolViewController.swift in Sources */,
 				7BB995112C3B96DC008EF04B /* CountEntity.swift in Sources */,
 				7BB995022C3B96CF008EF04B /* SettingRouter.swift in Sources */,
+				7BDB14A32C4E19E10081676D /* ContactViewController.swift in Sources */,
 				7BB995132C3B96DC008EF04B /* CountInteractor.swift in Sources */,
 				7B522E492C325A950034EE9D /* TabbarContract.swift in Sources */,
 				7BF32A2A2C33CF0A00CD8F18 /* CRRefreshAnimator.swift in Sources */,
@@ -1533,11 +1626,13 @@
 				7B3419EF2C33CFDC0069BD02 /* FastCircleLayer.swift in Sources */,
 				7B153E642C45415000F6718A /* RTLTextField.swift in Sources */,
 				7B522E742C32626E0034EE9D /* MainInteractor.swift in Sources */,
+				7BDB149F2C4E19E10081676D /* ContactPresenter.swift in Sources */,
 				7B522E762C32626E0034EE9D /* MainPresenter.swift in Sources */,
 				7B522E562C325C290034EE9D /* ObjectExtension.swift in Sources */,
 				7BB995072C3B96CF008EF04B /* SettingViewController.swift in Sources */,
 				7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */,
 				7B3419FE2C33D0060069BD02 /* NormalFooterAnimator.swift in Sources */,
+				7BDB14C02C4E19EE0081676D /* TermContract.swift in Sources */,
 				7B341A242C340B040069BD02 /* TitleSection.swift in Sources */,
 				7BB995182C3BDA19008EF04B /* BarButton.swift in Sources */,
 				7BF32A192C33CCD500CD8F18 /* BaseTableViewCell.swift in Sources */,
@@ -1550,13 +1645,19 @@
 				7B3419EB2C33CFDC0069BD02 /* FastCheckLayer.swift in Sources */,
 				7B153E782C4B752300F6718A /* GoogleMobileAdsConsentManager.swift in Sources */,
 				7BB9950F2C3B96DC008EF04B /* CountPresenter.swift in Sources */,
+				7BDB14B22C4E19E90081676D /* PolicyPresenter.swift in Sources */,
 				7BAC04312C40ED22006CE1DE /* AppConstant.swift in Sources */,
 				7BF32A282C33CF0A00CD8F18 /* CRRefreshExtension.swift in Sources */,
+				7BDB14AF2C4E19E90081676D /* PolicyViewController.swift in Sources */,
 				7B522E502C325B680034EE9D /* IntExtension.swift in Sources */,
 				7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */,
+				7BDB14AC2C4E19E90081676D /* PolicyEntity.swift in Sources */,
 				7B522E542C325C100034EE9D /* UIStoryboardExtension.swift in Sources */,
 				7B522E842C3262740034EE9D /* PatternViewController.swift in Sources */,
 				7B522E822C3262740034EE9D /* PatternContract.swift in Sources */,
+				7BDB14BA2C4E19EE0081676D /* TermPresenter.swift in Sources */,
+				7BDB14BC2C4E19EE0081676D /* TermEntity.swift in Sources */,
+				7BDB14B02C4E19E90081676D /* PolicyContract.swift in Sources */,
 				7B341AAB2C3532EA0069BD02 /* SymbolResponse.swift in Sources */,
 				7B3419EE2C33CFDC0069BD02 /* FastLayer.swift in Sources */,
 				7B3419E52C33CFD30069BD02 /* WCLLoadingView.swift in Sources */,
@@ -1572,8 +1673,11 @@
 				7B341A1B2C33F06C0069BD02 /* StrechyHeaderView.swift in Sources */,
 				7B7686972C4501CF00DBE001 /* CountFooterView.swift in Sources */,
 				7B153E7C2C4B7CDC00F6718A /* AppOpenAdManager.swift in Sources */,
+				7BDB14AE2C4E19E90081676D /* PolicyRouter.swift in Sources */,
+				7BDB14A42C4E19E10081676D /* ContactRouter.swift in Sources */,
 				7B522E332C3252EA0034EE9D /* BaseViewController.swift in Sources */,
 				7B4E349F2C3E46F60059167A /* SymbolDetailViewController.swift in Sources */,
+				7BDB14BF2C4E19EE0081676D /* TermViewController.swift in Sources */,
 				7BB995122C3B96DC008EF04B /* CountRouter.swift in Sources */,
 				7B4E34A22C3E46F60059167A /* SymbolDetailContract.swift in Sources */,
 				7BF32A1B2C33CE5500CD8F18 /* UITableViewExtension.swift in Sources */,
@@ -1590,11 +1694,14 @@
 				7B3419E42C33CFD30069BD02 /* SlackLoadingAnimator.swift in Sources */,
 				7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */,
 				7BB995012C3B96CF008EF04B /* SettingPresenter.swift in Sources */,
+				7BDB14A02C4E19E10081676D /* ContactEntity.swift in Sources */,
+				7BDB14BE2C4E19EE0081676D /* TermRouter.swift in Sources */,
 				7B153E6C2C464CFC00F6718A /* AddCountFooterView.swift in Sources */,
 				7B522E632C3260AC0034EE9D /* SplashContract.swift in Sources */,
 				7B522E812C3262740034EE9D /* PatternRouter.swift in Sources */,
 				7B522E022C32511B0034EE9D /* AppDelegate.swift in Sources */,
 				7B522E522C325BAF0034EE9D /* UIViewControllerExtension.swift in Sources */,
+				7BDB14AD2C4E19E90081676D /* PolicyInteractor.swift in Sources */,
 				7B153E522C453EDC00F6718A /* PopupHelper.swift in Sources */,
 				7B341AA42C34103D0069BD02 /* UIFontExtension.swift in Sources */,
 				7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */,
@@ -1610,6 +1717,7 @@
 				7B522E612C3260AC0034EE9D /* SplashPresenter.swift in Sources */,
 				7B4E34A12C3E46F60059167A /* SymbolDetailInteractor.swift in Sources */,
 				7B522EAB2C3262930034EE9D /* SymbolInteractor.swift in Sources */,
+				7BDB14A12C4E19E10081676D /* ContactContract.swift in Sources */,
 				7B3419ED2C33CFDC0069BD02 /* FastArrowLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

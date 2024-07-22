@@ -1,5 +1,5 @@
 //
-//  SettingRouter.swift
+//  PolicyRouter.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SettingRouter: PresenterToRouterSettingProtocol {
+class PolicyRouter: PresenterToRouterPolicyProtocol {
     func showScreen() {
         let destinationVC = self.createModule()
         destinationVC.hidesBottomBarWhenPushed = true
@@ -26,30 +26,19 @@ class SettingRouter: PresenterToRouterSettingProtocol {
 
     // MARK: Static methods
     func createModule() -> UIViewController {
-        let storyboard = UIStoryboard(name: "SettingStoryboard", bundle: nil)
-        let viewController = storyboard.instantiateViewController(viewControllerType:SettingViewController.self)
+        let storyboard = UIStoryboard(name: "PolicyStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateViewController(viewControllerType:PolicyViewController.self)
 
-        let presenter: ViewToPresenterSettingProtocol & InteractorToPresenterSettingProtocol = SettingPresenter()
-        let entity: InteractorToEntitySettingProtocol = SettingEntity()
+        let presenter: ViewToPresenterPolicyProtocol & InteractorToPresenterPolicyProtocol = PolicyPresenter()
+        let entity: InteractorToEntityPolicyProtocol = PolicyEntity()
         viewController.presenter = presenter
-        viewController.presenter?.router = SettingRouter()
+        viewController.presenter?.router = PolicyRouter()
         viewController.presenter?.view = viewController
-        viewController.presenter?.interactor = SettingInteractor()
+        viewController.presenter?.interactor = PolicyInteractor()
         viewController.presenter?.interactor?.entity = entity
 
         return viewController
     }
 
-    func navigateToTerm() {
-        TermRouter().showScreen()
-    }
-    
-    func navigateToPolicy() {
-        PolicyRouter().showScreen()
-    }
-    
-    func navigateToContact() {
-        ContactRouter().showScreen()
-    }
 }
 

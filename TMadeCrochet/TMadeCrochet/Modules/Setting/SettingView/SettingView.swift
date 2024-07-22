@@ -56,6 +56,37 @@ class SettingView: BaseView {
         
         rateImage.layer.cornerRadius = 5
         rateImage.layer.masksToBounds = true
+        
+        termView.delegate = self
+        termView.addTapGesture { [weak self] in
+            guard let self = self else { return }
+            self.delegate?.termViewNormalTap()
+        }
+        
+        policyView.delegate = self
+        policyView.addTapGesture { [weak self] in
+            guard let self = self else { return }
+            self.delegate?.policyViewNormalTap()
+        }
+        
+        contactView.delegate = self
+        contactView.addTapGesture { [weak self] in
+            guard let self = self else { return }
+            self.delegate?.contactViewNormalTap()
+        }
+        
+        shareView.delegate = self
+        shareView.addTapGesture { [weak self] in
+            guard let self = self else { return }
+            self.delegate?.shareViewNormalTap()
+        }
+        
+        rateView.delegate = self
+        rateView.addTapGesture { [weak self] in
+            guard let self = self else { return }
+            self.delegate?.rateViewNormalTap()
+        }
+        
     }
     
 }

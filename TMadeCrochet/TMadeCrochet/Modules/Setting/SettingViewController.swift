@@ -57,15 +57,15 @@ extension SettingViewController: PresenterToViewSettingProtocol {
 // MARK: - SettingViewDelegate
 extension SettingViewController: SettingViewDelegate {
     func termViewNormalTap() {
-        
+        self.presenter?.navigateToTerm()
     }
     
     func policyViewNormalTap() {
-        
+        self.presenter?.navigateToPolicy()
     }
     
     func contactViewNormalTap() {
-        
+        self.presenter?.navigateToContact()
     }
     
     func shareViewNormalTap() {
@@ -75,6 +75,4 @@ extension SettingViewController: SettingViewDelegate {
     func rateViewNormalTap() {
         
     }
-    
-    
 }

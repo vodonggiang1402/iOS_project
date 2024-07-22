@@ -13,6 +13,17 @@ class SettingPresenter: ViewToPresenterSettingProtocol {
     var interactor: PresenterToInteractorSettingProtocol?
     var router: PresenterToRouterSettingProtocol?
     
+    func navigateToTerm() {
+        self.router?.navigateToTerm()
+    }
+    
+    func navigateToPolicy() {
+        self.router?.navigateToPolicy()
+    }
+    
+    func navigateToContact() {
+        self.router?.navigateToContact()
+    }
 }
 
 
