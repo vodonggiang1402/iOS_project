@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "ico_add_count 1.svg",
+      "filename" : "ico_heade_count.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "ico_add_count.svg",
+      "filename" : "ico_heade_count 1.svg",
       "idiom" : "universal"
     }
   ],
