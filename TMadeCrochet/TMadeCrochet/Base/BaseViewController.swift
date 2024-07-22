@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 import GoogleMobileAds
 
-class BaseViewController: UIViewController, GADFullScreenContentDelegate {
-    
+class BaseViewController: UIViewController, ViewControllerInNavigation, GADFullScreenContentDelegate {
+ 
     private var interstitial: GADInterstitialAd?
     
     override init(nibName: String?, bundle: Bundle?) {
@@ -39,6 +39,15 @@ class BaseViewController: UIViewController, GADFullScreenContentDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.navigationController?.navigationBar.isTranslucent = false
+        // set delegate
+        self.delegateSwipeBack(of: self, to: self)
+        
+        // enable/disable swipeback
+        if let count = self.numberViewController, count > 1 {
+            self.enableSwipeBack(enable: true, for: self)
+        } else {
+            self.enableSwipeBack(enable: false, for: self)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +65,10 @@ class BaseViewController: UIViewController, GADFullScreenContentDelegate {
 
     }
     
+    func viewWillSwipeBack() {
+        
+    }
+   
     // MARK: - Navigation Bar
     func hideNavigationBar(isHide: Bool = true) {
         self.navigationController?.navigationBar.isHidden = isHide
@@ -116,11 +129,11 @@ class BaseViewController: UIViewController, GADFullScreenContentDelegate {
             button.contentHorizontalAlignment = .left
             button.titleLabel?.lineBreakMode = .byTruncatingTail
             
-            button.setImage(UIImage(named: ""), for: UIControl.State.normal)
-            button.setImage(UIImage(named: ""), for: UIControl.State.selected)
+            button.setImage(UIImage(named: "ico_back"), for: UIControl.State.normal)
+            button.setImage(UIImage(named: "ico_back"), for: UIControl.State.selected)
             
             button.imageEdgeInsets = UIEdgeInsets(top: 0,
-                                                  left: 0, bottom: 0,
+                                                  left: 16, bottom: 0,
                                                   right: 0)
             return button
         }()

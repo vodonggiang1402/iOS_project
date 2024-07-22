@@ -14,6 +14,7 @@ class PolicyViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavigationBar(title: "Cài đặt", isShowLeft: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
