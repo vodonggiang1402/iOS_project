@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="contactImageView" destination="qSZ-4N-2yu" id="i58-0L-yso"/>
                 <outlet property="contactLabel" destination="DS1-yf-lq2" id="Td3-vi-hVD"/>
+                <outlet property="contactView" destination="d3s-CT-Q4p" id="yP5-qu-86l"/>
                 <outlet property="policyImageView" destination="8RH-l4-Ihg" id="FFY-04-LfY"/>
                 <outlet property="policyLabel" destination="Cx4-VJ-1TT" id="qSH-BN-67D"/>
                 <outlet property="policyView" destination="WaD-8b-Sp2" id="MMk-AS-FCk"/>

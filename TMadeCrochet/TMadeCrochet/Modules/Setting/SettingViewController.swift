@@ -21,12 +21,11 @@ class SettingViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar(title: "Cài đặt", isShowLeft: false)
-        self.setupUISetting()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        self.setupUISetting()
     }
     
     override func viewDidAppear(_ animated: Bool) {
