@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -12,13 +12,56 @@
         <!--Setting View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SettingViewController" customModule="Móc_Đan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SettingViewController" customModule="Moc___Dan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lq4-M1-wUk">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTX-Ak-uWg">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2H-qv-hsh" customClass="SettingView" customModule="Moc___Dan" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="30" width="414" height="360"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="360" id="STq-Ra-4j9"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="I2H-qv-hsh" firstAttribute="leading" secondItem="BTX-Ak-uWg" secondAttribute="leading" id="FYF-2A-chD"/>
+                                            <constraint firstItem="I2H-qv-hsh" firstAttribute="top" secondItem="BTX-Ak-uWg" secondAttribute="top" constant="30" id="am9-nk-zjP"/>
+                                            <constraint firstAttribute="trailing" secondItem="I2H-qv-hsh" secondAttribute="trailing" id="hRm-as-Or5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BTX-Ak-uWg" secondAttribute="bottom" id="0zC-qj-dMA"/>
+                                    <constraint firstItem="BTX-Ak-uWg" firstAttribute="width" secondItem="lq4-M1-wUk" secondAttribute="width" id="4r0-fd-GEj"/>
+                                    <constraint firstItem="BTX-Ak-uWg" firstAttribute="leading" secondItem="lq4-M1-wUk" secondAttribute="leading" id="9u6-iu-PiK"/>
+                                    <constraint firstItem="BTX-Ak-uWg" firstAttribute="height" secondItem="lq4-M1-wUk" secondAttribute="height" priority="250" id="Ods-NO-P4L"/>
+                                    <constraint firstAttribute="trailing" secondItem="BTX-Ak-uWg" secondAttribute="trailing" id="Vod-OJ-iMY"/>
+                                    <constraint firstItem="BTX-Ak-uWg" firstAttribute="top" secondItem="lq4-M1-wUk" secondAttribute="top" id="ofT-Dd-0hd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="color_fafafa_181818"/>
+                        <constraints>
+                            <constraint firstItem="lq4-M1-wUk" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="8Qc-lb-hTI"/>
+                            <constraint firstItem="lq4-M1-wUk" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Zsu-sD-oUV"/>
+                            <constraint firstItem="lq4-M1-wUk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="m4e-nL-Rhv"/>
+                            <constraint firstItem="lq4-M1-wUk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="yO6-eC-H4j"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="settingView" destination="I2H-qv-hsh" id="NuD-vN-awG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

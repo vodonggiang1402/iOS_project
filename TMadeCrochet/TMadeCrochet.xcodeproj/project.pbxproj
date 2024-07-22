@@ -135,6 +135,10 @@
 		7BB995182C3BDA19008EF04B /* BarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB995172C3BDA19008EF04B /* BarButton.swift */; };
 		7BB9951B2C3BDB54008EF04B /* TitleViewNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9951A2C3BDB54008EF04B /* TitleViewNavigationBar.swift */; };
 		7BB9951D2C3BDB5B008EF04B /* TitleViewNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BB9951C2C3BDB5B008EF04B /* TitleViewNavigationBar.xib */; };
+		7BDB148C2C4DC86D0081676D /* HighlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB148B2C4DC86D0081676D /* HighlightView.swift */; };
+		7BDB148F2C4DF14C0081676D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB148E2C4DF14C0081676D /* SettingView.swift */; };
+		7BDB14912C4DF16D0081676D /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDB14902C4DF16D0081676D /* SettingView.xib */; };
+		7BDB14932C4E09110081676D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14922C4E09110081676D /* UIImageViewExtension.swift */; };
 		7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */; };
 		7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */; };
 		7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */; };
@@ -427,6 +431,10 @@
 		7BB995172C3BDA19008EF04B /* BarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButton.swift; sourceTree = "<group>"; };
 		7BB9951A2C3BDB54008EF04B /* TitleViewNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewNavigationBar.swift; sourceTree = "<group>"; };
 		7BB9951C2C3BDB5B008EF04B /* TitleViewNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleViewNavigationBar.xib; sourceTree = "<group>"; };
+		7BDB148B2C4DC86D0081676D /* HighlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightView.swift; sourceTree = "<group>"; };
+		7BDB148E2C4DF14C0081676D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		7BDB14902C4DF16D0081676D /* SettingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
+		7BDB14922C4E09110081676D /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashStoryboard.storyboard; sourceTree = "<group>"; };
 		7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -960,6 +968,7 @@
 		7B522E3C2C3253E00034EE9D /* UIKitExtension */ = {
 			isa = PBXGroup;
 			children = (
+				7BDB14922C4E09110081676D /* UIImageViewExtension.swift */,
 				7B153E672C46342400F6718A /* CACornerMask.swift */,
 				7B153E652C4541A900F6718A /* UITextFieldExtension.swift */,
 				7B153E5A2C45408800F6718A /* UIViewExtension.swift */,
@@ -1078,6 +1087,7 @@
 		7BB994CF2C3B9549008EF04B /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				7BDB148D2C4DF13E0081676D /* SettingView */,
 				7BB994FC2C3B96CF008EF04B /* SettingContract.swift */,
 				7BB994FF2C3B96CF008EF04B /* SettingEntity.swift */,
 				7BB994FE2C3B96CF008EF04B /* SettingInteractor.swift */,
@@ -1098,6 +1108,7 @@
 				7BB995172C3BDA19008EF04B /* BarButton.swift */,
 				7BAC04302C40ED22006CE1DE /* AppConstant.swift */,
 				7B153E582C453FBF00F6718A /* StyleButton.swift */,
+				7BDB148B2C4DC86D0081676D /* HighlightView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1109,6 +1120,15 @@
 				7BB9951C2C3BDB5B008EF04B /* TitleViewNavigationBar.xib */,
 			);
 			path = TitleViewNavigationBar;
+			sourceTree = "<group>";
+		};
+		7BDB148D2C4DF13E0081676D /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				7BDB148E2C4DF14C0081676D /* SettingView.swift */,
+				7BDB14902C4DF16D0081676D /* SettingView.xib */,
+			);
+			path = SettingView;
 			sourceTree = "<group>";
 		};
 		7BF32A142C33CC8900CD8F18 /* CustomView */ = {
@@ -1303,6 +1323,7 @@
 				7B7686882C42914300DBE001 /* CountCollectionCell.xib in Resources */,
 				7B76868F2C44DB0400DBE001 /* CountHeaderView.xib in Resources */,
 				7B3419FC2C33D0060069BD02 /* NormalFooter.bundle in Resources */,
+				7BDB14912C4DF16D0081676D /* SettingView.xib in Resources */,
 				7B4E34942C3E35180059167A /* SymbolHeaderView.xib in Resources */,
 				7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */,
 				7B153E6E2C464D0800F6718A /* AddCountFooterView.xib in Resources */,
@@ -1525,6 +1546,7 @@
 				7B4E34A32C3E46F60059167A /* SymbolDetailPresenter.swift in Sources */,
 				7B4E34A42C3E46F60059167A /* SymbolDetailRouter.swift in Sources */,
 				7B341A062C33D1B90069BD02 /* BaseCollectionViewCell.swift in Sources */,
+				7BDB148C2C4DC86D0081676D /* HighlightView.swift in Sources */,
 				7B3419EB2C33CFDC0069BD02 /* FastCheckLayer.swift in Sources */,
 				7B153E782C4B752300F6718A /* GoogleMobileAdsConsentManager.swift in Sources */,
 				7BB9950F2C3B96DC008EF04B /* CountPresenter.swift in Sources */,
@@ -1555,6 +1577,8 @@
 				7BB995122C3B96DC008EF04B /* CountRouter.swift in Sources */,
 				7B4E34A22C3E46F60059167A /* SymbolDetailContract.swift in Sources */,
 				7BF32A1B2C33CE5500CD8F18 /* UITableViewExtension.swift in Sources */,
+				7BDB14932C4E09110081676D /* UIImageViewExtension.swift in Sources */,
+				7BDB148F2C4DF14C0081676D /* SettingView.swift in Sources */,
 				7B522E7E2C3262740034EE9D /* PatternEntity.swift in Sources */,
 				7B522E5E2C3260AC0034EE9D /* SplashRouter.swift in Sources */,
 				7BF32A242C33CF0A00CD8F18 /* CRRefreshHeaderView.swift in Sources */,

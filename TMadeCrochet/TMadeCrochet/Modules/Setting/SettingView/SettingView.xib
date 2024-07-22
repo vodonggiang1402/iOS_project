@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingView" customModule="Moc___Dan" customModuleProvider="target">
+            <connections>
+                <outlet property="contactImageView" destination="qSZ-4N-2yu" id="i58-0L-yso"/>
+                <outlet property="contactLabel" destination="DS1-yf-lq2" id="Td3-vi-hVD"/>
+                <outlet property="policyImageView" destination="8RH-l4-Ihg" id="FFY-04-LfY"/>
+                <outlet property="policyLabel" destination="Cx4-VJ-1TT" id="qSH-BN-67D"/>
+                <outlet property="policyView" destination="WaD-8b-Sp2" id="MMk-AS-FCk"/>
+                <outlet property="rateImage" destination="czJ-VT-fjD" id="dDY-pj-xIl"/>
+                <outlet property="rateLabel" destination="caC-TN-6fD" id="Qyh-lE-OHQ"/>
+                <outlet property="rateView" destination="udi-qa-WYw" id="Qph-C8-pSk"/>
+                <outlet property="shareImageView" destination="2of-qJ-rM1" id="w2L-VU-fnR"/>
+                <outlet property="shareLabel" destination="wKE-Ob-aiG" id="DkH-WY-oO0"/>
+                <outlet property="shareView" destination="Z7j-2B-Ear" id="qbS-hu-Oqc"/>
+                <outlet property="termImageView" destination="dwu-F8-yW2" id="HOk-2u-ir0"/>
+                <outlet property="termLabel" destination="18N-Ec-6FY" id="n2G-22-STT"/>
+                <outlet property="termView" destination="bBA-M3-tMM" id="jhZ-kq-cn1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ofr-dP-5Pq">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" id="0Sn-4b-qjW">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBA-M3-tMM" customClass="HighlightView" customModule="Moc___Dan" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JOK-SY-WRt">
+                                    <rect key="frame" x="16" y="0.0" width="382" height="56"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_setting_term" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-F8-yW2">
+                                            <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="56" id="y3c-qq-zxg"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Điều khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18N-Ec-6FY">
+                                            <rect key="frame" x="76" y="0.0" width="306" height="56"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="color_7f7f7f_565656"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="JOK-SY-WRt" firstAttribute="top" secondItem="bBA-M3-tMM" secondAttribute="top" id="HN0-ML-IqV"/>
+                                <constraint firstItem="JOK-SY-WRt" firstAttribute="leading" secondItem="bBA-M3-tMM" secondAttribute="leading" constant="16" id="q9w-vY-GES"/>
+                                <constraint firstAttribute="trailing" secondItem="JOK-SY-WRt" secondAttribute="trailing" constant="16" id="sDL-Iv-AEj"/>
+                                <constraint firstAttribute="bottom" secondItem="JOK-SY-WRt" secondAttribute="bottom" id="su6-l9-BR4"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WaD-8b-Sp2" customClass="HighlightView" customModule="Moc___Dan" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="76" width="414" height="56"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rEg-9H-thU">
+                                    <rect key="frame" x="16" y="0.0" width="382" height="56"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_setting_policy" translatesAutoresizingMaskIntoConstraints="NO" id="8RH-l4-Ihg">
+                                            <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="56" id="RNx-fA-9Rg"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chính sách" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cx4-VJ-1TT">
+                                            <rect key="frame" x="76" y="0.0" width="306" height="56"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="color_7f7f7f_565656"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="rEg-9H-thU" firstAttribute="top" secondItem="WaD-8b-Sp2" secondAttribute="top" id="2ub-OF-vlU"/>
+                                <constraint firstItem="rEg-9H-thU" firstAttribute="leading" secondItem="WaD-8b-Sp2" secondAttribute="leading" constant="16" id="5iL-se-giM"/>
+                                <constraint firstAttribute="bottom" secondItem="rEg-9H-thU" secondAttribute="bottom" id="il0-3P-Gag"/>
+                                <constraint firstAttribute="trailing" secondItem="rEg-9H-thU" secondAttribute="trailing" constant="16" id="ygo-u4-e8q"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3s-CT-Q4p" customClass="HighlightView" customModule="Moc___Dan" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="152" width="414" height="56"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YPO-Dc-FbC">
+                                    <rect key="frame" x="16" y="0.0" width="382" height="56"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_setting_contact" translatesAutoresizingMaskIntoConstraints="NO" id="qSZ-4N-2yu">
+                                            <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="56" id="hX3-vJ-fzX"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liên hệ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DS1-yf-lq2">
+                                            <rect key="frame" x="76" y="0.0" width="306" height="56"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="color_7f7f7f_565656"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="YPO-Dc-FbC" secondAttribute="trailing" constant="16" id="TF1-B9-NAE"/>
+                                <constraint firstItem="YPO-Dc-FbC" firstAttribute="leading" secondItem="d3s-CT-Q4p" secondAttribute="leading" constant="16" id="Wki-Dt-QhY"/>
+                                <constraint firstItem="YPO-Dc-FbC" firstAttribute="top" secondItem="d3s-CT-Q4p" secondAttribute="top" id="Xc8-EJ-iym"/>
+                                <constraint firstAttribute="bottom" secondItem="YPO-Dc-FbC" secondAttribute="bottom" id="imx-Ld-iRb"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7j-2B-Ear" customClass="HighlightView" customModule="Moc___Dan" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="228" width="414" height="56"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AVP-9X-Jzx">
+                                    <rect key="frame" x="16" y="0.0" width="382" height="56"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_setting_share" translatesAutoresizingMaskIntoConstraints="NO" id="2of-qJ-rM1">
+                                            <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="56" id="Cez-dx-F1y"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chia sẻ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKE-Ob-aiG">
+                                            <rect key="frame" x="76" y="0.0" width="306" height="56"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="color_7f7f7f_565656"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="AVP-9X-Jzx" secondAttribute="bottom" id="Hcb-7U-nTA"/>
+                                <constraint firstItem="AVP-9X-Jzx" firstAttribute="leading" secondItem="Z7j-2B-Ear" secondAttribute="leading" constant="16" id="VQM-x2-LIB"/>
+                                <constraint firstItem="AVP-9X-Jzx" firstAttribute="top" secondItem="Z7j-2B-Ear" secondAttribute="top" id="fd7-6d-PV2"/>
+                                <constraint firstAttribute="trailing" secondItem="AVP-9X-Jzx" secondAttribute="trailing" constant="16" id="to1-tW-qce"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udi-qa-WYw" customClass="HighlightView" customModule="Moc___Dan" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="304" width="414" height="56"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Cyl-WT-W40">
+                                    <rect key="frame" x="16" y="0.0" width="382" height="56"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_setting_rate" translatesAutoresizingMaskIntoConstraints="NO" id="czJ-VT-fjD">
+                                            <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="56" id="XUe-vM-ccZ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đánh giá" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caC-TN-6fD">
+                                            <rect key="frame" x="76" y="0.0" width="306" height="56"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="color_7f7f7f_565656"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Cyl-WT-W40" secondAttribute="trailing" constant="16" id="QhA-HQ-BmZ"/>
+                                <constraint firstItem="Cyl-WT-W40" firstAttribute="top" secondItem="udi-qa-WYw" secondAttribute="top" id="Xqi-pf-2gc"/>
+                                <constraint firstItem="Cyl-WT-W40" firstAttribute="leading" secondItem="udi-qa-WYw" secondAttribute="leading" constant="16" id="lhG-wy-eNw"/>
+                                <constraint firstAttribute="bottom" secondItem="Cyl-WT-W40" secondAttribute="bottom" id="p3p-fE-NpX"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="3i7-Nd-oFZ"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="56" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_setting_contact" width="56" height="56"/>
+        <image name="ico_setting_policy" width="56" height="56"/>
+        <image name="ico_setting_rate" width="56" height="56"/>
+        <image name="ico_setting_share" width="56" height="56"/>
+        <image name="ico_setting_term" width="56" height="56"/>
+        <namedColor name="color_7f7f7f_565656">
+            <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
