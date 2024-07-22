@@ -17,10 +17,11 @@ class SplashViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavigationBar(isHide: true)
-        guard AppConstant.isFirstTime else {
-            self.presenter?.getData()
-            return
-        }
+//        guard AppConstant.isFirstTime else {
+//            self.presenter?.getData()
+//            return
+//        }
+        self.presenter?.getData()
         self.handleFlowApp()
     }
     

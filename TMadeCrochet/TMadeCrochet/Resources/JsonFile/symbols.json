@@ -11,22 +11,22 @@
           {
             "content" : "Đặt kim móc sau sợi len.",
             "step_name" : "Bước 1",
-            "image_name" : "slip_knot_step_1"
+            "image_name" : "slip_knot_crochet_1"
           },
           {
             "content" : "Vòng kim ra phía trước sợi len và ngoặc kim lên để tạo thành 1 vòng tròn.",
             "step_name" : "Bước 2",
-            "image_name" : "slip_knot_step_2"
+            "image_name" : "slip_knot_crochet_2"
           },
           {
             "content" : "Dùng kim lấy len và kéo qua vòng tròn vừa tạo. Kéo sợi len thừa để thắt chặt mũi gút.",
             "step_name" : "Bước 3",
-            "image_name" : "slip_knot_step_3"
+            "image_name" : "slip_knot_crochet_3"
           },
           {
             "content" : "Kéo sợi len thừa để thắt chặt mũi gút.",
             "step_name" : "Bước 4",
-            "image_name" : "slip_knot_step_3"
+            "image_name" : "slip_knot_3"
           }
         ],
         "background_color" : "FED1B2",
@@ -68,17 +68,17 @@
           {
             "content" : "Dùng kim móc lấy len.",
             "step_name" : "Bước 1",
-            "image_name" : "chain_step_1"
+            "image_name" : "chain_crochet_1"
           },
           {
             "content" : "Kéo lên qua vòng tròn mũi gút.",
             "step_name" : "Bước 2",
-            "image_name" : "chain_step_2"
+            "image_name" : "chain_crochet_2"
           },
           {
             "content" : "Tiếp tục lặp lại 2 bước trên để có được dây bính với số mũi bính cần thiết.",
             "step_name" : "Bước 3",
-            "image_name" : "chain_step_3"
+            "image_name" : "chain_crochet_3"
           }
         ],
         "background_color" : "FED1B2",
@@ -92,19 +92,24 @@
         "icon_name" : "single_crochet",
         "steps" : [
           {
-            "content" : "",
+            "content" : "Luồn kim qua mũi bính.",
             "step_name" : "Bước 1",
-            "image_name" : "crochet_step"
+            "image_name" : "single_crochet_1"
           },
           {
-            "content" : "abc",
+            "content" : "Lấy len và kéo qua để có 2 vòng len trên kim.",
             "step_name" : "Bước 2",
-            "image_name" : "crochet_step"
+            "image_name" : "single_crochet_2"
           },
           {
-            "content" : "abc",
+            "content" : "Tiếp tục lấy len và kéo len qua cả 2 vòng trên kim.",
             "step_name" : "Bước 3",
-            "image_name" : "crochet_step"
+            "image_name" : "single_crochet_3"
+          },
+          {
+            "content" : "Hoàn thành được một mũi đơn.",
+            "step_name" : "Bước 4",
+            "image_name" : "single_crochet_4"
           }
         ],
         "background_color" : "FED1B2",
@@ -118,19 +123,24 @@
         "icon_name" : "half_double_crochet",
         "steps" : [
           {
-            "content" : "",
+            "content" : "Dùng kim móc lấy len, và luồn kim qua chân bính thứ 3 của dây bính.",
             "step_name" : "Bước 1",
-            "image_name" : "crochet_step"
+            "image_name" : "half_double_crochet_1"
           },
           {
-            "content" : "abc",
+            "content" : "lấy len và kéo qua chân bính lúc này trên kim sẽ có 3 vòng sợi.",
             "step_name" : "Bước 2",
-            "image_name" : "crochet_step"
+            "image_name" : "half_double_crochet_2"
           },
           {
-            "content" : "abc",
+            "content" : "Tiếp tục lấy len và kéo len qua cả 3 vòng trên kim.",
             "step_name" : "Bước 3",
-            "image_name" : "crochet_step"
+            "image_name" : "half_double_crochet_3"
+          },
+          {
+            "content" : "Lặp lại 3 bước trên để được những mũi nửa kép tiếp theo.",
+            "step_name" : "Bước 4",
+            "image_name" : "half_double_crochet_4"
           }
         ],
         "background_color" : "FED1B2",
@@ -144,19 +154,29 @@
         "icon_name" : "double_crochet",
         "steps" : [
           {
-            "content" : "",
+            "content" : "Dùng kim móc lấy len và luồn kim qua chân bính thứ 5 của dây bính",
             "step_name" : "Bước 1",
-            "image_name" : "crochet_step"
+            "image_name" : "double_crochet_1"
           },
           {
-            "content" : "abc",
+            "content" : "Lấy len kéo kim móc qua chân bính.",
             "step_name" : "Bước 2",
-            "image_name" : "crochet_step"
+            "image_name" : "double_crochet_2"
           },
           {
-            "content" : "abc",
+            "content" : "Lấy len và kéo len qua 2 vòng len trên kim.",
             "step_name" : "Bước 3",
-            "image_name" : "crochet_step"
+            "image_name" : "double_crochet_3"
+          },
+          {
+            "content" : " Lấy len và kéo len qua 2 vòng còn lại trên kim.",
+            "step_name" : "Bước 3",
+            "image_name" : "double_crochet_4"
+          },
+          {
+            "content" : "Hoàn thành 1 mũi móc kép đơn.",
+            "step_name" : "Bước 3",
+            "image_name" : "double_crochet_5"
           }
         ],
         "background_color" : "FED1B2",
@@ -170,19 +190,29 @@
         "icon_name" : "triple_crochet",
         "steps" : [
           {
-            "content" : "",
+            "content" : "Dùng kim móc quấn 2 vòng len.",
             "step_name" : "Bước 1",
-            "image_name" : "crochet_step"
+            "image_name" : "triple_crochet_1"
           },
           {
-            "content" : "abc",
+            "content" : "Sau đó luồn kim qua chân bính thứ 6 của dây bính, lấy len kéo qua chân bính.",
             "step_name" : "Bước 2",
-            "image_name" : "crochet_step"
+            "image_name" : "triple_crochet_2"
           },
           {
-            "content" : "abc",
+            "content" : "Lấy len và kéo len qua 2 vòng len trên kim.",
             "step_name" : "Bước 3",
-            "image_name" : "crochet_step"
+            "image_name" : "triple_crochet_3"
+          },
+          {
+            "content" : "Lặp lại lấy len và kéo len qua 2 vòng len trên kim 2 lần nữa.",
+            "step_name" : "Bước 4",
+            "image_name" : "triple_crochet_4"
+          },
+          {
+            "content" : "Hoàn thành 1 mũi móc kép đôi.",
+            "step_name" : "Bước 5",
+            "image_name" : "triple_crochet_5"
           }
         ],
         "background_color" : "FED1B2",
@@ -196,19 +226,29 @@
         "icon_name" : "double_triple",
         "steps" : [
           {
-            "content" : "",
+            "content" : "Dùng kim móc quấn 3 vòng len.",
             "step_name" : "Bước 1",
-            "image_name" : "crochet_step"
+            "image_name" : "double_triple_1"
           },
           {
-            "content" : "abc",
+            "content" : "Sau đó luồn kim qua chân bính thứ 7 của dây bính, lấy len kéo qua chân bính.",
             "step_name" : "Bước 2",
-            "image_name" : "crochet_step"
+            "image_name" : "double_triple_2"
           },
           {
-            "content" : "abc",
+            "content" : "Lấy len và kéo len qua 2 vòng len trên kim.",
             "step_name" : "Bước 3",
-            "image_name" : "crochet_step"
+            "image_name" : "double_triple_3"
+          },
+          {
+            "content" : "Lặp lại lấy len và kéo len qua 2 vòng len trên kim 3 lần nữa.",
+            "step_name" : "Bước 4",
+            "image_name" : "double_triple_4"
+          },
+          {
+            "content" : "Hoàn thành 1 mũi móc kép ba.",
+            "step_name" : "Bước 5",
+            "image_name" : "double_triple_5"
           }
         ],
         "background_color" : "FED1B2",
