@@ -170,12 +170,12 @@
           },
           {
             "content" : " Lấy len và kéo len qua 2 vòng còn lại trên kim.",
-            "step_name" : "Bước 3",
+            "step_name" : "Bước 4",
             "image_name" : "double_crochet_4"
           },
           {
             "content" : "Hoàn thành 1 mũi móc kép đơn.",
-            "step_name" : "Bước 3",
+            "step_name" : "Bước 5",
             "image_name" : "double_crochet_5"
           }
         ],
@@ -256,53 +256,63 @@
       }
     ],
     [
-      {
-        "is_ads" : true,
-        "symbol_id" : "1",
-        "symbol_des" : "Trong các hướng dẫn của chart móc thì Mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên",
-        "symbol_name" : "ico_hdc3tog_into_same_st",
-        "icon_name" : "ico_hdc3tog_into_same_st",
-        "steps" : [
-          {
-            "content" : "",
-            "step_name" : "Bước 1",
-            "image_name" : "crochet_step"
-          },
-          {
-            "content" : "abc",
-            "step_name" : "Bước 2",
-            "image_name" : "crochet_step"
-          },
-          {
-            "content" : "abc",
-            "step_name" : "Bước 3",
-            "image_name" : "crochet_step"
-          }
-        ],
-        "background_color" : "FED1B2",
-        "video_url" : ""
-      },
+    {
+      "is_ads" : true,
+      "symbol_id" : "1",
+      "symbol_des" : "Mũi hạt bắp ( 3 mũi nửa kép) được hình thành từ 3 mũi nửa kép chưa đầy đủ cùng móc vào 1 chân.",
+      "symbol_name" : "Mũi hạt bắp ( 3 mũi nửa kép)",
+      "icon_name" : "ico_hdc3tog_into_same_st",
+      "steps" : [
+        {
+          "content" : "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.",
+          "step_name" : "Bước 1",
+          "image_name" : "hdc3tog_into_same_st_1"
+        },
+        {
+          "content" : "Kéo lên qua chân bính được 1 mũi nửa kép chưa hoàn thành, lặp lại thêm 2 lần mũi nửa kép chưa hoàn thành vào chung 1 chân móc.",
+          "step_name" : "Bước 2",
+          "image_name" : "hdc3tog_into_same_st_2"
+        },
+        {
+          "content" : "Dùng kim lấy len và kéo len qua cả 7 vòng trên kim để chụm thành 1 mũi.",
+          "step_name" : "Bước 3",
+          "image_name" : "hdc3tog_into_same_st_3"
+        },
+        {
+          "content" : "Hoàn thành 1 mũi hạt bắp từ 3 mũi nữa kép.",
+          "step_name" : "Bước 4",
+          "image_name" : "hdc3tog_into_same_st_4"
+        }
+      ],
+      "background_color" : "FED1B2",
+      "video_url" : ""
+    },
       {
         "is_ads" : true,
         "symbol_id" : "2",
-        "symbol_des" : "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…",
-        "symbol_name" : "ico_dc3tog_into_same_st",
+        "symbol_des" : "Mũi hạt bắp (3 mũi kép đơn) được hình thành từ 3 mũi kép chưa đầy đủ cùng móc vào 1 chân.",
+        "symbol_name" : "Mũi hạt bắp (3 mũi kép đơn)",
         "icon_name" : "ico_dc3tog_into_same_st",
         "steps" : [
           {
-            "content" : "",
+            "content" : "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.",
             "step_name" : "Bước 1",
-            "image_name" : "crochet_step"
+            "image_name" : "dc3tog_into_same_st_1"
           },
           {
-            "content" : "abc",
+            "content" : "Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 2 lần mũi  kép chưa hoàn thành vào chung 1 chân móc",
             "step_name" : "Bước 2",
-            "image_name" : "crochet_step"
+            "image_name" : "dc3tog_into_same_st_2"
           },
           {
-            "content" : "abc",
+            "content" : "Dùng kim lấy len và kéo len qua cả 4 vòng trên kim để chụm thành 1 mũi ",
             "step_name" : "Bước 3",
-            "image_name" : "crochet_step"
+            "image_name" : "dc3tog_into_same_st_3"
+          },
+          {
+            "content" : "Hoàn thành 1 mũi hạt bắp từ 3 mũi kép đơn.",
+            "step_name" : "Bước 4",
+            "image_name" : "dc3tog_into_same_st_4"
           }
         ],
         "background_color" : "FED1B2",
@@ -311,24 +321,29 @@
       {
         "is_ads" : true,
         "symbol_id" : "3",
-        "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.",
-        "symbol_name" : "ico_dc5tog_into_same_st",
+        "symbol_des" : "Mũi hạt bắp (5 mũi kép đơn) được hình thành từ 5 mũi kép chưa đầy đủ cùng móc vào 1 chân.",
+        "symbol_name" : "Mũi hạt bắp (5 mũi kép đơn)",
         "icon_name" : "ico_dc5tog_into_same_st",
         "steps" : [
           {
-            "content" : "",
+            "content" : "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.",
             "step_name" : "Bước 1",
-            "image_name" : "crochet_step"
+            "image_name" : "dc5tog_into_same_st_1"
           },
           {
-            "content" : "abc",
+            "content" : "Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 4 lần mũi kép chưa hoàn thành vào chung 1 chân móc.",
             "step_name" : "Bước 2",
-            "image_name" : "crochet_step"
+            "image_name" : "dc5tog_into_same_st_2"
           },
           {
-            "content" : "abc",
+            "content" : "Dùng kim lấy len và kéo len qua cả 6 vòng trên kim để chụm thành 1 mũi.",
             "step_name" : "Bước 3",
-            "image_name" : "crochet_step"
+            "image_name" : "dc5tog_into_same_st_3"
+          },
+          {
+            "content" : "Hoàn thành 1 mũi hạt bắp từ 5 mũi kép đơn",
+            "step_name" : "Bước 4",
+            "image_name" : "dc5tog_into_same_st_4"
           }
         ],
         "background_color" : "FED1B2",
@@ -340,7 +355,7 @@
         "is_ads" : true,
         "symbol_id" : "4",
         "symbol_des" : "Mũi móc đơn có độ cao bằng một mũi bính. Đẻ có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.",
-        "symbol_name" : "Mũi đơn",
+        "symbol_name" : "2 mũi đơn chung chân",
         "icon_name" : "ico_sc",
         "steps" : [
           {
