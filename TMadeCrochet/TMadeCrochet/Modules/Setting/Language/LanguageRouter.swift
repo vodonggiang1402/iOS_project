@@ -36,6 +36,7 @@ class LanguageRouter: PresenterToRouterLanguageProtocol {
         viewController.presenter?.view = viewController
         viewController.presenter?.interactor = LanguageInteractor()
         viewController.presenter?.interactor?.entity = entity
+        viewController.presenter?.interactor?.presenter = presenter
 
         return viewController
     }

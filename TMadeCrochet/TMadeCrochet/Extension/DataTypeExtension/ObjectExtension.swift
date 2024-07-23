@@ -2,7 +2,7 @@
 //  ObjectExtension.swift
 //  Probit
 //
-//  Created by Beacon on 10/08/2022.
+//  Created by Vo Dong Giang on 1/7/24.
 //
 
 import Foundation

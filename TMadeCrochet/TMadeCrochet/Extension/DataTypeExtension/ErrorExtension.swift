@@ -2,7 +2,7 @@
 //  ErrorExtension.swift
 //  Probit
 //
-//  Created by Nguyen Huy Hoang on 02/10/2023.
+//  Created by Vo Dong Giang on 1/7/24.
 //
 
 import Foundation
