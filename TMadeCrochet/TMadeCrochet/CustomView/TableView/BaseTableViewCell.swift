@@ -8,7 +8,7 @@
 import UIKit
 
 class BaseTableViewCell: UITableViewCell {
-    var bgColor: UIColor = UIColor.colorFafafa181818
+    var bgColor: UIColor = UIColor.clear
 
     private var isApplyHover: Bool = true
     

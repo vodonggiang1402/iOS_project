@@ -168,9 +168,9 @@
 		7BDB14D12C4FD83D0081676D /* LanguageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14CA2C4FD83D0081676D /* LanguageInteractor.swift */; };
 		7BDB14D22C4FD83D0081676D /* LanguageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14CB2C4FD83D0081676D /* LanguageEntity.swift */; };
 		7BDB14D32C4FD83D0081676D /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14CC2C4FD83D0081676D /* LanguageViewController.swift */; };
-		7BDB14D62C4FDDF10081676D /* LanguageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14D52C4FDDF10081676D /* LanguageTableCell.swift */; };
-		7BDB14D82C4FDDF70081676D /* LanguageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDB14D72C4FDDF70081676D /* LanguageTableCell.xib */; };
+		7BDB14D62C4FDDF10081676D /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14D52C4FDDF10081676D /* LanguageTableViewCell.swift */; };
 		7BDB14DA2C4FE4270081676D /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14D92C4FE4270081676D /* ArrayExtension.swift */; };
+		7BDB14DC2C4FEFD40081676D /* LanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDB14DB2C4FEFD40081676D /* LanguageTableViewCell.xib */; };
 		7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */; };
 		7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */; };
 		7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */; };
@@ -496,9 +496,9 @@
 		7BDB14CA2C4FD83D0081676D /* LanguageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageInteractor.swift; sourceTree = "<group>"; };
 		7BDB14CB2C4FD83D0081676D /* LanguageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageEntity.swift; sourceTree = "<group>"; };
 		7BDB14CC2C4FD83D0081676D /* LanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
-		7BDB14D52C4FDDF10081676D /* LanguageTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableCell.swift; sourceTree = "<group>"; };
-		7BDB14D72C4FDDF70081676D /* LanguageTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableCell.xib; sourceTree = "<group>"; };
+		7BDB14D52C4FDDF10081676D /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		7BDB14D92C4FE4270081676D /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		7BDB14DB2C4FEFD40081676D /* LanguageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableViewCell.xib; sourceTree = "<group>"; };
 		7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashStoryboard.storyboard; sourceTree = "<group>"; };
 		7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -1260,8 +1260,8 @@
 		7BDB14D42C4FDDE00081676D /* LanguageTableCell */ = {
 			isa = PBXGroup;
 			children = (
-				7BDB14D52C4FDDF10081676D /* LanguageTableCell.swift */,
-				7BDB14D72C4FDDF70081676D /* LanguageTableCell.xib */,
+				7BDB14D52C4FDDF10081676D /* LanguageTableViewCell.swift */,
+				7BDB14DB2C4FEFD40081676D /* LanguageTableViewCell.xib */,
 			);
 			path = LanguageTableCell;
 			sourceTree = "<group>";
@@ -1455,6 +1455,7 @@
 				7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */,
 				7BDB149E2C4E19E10081676D /* ContactStoryboard.storyboard in Resources */,
 				7B4E34A52C3E46F60059167A /* SymbolDetailStoryboard.storyboard in Resources */,
+				7BDB14DC2C4FEFD40081676D /* LanguageTableViewCell.xib in Resources */,
 				7B7686992C4501D600DBE001 /* CountFooterView.xib in Resources */,
 				7B341A262C340B0C0069BD02 /* TitleSection.xib in Resources */,
 				7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */,
@@ -1476,7 +1477,6 @@
 				7B522E7F2C3262740034EE9D /* PatternStoryboard.storyboard in Resources */,
 				7B522E752C32626E0034EE9D /* MainStoryboard.storyboard in Resources */,
 				7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */,
-				7BDB14D82C4FDDF70081676D /* LanguageTableCell.xib in Resources */,
 				7B4E34912C3D04630059167A /* SymbolCollectionCell.xib in Resources */,
 				7B341A212C33FDE70069BD02 /* MainTableCell.xib in Resources */,
 				7BDB14BD2C4E19EE0081676D /* TermStoryboard.storyboard in Resources */,
@@ -1733,7 +1733,7 @@
 				7B522E332C3252EA0034EE9D /* BaseViewController.swift in Sources */,
 				7B4E349F2C3E46F60059167A /* SymbolDetailViewController.swift in Sources */,
 				7BDB14BF2C4E19EE0081676D /* TermViewController.swift in Sources */,
-				7BDB14D62C4FDDF10081676D /* LanguageTableCell.swift in Sources */,
+				7BDB14D62C4FDDF10081676D /* LanguageTableViewCell.swift in Sources */,
 				7BB995122C3B96DC008EF04B /* CountRouter.swift in Sources */,
 				7B4E34A22C3E46F60059167A /* SymbolDetailContract.swift in Sources */,
 				7BF32A1B2C33CE5500CD8F18 /* UITableViewExtension.swift in Sources */,

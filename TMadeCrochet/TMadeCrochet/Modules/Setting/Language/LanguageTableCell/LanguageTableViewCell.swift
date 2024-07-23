@@ -23,7 +23,7 @@ class LanguageTableViewCell: BaseTableViewCell {
         languageLabel.font = isSelected ? .medium(size: 16) : .primary(size: 16)
         languageLabel.text = model.name.firstUppercased
         languageLabel.textColor = isSelected ? UIColor.color_5b5b5b_dadada : UIColor.color_7f7f7f_565656
-        checkImage.isHidden = !(isSelected)
+        checkImage.image = isSelected ? UIImage.init(named: "ico_check") : UIImage.init(named: "ico_uncheck")
         isUserInteractionEnabled = !(isSelected)
     }
     

@@ -6,9 +6,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Language View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -18,21 +22,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hvg-YN-aub" customClass="BaseTableView" customModule="Moc___Dan" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hvg-YN-aub" customClass="BaseTableView" customModule="Moc___Dan" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48" width="414" height="734"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igq-6L-WlA">
+                                <rect key="frame" x="0.0" y="782" width="414" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="iB2-Ib-ChM">
+                                        <rect key="frame" x="16" y="12" width="382" height="56"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIb-Kn-5RO" customClass="StyleButton" customModule="Probit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="56"/>
+                                                <color key="backgroundColor" name="color_4231c8_6f6ff7"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Save">
+                                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="saveButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cyy-X1-kIr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="CMa-op-afY"/>
+                                            <constraint firstAttribute="width" constant="382" id="ZFP-KO-xhI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iB2-Ib-ChM" secondAttribute="trailing" constant="16" id="FqJ-dk-s3i"/>
+                                    <constraint firstAttribute="height" constant="80" id="Ptq-ud-NSL"/>
+                                    <constraint firstItem="iB2-Ib-ChM" firstAttribute="leading" secondItem="Igq-6L-WlA" secondAttribute="leading" constant="16" id="bu4-sf-LjL"/>
+                                    <constraint firstItem="iB2-Ib-ChM" firstAttribute="top" secondItem="Igq-6L-WlA" secondAttribute="top" constant="12" id="jxZ-gt-NSb"/>
+                                    <constraint firstAttribute="bottom" secondItem="iB2-Ib-ChM" secondAttribute="bottom" constant="12" id="yst-s9-Ojw"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="color_fafafa_181818"/>
                         <constraints>
-                            <constraint firstItem="hvg-YN-aub" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="NFc-LY-qbJ"/>
+                            <constraint firstItem="Igq-6L-WlA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="5SO-aJ-Fkb"/>
+                            <constraint firstItem="Igq-6L-WlA" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="5hd-7i-dmp"/>
+                            <constraint firstItem="Igq-6L-WlA" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="ECV-Ik-yOT"/>
+                            <constraint firstItem="Igq-6L-WlA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="G6O-PS-E0U"/>
+                            <constraint firstItem="Igq-6L-WlA" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="KKb-0U-CjI"/>
+                            <constraint firstItem="Igq-6L-WlA" firstAttribute="top" secondItem="hvg-YN-aub" secondAttribute="bottom" id="f6R-7n-WV7"/>
                             <constraint firstItem="hvg-YN-aub" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="hOM-4z-yp5"/>
+                            <constraint firstItem="Igq-6L-WlA" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="yJo-q4-Mhs"/>
                             <constraint firstItem="hvg-YN-aub" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="yq4-yj-pfA"/>
                             <constraint firstItem="hvg-YN-aub" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="zDZ-Ve-xHi"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="saveButton" destination="pIb-Kn-5RO" id="4gj-DN-g4f"/>
                         <outlet property="tableView" destination="hvg-YN-aub" id="H7V-zq-6Mz"/>
                     </connections>
                 </viewController>
@@ -42,11 +88,11 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="color_4231c8_6f6ff7">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="color_fafafa_181818">
             <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

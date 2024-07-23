@@ -32,9 +32,10 @@ class LanguageInteractor: PresenterToInteractorLanguageProtocol {
             }
         }
         languageAppSetting = languages.sorted(by: {$0.name.lowercased() < $1.name.lowercased()})
-        if let enIndex = languageAppSetting.firstIndex(where: {$0.id == "en-US"}) {
+        if let enIndex = languageAppSetting.firstIndex(where: {$0.id == "vi"}) {
             languageAppSetting.rearrange(fromIndex: enIndex, toIndex: 0)
         }
+        self.presenter?.dataListDidFetch()
     }
     
     func changeLanguage(indexPath: IndexPath) {
@@ -45,5 +46,4 @@ class LanguageInteractor: PresenterToInteractorLanguageProtocol {
             appDelegate.setRootScreen()
         }
     }
-    
 }

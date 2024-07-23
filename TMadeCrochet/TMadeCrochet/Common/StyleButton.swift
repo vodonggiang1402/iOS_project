@@ -17,7 +17,7 @@ enum StyleBtn {
         case .style_cancel:
             return 1.0
         case .style_ok:
-            return 1.0
+            return 0
         }
     }
     

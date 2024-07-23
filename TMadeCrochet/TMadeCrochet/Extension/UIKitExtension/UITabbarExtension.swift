@@ -47,11 +47,11 @@ enum TabBarItem {
         case .count:
             return "tabbar_item_count_text".Localizable()
         case .symbol:
-            return "Mũi móc"
+            return "tabbar_item_symbol_text".Localizable()
         case .pattern:
-            return "Mẫu móc"
+            return "tabbar_item_pattern_text".Localizable()
         case .setting:
-            return "Cài đặt"
+            return "tabbar_item_setting_text".Localizable()
         }
     }
     

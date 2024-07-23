@@ -12,19 +12,23 @@ class LanguageViewController: BaseViewController {
     
     @IBOutlet weak var tableView: BaseTableView!
     
+    @IBOutlet weak var saveButton: StyleButton!
     var presenter: ViewToPresenterLanguageProtocol?
+    var languageAppSetting: [Language] = []
+    var currentIndexPath: IndexPath = []
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar(title: "Ngôn ngữ", isShowLeft: true)
-        presenter?.getListLanguage()
         setupTable()
+        saveButton.style = .style_ok
+        saveButton.setEnable(isEnable: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        presenter?.getListLanguage()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -48,16 +52,36 @@ class LanguageViewController: BaseViewController {
                             hasLoadMore: false)
         tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
-        tableView.dataArray = [presenter?.languageAppSetting ?? []]
+        tableView.dataArray = []
         tableView.cellheight = 60
     }
+    
+    func validateSaveButton() {
+        var valid = false
+        let item = self.languageAppSetting[self.currentIndexPath.item]
+        if AppConstant.localeId != item.id {
+            valid = true
+        }
+        self.saveButton.setEnable(isEnable: valid)
+    }
+    
 
+    @IBAction func saveButtonAction(_ sender: Any) {
+        let item = self.languageAppSetting[self.currentIndexPath.item]
+        if AppConstant.localeId != item.id {
+            self.presenter?.changeLanguage(indexPath: self.currentIndexPath)
+        }
+    }
 }
     
 
 extension LanguageViewController: PresenterToViewLanguageProtocol {
     func reloadData() {
-        tableView.dataArray = [presenter?.languageAppSetting ?? []]
+        if let list = presenter?.languageAppSetting {
+            self.languageAppSetting = list
+            tableView.dataArray = [self.languageAppSetting]
+            tableView.reloadData()
+        }
     }
 }
 
@@ -72,13 +96,21 @@ extension LanguageViewController: BaseTableViewProtocol {
     
     func didSelectRow(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UITableViewCell) {
         guard let model = presenter?.languageAppSetting[indexPath.row] else { return }
-//        showPopupHelperForLanguage("__notice".Localizable(langCode: model.id),
-//                                   language: model,
-//                                   message: "dialog_restart_needed_content".LocalizableForChangeLanguage(langCode: model.id, isLanguageRightToLeft: self.isRightToLeft(forLanguage: model)),
-//                                   acceptTitle: "__common_confirm".Localizable(langCode: model.id),
-//                                   cancleTitle: "__cancel".Localizable(langCode: model.id),
-//                                   acceptAction: {
-//            self.presenter?.changeLanguage(indexPath: indexPath)
-//        }, cancelAction: nil)
+        self.currentIndexPath = indexPath
+        var tempList: [Language] = []
+        for var item in self.languageAppSetting {
+            if item.id == model.id {
+                item.isSelected = true
+            } else {
+                item.isSelected = false
+            }
+            tempList.append(item)
+        }
+        self.languageAppSetting = tempList
+        tableView.dataArray = [self.languageAppSetting]
+        validateSaveButton()
+        tableView.reloadData()
     }
+    
+    
 }

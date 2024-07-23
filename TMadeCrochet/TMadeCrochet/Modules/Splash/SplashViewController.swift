@@ -34,7 +34,7 @@ class SplashViewController: BaseViewController {
     }
     
     func handleFlowApp() {
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             AppConstant.isFirstTime = true
             self.presenter?.navigateToRootMain()
         }
