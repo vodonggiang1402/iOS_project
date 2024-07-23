@@ -72,6 +72,7 @@
             <connections>
                 <outlet property="addButton" destination="8gY-Ei-YxK" id="8Jx-s3-jJd"/>
                 <outlet property="containView" destination="WhX-dh-KMz" id="LIg-mI-MC4"/>
+                <outlet property="imageView" destination="IOl-Px-yhu" id="AVW-dL-jbQ"/>
                 <outlet property="titleLabel" destination="OF0-Ba-XCW" id="EgW-wd-NbV"/>
             </connections>
             <point key="canvasLocation" x="18.840579710144929" y="32.8125"/>

@@ -15,6 +15,7 @@ protocol CountFooterViewDelegate: AnyObject {
 class CountFooterView: BaseCollectionReusableView {
     @IBOutlet weak var containView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var addButton: UIButton!
     weak var delegate: CountFooterViewDelegate?
     
@@ -25,6 +26,7 @@ class CountFooterView: BaseCollectionReusableView {
     override func setupView(text: String, imageStr: String) {
         self.addButton.setTitle("Thêm", for: .normal)
         self.titleLabel.text = text
+        self.imageView.image = UIImage.init(named: imageStr)
     }
     @IBAction func addButtonAction(_ sender: Any) {
         self.delegate?.addButtonAction()

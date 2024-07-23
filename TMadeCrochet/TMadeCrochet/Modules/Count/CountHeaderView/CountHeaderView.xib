@@ -86,6 +86,7 @@
             </constraints>
             <connections>
                 <outlet property="containView" destination="ci8-01-wvp" id="X0n-1d-cHi"/>
+                <outlet property="imageView" destination="8IQ-jt-Xt9" id="dt7-IV-JTJ"/>
                 <outlet property="refreshButton" destination="6O6-Yu-Xi3" id="GeV-jH-xvy"/>
                 <outlet property="refreshImageView" destination="P3q-7S-amR" id="AD2-nD-t6t"/>
                 <outlet property="titleLabel" destination="XhZ-nb-FR4" id="we2-eZ-yVE"/>

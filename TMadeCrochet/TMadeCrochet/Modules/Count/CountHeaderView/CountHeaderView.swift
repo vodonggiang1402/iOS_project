@@ -15,6 +15,7 @@ protocol CountHeaderViewDelegate: AnyObject {
 class CountHeaderView: BaseCollectionReusableView {
     @IBOutlet weak var containView: UIView!
     @IBOutlet weak var refreshButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var refreshImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -27,6 +28,7 @@ class CountHeaderView: BaseCollectionReusableView {
     
     override func setupView(text: String, imageStr: String) {
         self.titleLabel.text = text
+        self.imageView.image = UIImage.init(named: imageStr)
     }
     @IBAction func refreshButtonAction(_ sender: Any) {
         self.delegate?.refreshButtonAction()
