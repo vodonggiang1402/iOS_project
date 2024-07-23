@@ -10,3 +10,10 @@
 "tabbar_item_symbol_text" = "Symbol";
 "tabbar_item_pattern_text" = "Tutorial";
 "tabbar_item_setting_text" = "Setting";
+"main_counter_text" = "Main counter";
+"extra_counter_text" = "Extra counter";
+"add_more_text" = "Add more";
+"edit_text" = "Edit";
+"reset_text" = "Reset";
+"delete_text" = "Delete";
+"cancel_text" = "Cancel";

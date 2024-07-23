@@ -154,10 +154,10 @@ extension CountViewController: BaseCollectionViewProtocol {
                     headerView.delegate = self
                     switch indexPath.section {
                     case 0:
-                        headerView.setupView(text: "Bộ đếm chính", imageStr: "ico_count_main")
+                        headerView.setupView(text: "main_counter_text".Localizable(), imageStr: "ico_count_main")
                         break
                     default:
-                        headerView.setupView(text: "Bộ đếm", imageStr: "")
+                        headerView.setupView(text: "main_counter_text".Localizable(), imageStr: "")
                     }
 
                 }
@@ -172,10 +172,10 @@ extension CountViewController: BaseCollectionViewProtocol {
                        footerView.delegate = self
                        switch indexPath.section {
                        case 0:
-                           footerView.setupView(text: "Bộ đếm phụ", imageStr: "ico_count_sub")
+                           footerView.setupView(text: "extra_counter_text".Localizable(), imageStr: "ico_count_sub")
                            break
                        default:
-                           footerView.setupView(text: "Bộ đếm", imageStr: "")
+                           footerView.setupView(text: "extra_counter_text".Localizable(), imageStr: "ico_count_sub")
                        }
 
                    }
@@ -336,19 +336,19 @@ extension CountViewController: CountCollectionCellDelegate {
         let actionSheetController: UIAlertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 
         // create an action
-        let editAction: UIAlertAction = UIAlertAction(title: "Chỉnh sửa", style: .default) { action -> Void in
+        let editAction: UIAlertAction = UIAlertAction(title: "edit_text".Localizable(), style: .default) { action -> Void in
             self.editAction(indexPath: indexPath)
         }
 
-        let resetAction: UIAlertAction = UIAlertAction(title: "Đếm lại", style: .default) { action -> Void in
+        let resetAction: UIAlertAction = UIAlertAction(title: "reset_text".Localizable(), style: .default) { action -> Void in
             self.resetAction(indexPath: indexPath)
         }
 
-        let deleteAction: UIAlertAction = UIAlertAction(title: "Xoá đếm", style: .destructive) { action -> Void in
+        let deleteAction: UIAlertAction = UIAlertAction(title: "delete_text".Localizable(), style: .destructive) { action -> Void in
             self.deleteAction(indexPath: indexPath)
         }
         
-        let cancelAction: UIAlertAction = UIAlertAction(title: "Bỏ qua", style: .cancel) { action -> Void in
+        let cancelAction: UIAlertAction = UIAlertAction(title: "cancel_text".Localizable(), style: .cancel) { action -> Void in
 
         }
 

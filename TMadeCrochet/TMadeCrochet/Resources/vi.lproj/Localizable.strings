@@ -10,3 +10,10 @@
 "tabbar_item_symbol_text" = "Mũi móc";
 "tabbar_item_pattern_text" = "Hướng dẫn";
 "tabbar_item_setting_text" = "Cài đặt";
+"main_counter_text" = "Bộ đếm chính";
+"extra_counter_text" = "Bộ đếm phụ";
+"add_more_text" = "Thêm";
+"edit_text" = "Chỉnh sửa";
+"reset_text" = "Đếm lại";
+"delete_text" = "Xoá đếm";
+"cancel_text" = "Bỏ qua";

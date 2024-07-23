@@ -24,7 +24,7 @@ class CountFooterView: BaseCollectionReusableView {
     }
     
     override func setupView(text: String, imageStr: String) {
-        self.addButton.setTitle("Thêm", for: .normal)
+        self.addButton.setTitle("add_more_text".Localizable(), for: .normal)
         self.titleLabel.text = text
         self.imageView.image = UIImage.init(named: imageStr)
     }

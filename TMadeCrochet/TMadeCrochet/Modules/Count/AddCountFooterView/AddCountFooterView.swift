@@ -17,7 +17,7 @@ class AddCountFooterView: BaseCollectionReusableView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.addButton.setTitle("Thêm", for: .normal)
+        self.addButton.setTitle("add_more_text".Localizable(), for: .normal)
         self.addButton.imageView?.contentMode = .scaleAspectFill
     }
     
