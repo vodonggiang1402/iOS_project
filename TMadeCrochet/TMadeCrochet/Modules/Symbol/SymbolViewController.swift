@@ -112,19 +112,19 @@ extension SymbolViewController: BaseCollectionViewProtocol {
                 if let headerView = headerView as? SymbolHeaderView {
                     switch indexPath.section {
                     case 0:
-                        headerView.setupView(text: "Mũi cơ bản")
+                        headerView.setupView(text: "Mũi cơ bản", imageStr: "ico_symbol_1")
                         break
                     case 1:
-                        headerView.setupView(text: "Mũi hạt bắp")
+                        headerView.setupView(text: "Mũi hạt bắp", imageStr: "ico_symbol_2")
                         break
                     case 2:
-                        headerView.setupView(text: "Mũi tăng")
+                        headerView.setupView(text: "Mũi tăng", imageStr: "ico_symbol_3")
                         break
                     case 3:
-                        headerView.setupView(text: "Mũi giảm")
+                        headerView.setupView(text: "Mũi giảm", imageStr: "ico_symbol_4")
                         break
                     default:
-                        headerView.setupView(text: "Mũi cơ bản")
+                        headerView.setupView(text: "Mũi cơ bản", imageStr: "ico_symbol_1")
                     }
                 }
                return headerView

@@ -11,6 +11,7 @@ import UIKit
 class SymbolCollectionCell: BaseCollectionViewCell {
     @IBOutlet weak var containView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var containImageView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var adsImageView: UIImageView!
     
@@ -34,6 +35,9 @@ class SymbolCollectionCell: BaseCollectionViewCell {
         self.titleLabel.text = model.symbolName
         if let iconName = model.iconName, iconName.count > 0 {
             self.imageView.image = UIImage.init(named: iconName)
+            self.containImageView.isHidden = false
+        } else {
+            self.containImageView.isHidden = true
         }
         self.adsImageView.image = UIImage.init(named: "ico_clock")
         if let isAds = model.isAds, isAds {

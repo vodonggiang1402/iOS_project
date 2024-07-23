@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 
 class BaseCollectionReusableView: UICollectionReusableView {
-    func setupView(text: String) {}
+    func setupView(text: String, imageStr: String) {}
 }

@@ -154,10 +154,10 @@ extension CountViewController: BaseCollectionViewProtocol {
                     headerView.delegate = self
                     switch indexPath.section {
                     case 0:
-                        headerView.setupView(text: "Bộ đếm chính")
+                        headerView.setupView(text: "Bộ đếm chính", imageStr: "")
                         break
                     default:
-                        headerView.setupView(text: "Bộ đếm")
+                        headerView.setupView(text: "Bộ đếm", imageStr: "")
                     }
 
                 }
@@ -172,10 +172,10 @@ extension CountViewController: BaseCollectionViewProtocol {
                        footerView.delegate = self
                        switch indexPath.section {
                        case 0:
-                           footerView.setupView(text: "Bộ đếm phụ")
+                           footerView.setupView(text: "Bộ đếm phụ", imageStr: "")
                            break
                        default:
-                           footerView.setupView(text: "Bộ đếm")
+                           footerView.setupView(text: "Bộ đếm", imageStr: "")
                        }
 
                    }

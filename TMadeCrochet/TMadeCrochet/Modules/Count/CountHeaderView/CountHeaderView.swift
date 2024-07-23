@@ -25,7 +25,7 @@ class CountHeaderView: BaseCollectionReusableView {
         self.refreshButton.setTitle("", for: .normal)
     }
     
-    override func setupView(text: String) {
+    override func setupView(text: String, imageStr: String) {
         self.titleLabel.text = text
     }
     @IBAction func refreshButtonAction(_ sender: Any) {

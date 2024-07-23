@@ -22,7 +22,7 @@ class CountFooterView: BaseCollectionReusableView {
         super.awakeFromNib()
     }
     
-    override func setupView(text: String) {
+    override func setupView(text: String, imageStr: String) {
         self.addButton.setTitle("Thêm", for: .normal)
         self.titleLabel.text = text
     }
