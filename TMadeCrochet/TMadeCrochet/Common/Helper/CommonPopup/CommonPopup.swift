@@ -48,7 +48,7 @@ class CommonPopup: BaseViewController {
         self.view.endEditing(true)
        var text = self.pinInputView.getInputText()
         if text.isEmpty {
-            text = "Bộ đếm"
+            text = "add_counter_textfield_default_text".Localizable()
         }
         self.dismissView()
         self.activeAction?(text)
@@ -58,7 +58,7 @@ class CommonPopup: BaseViewController {
         pinInputView.delegate = self
         pinInputView.inputTextField.delegate = self
         pinInputView.title = ""
-        pinInputView.placeHolder = "Nhập"
+        pinInputView.placeHolder = "add_counter_textfield_place_holder".Localizable()
         pinInputView.inputTextField.font = UIFont.systemFont(ofSize: 14)
         pinInputView.isSecureTextEntry = false
         pinInputView.textFieldType = .normal
@@ -78,9 +78,9 @@ class CommonPopup: BaseViewController {
     
     func setupFont() {
         titleHeaderLabel.font = UIFont.systemFont(ofSize: 18)
-        titleHeaderLabel.text = ""
-        cancelButton.setTitle("", for: .normal)
-        activeButton.setTitle("", for: .normal)
+        titleHeaderLabel.text = "add_counter_title".Localizable()
+        cancelButton.setTitle("cancel_text".Localizable(), for: .normal)
+        activeButton.setTitle("ok_text".Localizable(), for: .normal)
     }
     
     override func updateLayoutWhenKeyboardChanged(height: CGFloat) {

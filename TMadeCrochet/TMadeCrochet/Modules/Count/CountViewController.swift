@@ -267,9 +267,9 @@ extension CountViewController: CountFooterViewDelegate {
     }
     
     func showAddPopup() {
-        PopupHelper.shared.showCommonPopup(baseViewController: self, titleHeader: "Nhập thông tin", activeTitle: "Đồng ý", activeAction: { title in
+        PopupHelper.shared.showCommonPopup(baseViewController: self, titleHeader: "add_counter_title".Localizable(), activeTitle: "ok_text".Localizable(), activeAction: { title in
             self.addNewCount(text: title)
-        }, cancelTitle: "Bỏ qua") {}
+        }, cancelTitle: "cancel_text".Localizable()) {}
     }
     
     func addNewCount(text: String) {
@@ -364,9 +364,9 @@ extension CountViewController: CountCollectionCellDelegate {
     }
     
     func editAction(indexPath: IndexPath) {
-        PopupHelper.shared.showCommonPopup(baseViewController: self, titleHeader: "Nhập thông tin", activeTitle: "Đồng ý", activeAction: { title in
+        PopupHelper.shared.showCommonPopup(baseViewController: self, titleHeader: "add_counter_title".Localizable(), activeTitle: "ok_text".Localizable(), activeAction: { title in
             self.resetCount(indexPath: indexPath, text: title)
-        }, cancelTitle: "Bỏ qua") {}
+        }, cancelTitle: "cancel_text".Localizable()) {}
     }
     
     func resetCount(indexPath: IndexPath, text: String) {
