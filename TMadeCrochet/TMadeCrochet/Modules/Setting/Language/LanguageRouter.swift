@@ -1,5 +1,5 @@
 //
-//  SettingRouter.swift
+//  LanguageRouter.swift
 //  Probit
 //
 //  Created by Vo Dong Giang on 14/09/2023.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SettingRouter: PresenterToRouterSettingProtocol {
+class LanguageRouter: PresenterToRouterLanguageProtocol {
     func showScreen() {
         let destinationVC = self.createModule()
         destinationVC.hidesBottomBarWhenPushed = true
@@ -26,34 +26,19 @@ class SettingRouter: PresenterToRouterSettingProtocol {
 
     // MARK: Static methods
     func createModule() -> UIViewController {
-        let storyboard = UIStoryboard(name: "SettingStoryboard", bundle: nil)
-        let viewController = storyboard.instantiateViewController(viewControllerType:SettingViewController.self)
+        let storyboard = UIStoryboard(name: "LanguageStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateViewController(viewControllerType:LanguageViewController.self)
 
-        let presenter: ViewToPresenterSettingProtocol & InteractorToPresenterSettingProtocol = SettingPresenter()
-        let entity: InteractorToEntitySettingProtocol = SettingEntity()
+        let presenter: ViewToPresenterLanguageProtocol & InteractorToPresenterLanguageProtocol = LanguagePresenter()
+        let entity: InteractorToEntityLanguageProtocol = LanguageEntity()
         viewController.presenter = presenter
-        viewController.presenter?.router = SettingRouter()
+        viewController.presenter?.router = LanguageRouter()
         viewController.presenter?.view = viewController
-        viewController.presenter?.interactor = SettingInteractor()
+        viewController.presenter?.interactor = LanguageInteractor()
         viewController.presenter?.interactor?.entity = entity
 
         return viewController
     }
 
-    func navigateToLaguage() {
-        LanguageRouter().showScreen()
-    }
-    
-    func navigateToTerm() {
-        TermRouter().showScreen()
-    }
-    
-    func navigateToPolicy() {
-        PolicyRouter().showScreen()
-    }
-    
-    func navigateToContact() {
-        ContactRouter().showScreen()
-    }
 }
 

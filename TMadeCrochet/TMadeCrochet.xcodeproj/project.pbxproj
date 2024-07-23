@@ -160,6 +160,14 @@
 		7BDB14BE2C4E19EE0081676D /* TermRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14B72C4E19EE0081676D /* TermRouter.swift */; };
 		7BDB14BF2C4E19EE0081676D /* TermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14B82C4E19EE0081676D /* TermViewController.swift */; };
 		7BDB14C02C4E19EE0081676D /* TermContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14B92C4E19EE0081676D /* TermContract.swift */; };
+		7BDB14C32C4FD3990081676D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BDB14C12C4FD3990081676D /* Localizable.strings */; };
+		7BDB14CD2C4FD83D0081676D /* LanguageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14C62C4FD83C0081676D /* LanguageRouter.swift */; };
+		7BDB14CE2C4FD83D0081676D /* LanguageContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14C72C4FD83C0081676D /* LanguageContract.swift */; };
+		7BDB14CF2C4FD83D0081676D /* LanguageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDB14C82C4FD83C0081676D /* LanguageStoryboard.storyboard */; };
+		7BDB14D02C4FD83D0081676D /* LanguagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14C92C4FD83C0081676D /* LanguagePresenter.swift */; };
+		7BDB14D12C4FD83D0081676D /* LanguageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14CA2C4FD83D0081676D /* LanguageInteractor.swift */; };
+		7BDB14D22C4FD83D0081676D /* LanguageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14CB2C4FD83D0081676D /* LanguageEntity.swift */; };
+		7BDB14D32C4FD83D0081676D /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB14CC2C4FD83D0081676D /* LanguageViewController.swift */; };
 		7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */; };
 		7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */; };
 		7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */; };
@@ -476,6 +484,15 @@
 		7BDB14B72C4E19EE0081676D /* TermRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermRouter.swift; sourceTree = "<group>"; };
 		7BDB14B82C4E19EE0081676D /* TermViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermViewController.swift; sourceTree = "<group>"; };
 		7BDB14B92C4E19EE0081676D /* TermContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermContract.swift; sourceTree = "<group>"; };
+		7BDB14C22C4FD3990081676D /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7BDB14C42C4FD3A00081676D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7BDB14C62C4FD83C0081676D /* LanguageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageRouter.swift; sourceTree = "<group>"; };
+		7BDB14C72C4FD83C0081676D /* LanguageContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageContract.swift; sourceTree = "<group>"; };
+		7BDB14C82C4FD83C0081676D /* LanguageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LanguageStoryboard.storyboard; sourceTree = "<group>"; };
+		7BDB14C92C4FD83C0081676D /* LanguagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagePresenter.swift; sourceTree = "<group>"; };
+		7BDB14CA2C4FD83D0081676D /* LanguageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageInteractor.swift; sourceTree = "<group>"; };
+		7BDB14CB2C4FD83D0081676D /* LanguageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageEntity.swift; sourceTree = "<group>"; };
+		7BDB14CC2C4FD83D0081676D /* LanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF32A0B2C329A7800CD8F18 /* SplashStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashStoryboard.storyboard; sourceTree = "<group>"; };
 		7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -947,6 +964,7 @@
 				7B341A272C340DDA0069BD02 /* Font */,
 				7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */,
 				7B522E0A2C32511C0034EE9D /* Assets.xcassets */,
+				7BDB14C12C4FD3990081676D /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1127,6 +1145,7 @@
 		7BB994CF2C3B9549008EF04B /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				7BDB14C52C4FD8290081676D /* Language */,
 				7BDB14962C4E19A00081676D /* Contact */,
 				7BDB14952C4E19970081676D /* Policy */,
 				7BDB14942C4E19870081676D /* Term */,
@@ -1214,6 +1233,20 @@
 				7BDB149C2C4E19E00081676D /* ContactViewController.swift */,
 			);
 			path = Contact;
+			sourceTree = "<group>";
+		};
+		7BDB14C52C4FD8290081676D /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				7BDB14C72C4FD83C0081676D /* LanguageContract.swift */,
+				7BDB14CB2C4FD83D0081676D /* LanguageEntity.swift */,
+				7BDB14CA2C4FD83D0081676D /* LanguageInteractor.swift */,
+				7BDB14C92C4FD83C0081676D /* LanguagePresenter.swift */,
+				7BDB14C62C4FD83C0081676D /* LanguageRouter.swift */,
+				7BDB14C82C4FD83C0081676D /* LanguageStoryboard.storyboard */,
+				7BDB14CC2C4FD83D0081676D /* LanguageViewController.swift */,
+			);
+			path = Language;
 			sourceTree = "<group>";
 		};
 		7BF32A142C33CC8900CD8F18 /* CustomView */ = {
@@ -1373,11 +1406,12 @@
 			};
 			buildConfigurationList = 7B522DF92C32511B0034EE9D /* Build configuration list for PBXProject "TMadeCrochet" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = vi;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 7B522DF52C32511B0034EE9D;
 			productRefGroup = 7B522DFF2C32511B0034EE9D /* Products */;
@@ -1412,10 +1446,12 @@
 				7B3419FC2C33D0060069BD02 /* NormalFooter.bundle in Resources */,
 				7BDB14912C4DF16D0081676D /* SettingView.xib in Resources */,
 				7B4E34942C3E35180059167A /* SymbolHeaderView.xib in Resources */,
+				7BDB14C32C4FD3990081676D /* Localizable.strings in Resources */,
 				7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */,
 				7B153E6E2C464D0800F6718A /* AddCountFooterView.xib in Resources */,
 				7B7686812C4285FC00DBE001 /* count.json in Resources */,
 				7B153E612C45411500F6718A /* InLineTextField.xib in Resources */,
+				7BDB14CF2C4FD83D0081676D /* LanguageStoryboard.storyboard in Resources */,
 				7B3419FF2C33D0060069BD02 /* NormalHeader.bundle in Resources */,
 				7BB995042C3B96CF008EF04B /* SettingStoryboard.storyboard in Resources */,
 				7B341AA72C3512880069BD02 /* symbols.json in Resources */,
@@ -1588,6 +1624,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B341A012C33D0C60069BD02 /* ErrorExtension.swift in Sources */,
+				7BDB14D02C4FD83D0081676D /* LanguagePresenter.swift in Sources */,
 				7B522E482C325A950034EE9D /* TabbarViewController.swift in Sources */,
 				7B522EAC2C3262930034EE9D /* SymbolRouter.swift in Sources */,
 				7B522E642C3260AC0034EE9D /* SplashInteractor.swift in Sources */,
@@ -1626,6 +1663,7 @@
 				7B522E742C32626E0034EE9D /* MainInteractor.swift in Sources */,
 				7BDB149F2C4E19E10081676D /* ContactPresenter.swift in Sources */,
 				7B522E762C32626E0034EE9D /* MainPresenter.swift in Sources */,
+				7BDB14CE2C4FD83D0081676D /* LanguageContract.swift in Sources */,
 				7B522E562C325C290034EE9D /* ObjectExtension.swift in Sources */,
 				7BB995072C3B96CF008EF04B /* SettingViewController.swift in Sources */,
 				7BF32A0E2C32B21500CD8F18 /* UIColorExtension.swift in Sources */,
@@ -1679,7 +1717,9 @@
 				7BB995122C3B96DC008EF04B /* CountRouter.swift in Sources */,
 				7B4E34A22C3E46F60059167A /* SymbolDetailContract.swift in Sources */,
 				7BF32A1B2C33CE5500CD8F18 /* UITableViewExtension.swift in Sources */,
+				7BDB14D32C4FD83D0081676D /* LanguageViewController.swift in Sources */,
 				7BDB14932C4E09110081676D /* UIImageViewExtension.swift in Sources */,
+				7BDB14CD2C4FD83D0081676D /* LanguageRouter.swift in Sources */,
 				7BDB148F2C4DF14C0081676D /* SettingView.swift in Sources */,
 				7B522E7E2C3262740034EE9D /* PatternEntity.swift in Sources */,
 				7B522E5E2C3260AC0034EE9D /* SplashRouter.swift in Sources */,
@@ -1712,8 +1752,10 @@
 				7B76868D2C44DAFC00DBE001 /* CountHeaderView.swift in Sources */,
 				7B522E4E2C325B3C0034EE9D /* StringExtension.swift in Sources */,
 				7B522E4B2C325AE10034EE9D /* UITabbarExtension.swift in Sources */,
+				7BDB14D12C4FD83D0081676D /* LanguageInteractor.swift in Sources */,
 				7B522E612C3260AC0034EE9D /* SplashPresenter.swift in Sources */,
 				7B4E34A12C3E46F60059167A /* SymbolDetailInteractor.swift in Sources */,
+				7BDB14D22C4FD83D0081676D /* LanguageEntity.swift in Sources */,
 				7B522EAB2C3262930034EE9D /* SymbolInteractor.swift in Sources */,
 				7BDB14A12C4E19E10081676D /* ContactContract.swift in Sources */,
 				7B3419ED2C33CFDC0069BD02 /* FastArrowLayer.swift in Sources */,
@@ -1751,6 +1793,18 @@
 			targetProxy = 7B522E1F2C32511C0034EE9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BDB14C12C4FD3990081676D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BDB14C22C4FD3990081676D /* vi */,
+				7BDB14C42C4FD3A00081676D /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7B522E262C32511C0034EE9D /* Debug */ = {

@@ -45,7 +45,7 @@ enum TabBarItem {
     var title: String {
         switch self {
         case .count:
-            return "Bộ đếm"
+            return "tabbar_item_count_text".Localizable()
         case .symbol:
             return "Mũi móc"
         case .pattern:

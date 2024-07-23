@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 protocol SettingViewDelegate: AnyObject {
+    func languageViewNormalTap()
     func termViewNormalTap()
     func policyViewNormalTap()
     func contactViewNormalTap()
@@ -17,19 +18,21 @@ protocol SettingViewDelegate: AnyObject {
 }
 
 class SettingView: BaseView {
-    
+    @IBOutlet weak var languageView: HighlightView!
     @IBOutlet weak var termView: HighlightView!
     @IBOutlet weak var policyView: HighlightView!
     @IBOutlet weak var contactView: HighlightView!
     @IBOutlet weak var shareView: HighlightView!
     @IBOutlet weak var rateView: HighlightView!
 
+    @IBOutlet private weak var languageLabel: UILabel!
     @IBOutlet private weak var termLabel: UILabel!
     @IBOutlet private weak var policyLabel: UILabel!
     @IBOutlet private weak var contactLabel: UILabel!
     @IBOutlet private weak var shareLabel: UILabel!
     @IBOutlet private weak var rateLabel: UILabel!
         
+    @IBOutlet weak var languageImageView: UIImageView!
     @IBOutlet weak var termImageView: UIImageView!
     @IBOutlet weak var policyImageView: UIImageView!
     @IBOutlet weak var contactImageView: UIImageView!
@@ -41,6 +44,9 @@ class SettingView: BaseView {
     override func localizedString() { }
     
     override func setupUI() {
+        
+        languageImageView.layer.cornerRadius = 5
+        languageImageView.layer.masksToBounds = true
         
         termImageView.layer.cornerRadius = 5
         termImageView.layer.masksToBounds = true
@@ -56,6 +62,12 @@ class SettingView: BaseView {
         
         rateImage.layer.cornerRadius = 5
         rateImage.layer.masksToBounds = true
+        
+        languageView.delegate = self
+        languageView.addTapGesture { [weak self] in
+            guard let self = self else { return }
+            self.delegate?.languageViewNormalTap()
+        }
         
         termView.delegate = self
         termView.addTapGesture { [weak self] in
@@ -94,6 +106,10 @@ class SettingView: BaseView {
 extension SettingView: HighlightViewProtocol {
     func highlight(view: HighlightView) {
         switch view {
+        case languageView:
+            languageLabel.textColor = UIColor.color_7f7f7f_565656
+            languageImageView.setTintImageView(imageName: "ico_setting_language",
+                                              colorTint: UIColor.clear)
         case termView:
             termLabel.textColor = UIColor.color_7f7f7f_565656
             termImageView.setTintImageView(imageName: "ico_setting_term",
@@ -120,6 +136,10 @@ extension SettingView: HighlightViewProtocol {
     
     func unHighlight(view: HighlightView) {
         switch view {
+        case languageView:
+            languageLabel.textColor = UIColor.color_7f7f7f_565656
+            languageImageView.setTintImageView(imageName: "ico_setting_language",
+                                              colorTint: UIColor.clear)
         case termView:
             termLabel.textColor = UIColor.color_7f7f7f_565656
             termImageView.setTintImageView(imageName: "ico_setting_term",

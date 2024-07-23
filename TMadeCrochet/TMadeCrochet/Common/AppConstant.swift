@@ -57,4 +57,14 @@ struct AppConstant {
             UserDefaults.standard.setValue(data, forKey: "count-response-data")
         }
     }
+    
+    static var localeId: String {
+        get {
+            let langIds = Bundle.main.localizations.filter({$0 != "en" && $0 != "vi"})
+            let currentShortId = Locale.current.languageCode ?? "vi"
+            let currentId = langIds.first(where: {$0.hasPrefix(currentShortId)}) ?? "vi"
+            return UserDefaults.standard.value(forKey: "selected_language") as? String ?? currentId
+        }
+        set { UserDefaults.standard.setValue(newValue, forKey: "selected_language") }
+    }
 }

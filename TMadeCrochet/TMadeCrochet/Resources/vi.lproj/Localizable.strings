@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TMadeCrochet
+
+  Created by Ly Nguyen Xuan Thao on 23/7/24.
+  
+*/
+
+"tabbar_item_count_text" = "Bộ đếm";
+"tabbar_item_symbol_text" = "Mũi móc";
+"tabbar_item_pattern_text" = "Hướng dẫn";
+"tabbar_item_setting_text" = "Cài đặt";

@@ -18,6 +18,7 @@ protocol ViewToPresenterSettingProtocol {
     var interactor: PresenterToInteractorSettingProtocol? { get set }
     var router: PresenterToRouterSettingProtocol? { get set }
     
+    func navigateToLaguage()
     func navigateToTerm()
     func navigateToPolicy()
     func navigateToContact()
@@ -35,6 +36,7 @@ protocol InteractorToPresenterSettingProtocol {
 
 // MARK: Router Input (Presenter -> Router)
 protocol PresenterToRouterSettingProtocol {
+    func navigateToLaguage()
     func navigateToTerm()
     func navigateToPolicy()
     func navigateToContact()

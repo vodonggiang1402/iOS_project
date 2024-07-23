@@ -55,6 +55,10 @@ extension SettingViewController: PresenterToViewSettingProtocol {
 
 // MARK: - SettingViewDelegate
 extension SettingViewController: SettingViewDelegate {
+    func languageViewNormalTap() {
+        self.presenter?.navigateToLaguage()
+    }
+    
     func termViewNormalTap() {
         self.presenter?.navigateToTerm()
     }

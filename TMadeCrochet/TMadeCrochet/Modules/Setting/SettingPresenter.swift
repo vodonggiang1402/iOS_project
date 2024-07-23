@@ -13,6 +13,10 @@ class SettingPresenter: ViewToPresenterSettingProtocol {
     var interactor: PresenterToInteractorSettingProtocol?
     var router: PresenterToRouterSettingProtocol?
     
+    func navigateToLaguage() {
+        self.router?.navigateToLaguage()
+    }
+    
     func navigateToTerm() {
         self.router?.navigateToTerm()
     }
