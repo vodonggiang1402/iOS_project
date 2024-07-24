@@ -19,6 +19,10 @@ struct AppConstant {
     static let globalCount = 3
     static let mailContact = "tmadeapp@gmail.com"
     static let phoneContact = "+84357798368"
+    static let youtubeContact = "http://www.youtube.com/@tmade-0705"
+    
+    
+    
     static var countShowAdsWhenAddMoreCount: Int? {
         get { UserDefaults.standard.value(forKey: "count-show-ads-when-add-more-count") as? Int }
         set { UserDefaults.standard.setValue(newValue, forKey: "count-show-ads-when-add-more-count") }

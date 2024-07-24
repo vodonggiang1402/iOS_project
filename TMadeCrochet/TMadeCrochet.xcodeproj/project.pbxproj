@@ -108,6 +108,8 @@
 		7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B522EA62C3262930034EE9D /* SymbolStoryboard.storyboard */; };
 		7B522EAE2C3262930034EE9D /* SymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EA72C3262930034EE9D /* SymbolViewController.swift */; };
 		7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */; };
+		7B60B3E02C50C52D008D6A34 /* ContactView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3DE2C50C52D008D6A34 /* ContactView.xib */; };
+		7B60B3E12C50C52D008D6A34 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3DF2C50C52D008D6A34 /* ContactView.swift */; };
 		7B7686812C4285FC00DBE001 /* count.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686802C4285FC00DBE001 /* count.json */; };
 		7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686822C42874B00DBE001 /* CountResponse.swift */; };
 		7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686852C42913B00DBE001 /* CountCollectionCell.swift */; };
@@ -442,6 +444,8 @@
 		7B522EA62C3262930034EE9D /* SymbolStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SymbolStoryboard.storyboard; sourceTree = "<group>"; };
 		7B522EA72C3262930034EE9D /* SymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolViewController.swift; sourceTree = "<group>"; };
 		7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerInNavigation.swift; sourceTree = "<group>"; };
+		7B60B3DE2C50C52D008D6A34 /* ContactView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactView.xib; sourceTree = "<group>"; };
+		7B60B3DF2C50C52D008D6A34 /* ContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		7B7686802C4285FC00DBE001 /* count.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = count.json; sourceTree = "<group>"; };
 		7B7686822C42874B00DBE001 /* CountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountResponse.swift; sourceTree = "<group>"; };
 		7B7686852C42913B00DBE001 /* CountCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionCell.swift; sourceTree = "<group>"; };
@@ -1119,6 +1123,15 @@
 			path = Pattern;
 			sourceTree = "<group>";
 		};
+		7B60B3DD2C50C505008D6A34 /* ContactView */ = {
+			isa = PBXGroup;
+			children = (
+				7B60B3DF2C50C52D008D6A34 /* ContactView.swift */,
+				7B60B3DE2C50C52D008D6A34 /* ContactView.xib */,
+			);
+			path = ContactView;
+			sourceTree = "<group>";
+		};
 		7B7686842C42912500DBE001 /* CountCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1246,6 +1259,7 @@
 		7BDB14962C4E19A00081676D /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				7B60B3DD2C50C505008D6A34 /* ContactView */,
 				7BDB149A2C4E19E00081676D /* ContactContract.swift */,
 				7BDB14992C4E19E00081676D /* ContactEntity.swift */,
 				7BDB149B2C4E19E00081676D /* ContactInteractor.swift */,
@@ -1481,6 +1495,7 @@
 				7B522E462C325A950034EE9D /* Tabbar.storyboard in Resources */,
 				7B153E572C453F6700F6718A /* CommonPopup.xib in Resources */,
 				7BB995152C3B96DC008EF04B /* CountStoryboard.storyboard in Resources */,
+				7B60B3E02C50C52D008D6A34 /* ContactView.xib in Resources */,
 				7B522E0B2C32511C0034EE9D /* Assets.xcassets in Resources */,
 				7BDB149E2C4E19E10081676D /* ContactStoryboard.storyboard in Resources */,
 				7B4E34A52C3E46F60059167A /* SymbolDetailStoryboard.storyboard in Resources */,
@@ -1724,6 +1739,7 @@
 				7B341A242C340B040069BD02 /* TitleSection.swift in Sources */,
 				7BB995182C3BDA19008EF04B /* BarButton.swift in Sources */,
 				7BF32A192C33CCD500CD8F18 /* BaseTableViewCell.swift in Sources */,
+				7B60B3E12C50C52D008D6A34 /* ContactView.swift in Sources */,
 				7B522EAA2C3262930034EE9D /* SymbolPresenter.swift in Sources */,
 				7B153E5B2C45408800F6718A /* UIViewExtension.swift in Sources */,
 				7B4E34A32C3E46F60059167A /* SymbolDetailPresenter.swift in Sources */,
