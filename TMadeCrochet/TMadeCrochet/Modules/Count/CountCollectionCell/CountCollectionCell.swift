@@ -28,6 +28,8 @@ class CountCollectionCell: BaseCollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.titleLabel.font = UIFont.systemFont(ofSize: AppConstant.headerTitleSize2)
+        
         self.moreButton.setTitle("", for: .normal)
         self.minusButton.setTitle("", for: .normal)
         self.plusButton.setTitle("", for: .normal)

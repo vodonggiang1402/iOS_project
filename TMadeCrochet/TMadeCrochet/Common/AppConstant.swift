@@ -9,11 +9,16 @@ import Foundation
 import UIKit
 
 struct AppConstant {
+    static let navigationTitleSize: CGFloat = 20
+    static let headerTitleSize1: CGFloat = 18
+    static let headerTitleSize2: CGFloat = 17
+    static let contentTextSize: CGFloat = 16
     static let testDeviceIdentifiers = "83e18d4b12a81912a807ce957ab91419"
     static let openAppAdId = "ca-app-pub-3940256099942544/5575463023"
     static let symbolAdId = "ca-app-pub-3940256099942544/4411468910"
     static let globalCount = 3
-    
+    static let mailContact = "tmadeapp@gmail.com"
+    static let phoneContact = "+84357798368"
     static var countShowAdsWhenAddMoreCount: Int? {
         get { UserDefaults.standard.value(forKey: "count-show-ads-when-add-more-count") as? Int }
         set { UserDefaults.standard.setValue(newValue, forKey: "count-show-ads-when-add-more-count") }

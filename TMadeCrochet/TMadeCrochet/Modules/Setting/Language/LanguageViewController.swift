@@ -20,7 +20,7 @@ class LanguageViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavigationBar(title: "Ngôn ngữ", isShowLeft: true)
+        self.setupNavigationBar(title: "language_screen_header_title".Localizable(), isShowLeft: true)
         setupTable()
         saveButton.style = .style_ok
         saveButton.setEnable(isEnable: false)

@@ -24,8 +24,9 @@
 "add_counter_title" = "Nhập thông tin";
 "add_counter_textfield_place_holder" = "Vui lòng nhập thông tin";
 "add_counter_textfield_default_text" = "Bộ đếm mới";
+
 "language_text" = "Ngôn ngữ úng dụng";
-"term_text" = "Điều khoản ứng dụng";
+"term_text" = "Điều khoản và chính sách";
 "policy_text" = "Chính sách ứng dụng";
 "contact_text" = "Liên hệ chúng tôi";
 "share_text" = "Chia sẻ ứng dụng";
@@ -247,3 +248,7 @@
 "symbol_screen_header_title" = "Mũi móc";
 "tutorial_screen_header_title" = "Hướng dẫn";
 "setting_screen_header_title" = "Cài đặt";
+"language_screen_header_title" = "Ngôn ngữ ứng dụng";
+"term_screen_header_title" = "Điều khoản hoạt động";
+"policy_screen_header_title" = "Chính sách bảo mật";
+"contact_screen_header_title" = "Liên hệ chúng tôi";

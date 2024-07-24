@@ -23,6 +23,8 @@ class SymbolCollectionCell: BaseCollectionViewCell {
         self.adsImageView.layer.cornerRadius = 8.0
         self.adsImageView.layer.masksToBounds = true
         
+        self.titleLabel.font = UIFont.systemFont(ofSize: AppConstant.contentTextSize)
+        
     }
     
     override func prepareForReuse() {

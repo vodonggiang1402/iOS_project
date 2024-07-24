@@ -21,6 +21,7 @@ class CountFooterView: BaseCollectionReusableView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.titleLabel.font = UIFont.systemFont(ofSize: AppConstant.headerTitleSize1)
     }
     
     override func setupView(text: String, imageStr: String) {

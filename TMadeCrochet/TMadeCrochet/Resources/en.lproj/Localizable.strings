@@ -25,12 +25,13 @@
 "add_counter_title" = "Information";
 "add_counter_textfield_place_holder" = "Please enter information";
 "add_counter_textfield_default_text" = "New counter";
-"language_text" = "Language application";
-"term_text" = "Term application";
+
+"language_text" = "Language Application";
+"term_text" = "Term Application";
 "policy_text" = "Policy application";
 "contact_text" = "Contact us";
-"share_text" = "Share application";
-"rate_text" = "Rate application";
+"share_text" = "Share Application";
+"rate_text" = "Rate Application";
 
 "basic_stitches" = "Basic stitches";
 "puff_stitches" = "Puff stitch - Popcorn stitch";
@@ -250,3 +251,7 @@
 "symbol_screen_header_title" = "Stitches";
 "tutorial_screen_header_title" = "Tutorial";
 "setting_screen_header_title" = "Setting";
+"language_screen_header_title" = "Language Application";
+"term_screen_header_title" = "Term Application";
+"policy_screen_header_title" = "Policy Application";
+"contact_screen_header_title" = "Contact us";

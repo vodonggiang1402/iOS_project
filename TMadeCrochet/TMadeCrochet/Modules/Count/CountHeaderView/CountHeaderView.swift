@@ -23,6 +23,7 @@ class CountHeaderView: BaseCollectionReusableView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.titleLabel.font = UIFont.systemFont(ofSize: AppConstant.headerTitleSize1)
         self.refreshButton.setTitle("", for: .normal)
     }
     

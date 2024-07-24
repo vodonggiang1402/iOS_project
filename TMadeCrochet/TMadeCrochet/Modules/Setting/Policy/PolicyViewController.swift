@@ -14,7 +14,7 @@ class PolicyViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavigationBar(title: "Cài đặt", isShowLeft: true)
+        self.setupNavigationBar(title: "policy_screen_header_title".Localizable(), isShowLeft: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {

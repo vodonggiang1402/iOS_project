@@ -29,7 +29,7 @@ class CountViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavigationBar(title: "Bộ đếm", isShowLeft: false)
+        self.setupNavigationBar(title: "count_screen_header_title".Localizable(), isShowLeft: false)
         self.setupDataForCollectionView()
         self.startGoogleMobileAdsSDK()
     }
