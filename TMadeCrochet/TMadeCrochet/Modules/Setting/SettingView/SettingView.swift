@@ -116,27 +116,27 @@ extension SettingView: HighlightViewProtocol {
         case languageView:
             languageLabel.textColor = UIColor.color_7f7f7f_565656
             languageImageView.setTintImageView(imageName: "ico_setting_language",
-                                              colorTint: UIColor.clear)
+                                              colorTint: UIColor.color_fafafa_1818181)
         case termView:
             termLabel.textColor = UIColor.color_7f7f7f_565656
             termImageView.setTintImageView(imageName: "ico_setting_term",
-                                                colorTint: UIColor.clear)
+                                                colorTint: UIColor.color_fafafa_1818181)
         case policyView:
             policyLabel.textColor = UIColor.color_7f7f7f_565656
             policyImageView.setTintImageView(imageName: "ico_setting_policy",
-                                                     colorTint: UIColor.clear)
+                                                     colorTint: UIColor.color_fafafa_1818181)
         case contactView:
             contactLabel.textColor = UIColor.color_7f7f7f_565656
             contactImageView.setTintImageView(imageName: "ico_setting_contact",
-                                                   colorTint: UIColor.clear)
+                                                   colorTint: UIColor.color_fafafa_1818181)
         case shareView:
             shareLabel.textColor = UIColor.color_7f7f7f_565656
             shareImageView.setTintImageView(imageName: "ico_setting_share",
-                                               colorTint: UIColor.clear)
+                                               colorTint: UIColor.color_fafafa_1818181)
         case rateView:
             rateLabel.textColor = UIColor.color_7f7f7f_565656
             rateImage.setTintImageView(imageName: "ico_setting_rate",
-                                               colorTint: UIColor.clear)
+                                               colorTint: UIColor.color_fafafa_1818181)
         default: break
         }
     }

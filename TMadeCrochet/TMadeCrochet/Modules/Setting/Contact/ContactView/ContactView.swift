@@ -76,15 +76,15 @@ extension ContactView: HighlightViewProtocol {
         case phoneView:
             phoneLabel.textColor = UIColor.color_7f7f7f_565656
             phoneImageView.setTintImageView(imageName: "ico_phone",
-                                              colorTint: UIColor.clear)
+                                              colorTint: UIColor.color_fafafa_1818181)
         case mailView:
             mailLabel.textColor = UIColor.color_7f7f7f_565656
             mailImageView.setTintImageView(imageName: "ico_setting_contact",
-                                                colorTint: UIColor.clear)
+                                                colorTint: UIColor.color_fafafa_1818181)
         case youtubeView:
             youtubeLabel.textColor = UIColor.color_7f7f7f_565656
             youtubeImageView.setTintImageView(imageName: "ico_youtube",
-                                                     colorTint: UIColor.clear)
+                                                     colorTint: UIColor.color_fafafa_1818181)
         default: break
         }
     }
