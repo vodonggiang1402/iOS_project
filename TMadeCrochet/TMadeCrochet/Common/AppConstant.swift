@@ -76,4 +76,9 @@ struct AppConstant {
         }
         set { UserDefaults.standard.setValue(newValue, forKey: "selected_language") }
     }
+    
+    static var appVersion: String {
+        guard let releaseVersion = Bundle.main.releaseVersionNumber else { return ""}
+        return releaseVersion
+    }
 }

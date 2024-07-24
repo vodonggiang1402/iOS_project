@@ -25,6 +25,7 @@
 "add_counter_title" = "Nhập thông tin";
 "add_counter_textfield_place_holder" = "Vui lòng nhập thông tin";
 "add_counter_textfield_default_text" = "Bộ đếm mới";
+"app_version" = "Phiên bản";
 
 "language_text" = "Ngôn ngữ úng dụng";
 "term_text" = "Điều khoản và chính sách";

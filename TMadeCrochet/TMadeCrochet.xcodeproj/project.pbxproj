@@ -110,6 +110,7 @@
 		7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */; };
 		7B60B3E02C50C52D008D6A34 /* ContactView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3DE2C50C52D008D6A34 /* ContactView.xib */; };
 		7B60B3E12C50C52D008D6A34 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3DF2C50C52D008D6A34 /* ContactView.swift */; };
+		7B60B3E32C511670008D6A34 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3E22C511670008D6A34 /* BundleExtension.swift */; };
 		7B7686812C4285FC00DBE001 /* count.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686802C4285FC00DBE001 /* count.json */; };
 		7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686822C42874B00DBE001 /* CountResponse.swift */; };
 		7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686852C42913B00DBE001 /* CountCollectionCell.swift */; };
@@ -446,6 +447,7 @@
 		7B522EAF2C32639B0034EE9D /* ViewControllerInNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerInNavigation.swift; sourceTree = "<group>"; };
 		7B60B3DE2C50C52D008D6A34 /* ContactView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactView.xib; sourceTree = "<group>"; };
 		7B60B3DF2C50C52D008D6A34 /* ContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		7B60B3E22C511670008D6A34 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		7B7686802C4285FC00DBE001 /* count.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = count.json; sourceTree = "<group>"; };
 		7B7686822C42874B00DBE001 /* CountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountResponse.swift; sourceTree = "<group>"; };
 		7B7686852C42913B00DBE001 /* CountCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionCell.swift; sourceTree = "<group>"; };
@@ -1061,6 +1063,7 @@
 				7B522E4A2C325AE10034EE9D /* UITabbarExtension.swift */,
 				7B522E512C325BAF0034EE9D /* UIViewControllerExtension.swift */,
 				7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */,
+				7B60B3E22C511670008D6A34 /* BundleExtension.swift */,
 			);
 			path = UIKitExtension;
 			sourceTree = "<group>";
@@ -1791,6 +1794,7 @@
 				7BF32A1B2C33CE5500CD8F18 /* UITableViewExtension.swift in Sources */,
 				7BDB14D32C4FD83D0081676D /* LanguageViewController.swift in Sources */,
 				7BDB14932C4E09110081676D /* UIImageViewExtension.swift in Sources */,
+				7B60B3E32C511670008D6A34 /* BundleExtension.swift in Sources */,
 				7BDB14CD2C4FD83D0081676D /* LanguageRouter.swift in Sources */,
 				7BDB148F2C4DF14C0081676D /* SettingView.swift in Sources */,
 				7B522E7E2C3262740034EE9D /* PatternEntity.swift in Sources */,
@@ -2007,7 +2011,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.3;
 				DEVELOPMENT_TEAM = S3KCS74MJ4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2050,7 +2054,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution: Giang Vo (S3KCS74MJ4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: Giang Vo (S3KCS74MJ4)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.3;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = S3KCS74MJ4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;

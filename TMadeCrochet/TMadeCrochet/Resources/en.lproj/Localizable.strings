@@ -26,6 +26,7 @@
 "add_counter_title" = "Information";
 "add_counter_textfield_place_holder" = "Please enter information";
 "add_counter_textfield_default_text" = "New counter";
+"app_version" = "Version";
 
 "language_text" = "Language Application";
 "term_text" = "Term Application";

@@ -24,6 +24,7 @@ class SettingView: BaseView {
     @IBOutlet weak var contactView: HighlightView!
     @IBOutlet weak var shareView: HighlightView!
     @IBOutlet weak var rateView: HighlightView!
+    @IBOutlet weak var versionView: HighlightView!
 
     @IBOutlet private weak var languageLabel: UILabel!
     @IBOutlet private weak var termLabel: UILabel!
@@ -31,6 +32,7 @@ class SettingView: BaseView {
     @IBOutlet private weak var contactLabel: UILabel!
     @IBOutlet private weak var shareLabel: UILabel!
     @IBOutlet private weak var rateLabel: UILabel!
+    @IBOutlet private weak var versionLabel: UILabel!
         
     @IBOutlet weak var languageImageView: UIImageView!
     @IBOutlet weak var termImageView: UIImageView!
@@ -38,6 +40,7 @@ class SettingView: BaseView {
     @IBOutlet weak var contactImageView: UIImageView!
     @IBOutlet weak var shareImageView: UIImageView!
     @IBOutlet weak var rateImage: UIImageView!
+    @IBOutlet weak var vesionImage: UIImageView!
     
     weak var delegate: SettingViewDelegate?
     
@@ -48,6 +51,7 @@ class SettingView: BaseView {
         contactLabel.text = "contact_text".Localizable()
         shareLabel.text = "share_text".Localizable()
         rateLabel.text = "rate_text".Localizable()
+        versionLabel.text = String.init(format:"%@: %@", "app_version".Localizable(), AppConstant.appVersion)
     }
     
     override func setupUI() {
