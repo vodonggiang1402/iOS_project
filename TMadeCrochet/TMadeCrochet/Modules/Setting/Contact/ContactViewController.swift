@@ -66,7 +66,12 @@ extension ContactViewController: ContactViewDelegate {
     }
     
     func mailViewNormalTap() {
-        showMailComposer()
+        let appURL = URL(string: "mailto:tmadeapp@gmail.com")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(appURL)
+        }
     }
     
     func showMailComposer() {
