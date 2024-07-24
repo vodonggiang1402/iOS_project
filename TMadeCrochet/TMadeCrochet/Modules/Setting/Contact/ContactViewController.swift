@@ -74,19 +74,16 @@ extension ContactViewController: ContactViewDelegate {
         }
     }
     
-    func showMailComposer() {
-         guard MFMailComposeViewController.canSendMail() else{
-           return
-         }
-         let composer = MFMailComposeViewController()
-         composer.mailComposeDelegate = self
-        composer.setToRecipients([AppConstant.mailContact])
-         composer.setSubject("Diabell App Help")
-         composer.setMessageBody("Fyll i vad du behöver hjälp med", isHTML: false)
-         present(composer, animated: true)
-     }
-    
     func youtubeViewNormalTap() {
-        
+        let youtubeContact =  AppConstant.youtubeContact
+        let appURL = NSURL(string: "youtube://www.youtube.com/@\(youtubeContact)")!
+        let webURL = NSURL(string: "https://www.youtube.com/@\(youtubeContact)")!
+        let application = UIApplication.shared
+        if application.canOpenURL(appURL as URL) {
+           application.open(appURL as URL)
+        } else {
+           // if Youtube app is not installed, open URL inside Safari
+           application.open(webURL as URL)
+        }
     }
 }
