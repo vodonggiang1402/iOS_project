@@ -10,6 +10,7 @@ import UIKit
 
 class SplashViewController: BaseViewController { 
     
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
     // MARK: - Properties
     var presenter: ViewToPresenterSplashProtocol?
 
@@ -17,11 +18,11 @@ class SplashViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavigationBar(isHide: true)
-//        guard AppConstant.isFirstTime else {
-//            self.presenter?.getData()
-//            return
-//        }
-        self.presenter?.getData()
+        self.loadingView.startAnimating()
+        guard AppConstant.isFirstTime else {
+            self.presenter?.getData()
+            return
+        }
         self.handleFlowApp()
     }
     
@@ -35,6 +36,7 @@ class SplashViewController: BaseViewController {
     
     func handleFlowApp() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.loadingView.stopAnimating()
             AppConstant.isFirstTime = true
             self.presenter?.navigateToRootMain()
         }

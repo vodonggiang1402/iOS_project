@@ -23,6 +23,7 @@ class LanguageViewController: BaseViewController {
         self.setupNavigationBar(title: "language_screen_header_title".Localizable(), isShowLeft: true)
         setupTable()
         saveButton.style = .style_ok
+        saveButton.setTitle("save_text".Localizable(), for: .normal)
         saveButton.setEnable(isEnable: false)
     }
     
