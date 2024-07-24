@@ -20,7 +20,7 @@ struct AppConstant {
     static let mailContact = "tmadeapp@gmail.com"
     static let phoneContact = "+84357798368"
     static let youtubeContact = "http://www.youtube.com/@tmade-0705"
-    
+    static var tmadeAppLink: String { get { return "itms-apps://itunes.apple.com/app//id6560104490" } }
     
     
     static var countShowAdsWhenAddMoreCount: Int? {

@@ -28,7 +28,7 @@
 
 "language_text" = "Language Application";
 "term_text" = "Term Application";
-"policy_text" = "Policy application";
+"policy_text" = "Policy Application";
 "contact_text" = "Contact us";
 "share_text" = "Share Application";
 "rate_text" = "Rate Application";
@@ -255,3 +255,5 @@
 "term_screen_header_title" = "Term Application";
 "policy_screen_header_title" = "Policy Application";
 "contact_screen_header_title" = "Contact us";
+
+"share_app_info" = "Móc & Đan - Cơ bản và Nâng cao";

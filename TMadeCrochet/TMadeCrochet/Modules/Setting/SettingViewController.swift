@@ -72,10 +72,47 @@ extension SettingViewController: SettingViewDelegate {
     }
     
     func shareViewNormalTap() {
-        
+        shareApp()
     }
     
     func rateViewNormalTap() {
         
+    }
+    
+    func shareApp() {
+        // Setting description
+        let firstActivityItem = "share_app_info".Localizable()
+
+          // Setting url
+        let secondActivityItem : NSURL = NSURL(string: AppConstant.tmadeAppLink)!
+          
+          // If you want to use an image
+          let activityViewController : UIActivityViewController = UIActivityViewController(
+              activityItems: [firstActivityItem, secondActivityItem], applicationActivities: nil)
+          
+          // This line remove the arrow of the popover to show in iPad
+          activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.down
+          activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
+          
+          // Pre-configuring activity items
+          activityViewController.activityItemsConfiguration = [
+          UIActivity.ActivityType.message
+          ] as? UIActivityItemsConfigurationReading
+          
+          // Anything you want to exclude
+          activityViewController.excludedActivityTypes = [
+              UIActivity.ActivityType.postToWeibo,
+              UIActivity.ActivityType.print,
+              UIActivity.ActivityType.assignToContact,
+              UIActivity.ActivityType.saveToCameraRoll,
+              UIActivity.ActivityType.addToReadingList,
+              UIActivity.ActivityType.postToFlickr,
+              UIActivity.ActivityType.postToVimeo,
+              UIActivity.ActivityType.postToTencentWeibo,
+              UIActivity.ActivityType.postToFacebook
+          ]
+          
+          activityViewController.isModalInPresentation = true
+          self.present(activityViewController, animated: true, completion: nil)
     }
 }
