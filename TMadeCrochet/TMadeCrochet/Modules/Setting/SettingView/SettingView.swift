@@ -145,28 +145,22 @@ extension SettingView: HighlightViewProtocol {
         switch view {
         case languageView:
             languageLabel.textColor = UIColor.color_7f7f7f_565656
-            languageImageView.setTintImageView(imageName: "ico_setting_language",
-                                              colorTint: UIColor.clear)
+            languageImageView.image = UIImage(named: "ico_setting_language")
         case termView:
             termLabel.textColor = UIColor.color_7f7f7f_565656
-            termImageView.setTintImageView(imageName: "ico_setting_term",
-                                              colorTint: UIColor.clear)
+            termImageView.image = UIImage(named: "ico_setting_term")
         case policyView:
             policyLabel.textColor = UIColor.color_7f7f7f_565656
-            policyImageView.setTintImageView(imageName: "ico_setting_policy",
-                                              colorTint: UIColor.clear)
+            policyImageView.image = UIImage(named: "ico_setting_policy")
         case contactView:
             contactLabel.textColor = UIColor.color_7f7f7f_565656
-            contactImageView.setTintImageView(imageName: "ico_setting_contact",
-                                                   colorTint: UIColor.clear)
+            contactImageView.image = UIImage(named: "ico_setting_contact")
         case shareView:
             shareLabel.textColor = UIColor.color_7f7f7f_565656
-            shareImageView.setTintImageView(imageName: "ico_setting_share",
-                                               colorTint: UIColor.clear)
+            shareImageView.image = UIImage(named: "ico_setting_share")
         case rateView:
             rateLabel.textColor = UIColor.color_7f7f7f_565656
-            rateImage.setTintImageView(imageName: "ico_setting_rate",
-                                               colorTint: UIColor.clear)
+            rateImage.image = UIImage(named: "ico_setting_rate")
         default: break
         }
     }

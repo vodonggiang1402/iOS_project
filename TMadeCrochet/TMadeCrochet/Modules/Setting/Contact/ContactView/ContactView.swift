@@ -93,16 +93,13 @@ extension ContactView: HighlightViewProtocol {
         switch view {
         case phoneView:
             phoneLabel.textColor = UIColor.color_7f7f7f_565656
-            phoneImageView.setTintImageView(imageName: "ico_phone",
-                                              colorTint: UIColor.clear)
+            phoneImageView.image = UIImage(named: "ico_phone")
         case mailView:
             mailLabel.textColor = UIColor.color_7f7f7f_565656
-            mailImageView.setTintImageView(imageName: "ico_setting_contact",
-                                                colorTint: UIColor.clear)
+            mailImageView.image = UIImage(named: "ico_setting_contact")
         case youtubeView:
             youtubeLabel.textColor = UIColor.color_7f7f7f_565656
-            youtubeImageView.setTintImageView(imageName: "ico_youtube",
-                                                     colorTint: UIColor.clear)
+            youtubeImageView.image = UIImage(named: "ico_youtube")
         default: break
         }
     }

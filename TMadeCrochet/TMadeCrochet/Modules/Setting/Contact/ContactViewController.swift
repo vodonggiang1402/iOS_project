@@ -22,6 +22,7 @@ class ContactViewController: BaseViewController, MFMailComposeViewControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar(title: "contact_screen_header_title".Localizable(), isShowLeft: true)
+        self.titleLabel.text = "contact_screent_title_text".Localizable()
         self.contactView.delegate = self
     }
     
