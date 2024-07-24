@@ -8,9 +8,12 @@
 
 "tabbar_item_count_text" = "Bộ đếm";
 "tabbar_item_symbol_text" = "Mũi móc";
+"tabbar_item_tutorial_text" = "Hướng dẫn";
 "tabbar_item_pattern_text" = "Hướng dẫn";
 "tabbar_item_setting_text" = "Cài đặt";
+
 "main_counter_text" = "Bộ đếm chính";
+"main_counter_default" = "Đếm chính";
 "extra_counter_text" = "Bộ đếm phụ";
 "add_more_text" = "Thêm";
 "edit_text" = "Chỉnh sửa";
@@ -21,3 +24,226 @@
 "add_counter_title" = "Nhập thông tin";
 "add_counter_textfield_place_holder" = "Vui lòng nhập thông tin";
 "add_counter_textfield_default_text" = "Bộ đếm mới";
+"language_text" = "Ngôn ngữ úng dụng";
+"term_text" = "Điều khoản ứng dụng";
+"policy_text" = "Chính sách ứng dụng";
+"contact_text" = "Liên hệ chúng tôi";
+"share_text" = "Chia sẻ ứng dụng";
+"rate_text" = "Đánh giá ứng dụng";
+"basic_stitches" = "Mũi cơ bản";
+"puff_stitches" = "Mũi hạt bắp";
+"increases_stitches" = "Mũi tăng";
+"decreases_stitches" = "Mũi giảm";
+"step_text" = "Bước %d";
+//Mũi cơ bản
+"slip_knot_crochet_name" = "Mũi gút";
+"slip_knot_crochet_description" = "Trong các hướng dẫn của chart móc thì mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên.";
+"slip_knot_crochet_content_1" = "Đặt kim móc sau sợi len.";
+"slip_knot_crochet_content_2" = "Vòng kim ra phía trước sợi len và ngoặc kim lên để tạo thành 1 vòng tròn.";
+"slip_knot_crochet_content_3" = "Dùng kim lấy len và kéo qua vòng tròn vừa tạo. Kéo sợi len thừa để thắt chặt mũi gút.";
+"slip_knot_crochet_content_4" = "Kéo sợi len thừa để thắt chặt mũi gút.";
+
+"slip_stich_crochet_name" = "Mũi trượt";
+"slip_stich_crochet_description" = "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…";
+"slip_stich_crochet_content_1" = "Vòng kim ra phía trước sợi len và ngoặc kim lên để tạo thành 1 vòng tròn.";
+"slip_stich_crochet_content_2" = "Dùng kim lấy len và kéo qua vòng tròn vừa tạo. Kéo sợi len thừa để thắt chặt mũi gút.";
+"slip_stich_crochet_content_3" = "Kéo sợi len thừa để thắt chặt mũi gút.";
+
+"chain_crochet_name" = "Mũi bính";
+"chain_crochet_description" = "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.";
+"chain_crochet_content_1" = "Dùng kim móc lấy len.";
+"chain_crochet_content_2" = "Kéo lên qua vòng tròn mũi gút.";
+"chain_crochet_content_3" = "Tiếp tục lặp lại 2 bước trên để có được dây bính với số mũi bính cần thiết.";
+
+"single_crochet_name" = "Mũi đơn";
+"single_crochet_description" = "Mũi móc đơn có độ cao bằng một mũi bính. Đẻ có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.";
+"single_crochet_content_1" = "Luồn kim qua mũi bính.";
+"single_crochet_content_2" = "Lấy len và kéo qua để có 2 vòng len trên kim.";
+"single_crochet_content_3" = "Tiếp tục lấy len và kéo len qua cả 2 vòng trên kim.";
+"single_crochet_content_4" = "Hoàn thành được một mũi đơn.";
+
+"half_double_crochet_name" = "Mũi nửa kép";
+"half_double_crochet_description" = "Mũi nữa kép có độ cao bằng 2 lần mũi bính. Mũi kép đơn đầu tiên sẽ được móc vào chân bính thứ 4 của dây bính.";
+"half_double_crochet_content_1" = "Dùng kim móc lấy len, và luồn kim qua chân bính thứ 3 của dây bính.";
+"half_double_crochet_content_2" = "Lấy len và kéo qua chân bính lúc này trên kim sẽ có 3 vòng sợi.";
+"half_double_crochet_content_3" = "Tiếp tục lấy len và kéo len qua cả 3 vòng trên kim.";
+"half_double_crochet_content_4" = "Lặp lại 3 bước trên để được những mũi nửa kép tiếp theo.";
+
+"double_crochet_name" = "Mũi kép đơn";
+"double_crochet_description" = "Mũi kép đơn có độ cao bằng 3 lần mũi bính.";
+"double_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua chân bính thứ 5 của dây bính";
+"double_crochet_content_2" = "Lấy len kéo kim móc qua chân bính.";
+"double_crochet_content_3" = "Lấy len và kéo len qua 2 vòng len trên kim.";
+"double_crochet_content_4" = "Lấy len và kéo len qua 2 vòng còn lại trên kim.";
+"double_crochet_content_5" = "Hoàn thành 1 mũi móc kép đơn.";
+
+
+"triple_crochet_name" = "Mũi kép đôi";
+"triple_crochet_description" = "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước";
+"triple_crochet_content_1" = "Dùng kim móc quấn 2 vòng len.";
+"triple_crochet_content_2" = "Sau đó luồn kim qua chân bính thứ 6 của dây bính, lấy len kéo qua chân bính.";
+"triple_crochet_content_3" = "Lấy len và kéo len qua 2 vòng len trên kim.";
+"triple_crochet_content_4" = "Lặp lại lấy len và kéo len qua 2 vòng len trên kim 2 lần nữa.";
+"triple_crochet_content_5" = "Hoàn thành 1 mũi móc kép đôi.";
+
+"double_triple_crochet_name" = "Mũi kép ba";
+"double_triple_crochet_description" = "symbol_des: Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.";
+"double_triple_crochet_content_1" = "Dùng kim móc quấn 3 vòng len.";
+"double_triple_crochet_content_2" = "Sau đó luồn kim qua chân bính thứ 7 của dây bính, lấy len kéo qua chân bính.";
+"double_triple_crochet_content_3" = "Lấy len và kéo len qua 2 vòng len trên kim.";
+"double_triple_crochet_content_4" = "Lặp lại lấy len và kéo len qua 2 vòng len trên kim 3 lần nữa.";
+"double_triple_crochet_content_5" = "Hoàn thành 1 mũi móc kép ba.";
+
+
+//Mũi hạt bắp
+"hdc3tog_into_same_st_crochet_name" = "Mũi hạt bắp ( 3 mũi nửa kép)";
+"hdc3tog_into_same_st_crochet_description" = "Mũi hạt bắp ( 3 mũi nửa kép) được hình thành từ 3 mũi nửa kép chưa đầy đủ cùng móc vào 1 chân.";
+"hdc3tog_into_same_st_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.";
+"hdc3tog_into_same_st_crochet_content_2" = "Kéo lên qua chân bính được 1 mũi nửa kép chưa hoàn thành, lặp lại thêm 2 lần mũi nửa kép chưa hoàn thành vào chung 1 chân móc.";
+"hdc3tog_into_same_st_crochet_content_3" = "Dùng kim lấy len và kéo len qua cả 7 vòng trên kim để chụm thành 1 mũi.";
+"hdc3tog_into_same_st_crochet_content_4" = "Hoàn thành 1 mũi hạt bắp từ 3 mũi nữa kép.";
+
+
+"dc3tog_into_same_st_crochet_name" = "Mũi hạt bắp (3 mũi kép đơn)";
+"dc3tog_into_same_st_crochet_description" = "Mũi hạt bắp (3 mũi kép đơn) được hình thành từ 3 mũi kép chưa đầy đủ cùng móc vào 1 chân.";
+"dc3tog_into_same_st_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.";
+"dc3tog_into_same_st_crochet_content_2" = "Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 2 lần mũi  kép chưa hoàn thành vào chung 1 chân móc";
+"dc3tog_into_same_st_crochet_content_3" = "Dùng kim lấy len và kéo len qua cả 4 vòng trên kim để chụm thành 1 mũi";
+"dc3tog_into_same_st_crochet_content_4" = "Hoàn thành 1 mũi hạt bắp từ 3 mũi kép đơn.";
+"dc3tog_into_same_st_crochet_content_5" = "";
+
+"dc5tog_into_same_st_crochet_name" = "Mũi hạt bắp (5 mũi kép đơn)";
+"dc5tog_into_same_st_crochet_description" = "Mũi hạt bắp (5 mũi kép đơn) được hình thành từ 5 mũi kép chưa đầy đủ cùng móc vào 1 chân.";
+"dc5tog_into_same_st_crochet_content_1" = "content: Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.";
+"dc5tog_into_same_st_crochet_content_2" = "content: Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 4 lần mũi kép chưa hoàn thành vào chung 1 chân móc.";
+"dc5tog_into_same_st_crochet_content_3" = "content: Dùng kim lấy len và kéo len qua cả 6 vòng trên kim để chụm thành 1 mũi.";
+"dc5tog_into_same_st_crochet_content_4" = "content: Hoàn thành 1 mũi hạt bắp từ 5 mũi kép đơn";
+
+
+//Mũi tăng
+"2sc_into_same_st_crochet_name" = "2 mũi đơn chung chân";
+"2sc_into_same_st_crochet_description" = "";
+"2sc_into_same_st_crochet_content_1" = "";
+"2sc_into_same_st_crochet_content_2" = "";
+"2sc_into_same_st_crochet_content_3" = "";
+"2sc_into_same_st_crochet_content_4" = "";
+"2sc_into_same_st_crochet_content_5" = "";
+
+"1sc_1ch_1sc_crochet_name" = "1 mũi đơn- 1 bính - 1 mũi đơn chung chân";
+"1sc_1ch_1sc_crochet_description" = "";
+"1sc_1ch_1sc_crochet_content_1" = "";
+"1sc_1ch_1sc_crochet_content_2" = "";
+"1sc_1ch_1sc_crochet_content_3" = "";
+"1sc_1ch_1sc_crochet_content_4" = "";
+"1sc_1ch_1sc_crochet_content_5" = "";
+
+"3sc_into_same_st_crochet_name" = "3 mũi đơn chung chân";
+"3sc_into_same_st_crochet_description" = "";
+"3sc_into_same_st_crochet_content_1" = "";
+"3sc_into_same_st_crochet_content_2" = "";
+"3sc_into_same_st_crochet_content_3" = "";
+"3sc_into_same_st_crochet_content_4" = "";
+"3sc_into_same_st_crochet_content_5" = "";
+
+"2hdcs_into_same_st_crochet_name" = "2 mũi nửa kép chung chân";
+"2hdcs_into_same_st_crochet_description" = "";
+"2hdcs_into_same_st_crochet_content_1" = "";
+"2hdcs_into_same_st_crochet_content_2" = "";
+"2hdcs_into_same_st_crochet_content_3" = "";
+"2hdcs_into_same_st_crochet_content_4" = "";
+"2hdcs_into_same_st_crochet_content_5" = "";
+
+"3hdcs_into_same_st_crochet_name" = "3 mũi nửa kép chung chân";
+"3hdcs_into_same_st_crochet_description" = "";
+"3hdcs_into_same_st_crochet_content_1" = "";
+"3hdcs_into_same_st_crochet_content_2" = "";
+"3hdcs_into_same_st_crochet_content_3" = "";
+"3hdcs_into_same_st_crochet_content_4" = "";
+"3hdcs_into_same_st_crochet_content_5" = "";
+
+"2dcs_into_same_st_crochet_name" = "2 mũi kép chung chân";
+"2dcs_into_same_st_crochet_description" = "";
+"2dcs_into_same_st_crochet_content_1" = "";
+"2dcs_into_same_st_crochet_content_2" = "";
+"2dcs_into_same_st_crochet_content_3" = "";
+"2dcs_into_same_st_crochet_content_4" = "";
+"2dcs_into_same_st_crochet_content_5" = "";
+
+"1dc_1ch_1dc_crochet_name" = "1 kép - bính - 1 kép chung chân";
+"1dc_1ch_1dc_crochet_description" = "";
+"1dc_1ch_1dc_crochet_content_1" = "";
+"1dc_1ch_1dc_crochet_content_2" = "";
+"1dc_1ch_1dc_crochet_content_3" = "";
+"1dc_1ch_1dc_crochet_content_4" = "";
+"1dc_1ch_1dc_crochet_content_5" = "";
+
+"3dc_into_same_st_crochet_name" = "3 mũi kép chung chân";
+"3dc_into_same_st_crochet_description" = "";
+"3dc_into_same_st_crochet_content_1" = "";
+"3dc_into_same_st_crochet_content_2" = "";
+"3dc_into_same_st_crochet_content_3" = "";
+"3dc_into_same_st_crochet_content_4" = "";
+"3dc_into_same_st_crochet_content_5" = "";
+
+"5dcs_into_same_st_crochet_name" = "5 mũi kép chung chân";
+"5dcs_into_same_st_crochet_description" = "";
+"5dcs_into_same_st_crochet_content_1" = "";
+"5dcs_into_same_st_crochet_content_2" = "";
+"5dcs_into_same_st_crochet_content_3" = "";
+"5dcs_into_same_st_crochet_content_4" = "";
+"5dcs_into_same_st_crochet_content_5" = "";
+
+//mũi giảm
+"sc2tog_crochet_name" = "2 đơn chụm đầu";
+"sc2tog_crochet_description" = "";
+"sc2tog_crochet_content_1" = "";
+"sc2tog_crochet_content_2" = "";
+"sc2tog_crochet_content_3" = "";
+"sc2tog_crochet_content_4" = "";
+"sc2tog_crochet_content_5" = "";
+
+"hdc2tog_crochet_name" = "2 mũi nửa kép chụm đầu";
+"hdc2tog_crochet_description" = "";
+"hdc2tog_crochet_content_1" = "";
+"hdc2tog_crochet_content_2" = "";
+"hdc2tog_crochet_content_3" = "";
+"hdc2tog_crochet_content_4" = "";
+"hdc2tog_crochet_content_5" = "";
+
+"dc2tog_crochet_name" = "2 mũi kép chụm đầu";
+"dc2tog_crochet_description" = "";
+"dc2tog_crochet_content_1" = "";
+"dc2tog_crochet_content_2" = "";
+"dc2tog_crochet_content_3" = "";
+"dc2tog_crochet_content_4" = "";
+"dc2tog_crochet_content_5" = "";
+
+"sc3tog_crochet_name" = "3 mũi đơn chụm đầu";
+"sc3tog_crochet_description" = "";
+"sc3tog_crochet_content_1" = "";
+"sc3tog_crochet_content_2" = "";
+"sc3tog_crochet_content_3" = "";
+"sc3tog_crochet_content_4" = "";
+"sc3tog_crochet_content_5" = "";
+
+"hdc3tog_crochet_name" = "3 mũi nửa kép chụm đầu";
+"hdc3tog_crochet_description" = "";
+"hdc3tog_crochet_content_1" = "";
+"hdc3tog_crochet_content_2" = "";
+"hdc3tog_crochet_content_3" = "";
+"hdc3tog_crochet_content_4" = "";
+"hdc3tog_crochet_content_5" = "";
+
+"dc3tog_crochet_name" = "3 mũi kép chụm đầu";
+"dc3tog_crochet_description" = "";
+"dc3tog_crochet_content_1" = "";
+"dc3tog_crochet_content_2" = "";
+"dc3tog_crochet_content_3" = "";
+"dc3tog_crochet_content_4" = "";
+"dc3tog_crochet_content_5" = "";
+
+//Header title
+"count_screen_header_title" = "Bộ đếm";
+"symbol_screen_header_title" = "Mũi móc";
+"tutorial_screen_header_title" = "Hướng dẫn";
+"setting_screen_header_title" = "Cài đặt";

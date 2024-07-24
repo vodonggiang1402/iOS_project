@@ -21,7 +21,7 @@ class SymbolViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavigationBar(title: "Mũi móc", isShowLeft: false)
+        self.setupNavigationBar(title: "symbol_screen_header_title".Localizable(), isShowLeft: false)
         self.setupDataForCollectionView()
         self.startGoogleMobileAdsSDK()
     }
@@ -112,19 +112,19 @@ extension SymbolViewController: BaseCollectionViewProtocol {
                 if let headerView = headerView as? SymbolHeaderView {
                     switch indexPath.section {
                     case 0:
-                        headerView.setupView(text: "Mũi cơ bản", imageStr: "ico_symbol_1")
+                        headerView.setupView(text: "basic_stitches".Localizable(), imageStr: "ico_symbol_1")
                         break
                     case 1:
-                        headerView.setupView(text: "Mũi hạt bắp", imageStr: "ico_symbol_2")
+                        headerView.setupView(text: "puff_stitches".Localizable(), imageStr: "ico_symbol_2")
                         break
                     case 2:
-                        headerView.setupView(text: "Mũi tăng", imageStr: "ico_symbol_3")
+                        headerView.setupView(text: "increases_stitches".Localizable(), imageStr: "ico_symbol_3")
                         break
                     case 3:
-                        headerView.setupView(text: "Mũi giảm", imageStr: "ico_symbol_4")
+                        headerView.setupView(text: "decreases_stitches".Localizable(), imageStr: "ico_symbol_4")
                         break
                     default:
-                        headerView.setupView(text: "Mũi cơ bản", imageStr: "ico_symbol_1")
+                        headerView.setupView(text: "basic_stitches".Localizable(), imageStr: "ico_symbol_1")
                     }
                 }
                return headerView

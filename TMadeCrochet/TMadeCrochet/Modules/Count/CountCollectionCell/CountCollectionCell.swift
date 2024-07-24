@@ -39,7 +39,11 @@ class CountCollectionCell: BaseCollectionViewCell {
     
     override func setupCell(object: Any) {
         guard let model = object as? Count else { return }
-        self.titleLabel.text = model.countName 
+        if let isGlobal = model.isGlobal, isGlobal {
+            self.titleLabel.text = model.countName?.Localizable()
+        } else {
+            self.titleLabel.text = model.countName
+        }
         self.countLabel.text = model.count?.asString()
         self.moreButton.isHidden = model.isGlobal ?? false ? true : false
         self.containView.layer.borderColor = UIColor(hexString: model.color ?? "").cgColor

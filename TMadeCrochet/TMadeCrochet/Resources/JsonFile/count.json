@@ -3,7 +3,7 @@
         [
             {
             "is_global" : true,
-            "count_name" : "Đếm chính",
+            "count_name" : "main_counter_default",
             "count": 1,
             "color" : "F76A89"
             }

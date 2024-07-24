@@ -96,14 +96,14 @@ class SymbolDetailViewController: BaseViewController {
     }
     
     func setupContentLabel(content: String) {
-        self.contentLabel.text = content
+        self.contentLabel.text = content.Localizable()
     }
     
     func setupStackView(steps: [SymbolStep]) {
         if steps.count > 0 {
             stackView.removeFullyAllArrangedSubviews()
-            steps.forEach { step in
-                stackView.addArrangedSubview(StepView.init(title: String.init(format: "%@: %@", step.stepName ?? "", step.content ?? ""), imageName: step.imageName ?? ""))
+            for (index, element) in steps.enumerated() {
+                stackView.addArrangedSubview(StepView.init(title: String.init(format: "%@: %@", String.init(format:"step_text".Localizable(), index + 1), element.content?.Localizable() ?? ""), imageName: element.imageName?.Localizable() ?? ""))
             }
         }
     }

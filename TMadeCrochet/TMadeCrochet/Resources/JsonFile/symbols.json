@@ -4,28 +4,24 @@
       {
         "is_ads" : false,
         "symbol_id" : "1",
-        "symbol_des" : "Trong các hướng dẫn của chart móc thì mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên",
-        "symbol_name" : "Mũi gút",
+        "symbol_des" : "slip_knot_crochet_description",
+        "symbol_name" : "slip_knot_crochet_name",
         "icon_name" : "",
         "steps" : [
           {
-            "content" : "Đặt kim móc sau sợi len.",
-            "step_name" : "Bước 1",
+            "content" : "slip_knot_crochet_content_1",
             "image_name" : "slip_knot_crochet_1"
           },
           {
-            "content" : "Vòng kim ra phía trước sợi len và ngoặc kim lên để tạo thành 1 vòng tròn.",
-            "step_name" : "Bước 2",
+            "content" : "slip_knot_crochet_content_2",
             "image_name" : "slip_knot_crochet_2"
           },
           {
-            "content" : "Dùng kim lấy len và kéo qua vòng tròn vừa tạo. Kéo sợi len thừa để thắt chặt mũi gút.",
-            "step_name" : "Bước 3",
+            "content" : "slip_knot_crochet_content_3",
             "image_name" : "slip_knot_crochet_3"
           },
           {
-            "content" : "Kéo sợi len thừa để thắt chặt mũi gút.",
-            "step_name" : "Bước 4",
+            "content" : "slip_knot_crochet_content_4",
             "image_name" : "slip_knot_3"
           }
         ],
@@ -35,23 +31,20 @@
       {
         "is_ads" : false,
         "symbol_id" : "2",
-        "symbol_des" : "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…",
-        "symbol_name" : "Mũi trượt",
+        "symbol_des" : "slip_stich_crochet_description",
+        "symbol_name" : "slip_stich_crochet_name",
         "icon_name" : "slip_stich_crochet",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "slip_stich_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "slip_stich_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "slip_stich_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -61,23 +54,20 @@
       {
         "is_ads" : false,
         "symbol_id" : "3",
-        "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.",
-        "symbol_name" : "Mũi bính",
+        "symbol_des" : "chain_crochet_description",
+        "symbol_name" : "chain_crochet_name",
         "icon_name" : "chain_crochet",
         "steps" : [
           {
-            "content" : "Dùng kim móc lấy len.",
-            "step_name" : "Bước 1",
+            "content" : "chain_crochet_content_1",
             "image_name" : "chain_crochet_1"
           },
           {
-            "content" : "Kéo lên qua vòng tròn mũi gút.",
-            "step_name" : "Bước 2",
+            "content" : "chain_crochet_content_2",
             "image_name" : "chain_crochet_2"
           },
           {
-            "content" : "Tiếp tục lặp lại 2 bước trên để có được dây bính với số mũi bính cần thiết.",
-            "step_name" : "Bước 3",
+            "content" : "chain_crochet_content_3",
             "image_name" : "chain_crochet_3"
           }
         ],
@@ -87,28 +77,24 @@
       {
         "is_ads" : false,
         "symbol_id" : "4",
-        "symbol_des" : "Mũi móc đơn có độ cao bằng một mũi bính. Đẻ có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.",
-        "symbol_name" : "Mũi đơn",
+        "symbol_des" : "single_crochet_description",
+        "symbol_name" : "single_crochet_name",
         "icon_name" : "single_crochet",
         "steps" : [
           {
-            "content" : "Luồn kim qua mũi bính.",
-            "step_name" : "Bước 1",
+            "content" : "single_crochet_content_1",
             "image_name" : "single_crochet_1"
           },
           {
-            "content" : "Lấy len và kéo qua để có 2 vòng len trên kim.",
-            "step_name" : "Bước 2",
+            "content" : "single_crochet_content_2",
             "image_name" : "single_crochet_2"
           },
           {
-            "content" : "Tiếp tục lấy len và kéo len qua cả 2 vòng trên kim.",
-            "step_name" : "Bước 3",
+            "content" : "single_crochet_content_3",
             "image_name" : "single_crochet_3"
           },
           {
-            "content" : "Hoàn thành được một mũi đơn.",
-            "step_name" : "Bước 4",
+            "content" : "single_crochet_content_4",
             "image_name" : "single_crochet_4"
           }
         ],
@@ -118,28 +104,24 @@
       {
         "is_ads" : false,
         "symbol_id" : "5",
-        "symbol_des" : "Mũi nữa kép có độ cao bằng 2 lần mũi bính. Mũi kép đơn đầu tiên sẽ được móc vào chân bính thứ 4 của dây bính",
-        "symbol_name" : "Mũi nữa kép",
+        "symbol_des" : "half_double_crochet_description",
+        "symbol_name" : "half_double_crochet_name",
         "icon_name" : "half_double_crochet",
         "steps" : [
           {
-            "content" : "Dùng kim móc lấy len, và luồn kim qua chân bính thứ 3 của dây bính.",
-            "step_name" : "Bước 1",
+            "content" : "half_double_crochet_content_1",
             "image_name" : "half_double_crochet_1"
           },
           {
-            "content" : "lấy len và kéo qua chân bính lúc này trên kim sẽ có 3 vòng sợi.",
-            "step_name" : "Bước 2",
+            "content" : "half_double_crochet_content_2",
             "image_name" : "half_double_crochet_2"
           },
           {
-            "content" : "Tiếp tục lấy len và kéo len qua cả 3 vòng trên kim.",
-            "step_name" : "Bước 3",
+            "content" : "half_double_crochet_content_3",
             "image_name" : "half_double_crochet_3"
           },
           {
-            "content" : "Lặp lại 3 bước trên để được những mũi nửa kép tiếp theo.",
-            "step_name" : "Bước 4",
+            "content" : "half_double_crochet_content_4",
             "image_name" : "half_double_crochet_4"
           }
         ],
@@ -149,33 +131,28 @@
       {
         "is_ads" : false,
         "symbol_id" : "6",
-        "symbol_des" : "Mũi kép đơn có độ cao bằng 3 lần mũi bính.",
-        "symbol_name" : "Mũi kép đơn",
+        "symbol_des" : "double_crochet_description",
+        "symbol_name" : "double_crochet_name",
         "icon_name" : "double_crochet",
         "steps" : [
           {
-            "content" : "Dùng kim móc lấy len và luồn kim qua chân bính thứ 5 của dây bính",
-            "step_name" : "Bước 1",
+            "content" : "double_crochet_content_1",
             "image_name" : "double_crochet_1"
           },
           {
-            "content" : "Lấy len kéo kim móc qua chân bính.",
-            "step_name" : "Bước 2",
+            "content" : "double_crochet_content_2",
             "image_name" : "double_crochet_2"
           },
           {
-            "content" : "Lấy len và kéo len qua 2 vòng len trên kim.",
-            "step_name" : "Bước 3",
+            "content" : "double_crochet_content_3",
             "image_name" : "double_crochet_3"
           },
           {
-            "content" : " Lấy len và kéo len qua 2 vòng còn lại trên kim.",
-            "step_name" : "Bước 4",
+            "content" : "double_crochet_content_4",
             "image_name" : "double_crochet_4"
           },
           {
-            "content" : "Hoàn thành 1 mũi móc kép đơn.",
-            "step_name" : "Bước 5",
+            "content" : "double_crochet_content_5",
             "image_name" : "double_crochet_5"
           }
         ],
@@ -185,33 +162,28 @@
       {
         "is_ads" : false,
         "symbol_id" : "7",
-        "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
-        "symbol_name" : "Mũi kép đôi",
+        "symbol_des" : "triple_crochet_description",
+        "symbol_name" : "triple_crochet_name",
         "icon_name" : "triple_crochet",
         "steps" : [
           {
-            "content" : "Dùng kim móc quấn 2 vòng len.",
-            "step_name" : "Bước 1",
+            "content" : "triple_crochet_content_1",
             "image_name" : "triple_crochet_1"
           },
           {
-            "content" : "Sau đó luồn kim qua chân bính thứ 6 của dây bính, lấy len kéo qua chân bính.",
-            "step_name" : "Bước 2",
+            "content" : "triple_crochet_content_2",
             "image_name" : "triple_crochet_2"
           },
           {
-            "content" : "Lấy len và kéo len qua 2 vòng len trên kim.",
-            "step_name" : "Bước 3",
+            "content" : "triple_crochet_content_3",
             "image_name" : "triple_crochet_3"
           },
           {
-            "content" : "Lặp lại lấy len và kéo len qua 2 vòng len trên kim 2 lần nữa.",
-            "step_name" : "Bước 4",
+            "content" : "triple_crochet_content_4",
             "image_name" : "triple_crochet_4"
           },
           {
-            "content" : "Hoàn thành 1 mũi móc kép đôi.",
-            "step_name" : "Bước 5",
+            "content" : "triple_crochet_content_5",
             "image_name" : "triple_crochet_5"
           }
         ],
@@ -221,32 +193,28 @@
       {
         "is_ads" : false,
         "symbol_id" : "8",
-        "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
-        "symbol_name" : "Mũi kép ba",
+        "symbol_des" : "double_triple_crochet_description",
+        "symbol_name" : "double_triple_crochet_name",
         "icon_name" : "double_triple",
         "steps" : [
           {
-            "content" : "Dùng kim móc quấn 3 vòng len.",
-            "step_name" : "Bước 1",
+            "content" : "double_triple_crochet_content_1",
             "image_name" : "double_triple_1"
           },
           {
-            "content" : "Sau đó luồn kim qua chân bính thứ 7 của dây bính, lấy len kéo qua chân bính.",
-            "step_name" : "Bước 2",
+            "content" : "double_triple_crochet_content_2",
             "image_name" : "double_triple_2"
           },
           {
-            "content" : "Lấy len và kéo len qua 2 vòng len trên kim.",
-            "step_name" : "Bước 3",
+            "content" : "double_triple_crochet_content_3",
             "image_name" : "double_triple_3"
           },
           {
-            "content" : "Lặp lại lấy len và kéo len qua 2 vòng len trên kim 3 lần nữa.",
-            "step_name" : "Bước 4",
+            "content" : "double_triple_crochet_content_4",
             "image_name" : "double_triple_4"
           },
           {
-            "content" : "Hoàn thành 1 mũi móc kép ba.",
+            "content" : "double_triple_crochet_content_5",
             "step_name" : "Bước 5",
             "image_name" : "double_triple_5"
           }
@@ -256,62 +224,54 @@
       }
     ],
     [
-    {
-      "is_ads" : true,
-      "symbol_id" : "1",
-      "symbol_des" : "Mũi hạt bắp ( 3 mũi nửa kép) được hình thành từ 3 mũi nửa kép chưa đầy đủ cùng móc vào 1 chân.",
-      "symbol_name" : "Mũi hạt bắp ( 3 mũi nửa kép)",
-      "icon_name" : "ico_hdc3tog_into_same_st",
-      "steps" : [
-        {
-          "content" : "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.",
-          "step_name" : "Bước 1",
-          "image_name" : "hdc3tog_into_same_st_1"
-        },
-        {
-          "content" : "Kéo lên qua chân bính được 1 mũi nửa kép chưa hoàn thành, lặp lại thêm 2 lần mũi nửa kép chưa hoàn thành vào chung 1 chân móc.",
-          "step_name" : "Bước 2",
-          "image_name" : "hdc3tog_into_same_st_2"
-        },
-        {
-          "content" : "Dùng kim lấy len và kéo len qua cả 7 vòng trên kim để chụm thành 1 mũi.",
-          "step_name" : "Bước 3",
-          "image_name" : "hdc3tog_into_same_st_3"
-        },
-        {
-          "content" : "Hoàn thành 1 mũi hạt bắp từ 3 mũi nữa kép.",
-          "step_name" : "Bước 4",
-          "image_name" : "hdc3tog_into_same_st_4"
-        }
-      ],
-      "background_color" : "a8dfc7",
-      "video_url" : ""
-    },
+      {
+        "is_ads" : true,
+        "symbol_id" : "1",
+        "symbol_des" : "hdc3tog_into_same_st_crochet_description",
+        "symbol_name" : "hdc3tog_into_same_st_crochet_name",
+        "icon_name" : "ico_hdc3tog_into_same_st",
+        "steps" : [
+          {
+            "content" : "hdc3tog_into_same_st_crochet_content_1",
+            "image_name" : "hdc3tog_into_same_st_1"
+          },
+          {
+            "content" : "hdc3tog_into_same_st_crochet_content_2",
+            "image_name" : "hdc3tog_into_same_st_2"
+          },
+          {
+            "content" : "hdc3tog_into_same_st_crochet_content_3",
+            "image_name" : "hdc3tog_into_same_st_3"
+          },
+          {
+            "content" : "hdc3tog_into_same_st_crochet_content_4",
+            "image_name" : "hdc3tog_into_same_st_4"
+          }
+        ],
+        "background_color" : "a8dfc7",
+        "video_url" : ""
+      },
       {
         "is_ads" : true,
         "symbol_id" : "2",
-        "symbol_des" : "Mũi hạt bắp (3 mũi kép đơn) được hình thành từ 3 mũi kép chưa đầy đủ cùng móc vào 1 chân.",
-        "symbol_name" : "Mũi hạt bắp (3 mũi kép đơn)",
+        "symbol_des" : "dc3tog_into_same_st_crochet_description",
+        "symbol_name" : "dc3tog_into_same_st_crochet_name",
         "icon_name" : "ico_dc3tog_into_same_st",
         "steps" : [
           {
-            "content" : "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.",
-            "step_name" : "Bước 1",
+            "content" : "dc3tog_into_same_st_crochet_content_1",
             "image_name" : "dc3tog_into_same_st_1"
           },
           {
-            "content" : "Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 2 lần mũi  kép chưa hoàn thành vào chung 1 chân móc",
-            "step_name" : "Bước 2",
+            "content" : "dc3tog_into_same_st_crochet_content_2",
             "image_name" : "dc3tog_into_same_st_2"
           },
           {
-            "content" : "Dùng kim lấy len và kéo len qua cả 4 vòng trên kim để chụm thành 1 mũi ",
-            "step_name" : "Bước 3",
+            "content" : "dc3tog_into_same_st_crochet_content_3",
             "image_name" : "dc3tog_into_same_st_3"
           },
           {
-            "content" : "Hoàn thành 1 mũi hạt bắp từ 3 mũi kép đơn.",
-            "step_name" : "Bước 4",
+            "content" : "dc3tog_into_same_st_crochet_content_4",
             "image_name" : "dc3tog_into_same_st_4"
           }
         ],
@@ -321,28 +281,24 @@
       {
         "is_ads" : true,
         "symbol_id" : "3",
-        "symbol_des" : "Mũi hạt bắp (5 mũi kép đơn) được hình thành từ 5 mũi kép chưa đầy đủ cùng móc vào 1 chân.",
-        "symbol_name" : "Mũi hạt bắp (5 mũi kép đơn)",
+        "symbol_des" : "dc5tog_into_same_st_crochet_description",
+        "symbol_name" : "dc5tog_into_same_st_crochet_name",
         "icon_name" : "ico_dc5tog_into_same_st",
         "steps" : [
           {
-            "content" : "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.",
-            "step_name" : "Bước 1",
+            "content" : "dc5tog_into_same_st_crochet_content_1",
             "image_name" : "dc5tog_into_same_st_1"
           },
           {
-            "content" : "Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 4 lần mũi kép chưa hoàn thành vào chung 1 chân móc.",
-            "step_name" : "Bước 2",
+            "content" : "dc5tog_into_same_st_crochet_content_2",
             "image_name" : "dc5tog_into_same_st_2"
           },
           {
-            "content" : "Dùng kim lấy len và kéo len qua cả 6 vòng trên kim để chụm thành 1 mũi.",
-            "step_name" : "Bước 3",
+            "content" : "dc5tog_into_same_st_crochet_content_3",
             "image_name" : "dc5tog_into_same_st_3"
           },
           {
-            "content" : "Hoàn thành 1 mũi hạt bắp từ 5 mũi kép đơn",
-            "step_name" : "Bước 4",
+            "content" : "dc5tog_into_same_st_crochet_content_4",
             "image_name" : "dc5tog_into_same_st_4"
           }
         ],
@@ -354,23 +310,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "4",
-        "symbol_des" : "Mũi móc đơn có độ cao bằng một mũi bính. Đẻ có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.",
-        "symbol_name" : "2 mũi đơn chung chân",
+        "symbol_des" : "2sc_into_same_st_crochet_description",
+        "symbol_name" : "2sc_into_same_st_crochet_name",
         "icon_name" : "ico_sc",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "2sc_into_same_st_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "2sc_into_same_st_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "2sc_into_same_st_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -380,23 +333,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "5",
-        "symbol_des" : "Mũi nữa kép có độ cao bằng 2 lần mũi bính. Mũi kép đơn đầu tiên sẽ được móc vào chân bính thứ 4 của dây bính",
-        "symbol_name" : "1 mũi đơn- 1 bính - 1 mũi đơn chung chân",
+        "symbol_des" : "1sc_1ch_1sc_crochet_description",
+        "symbol_name" : "1sc_1ch_1sc_crochet_name",
         "icon_name" : "ico_1sc_1ch_1sc",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "1sc_1ch_1sc_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "1sc_1ch_1sc_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "1sc_1ch_1sc_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -406,23 +356,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "6",
-        "symbol_des" : "Mũi kép đơn có độ cao bằng 3 lần mũi bính.",
-        "symbol_name" : "3 mũi đơn chung chân",
+        "symbol_des" : "3sc_into_same_st_crochet_description",
+        "symbol_name" : "3sc_into_same_st_crochet_name",
         "icon_name" : "ico_3sc",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "3sc_into_same_st_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "3sc_into_same_st_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "3sc_into_same_st_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -432,23 +379,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "7",
-        "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước",
-        "symbol_name" : "2 mũi nửa kép chung chân",
+        "symbol_des" : "2hdcs_into_same_st_crochet_description",
+        "symbol_name" : "2hdcs_into_same_st_crochet_name",
         "icon_name" : "ico_2hdcs_into_same_st",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "2hdcs_into_same_st_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "2hdcs_into_same_st_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "2hdcs_into_same_st_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -458,23 +402,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "8",
-        "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
-        "symbol_name" : "3 mũi nửa kép chung chân",
+        "symbol_des" : "3hdcs_into_same_st_crochet_description",
+        "symbol_name" : "3hdcs_into_same_st_crochet_name",
         "icon_name" : "ico_3hdcs",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "3hdcs_into_same_st_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "3hdcs_into_same_st_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "3hdcs_into_same_st_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -484,23 +425,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "8",
-        "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
-        "symbol_name" : "2 mũi kép chung chân",
+        "symbol_des" : "2dcs_into_same_st_crochet_description",
+        "symbol_name" : "2dcs_into_same_st_crochet_name",
         "icon_name" : "ico_dcs",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "2dcs_into_same_st_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "2dcs_into_same_st_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "2dcs_into_same_st_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -510,23 +448,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "8",
-        "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
-        "symbol_name" : "1 kép - bính - 1 kép chung chân",
+        "symbol_des" : "1dc_1ch_1dc_crochet_description",
+        "symbol_name" : "1dc_1ch_1dc_crochet_name",
         "icon_name" : "ico_1dc_1ch_1dc",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "1dc_1ch_1dc_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "1dc_1ch_1dc_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "1dc_1ch_1dc_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -537,22 +472,19 @@
         "is_ads" : true,
         "symbol_id" : "8",
         "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
-        "symbol_name" : "3 mũi kép chung chân",
+        "symbol_name" : "3dc_into_same_st_crochet_name",
         "icon_name" : "ico_3dc_into_same_st",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "3dc_into_same_st_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "3dc_into_same_st_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "3dc_into_same_st_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -562,23 +494,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "8",
-        "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
-        "symbol_name" : "5 mũi kép chung chân",
+        "symbol_des" : "5dcs_into_same_st_crochet_description",
+        "symbol_name" : "5dcs_into_same_st_crochet_name",
         "icon_name" : "ico_5dcs_into_same_st",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "5dcs_into_same_st_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "5dcs_into_same_st_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "5dcs_into_same_st_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -590,23 +519,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "1",
-        "symbol_des" : "Trong các hướng dẫn của chart móc thì Mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên",
-        "symbol_name" : "2 đơn chụm đầu",
+        "symbol_des" : "sc2tog_crochet_description",
+        "symbol_name" : "sc2tog_crochet_name",
         "icon_name" : "ico_sc2tog",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "sc2tog_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "sc2tog_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "sc2tog_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -616,23 +542,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "2",
-        "symbol_des" : "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…",
-        "symbol_name" : "2 mũi nửa kép chụm đầu",
+        "symbol_des" : "hdc2tog_crochet_description",
+        "symbol_name" : "hdc2tog_crochet_name",
         "icon_name" : "ico_hdc2tog",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "hdc2tog_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "hdc2tog_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "hdc2tog_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -642,23 +565,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "3",
-        "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.",
-        "symbol_name" : "2 mũi kép chụm đầu",
+        "symbol_des" : "dc2tog_crochet_description",
+        "symbol_name" : "dc2tog_crochet_name",
         "icon_name" : "ico_dc2tog",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "dc2tog_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "dc2tog_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "dc2tog_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -668,23 +588,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "1",
-        "symbol_des" : "Trong các hướng dẫn của chart móc thì Mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên",
-        "symbol_name" : "3 mũi đơn chụm đầu",
+        "symbol_des" : "sc3tog_crochet_description",
+        "symbol_name" : "sc3tog_crochet_name",
         "icon_name" : "ico_sc3tog",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "sc3tog_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "sc3tog_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "sc3tog_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -694,23 +611,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "2",
-        "symbol_des" : "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…",
-        "symbol_name" : "3 mũi nửa kép chụm đầu",
+        "symbol_des" : "hdc3tog_crochet_description",
+        "symbol_name" : "hdc3tog_crochet_name",
         "icon_name" : "ico_hdc3tog",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "hdc3tog_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "hdc3tog_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "hdc3tog_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],
@@ -720,23 +634,20 @@
       {
         "is_ads" : true,
         "symbol_id" : "3",
-        "symbol_des" : "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.",
-        "symbol_name" : "3 mũi kép chụm đầu",
+        "symbol_des" : "dc3tog_crochet_description",
+        "symbol_name" : "dc3tog_crochet_name",
         "icon_name" : "ico_dc3tog",
         "steps" : [
           {
-            "content" : "",
-            "step_name" : "Bước 1",
+            "content" : "dc3tog_crochet_content_1",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 2",
+            "content" : "dc3tog_crochet_content_2",
             "image_name" : "crochet_step"
           },
           {
-            "content" : "abc",
-            "step_name" : "Bước 3",
+            "content" : "dc3tog_crochet_content_3",
             "image_name" : "crochet_step"
           }
         ],

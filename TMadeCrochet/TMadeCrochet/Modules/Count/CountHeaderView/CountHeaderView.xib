@@ -21,7 +21,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WEV-RH-PEU">
                             <rect key="frame" x="0.0" y="20" width="382" height="50"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_heade_count" translatesAutoresizingMaskIntoConstraints="NO" id="8IQ-jt-Xt9">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_count_main" translatesAutoresizingMaskIntoConstraints="NO" id="8IQ-jt-Xt9">
                                     <rect key="frame" x="0.0" y="0.0" width="20" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="20" id="68Q-YS-bR2"/>
@@ -95,7 +95,7 @@
         </collectionReusableView>
     </objects>
     <resources>
-        <image name="ico_heade_count" width="20" height="50"/>
+        <image name="ico_count_main" width="20" height="50"/>
         <image name="ico_refresh" width="20" height="20"/>
         <namedColor name="color_7f7f7f_565656">
             <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

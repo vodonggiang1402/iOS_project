@@ -32,7 +32,7 @@ class SymbolCollectionCell: BaseCollectionViewCell {
     
     override func setupCell(object: Any) {
         guard let model = object as? Symbol else { return }
-        self.titleLabel.text = model.symbolName
+        self.titleLabel.text = model.symbolName?.Localizable()
         if let iconName = model.iconName, iconName.count > 0 {
             self.imageView.image = UIImage.init(named: iconName)
             self.containImageView.isHidden = false

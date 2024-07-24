@@ -41,7 +41,14 @@ class SettingView: BaseView {
     
     weak var delegate: SettingViewDelegate?
     
-    override func localizedString() { }
+    override func localizedString() { 
+        languageLabel.text = "language_text".Localizable()
+        termLabel.text = "term_text".Localizable()
+        policyLabel.text = "policy_text".Localizable()
+        contactLabel.text = "contact_text".Localizable()
+        shareLabel.text = "share_text".Localizable()
+        rateLabel.text = "rate_text".Localizable()
+    }
     
     override func setupUI() {
         

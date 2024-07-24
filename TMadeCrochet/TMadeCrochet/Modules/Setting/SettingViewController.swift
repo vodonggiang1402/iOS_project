@@ -20,7 +20,7 @@ class SettingViewController: BaseViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavigationBar(title: "Cài đặt", isShowLeft: false)
+        self.setupNavigationBar(title: "setting_screen_header_title".Localizable(), isShowLeft: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {
