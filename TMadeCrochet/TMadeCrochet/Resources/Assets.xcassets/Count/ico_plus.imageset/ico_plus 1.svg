@@ -1,22 +1,22 @@
-<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_20_8)">
-<circle cx="15" cy="15" r="15" fill="#F76A89"/>
+<circle cx="25" cy="25" r="25" fill="#F76A89"/>
 <g clip-path="url(#clip1_20_8)">
-<mask id="mask0_20_8" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="5" width="20" height="20">
-<path d="M25 5H5V25H25V5Z" fill="white"/>
+<mask id="mask0_20_8" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="8" y="8" width="34" height="34">
+<path d="M41.6667 8.33331H8.33334V41.6666H41.6667V8.33331Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_20_8)">
-<path d="M10 15H20" stroke="white" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M15 10V20" stroke="white" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M16.6667 24.9999H33.3334" stroke="white" stroke-width="2.66667" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M25 16.6666V33.3333" stroke="white" stroke-width="2.66667" stroke-miterlimit="10" stroke-linecap="round"/>
 </g>
 </g>
 </g>
 <defs>
 <clipPath id="clip0_20_8">
-<rect width="30" height="30" fill="white"/>
+<rect width="50" height="50" fill="white"/>
 </clipPath>
 <clipPath id="clip1_20_8">
-<rect width="20" height="20" fill="white" transform="translate(5 5)"/>
+<rect width="33.3333" height="33.3333" fill="white" transform="translate(8.33334 8.33331)"/>
 </clipPath>
 </defs>
 </svg>
