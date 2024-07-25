@@ -23,7 +23,7 @@ enum TabBarItem {
         case .symbol:
             return UIImage(named: "ico_symbol_active")
         case .tutorial:
-            return UIImage(named: "ico_pattern_active")
+            return UIImage(named: "ico_tutorial_active")
         case .setting:
             return UIImage(named: "ico_setting_active")
         }
@@ -36,7 +36,7 @@ enum TabBarItem {
         case .symbol:
             return UIImage(named: "ico_symbol_inactive")
         case .tutorial:
-            return UIImage(named: "ico_pattern_inactive")
+            return UIImage(named: "ico_tutorial_inactive")
         case .setting:
             return UIImage(named: "ico_setting_inactive")
         }

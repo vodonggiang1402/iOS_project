@@ -22,10 +22,11 @@ class SplashViewController: BaseViewController {
         versionLabel.font = UIFont.systemFont(ofSize: 15)
         versionLabel.text = String.init(format:"%@ %@", "app_version".Localizable(), AppConstant.appVersion)
         self.loadingView.startAnimating()
-        guard AppConstant.isFirstTime else {
-            self.presenter?.getData()
-            return
-        }
+//        guard AppConstant.isFirstTime else {
+//            self.presenter?.getData()
+//            return
+//        }
+        self.presenter?.getData()
         self.handleFlowApp()
     }
     
