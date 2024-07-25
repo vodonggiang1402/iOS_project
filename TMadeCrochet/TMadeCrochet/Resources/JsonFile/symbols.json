@@ -343,15 +343,19 @@
         "steps" : [
           {
             "content" : "1sc_1ch_1sc_crochet_content_1",
-            "image_name" : "crochet_step"
+            "image_name" : "1sc_1ch_1sc_1"
           },
           {
             "content" : "1sc_1ch_1sc_crochet_content_2",
-            "image_name" : "crochet_step"
+            "image_name" : "1sc_1ch_1sc_2"
           },
           {
             "content" : "1sc_1ch_1sc_crochet_content_3",
-            "image_name" : "crochet_step"
+            "image_name" : "1sc_1ch_1sc_3"
+          },
+          {
+            "content" : "1sc_1ch_1sc_crochet_content_3",
+            "image_name" : "1sc_1ch_1sc_4"
           }
         ],
         "background_color" : "ffeabd",

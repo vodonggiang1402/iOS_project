@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "1sc_1ch_1sc_4.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "1sc_1ch_1sc_4 1.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
