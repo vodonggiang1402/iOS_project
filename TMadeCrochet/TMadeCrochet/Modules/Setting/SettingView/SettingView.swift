@@ -47,7 +47,7 @@ class SettingView: BaseView {
     override func localizedString() { 
         languageLabel.text = "language_text".Localizable()
         termLabel.text = "term_text".Localizable()
-        policyLabel.text = "policy_text".Localizable()
+//        policyLabel.text = "policy_text".Localizable()
         contactLabel.text = "contact_text".Localizable()
         shareLabel.text = "share_text".Localizable()
         rateLabel.text = "rate_text".Localizable()
@@ -62,8 +62,8 @@ class SettingView: BaseView {
         termImageView.layer.cornerRadius = 5
         termImageView.layer.masksToBounds = true
         
-        policyImageView.layer.cornerRadius = 5
-        policyImageView.layer.masksToBounds = true
+//        policyImageView.layer.cornerRadius = 5
+//        policyImageView.layer.masksToBounds = true
         
         contactImageView.layer.cornerRadius = 5
         contactImageView.layer.masksToBounds = true
@@ -73,6 +73,9 @@ class SettingView: BaseView {
         
         rateImage.layer.cornerRadius = 5
         rateImage.layer.masksToBounds = true
+        
+        vesionImage.layer.cornerRadius = 5
+        vesionImage.layer.masksToBounds = true
         
         languageView.delegate = self
         languageView.addTapGesture { [weak self] in
@@ -86,11 +89,11 @@ class SettingView: BaseView {
             self.delegate?.termViewNormalTap()
         }
         
-        policyView.delegate = self
-        policyView.addTapGesture { [weak self] in
-            guard let self = self else { return }
-            self.delegate?.policyViewNormalTap()
-        }
+//        policyView.delegate = self
+//        policyView.addTapGesture { [weak self] in
+//            guard let self = self else { return }
+//            self.delegate?.policyViewNormalTap()
+//        }
         
         contactView.delegate = self
         contactView.addTapGesture { [weak self] in
@@ -125,10 +128,10 @@ extension SettingView: HighlightViewProtocol {
             termLabel.textColor = UIColor.color_7f7f7f_565656
             termImageView.setTintImageView(imageName: "ico_setting_term",
                                                 colorTint: UIColor.color_fafafa_1818181)
-        case policyView:
-            policyLabel.textColor = UIColor.color_7f7f7f_565656
-            policyImageView.setTintImageView(imageName: "ico_setting_policy",
-                                                     colorTint: UIColor.color_fafafa_1818181)
+//        case policyView:
+//            policyLabel.textColor = UIColor.color_7f7f7f_565656
+//            policyImageView.setTintImageView(imageName: "ico_setting_policy",
+//                                                     colorTint: UIColor.color_fafafa_1818181)
         case contactView:
             contactLabel.textColor = UIColor.color_7f7f7f_565656
             contactImageView.setTintImageView(imageName: "ico_setting_contact",
@@ -153,9 +156,9 @@ extension SettingView: HighlightViewProtocol {
         case termView:
             termLabel.textColor = UIColor.color_7f7f7f_565656
             termImageView.image = UIImage(named: "ico_setting_term")
-        case policyView:
-            policyLabel.textColor = UIColor.color_7f7f7f_565656
-            policyImageView.image = UIImage(named: "ico_setting_policy")
+//        case policyView:
+//            policyLabel.textColor = UIColor.color_7f7f7f_565656
+//            policyImageView.image = UIImage(named: "ico_setting_policy")
         case contactView:
             contactLabel.textColor = UIColor.color_7f7f7f_565656
             contactImageView.image = UIImage(named: "ico_setting_contact")

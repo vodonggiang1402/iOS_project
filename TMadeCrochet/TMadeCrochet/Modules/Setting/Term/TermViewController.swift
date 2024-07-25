@@ -21,7 +21,7 @@ class TermViewController: BaseViewController {
     }
     
     func loadFile() {
-        if let rtfPath = Bundle.main.url(forResource: "policy", withExtension: "rtf") {
+        if let rtfPath = Bundle.main.url(forResource: "term", withExtension: "rtf") {
            do {
                let attributedStringWithRtf: NSAttributedString = try NSAttributedString(url: rtfPath, options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.rtf], documentAttributes: nil)
                self.textView.attributedText = attributedStringWithRtf
