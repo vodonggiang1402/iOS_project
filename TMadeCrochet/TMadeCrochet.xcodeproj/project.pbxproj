@@ -112,6 +112,8 @@
 		7B60B3E12C50C52D008D6A34 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3DF2C50C52D008D6A34 /* ContactView.swift */; };
 		7B60B3E32C511670008D6A34 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3E22C511670008D6A34 /* BundleExtension.swift */; };
 		7B60B3E52C5213E6008D6A34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3E42C5213E6008D6A34 /* GoogleService-Info.plist */; };
+		7B60B3E82C522916008D6A34 /* policy.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3E72C522916008D6A34 /* policy.rtf */; };
+		7B60B3EA2C522A4A008D6A34 /* term.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3E92C522A4A008D6A34 /* term.rtf */; };
 		7B7686812C4285FC00DBE001 /* count.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686802C4285FC00DBE001 /* count.json */; };
 		7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686822C42874B00DBE001 /* CountResponse.swift */; };
 		7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686852C42913B00DBE001 /* CountCollectionCell.swift */; };
@@ -450,6 +452,8 @@
 		7B60B3DF2C50C52D008D6A34 /* ContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		7B60B3E22C511670008D6A34 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		7B60B3E42C5213E6008D6A34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B60B3E72C522916008D6A34 /* policy.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = policy.rtf; sourceTree = "<group>"; };
+		7B60B3E92C522A4A008D6A34 /* term.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = term.rtf; sourceTree = "<group>"; };
 		7B7686802C4285FC00DBE001 /* count.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = count.json; sourceTree = "<group>"; };
 		7B7686822C42874B00DBE001 /* CountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountResponse.swift; sourceTree = "<group>"; };
 		7B7686852C42913B00DBE001 /* CountCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionCell.swift; sourceTree = "<group>"; };
@@ -989,6 +993,7 @@
 		7B522E352C3253170034EE9D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7B60B3E62C52281D008D6A34 /* File */,
 				7B341AA52C35127E0069BD02 /* JsonFile */,
 				7B341A272C340DDA0069BD02 /* Font */,
 				7BF32A082C326E3E00CD8F18 /* LaunchScreen.storyboard */,
@@ -1136,6 +1141,15 @@
 				7B60B3DE2C50C52D008D6A34 /* ContactView.xib */,
 			);
 			path = ContactView;
+			sourceTree = "<group>";
+		};
+		7B60B3E62C52281D008D6A34 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				7B60B3E72C522916008D6A34 /* policy.rtf */,
+				7B60B3E92C522A4A008D6A34 /* term.rtf */,
+			);
+			path = File;
 			sourceTree = "<group>";
 		};
 		7B7686842C42912500DBE001 /* CountCollectionCell */ = {
@@ -1507,12 +1521,14 @@
 				7B4E34A52C3E46F60059167A /* SymbolDetailStoryboard.storyboard in Resources */,
 				7BDB14DC2C4FEFD40081676D /* LanguageTableViewCell.xib in Resources */,
 				7B7686992C4501D600DBE001 /* CountFooterView.xib in Resources */,
+				7B60B3E82C522916008D6A34 /* policy.rtf in Resources */,
 				7B341A262C340B0C0069BD02 /* TitleSection.xib in Resources */,
 				7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */,
 				7B7686882C42914300DBE001 /* CountCollectionCell.xib in Resources */,
 				7B76868F2C44DB0400DBE001 /* CountHeaderView.xib in Resources */,
 				7B3419FC2C33D0060069BD02 /* NormalFooter.bundle in Resources */,
 				7BDB14912C4DF16D0081676D /* SettingView.xib in Resources */,
+				7B60B3EA2C522A4A008D6A34 /* term.rtf in Resources */,
 				7B4E34942C3E35180059167A /* SymbolHeaderView.xib in Resources */,
 				7BDB14C32C4FD3990081676D /* Localizable.strings in Resources */,
 				7BF32A0A2C326E3E00CD8F18 /* LaunchScreen.storyboard in Resources */,
@@ -2015,7 +2031,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = S3KCS74MJ4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2034,7 +2050,7 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/swift",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmadecrochet.dev;
 				PRODUCT_NAME = "Moc & Dan";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2058,7 +2074,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution: Giang Vo (S3KCS74MJ4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: Giang Vo (S3KCS74MJ4)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = S3KCS74MJ4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2078,7 +2094,7 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/swift",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmadecrochet.release;
 				PRODUCT_NAME = "Moc & Dan";
 				PROVISIONING_PROFILE_SPECIFIER = "Provisioning Tmade Release";
