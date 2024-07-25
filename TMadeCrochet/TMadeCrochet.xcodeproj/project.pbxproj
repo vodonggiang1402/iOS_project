@@ -113,6 +113,8 @@
 		7B60B3E32C511670008D6A34 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3E22C511670008D6A34 /* BundleExtension.swift */; };
 		7B60B3E52C5213E6008D6A34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3E42C5213E6008D6A34 /* GoogleService-Info.plist */; };
 		7B60B3EA2C522A4A008D6A34 /* term.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3E92C522A4A008D6A34 /* term.rtf */; };
+		7B60B3EC2C526BAD008D6A34 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3EB2C526BAD008D6A34 /* Configs.swift */; };
+		7B60B3EE2C526BC1008D6A34 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3ED2C526BC1008D6A34 /* Enviroment.swift */; };
 		7B7686812C4285FC00DBE001 /* count.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686802C4285FC00DBE001 /* count.json */; };
 		7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686822C42874B00DBE001 /* CountResponse.swift */; };
 		7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686852C42913B00DBE001 /* CountCollectionCell.swift */; };
@@ -452,6 +454,10 @@
 		7B60B3E22C511670008D6A34 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		7B60B3E42C5213E6008D6A34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B60B3E92C522A4A008D6A34 /* term.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = term.rtf; sourceTree = "<group>"; };
+		7B60B3EB2C526BAD008D6A34 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		7B60B3ED2C526BC1008D6A34 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		7B60B3F42C526E16008D6A34 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		7B60B3F52C526E1F008D6A34 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		7B7686802C4285FC00DBE001 /* count.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = count.json; sourceTree = "<group>"; };
 		7B7686822C42874B00DBE001 /* CountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountResponse.swift; sourceTree = "<group>"; };
 		7B7686852C42913B00DBE001 /* CountCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionCell.swift; sourceTree = "<group>"; };
@@ -626,8 +632,12 @@
 		7B153E6F2C4B09B700F6718A /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				7B60B3F32C526E03008D6A34 /* BuildConfigurations */,
 				7B60B3E42C5213E6008D6A34 /* GoogleService-Info.plist */,
 				7B522E0F2C32511C0034EE9D /* Info.plist */,
+				7B60B3EB2C526BAD008D6A34 /* Configs.swift */,
+				7B60B3ED2C526BC1008D6A34 /* Enviroment.swift */,
+				7BAC04302C40ED22006CE1DE /* AppConstant.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -1149,6 +1159,15 @@
 			path = File;
 			sourceTree = "<group>";
 		};
+		7B60B3F32C526E03008D6A34 /* BuildConfigurations */ = {
+			isa = PBXGroup;
+			children = (
+				7B60B3F42C526E16008D6A34 /* Debug.xcconfig */,
+				7B60B3F52C526E1F008D6A34 /* Release.xcconfig */,
+			);
+			path = BuildConfigurations;
+			sourceTree = "<group>";
+		};
 		7B7686842C42912500DBE001 /* CountCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1220,7 +1239,6 @@
 				7B153E502C453ECF00F6718A /* Helper */,
 				7BB995192C3BDB4D008EF04B /* TitleViewNavigationBar */,
 				7BB995172C3BDA19008EF04B /* BarButton.swift */,
-				7BAC04302C40ED22006CE1DE /* AppConstant.swift */,
 				7B153E582C453FBF00F6718A /* StyleButton.swift */,
 				7BDB148B2C4DC86D0081676D /* HighlightView.swift */,
 			);
@@ -1771,6 +1789,7 @@
 				7BDB14B22C4E19E90081676D /* PolicyPresenter.swift in Sources */,
 				7BAC04312C40ED22006CE1DE /* AppConstant.swift in Sources */,
 				7BF32A282C33CF0A00CD8F18 /* CRRefreshExtension.swift in Sources */,
+				7B60B3EE2C526BC1008D6A34 /* Enviroment.swift in Sources */,
 				7BDB14AF2C4E19E90081676D /* PolicyViewController.swift in Sources */,
 				7B522E502C325B680034EE9D /* IntExtension.swift in Sources */,
 				7B522EB02C32639B0034EE9D /* ViewControllerInNavigation.swift in Sources */,
@@ -1788,6 +1807,7 @@
 				7B522E712C32626E0034EE9D /* MainEntity.swift in Sources */,
 				7B341A1F2C33FDDF0069BD02 /* MainTableCell.swift in Sources */,
 				7BDB14E82C50A4340081676D /* TutorialRouter.swift in Sources */,
+				7B60B3EC2C526BAD008D6A34 /* Configs.swift in Sources */,
 				7B153E562C453F6700F6718A /* CommonPopup.swift in Sources */,
 				7BB995102C3B96DC008EF04B /* CountContract.swift in Sources */,
 				7BB995032C3B96CF008EF04B /* SettingContract.swift in Sources */,
@@ -2047,6 +2067,7 @@
 					"$(SDKROOT)/usr/lib/swift",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENDPOINT_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmadecrochet.dev;
 				PRODUCT_NAME = "Moc & Dan";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2091,6 +2112,7 @@
 					"$(SDKROOT)/usr/lib/swift",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENDPOINT_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmadecrochet.release;
 				PRODUCT_NAME = "Moc & Dan";
 				PROVISIONING_PROFILE_SPECIFIER = "Provisioning Tmade Release";

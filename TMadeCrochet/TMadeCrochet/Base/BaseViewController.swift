@@ -204,7 +204,7 @@ class BaseViewController: UIViewController, ViewControllerInNavigation, GADFullS
     func loadInterstitial() async {
         do {
           interstitial = try await GADInterstitialAd.load(
-            withAdUnitID: AppConstant.symbolAdId, request: GADRequest())
+            withAdUnitID: AppConstant.Ads.interstitialAdsId, request: GADRequest())
           interstitial?.fullScreenContentDelegate = self
         } catch {
           print("Failed to load interstitial ad with error: \(error.localizedDescription)")

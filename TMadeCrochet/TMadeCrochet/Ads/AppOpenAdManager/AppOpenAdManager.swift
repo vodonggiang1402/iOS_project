@@ -70,7 +70,7 @@ class AppOpenAdManager: NSObject {
 
     do {
       appOpenAd = try await GADAppOpenAd.load(
-        withAdUnitID: AppConstant.openAppAdId, request: GAMRequest())
+        withAdUnitID: AppConstant.Ads.openAppAdsId, request: GAMRequest())
       appOpenAd?.fullScreenContentDelegate = self
       loadTime = Date()
     } catch {

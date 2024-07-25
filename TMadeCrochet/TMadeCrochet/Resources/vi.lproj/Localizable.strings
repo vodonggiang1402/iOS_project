@@ -117,10 +117,10 @@
 
 "dc5tog_into_same_st_crochet_name" = "Mũi hạt bắp (5 mũi kép đơn)";
 "dc5tog_into_same_st_crochet_description" = "Mũi hạt bắp (5 mũi kép đơn) được hình thành từ 5 mũi kép chưa đầy đủ cùng móc vào 1 chân.";
-"dc5tog_into_same_st_crochet_content_1" = "content: Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.";
-"dc5tog_into_same_st_crochet_content_2" = "content: Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 4 lần mũi kép chưa hoàn thành vào chung 1 chân móc.";
-"dc5tog_into_same_st_crochet_content_3" = "content: Dùng kim lấy len và kéo len qua cả 6 vòng trên kim để chụm thành 1 mũi.";
-"dc5tog_into_same_st_crochet_content_4" = "content: Hoàn thành 1 mũi hạt bắp từ 5 mũi kép đơn";
+"dc5tog_into_same_st_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.";
+"dc5tog_into_same_st_crochet_content_2" = "Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 4 lần mũi kép chưa hoàn thành vào chung 1 chân móc.";
+"dc5tog_into_same_st_crochet_content_3" = "Dùng kim lấy len và kéo len qua cả 6 vòng trên kim để chụm thành 1 mũi.";
+"dc5tog_into_same_st_crochet_content_4" = "Hoàn thành 1 mũi hạt bắp từ 5 mũi kép đơn";
 
 
 //Mũi tăng

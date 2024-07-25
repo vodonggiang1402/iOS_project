@@ -1,0 +1,16 @@
+//
+//  Debug.xcconfig
+//  TMadeCrochet
+//
+//  Created by Ly Nguyen Xuan Thao on 25/7/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_NAME = Moc & Dan
+APP_NAME = Moc & Dan
+PRODUCT_BUNDLE_IDENTIFIER = com.tmadecrochet.dev
+MARKETING_VERSION = 1.0
+CURRENT_PROJECT_VERSION = 1
+OTHER_SWIFT_FLAGS = -D ENDPOINT_DEBUG

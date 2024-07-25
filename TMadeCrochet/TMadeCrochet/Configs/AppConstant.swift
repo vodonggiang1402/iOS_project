@@ -14,8 +14,6 @@ struct AppConstant {
     static let headerTitleSize2: CGFloat = 17
     static let contentTextSize: CGFloat = 16
     static let testDeviceIdentifiers = "83e18d4b12a81912a807ce957ab91419"
-    static let openAppAdId = "ca-app-pub-3940256099942544/5575463023"
-    static let symbolAdId = "ca-app-pub-3940256099942544/4411468910"
     static let globalCount = 3
     static let mailContact = "tmadeapp@gmail.com"
     static let phoneContact = "+84357798368"
@@ -81,4 +79,32 @@ struct AppConstant {
         guard let releaseVersion = Bundle.main.releaseVersionNumber else { return ""}
         return releaseVersion
     }
+    
+    struct Ads {
+        static var openAppAdsId: String {
+            if Configs.share.env == .dev {
+                return "ca-app-pub-3940256099942544/5575463023"
+            } else {
+                return "ca-app-pub-9183925814024348/5678293235"
+            }
+        }
+        
+        static var interstitialAdsId: String {
+            if Configs.share.env == .dev {
+                return "ca-app-pub-3940256099942544/4411468910"
+            } else {
+                return "ca-app-pub-9183925814024348/7264537763"
+            }
+        }
+        
+        static var bannerAdsId: String {
+            if Configs.share.env == .dev {
+                return "ca-app-pub-3940256099942544/2435281174"
+            } else {
+                return "ca-app-pub-9183925814024348/8440187943"
+            }
+        }
+       
+    }
+
 }
