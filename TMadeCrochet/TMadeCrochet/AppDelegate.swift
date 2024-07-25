@@ -7,7 +7,10 @@
 
 import UIKit
 import GoogleMobileAds
+import Firebase
 import FirebaseCore
+import FirebaseCrashlytics
+import FirebaseAnalytics
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -49,6 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setRootScreen() {
+        Analytics.setDefaultEventParameters([
+          "level_name": "Caverns01",
+          "level_difficulty": 4
+        ])
         SplashRouter().setupRootView()
     }
 
