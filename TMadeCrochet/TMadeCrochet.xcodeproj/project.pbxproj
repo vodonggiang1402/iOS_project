@@ -111,6 +111,7 @@
 		7B60B3E02C50C52D008D6A34 /* ContactView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3DE2C50C52D008D6A34 /* ContactView.xib */; };
 		7B60B3E12C50C52D008D6A34 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3DF2C50C52D008D6A34 /* ContactView.swift */; };
 		7B60B3E32C511670008D6A34 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3E22C511670008D6A34 /* BundleExtension.swift */; };
+		7B60B3E52C5213E6008D6A34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3E42C5213E6008D6A34 /* GoogleService-Info.plist */; };
 		7B7686812C4285FC00DBE001 /* count.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686802C4285FC00DBE001 /* count.json */; };
 		7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686822C42874B00DBE001 /* CountResponse.swift */; };
 		7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686852C42913B00DBE001 /* CountCollectionCell.swift */; };
@@ -448,6 +449,7 @@
 		7B60B3DE2C50C52D008D6A34 /* ContactView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactView.xib; sourceTree = "<group>"; };
 		7B60B3DF2C50C52D008D6A34 /* ContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		7B60B3E22C511670008D6A34 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		7B60B3E42C5213E6008D6A34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B7686802C4285FC00DBE001 /* count.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = count.json; sourceTree = "<group>"; };
 		7B7686822C42874B00DBE001 /* CountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountResponse.swift; sourceTree = "<group>"; };
 		7B7686852C42913B00DBE001 /* CountCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionCell.swift; sourceTree = "<group>"; };
@@ -622,6 +624,7 @@
 		7B153E6F2C4B09B700F6718A /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				7B60B3E42C5213E6008D6A34 /* GoogleService-Info.plist */,
 				7B522E0F2C32511C0034EE9D /* Info.plist */,
 			);
 			path = Configs;
@@ -941,6 +944,7 @@
 		7B522E002C32511B0034EE9D /* TMadeCrochet */ = {
 			isa = PBXGroup;
 			children = (
+				7B522E012C32511B0034EE9D /* AppDelegate.swift */,
 				7B522E312C3252C70034EE9D /* Base */,
 				7B153E702C4B535900F6718A /* Ads */,
 				7B153E6F2C4B09B700F6718A /* Configs */,
@@ -950,7 +954,6 @@
 				7B522E382C3253490034EE9D /* Modules */,
 				7B522E362C3253270034EE9D /* Extension */,
 				7B522E352C3253170034EE9D /* Resources */,
-				7B522E012C32511B0034EE9D /* AppDelegate.swift */,
 			);
 			path = TMadeCrochet;
 			sourceTree = "<group>";
@@ -1522,6 +1525,7 @@
 				7BB995042C3B96CF008EF04B /* SettingStoryboard.storyboard in Resources */,
 				7B341AA72C3512880069BD02 /* symbols.json in Resources */,
 				7BB9951D2C3BDB5B008EF04B /* TitleViewNavigationBar.xib in Resources */,
+				7B60B3E52C5213E6008D6A34 /* GoogleService-Info.plist in Resources */,
 				7B522E7F2C3262740034EE9D /* PatternStoryboard.storyboard in Resources */,
 				7B522E752C32626E0034EE9D /* MainStoryboard.storyboard in Resources */,
 				7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */,

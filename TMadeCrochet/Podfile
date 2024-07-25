@@ -9,6 +9,8 @@ def shared_pods
   # Pods for TMadeCrochet
   pod 'YouTubePlayer'
   pod 'Google-Mobile-Ads-SDK'
+  # Add the Firebase pod for Google Analytics
+  pod 'FirebaseAnalytics'
 end
 
 target 'TMadeCrochet' do

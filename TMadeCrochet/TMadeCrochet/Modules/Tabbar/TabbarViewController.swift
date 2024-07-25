@@ -145,8 +145,8 @@ class TabbarViewController: UITabBarController, AppOpenAdManagerDelegate {
         tabbarItem.setTitleTextAttributes(normalAttributes, for: .normal)
         tabbarItem.setTitleTextAttributes(selectedAttributes, for: .selected)
         
-        tabbarItem.imageInsets = UIEdgeInsets(top: 2, left: 0, bottom: -2, right: 0)
-        tabbarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 1)
+        tabbarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -2, right: 0)
+        tabbarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 4)
         
         viewController.tabBarItem = tabbarItem
     }
@@ -218,7 +218,7 @@ extension TabbarViewController {
         tabbarItem.setTitleTextAttributes(selectedAttributes, for: .selected)
         
         tabbarItem.imageInsets = UIEdgeInsets(top: 2, left: 0, bottom: -2, right: 0)
-        tabbarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 1)
+        tabbarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 4)
         
         viewController.tabBarItem = tabbarItem
         let navigation = UINavigationController(rootViewController: viewController)
