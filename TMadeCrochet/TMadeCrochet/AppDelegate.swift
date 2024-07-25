@@ -53,8 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setRootScreen() {
         Analytics.setDefaultEventParameters([
-          "level_name": "Caverns01",
-          "level_difficulty": 4
+          "start_app": "SetupRootView"
         ])
         SplashRouter().setupRootView()
     }

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import FirebaseAnalytics
 
 class SymbolViewController: BaseViewController {
     var presenter: ViewToPresenterSymbolProtocol?
@@ -96,6 +97,9 @@ extension SymbolViewController: BaseCollectionViewProtocol {
     
     @objc func didSelectItem(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UICollectionViewCell) {
         guard let data = dataItem as? Symbol else { return }
+        Analytics.logEvent("Symbols", parameters: [
+            "stitch" : (indexPath.row + 1), "stitch_name" : (data.symbolName ?? "") as NSObject
+               ])
         if let isAds = data.isAds, isAds {
             self.currentIndexPath = indexPath
             self.showAds()

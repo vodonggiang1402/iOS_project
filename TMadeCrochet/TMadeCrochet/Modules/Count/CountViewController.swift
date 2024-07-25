@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import FirebaseAnalytics
 
 enum AdsFlow {
     case nomal
@@ -229,6 +230,9 @@ extension CountViewController: CountHeaderViewDelegate {
     }
     
     func resetData() {
+        Analytics.logEvent("Counter", parameters: [
+            "reset_global" : true as NSObject
+               ])
         self.data = self.getResetData()
         AppConstant.countResponseData = CountResponseData.init(newData: self.data)
         self.loadData()
@@ -273,6 +277,9 @@ extension CountViewController: CountFooterViewDelegate {
     }
     
     func addNewCount(text: String) {
+        Analytics.logEvent("Counter", parameters: [
+            "count_name" : text as NSObject
+               ])
         if self.data.count > 1 {
             self.data[1].append(Count.init(isGlobal: false, countName: text, count: 1, color: self.getRamdomColor(colors: self.getColorArray())))
             AppConstant.countResponseData = CountResponseData.init(newData: self.data)
@@ -379,6 +386,9 @@ extension CountViewController: CountCollectionCellDelegate {
     
     func resetAction(indexPath: IndexPath) {
         if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
+            Analytics.logEvent("Counter", parameters: [
+                "reset_item" : true as NSObject
+                   ])
             self.data[indexPath.section][indexPath.row].count = 1
             AppConstant.countResponseData = CountResponseData.init(newData: self.data)
             self.loadData()
@@ -387,6 +397,9 @@ extension CountViewController: CountCollectionCellDelegate {
     
     func deleteAction(indexPath: IndexPath) {
         if self.data.count > 0, self.data.count > indexPath.section && self.data[indexPath.section].count > indexPath.row {
+            Analytics.logEvent("Counter", parameters: [
+                "delete_item" : true as NSObject
+                   ])
             var group = self.data[indexPath.section]
             group.remove(at: indexPath.row)
             self.data[indexPath.section] = group
