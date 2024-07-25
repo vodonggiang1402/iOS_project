@@ -51,7 +51,7 @@ class SettingView: BaseView {
         contactLabel.text = "contact_text".Localizable()
         shareLabel.text = "share_text".Localizable()
         rateLabel.text = "rate_text".Localizable()
-        versionLabel.text = String.init(format:"%@: %@", "app_version".Localizable(), AppConstant.appVersion)
+        versionLabel.text = String.init(format:"%@ %@", "app_version".Localizable(), AppConstant.appVersion)
     }
     
     override func setupUI() {

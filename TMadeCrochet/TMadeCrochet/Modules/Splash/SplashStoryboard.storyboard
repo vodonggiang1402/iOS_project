@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,28 +21,42 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="4pQ-F6-QLo">
-                                <rect key="frame" x="182" y="522" width="50" height="50"/>
+                                <rect key="frame" x="182" y="505" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="EpA-QA-nf2"/>
                                     <constraint firstAttribute="height" constant="50" id="PB4-7m-9Tt"/>
                                 </constraints>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTQ-f6-YdM">
+                                <rect key="frame" x="107" y="825" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2xE-NL-sAs"/>
+                                    <constraint firstAttribute="height" constant="21" id="itZ-Rx-zlc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="color_7f7f7f_565656"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4pQ-F6-QLo" secondAttribute="trailing" constant="182" id="9HO-ZX-NCn"/>
                             <constraint firstItem="x9i-fc-HgO" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Bff-MW-uAX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gTQ-f6-YdM" secondAttribute="trailing" constant="107" id="Nb6-gu-hZW"/>
                             <constraint firstItem="x9i-fc-HgO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cTR-KR-ykn"/>
-                            <constraint firstItem="4pQ-F6-QLo" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="474" id="eOX-UV-7gd"/>
+                            <constraint firstItem="4pQ-F6-QLo" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="457" id="eOX-UV-7gd"/>
                             <constraint firstItem="x9i-fc-HgO" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="f7d-H1-8EW"/>
                             <constraint firstAttribute="bottom" secondItem="x9i-fc-HgO" secondAttribute="bottom" id="iGx-UF-rp9"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="4pQ-F6-QLo" secondAttribute="bottom" constant="290" id="lyY-nK-3oK"/>
+                            <constraint firstItem="gTQ-f6-YdM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="107" id="iaF-DU-u2p"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="4pQ-F6-QLo" secondAttribute="bottom" constant="307" id="lyY-nK-3oK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gTQ-f6-YdM" secondAttribute="bottom" constant="16" id="qkv-LK-YMY"/>
                             <constraint firstItem="4pQ-F6-QLo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="182" id="xFU-9t-REP"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="loadingView" destination="4pQ-F6-QLo" id="8GU-sx-nwO"/>
+                        <outlet property="versionLabel" destination="gTQ-f6-YdM" id="GPo-e7-zHz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -51,5 +66,8 @@
     </scenes>
     <resources>
         <image name="ico_plash" width="414" height="896"/>
+        <namedColor name="color_7f7f7f_565656">
+            <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

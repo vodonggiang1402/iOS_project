@@ -10,6 +10,7 @@ import UIKit
 
 class SplashViewController: BaseViewController { 
     
+    @IBOutlet weak var versionLabel: UILabel!
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
     // MARK: - Properties
     var presenter: ViewToPresenterSplashProtocol?
@@ -18,6 +19,8 @@ class SplashViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavigationBar(isHide: true)
+        versionLabel.font = UIFont.systemFont(ofSize: 15)
+        versionLabel.text = String.init(format:"%@ %@", "app_version".Localizable(), AppConstant.appVersion)
         self.loadingView.startAnimating()
         guard AppConstant.isFirstTime else {
             self.presenter?.getData()
