@@ -505,15 +505,19 @@
         "steps" : [
           {
             "content" : "3dc_into_same_st_crochet_content_1",
-            "image_name" : "crochet_step"
+            "image_name" : "3dc_into_same_st_1"
           },
           {
             "content" : "3dc_into_same_st_crochet_content_2",
-            "image_name" : "crochet_step"
+            "image_name" : "3dc_into_same_st_2"
           },
           {
             "content" : "3dc_into_same_st_crochet_content_3",
-            "image_name" : "crochet_step"
+            "image_name" : "3dc_into_same_st_3"
+          },
+          {
+            "content" : "3dc_into_same_st_crochet_content_4",
+            "image_name" : "3dc_into_same_st_4"
           }
         ],
         "background_color" : "ffeabd",
@@ -528,15 +532,19 @@
         "steps" : [
           {
             "content" : "5dcs_into_same_st_crochet_content_1",
-            "image_name" : "crochet_step"
+            "image_name" : "5dc_into_same_st_1"
           },
           {
             "content" : "5dcs_into_same_st_crochet_content_2",
-            "image_name" : "crochet_step"
+            "image_name" : "5dc_into_same_st_2"
           },
           {
             "content" : "5dcs_into_same_st_crochet_content_3",
-            "image_name" : "crochet_step"
+            "image_name" : "5dc_into_same_st_3"
+          },
+          {
+            "content" : "5dcs_into_same_st_crochet_content_4",
+            "image_name" : "5dc_into_same_st_4"
           }
         ],
         "background_color" : "ffeabd",
