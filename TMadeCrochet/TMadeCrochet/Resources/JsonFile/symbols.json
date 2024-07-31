@@ -499,7 +499,7 @@
       {
         "is_ads" : true,
         "symbol_id" : "8",
-        "symbol_des" : "Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.",
+        "symbol_des" : "",
         "symbol_name" : "3dc_into_same_st_crochet_name",
         "icon_name" : "ico_3dc_into_same_st",
         "steps" : [
