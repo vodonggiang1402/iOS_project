@@ -100,12 +100,12 @@ extension SymbolViewController: BaseCollectionViewProtocol {
         Analytics.logEvent("Symbols", parameters: [
             "stitch" : (indexPath.row + 1), "stitch_name" : (data.symbolName ?? "") as NSObject
                ])
-//        if let isAds = data.isAds, isAds {
-//            self.currentIndexPath = indexPath
-//            self.showAds()
-//        } else {
+        if let isAds = data.isAds, isAds {
+            self.currentIndexPath = indexPath
+            self.showAds()
+        } else {
             self.presenter?.navigateToDetail(symbol: data)
-//        }
+        }
     }
     
     func collectionReusableView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
