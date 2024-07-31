@@ -44,12 +44,24 @@
                                             <constraint firstItem="JKD-2N-azX" firstAttribute="leading" secondItem="Slg-Mb-P0d" secondAttribute="leading" constant="25" id="p0p-YT-4aQ"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cL-GV-QT2">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hxj-f7-UWo">
                                         <rect key="frame" x="0.0" y="70" width="100" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" name="color_7f7f7f_565656"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cL-GV-QT2">
+                                                <rect key="frame" x="4" y="0.0" width="92" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" name="color_7f7f7f_565656"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="8cL-GV-QT2" secondAttribute="bottom" id="NO1-bm-BqQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="8cL-GV-QT2" secondAttribute="trailing" constant="4" id="U0C-VZ-RT5"/>
+                                            <constraint firstItem="8cL-GV-QT2" firstAttribute="top" secondItem="Hxj-f7-UWo" secondAttribute="top" id="USW-Lc-ll4"/>
+                                            <constraint firstItem="8cL-GV-QT2" firstAttribute="leading" secondItem="Hxj-f7-UWo" secondAttribute="leading" constant="4" id="pUA-eI-6Ln"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
