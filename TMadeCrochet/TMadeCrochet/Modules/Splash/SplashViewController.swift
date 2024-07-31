@@ -39,7 +39,7 @@ class SplashViewController: BaseViewController {
     }
     
     func handleFlowApp() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 12.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             self.loadingView.stopAnimating()
             AppConstant.isFirstTime = true
             self.presenter?.navigateToRootMain()

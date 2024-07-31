@@ -23,9 +23,6 @@
                 <outlet property="shareImageView" destination="2of-qJ-rM1" id="w2L-VU-fnR"/>
                 <outlet property="shareLabel" destination="wKE-Ob-aiG" id="DkH-WY-oO0"/>
                 <outlet property="shareView" destination="Z7j-2B-Ear" id="qbS-hu-Oqc"/>
-                <outlet property="termImageView" destination="dwu-F8-yW2" id="HOk-2u-ir0"/>
-                <outlet property="termLabel" destination="18N-Ec-6FY" id="n2G-22-STT"/>
-                <outlet property="termView" destination="bBA-M3-tMM" id="jhZ-kq-cn1"/>
                 <outlet property="versionLabel" destination="1UM-9N-fmR" id="0fg-fr-CaD"/>
                 <outlet property="versionView" destination="UN5-Zw-bU1" id="exj-Uz-w9T"/>
                 <outlet property="vesionImage" destination="UDm-9A-axL" id="VSF-tq-h7o"/>
@@ -33,11 +30,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="ofr-dP-5Pq">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="436"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" id="0Sn-4b-qjW">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="436"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZu-og-EhN" customClass="HighlightView" customModule="Moc___Dan" customModuleProvider="target">
@@ -69,37 +66,8 @@
                                 <constraint firstAttribute="bottom" secondItem="nyT-vA-8qh" secondAttribute="bottom" id="V7O-nb-wuC"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBA-M3-tMM" customClass="HighlightView" customModule="Moc___Dan" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="76" width="414" height="56"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JOK-SY-WRt">
-                                    <rect key="frame" x="16" y="0.0" width="382" height="56"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_setting_term" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-F8-yW2">
-                                            <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="56" id="y3c-qq-zxg"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Điều khoản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18N-Ec-6FY">
-                                            <rect key="frame" x="76" y="0.0" width="306" height="56"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <color key="textColor" name="color_7f7f7f_565656"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </stackView>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstItem="JOK-SY-WRt" firstAttribute="top" secondItem="bBA-M3-tMM" secondAttribute="top" id="HN0-ML-IqV"/>
-                                <constraint firstItem="JOK-SY-WRt" firstAttribute="leading" secondItem="bBA-M3-tMM" secondAttribute="leading" constant="16" id="q9w-vY-GES"/>
-                                <constraint firstAttribute="trailing" secondItem="JOK-SY-WRt" secondAttribute="trailing" constant="16" id="sDL-Iv-AEj"/>
-                                <constraint firstAttribute="bottom" secondItem="JOK-SY-WRt" secondAttribute="bottom" id="su6-l9-BR4"/>
-                            </constraints>
-                        </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3s-CT-Q4p" customClass="HighlightView" customModule="Moc___Dan" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="152" width="414" height="56"/>
+                            <rect key="frame" x="0.0" y="76" width="414" height="56"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YPO-Dc-FbC">
                                     <rect key="frame" x="16" y="0.0" width="382" height="56"/>
@@ -128,7 +96,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7j-2B-Ear" customClass="HighlightView" customModule="Moc___Dan" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="228" width="414" height="56"/>
+                            <rect key="frame" x="0.0" y="152" width="414" height="56"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AVP-9X-Jzx">
                                     <rect key="frame" x="16" y="0.0" width="382" height="56"/>
@@ -157,7 +125,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udi-qa-WYw" customClass="HighlightView" customModule="Moc___Dan" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="304" width="414" height="56"/>
+                            <rect key="frame" x="0.0" y="228" width="414" height="56"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Cyl-WT-W40">
                                     <rect key="frame" x="16" y="0.0" width="382" height="56"/>
@@ -186,7 +154,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UN5-Zw-bU1" customClass="HighlightView" customModule="Moc___Dan" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="380" width="414" height="56"/>
+                            <rect key="frame" x="0.0" y="304" width="414" height="56"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ukv-Ae-8c4">
                                     <rect key="frame" x="16" y="0.0" width="382" height="56"/>
@@ -229,7 +197,6 @@
         <image name="ico_setting_language" width="56" height="56"/>
         <image name="ico_setting_rate" width="56" height="56"/>
         <image name="ico_setting_share" width="56" height="56"/>
-        <image name="ico_setting_term" width="56" height="56"/>
         <namedColor name="color_7f7f7f_565656">
             <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

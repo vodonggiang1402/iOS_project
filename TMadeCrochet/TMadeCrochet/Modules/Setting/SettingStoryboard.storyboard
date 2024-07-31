@@ -24,10 +24,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2H-qv-hsh" customClass="SettingView" customModule="Moc___Dan" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="30" width="414" height="436"/>
+                                                <rect key="frame" x="0.0" y="30" width="414" height="360"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="436" id="STq-Ra-4j9"/>
+                                                    <constraint firstAttribute="height" constant="360" id="STq-Ra-4j9"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

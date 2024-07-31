@@ -102,151 +102,135 @@
 
 
 //Mũi hạt bắp
-"hdc3tog_into_same_st_crochet_name" = "Mũi hạt bắp ( 3 mũi nửa kép)";
+"hdc3tog_into_same_st_crochet_name" = "hdc3tog into same st";
 "hdc3tog_into_same_st_crochet_description" = "Mũi hạt bắp ( 3 mũi nửa kép) được hình thành từ 3 mũi nửa kép chưa đầy đủ cùng móc vào 1 chân.";
-"hdc3tog_into_same_st_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.";
-"hdc3tog_into_same_st_crochet_content_2" = "Kéo lên qua chân bính được 1 mũi nửa kép chưa hoàn thành, lặp lại thêm 2 lần mũi nửa kép chưa hoàn thành vào chung 1 chân móc.";
-"hdc3tog_into_same_st_crochet_content_3" = "Dùng kim lấy len và kéo len qua cả 7 vòng trên kim để chụm thành 1 mũi.";
-"hdc3tog_into_same_st_crochet_content_4" = "Hoàn thành 1 mũi hạt bắp từ 3 mũi nữa kép.";
+"hdc3tog_into_same_st_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain st.";
+"hdc3tog_into_same_st_crochet_content_2" = "Work an incomplete hdc. Work 2 more incomplete hdcs into the same st.";
+"hdc3tog_into_same_st_crochet_content_3" = "Yarn over hook and draw through 7 loops on hook all at once.";
+"hdc3tog_into_same_st_crochet_content_4" = "This completes as hdc3tog into same stitch.";
 
 
-"dc3tog_into_same_st_crochet_name" = "Mũi hạt bắp (3 mũi kép đơn)";
+"dc3tog_into_same_st_crochet_name" = "dc3tog into same st";
 "dc3tog_into_same_st_crochet_description" = "Mũi hạt bắp (3 mũi kép đơn) được hình thành từ 3 mũi kép chưa đầy đủ cùng móc vào 1 chân.";
-"dc3tog_into_same_st_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.";
-"dc3tog_into_same_st_crochet_content_2" = "Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 2 lần mũi  kép chưa hoàn thành vào chung 1 chân móc";
-"dc3tog_into_same_st_crochet_content_3" = "Dùng kim lấy len và kéo len qua cả 4 vòng trên kim để chụm thành 1 mũi";
-"dc3tog_into_same_st_crochet_content_4" = "Hoàn thành 1 mũi hạt bắp từ 3 mũi kép đơn.";
-"dc3tog_into_same_st_crochet_content_5" = "";
+"dc3tog_into_same_st_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain st.";
+"dc3tog_into_same_st_crochet_content_2" = "Work an incomplete hdc. Work 2 more incomplete hdcs into the same st.";
+"dc3tog_into_same_st_crochet_content_3" = "Yarn over hook and draw through 4 loops on hook all at once.";
+"dc3tog_into_same_st_crochet_content_4" = "This completes as dc3tog into same stitch.";
 
-"dc5tog_into_same_st_crochet_name" = "Mũi hạt bắp (5 mũi kép đơn)";
+"dc5tog_into_same_st_crochet_name" = "dc5tog into same st";
 "dc5tog_into_same_st_crochet_description" = "Mũi hạt bắp (5 mũi kép đơn) được hình thành từ 5 mũi kép chưa đầy đủ cùng móc vào 1 chân.";
-"dc5tog_into_same_st_crochet_content_1" = "content: Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.";
-"dc5tog_into_same_st_crochet_content_2" = "content: Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 4 lần mũi kép chưa hoàn thành vào chung 1 chân móc.";
-"dc5tog_into_same_st_crochet_content_3" = "content: Dùng kim lấy len và kéo len qua cả 6 vòng trên kim để chụm thành 1 mũi.";
-"dc5tog_into_same_st_crochet_content_4" = "content: Hoàn thành 1 mũi hạt bắp từ 5 mũi kép đơn";
+"dc5tog_into_same_st_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain st.";
+"dc5tog_into_same_st_crochet_content_2" = "Work an incomplete hdc. Work 4 more incomplete hdcs into the same st.";
+"dc5tog_into_same_st_crochet_content_3" = "Yarn over hook and draw through 6 loops on hook all at once.";
+"dc5tog_into_same_st_crochet_content_4" = "This completes as dc5tog into same stitch.";
 
 
 //Mũi tăng
-"2sc_into_same_st_crochet_name" = "2 mũi đơn chung chân";
+"2sc_into_same_st_crochet_name" = "2sc into same st";
 "2sc_into_same_st_crochet_description" = "";
-"2sc_into_same_st_crochet_content_1" = "";
-"2sc_into_same_st_crochet_content_2" = "";
-"2sc_into_same_st_crochet_content_3" = "";
-"2sc_into_same_st_crochet_content_4" = "";
-"2sc_into_same_st_crochet_content_5" = "";
+"2sc_into_same_st_crochet_content_1" = "Work 1 sc into the top loops of st from the pre row.";
+"2sc_into_same_st_crochet_content_2" = "Yarn over hook and draw through.";
+"2sc_into_same_st_crochet_content_3" = "Work 1 more sc into the same st.";
+"2sc_into_same_st_crochet_content_4" = "2 sc worked into same st. 1 st increased.";
 
-"1sc_1ch_1sc_crochet_name" = "1 mũi đơn- 1 bính - 1 mũi đơn chung chân";
+"1sc_1ch_1sc_crochet_name" = "(1sc-1ch-1sc) into same st";
 "1sc_1ch_1sc_crochet_description" = "";
-"1sc_1ch_1sc_crochet_content_1" = "";
-"1sc_1ch_1sc_crochet_content_2" = "";
-"1sc_1ch_1sc_crochet_content_3" = "";
-"1sc_1ch_1sc_crochet_content_4" = "";
-"1sc_1ch_1sc_crochet_content_5" = "";
+"1sc_1ch_1sc_crochet_content_1" = "Work 1 sc into the top loops of st from the pre row and yarn over hook.";
+"1sc_1ch_1sc_crochet_content_2" = "Make 1 chain and then insert hook into the same st.";
+"1sc_1ch_1sc_crochet_content_3" = "Draw through and work a sc.";
+"1sc_1ch_1sc_crochet_content_4" = "2 scs with 1 ch worked into same st. 2 sts increased.";
 
-"3sc_into_same_st_crochet_name" = "3 mũi đơn chung chân";
+"3sc_into_same_st_crochet_name" = "3sc into same st";
 "3sc_into_same_st_crochet_description" = "";
-"3sc_into_same_st_crochet_content_1" = "";
-"3sc_into_same_st_crochet_content_2" = "";
-"3sc_into_same_st_crochet_content_3" = "";
-"3sc_into_same_st_crochet_content_4" = "";
-"3sc_into_same_st_crochet_content_5" = "";
+"3sc_into_same_st_crochet_content_1" = "Work 1 sc into the top loops of st from the pre row.";
+"3sc_into_same_st_crochet_content_2" = "Work one more sc into the same st.";
+"3sc_into_same_st_crochet_content_3" = "Work 1 more sc into the same st.";
 
-"2hdcs_into_same_st_crochet_name" = "2 mũi nửa kép chung chân";
+"2hdcs_into_same_st_crochet_name" = "2hdcs into same st";
 "2hdcs_into_same_st_crochet_description" = "";
-"2hdcs_into_same_st_crochet_content_1" = "";
-"2hdcs_into_same_st_crochet_content_2" = "";
-"2hdcs_into_same_st_crochet_content_3" = "";
-"2hdcs_into_same_st_crochet_content_4" = "";
-"2hdcs_into_same_st_crochet_content_5" = "";
+"2hdcs_into_same_st_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain st and draw through.";
+"2hdcs_into_same_st_crochet_content_2" = "Work 1 hdc. Yarn over hook.";
+"2hdcs_into_same_st_crochet_content_3" = "Work 1 more hdc into the same st.";
+"2hdcs_into_same_st_crochet_content_4" = "2 hdcs worked into same st. 1 st increased.";
 
-"3hdcs_into_same_st_crochet_name" = "3 mũi nửa kép chung chân";
+"3hdcs_into_same_st_crochet_name" = "3hdcs into same st";
 "3hdcs_into_same_st_crochet_description" = "";
-"3hdcs_into_same_st_crochet_content_1" = "";
-"3hdcs_into_same_st_crochet_content_2" = "";
-"3hdcs_into_same_st_crochet_content_3" = "";
-"3hdcs_into_same_st_crochet_content_4" = "";
-"3hdcs_into_same_st_crochet_content_5" = "";
+"3hdcs_into_same_st_crochet_content_1" = "Work 1 hdc into the back loops of chain. Yarn over and insert hook into same st.";
+"3hdcs_into_same_st_crochet_content_2" = "Work another hdc.";
+"3hdcs_into_same_st_crochet_content_3" = "Work 1 more hdc into the same st.";
+"3hdcs_into_same_st_crochet_content_4" = "3 hdcs worked into same st. 2 sts increased.";
 
-"2dcs_into_same_st_crochet_name" = "2 mũi kép chung chân";
+"2dcs_into_same_st_crochet_name" = "2dcs into same st";
 "2dcs_into_same_st_crochet_description" = "";
-"2dcs_into_same_st_crochet_content_1" = "";
-"2dcs_into_same_st_crochet_content_2" = "";
-"2dcs_into_same_st_crochet_content_3" = "";
-"2dcs_into_same_st_crochet_content_4" = "";
-"2dcs_into_same_st_crochet_content_5" = "";
+"2dcs_into_same_st_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain and draw through.";
+"2dcs_into_same_st_crochet_content_2" = "Work 1 dc. Yarn over hook.";
+"2dcs_into_same_st_crochet_content_3" = "Work 1 more dc into the same st.";
+"2dcs_into_same_st_crochet_content_4" = "2 dcs worked into same st. 1 st increased.";
 
-"1dc_1ch_1dc_crochet_name" = "1 kép - bính - 1 kép chung chân";
+"1dc_1ch_1dc_crochet_name" = "(1dc-1ch-1dc) into same st";
 "1dc_1ch_1dc_crochet_description" = "";
-"1dc_1ch_1dc_crochet_content_1" = "";
-"1dc_1ch_1dc_crochet_content_2" = "";
-"1dc_1ch_1dc_crochet_content_3" = "";
-"1dc_1ch_1dc_crochet_content_4" = "";
-"1dc_1ch_1dc_crochet_content_5" = "";
+"1dc_1ch_1dc_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain.";
+"1dc_1ch_1dc_crochet_content_2" = "Work 1 dc. Chain 1.";
+"1dc_1ch_1dc_crochet_content_3" = "Work 1 more dc into the same st.";
+"1dc_1ch_1dc_crochet_content_4" = "2 dcs worked into same st.";
 
-"3dc_into_same_st_crochet_name" = "3 mũi kép chung chân";
+"3dc_into_same_st_crochet_name" = "3dcs into same st";
 "3dc_into_same_st_crochet_description" = "";
-"3dc_into_same_st_crochet_content_1" = "";
-"3dc_into_same_st_crochet_content_2" = "";
-"3dc_into_same_st_crochet_content_3" = "";
-"3dc_into_same_st_crochet_content_4" = "";
-"3dc_into_same_st_crochet_content_5" = "";
+"3dc_into_same_st_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain. Yarn over and draw through.";
+"3dc_into_same_st_crochet_content_2" = "Work 1 dc.";
+"3dc_into_same_st_crochet_content_3" = "Work 2 more dcs into the same st.";
+"3dc_into_same_st_crochet_content_4" = "3 dcs worked into same st.";
 
-"5dcs_into_same_st_crochet_name" = "5 mũi kép chung chân";
+"5dcs_into_same_st_crochet_name" = "5dcs into same st";
 "5dcs_into_same_st_crochet_description" = "";
-"5dcs_into_same_st_crochet_content_1" = "";
-"5dcs_into_same_st_crochet_content_2" = "";
-"5dcs_into_same_st_crochet_content_3" = "";
-"5dcs_into_same_st_crochet_content_4" = "";
-"5dcs_into_same_st_crochet_content_5" = "";
+"5dcs_into_same_st_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain.";
+"5dcs_into_same_st_crochet_content_2" = "Work 1 dc.";
+"5dcs_into_same_st_crochet_content_3" = "Work 4 more dcs into the same st.";
+"5dcs_into_same_st_crochet_content_4" = "5 dcs worked into same st.";
 
 //mũi giảm
-"sc2tog_crochet_name" = "2 đơn chụm đầu";
+"sc2tog_crochet_name" = "Single crochet 2 stitches together sc2tog";
 "sc2tog_crochet_description" = "";
-"sc2tog_crochet_content_1" = "";
-"sc2tog_crochet_content_2" = "";
-"sc2tog_crochet_content_3" = "";
-"sc2tog_crochet_content_4" = "";
-"sc2tog_crochet_content_5" = "";
+"sc2tog_crochet_content_1" = "Insert hook into the both loops of the prev row as shown and yarn over hook.";
+"sc2tog_crochet_content_2" = "Draw through. Repeat by inserting hook into next st and yarn over hook and draw through.";
+"sc2tog_crochet_content_3" = "This makes two incomplete scs. Yarn over and draw through 3 loops on hook all at once.";
+"sc2tog_crochet_content_4" = "This completes a sc2tog";
 
-"hdc2tog_crochet_name" = "2 mũi nửa kép chụm đầu";
+"hdc2tog_crochet_name" = "half-double crochet 2 stitches together hdc2tog";
 "hdc2tog_crochet_description" = "";
-"hdc2tog_crochet_content_1" = "";
-"hdc2tog_crochet_content_2" = "";
-"hdc2tog_crochet_content_3" = "";
-"hdc2tog_crochet_content_4" = "";
-"hdc2tog_crochet_content_5" = "";
+"hdc2tog_crochet_content_1" = "Yarn over and insert hook into the back loop of chain st.";
+"hdc2tog_crochet_content_2" = "Draw through. Yarn over hook and insert hook into the back loop of the next st and draw through.";
+"hdc2tog_crochet_content_3" = "This makes two incomplete hdcs. Yarn over and draw through 5 loops on hook all at once.";
+"hdc2tog_crochet_content_4" = "This completes a hdc2tog.";
 
-"dc2tog_crochet_name" = "2 mũi kép chụm đầu";
+"dc2tog_crochet_name" = "double crochet 2 stitches together dc2tog";
 "dc2tog_crochet_description" = "";
-"dc2tog_crochet_content_1" = "";
-"dc2tog_crochet_content_2" = "";
-"dc2tog_crochet_content_3" = "";
-"dc2tog_crochet_content_4" = "";
-"dc2tog_crochet_content_5" = "";
+"dc2tog_crochet_content_1" = "Insert hook into the back loop of chain st and work 1 incomplete dc. Yarn over hook and insert hook into back loop of the next st and draw through.";
+"dc2tog_crochet_content_2" = "Yarn over hook again and draw through first 2 loops on hook.";
+"dc2tog_crochet_content_3" = "This makes two incomplete double crochet sts. Yarn over and draw through all 3 loops on hook at once.";
+"dc2tog_crochet_content_4" = "This completes a dc2tog.";
 
-"sc3tog_crochet_name" = "3 mũi đơn chụm đầu";
+"sc3tog_crochet_name" = "Single crochet 3 stitches together sc3tog";
 "sc3tog_crochet_description" = "";
-"sc3tog_crochet_content_1" = "";
-"sc3tog_crochet_content_2" = "";
-"sc3tog_crochet_content_3" = "";
-"sc3tog_crochet_content_4" = "";
-"sc3tog_crochet_content_5" = "";
+"sc3tog_crochet_content_1" = "Insert hook into the both loops of the prev row as shown.";
+"sc3tog_crochet_content_2" = "Repeat the previous step for the next two sts.";
+"sc3tog_crochet_content_3" = "This makes three incomplete scs. Yarn over and draw through all 4 loops on hook at once.";
+"sc3tog_crochet_content_4" = "This completes a sc2tog.";
 
-"hdc3tog_crochet_name" = "3 mũi nửa kép chụm đầu";
+"hdc3tog_crochet_name" = "hdc3tog";
 "hdc3tog_crochet_description" = "";
-"hdc3tog_crochet_content_1" = "";
-"hdc3tog_crochet_content_2" = "";
-"hdc3tog_crochet_content_3" = "";
-"hdc3tog_crochet_content_4" = "";
-"hdc3tog_crochet_content_5" = "";
+"hdc3tog_crochet_content_1" = "Yarn over and insert hook into the back loop of chain st.";
+"hdc3tog_crochet_content_2" = "Work an incomplete hdc. Work 2 more incomplete hdc in each of the next two sts.";
+"hdc3tog_crochet_content_3" = "Yarn over hook and draw through all 7 loops on hook at once.";
+"hdc3tog_crochet_content_4" = "This completes a hdc3tog";
 
-"dc3tog_crochet_name" = "3 mũi kép chụm đầu";
+
+"dc3tog_crochet_name" = "dc3tog";
 "dc3tog_crochet_description" = "";
-"dc3tog_crochet_content_1" = "";
-"dc3tog_crochet_content_2" = "";
-"dc3tog_crochet_content_3" = "";
-"dc3tog_crochet_content_4" = "";
-"dc3tog_crochet_content_5" = "";
+"dc3tog_crochet_content_1" = "Yarn over and insert hook into the back loop of chain st and work an incomplete dc.";
+"dc3tog_crochet_content_2" = "Work 2 more incomplete dc in each of the next 2 sts.";
+"dc3tog_crochet_content_3" = "Yarn over hook and draw through all 4 loops on hook at once.";
+"dc3tog_crochet_content_4" = "This completes a dc3tog";
 
 //Header title
 "count_screen_header_title" = "Counter";

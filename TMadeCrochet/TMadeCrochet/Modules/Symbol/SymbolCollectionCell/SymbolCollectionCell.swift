@@ -43,7 +43,7 @@ class SymbolCollectionCell: BaseCollectionViewCell {
         }
         self.adsImageView.image = UIImage.init(named: "ico_clock")
         if let isAds = model.isAds, isAds {
-            self.adsImageView.isHidden = false
+            self.adsImageView.isHidden = true
         } else {
             self.adsImageView.isHidden = true
         }

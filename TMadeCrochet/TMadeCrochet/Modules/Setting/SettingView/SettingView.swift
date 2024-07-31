@@ -46,7 +46,7 @@ class SettingView: BaseView {
     
     override func localizedString() { 
         languageLabel.text = "language_text".Localizable()
-        termLabel.text = "term_text".Localizable()
+//        termLabel.text = "term_text".Localizable()
 //        policyLabel.text = "policy_text".Localizable()
         contactLabel.text = "contact_text".Localizable()
         shareLabel.text = "share_text".Localizable()
@@ -59,8 +59,8 @@ class SettingView: BaseView {
         languageImageView.layer.cornerRadius = 5
         languageImageView.layer.masksToBounds = true
         
-        termImageView.layer.cornerRadius = 5
-        termImageView.layer.masksToBounds = true
+//        termImageView.layer.cornerRadius = 5
+//        termImageView.layer.masksToBounds = true
         
 //        policyImageView.layer.cornerRadius = 5
 //        policyImageView.layer.masksToBounds = true
@@ -83,11 +83,11 @@ class SettingView: BaseView {
             self.delegate?.languageViewNormalTap()
         }
         
-        termView.delegate = self
-        termView.addTapGesture { [weak self] in
-            guard let self = self else { return }
-            self.delegate?.termViewNormalTap()
-        }
+//        termView.delegate = self
+//        termView.addTapGesture { [weak self] in
+//            guard let self = self else { return }
+//            self.delegate?.termViewNormalTap()
+//        }
         
 //        policyView.delegate = self
 //        policyView.addTapGesture { [weak self] in
@@ -124,10 +124,10 @@ extension SettingView: HighlightViewProtocol {
             languageLabel.textColor = UIColor.color_7f7f7f_565656
             languageImageView.setTintImageView(imageName: "ico_setting_language",
                                               colorTint: UIColor.color_fafafa_1818181)
-        case termView:
-            termLabel.textColor = UIColor.color_7f7f7f_565656
-            termImageView.setTintImageView(imageName: "ico_setting_term",
-                                                colorTint: UIColor.color_fafafa_1818181)
+//        case termView:
+//            termLabel.textColor = UIColor.color_7f7f7f_565656
+//            termImageView.setTintImageView(imageName: "ico_setting_term",
+//                                                colorTint: UIColor.color_fafafa_1818181)
 //        case policyView:
 //            policyLabel.textColor = UIColor.color_7f7f7f_565656
 //            policyImageView.setTintImageView(imageName: "ico_setting_policy",
@@ -153,9 +153,9 @@ extension SettingView: HighlightViewProtocol {
         case languageView:
             languageLabel.textColor = UIColor.color_7f7f7f_565656
             languageImageView.image = UIImage(named: "ico_setting_language")
-        case termView:
-            termLabel.textColor = UIColor.color_7f7f7f_565656
-            termImageView.image = UIImage(named: "ico_setting_term")
+//        case termView:
+//            termLabel.textColor = UIColor.color_7f7f7f_565656
+//            termImageView.image = UIImage(named: "ico_setting_term")
 //        case policyView:
 //            policyLabel.textColor = UIColor.color_7f7f7f_565656
 //            policyImageView.image = UIImage(named: "ico_setting_policy")
