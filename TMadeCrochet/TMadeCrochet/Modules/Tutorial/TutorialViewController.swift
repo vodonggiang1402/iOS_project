@@ -17,7 +17,7 @@ class TutorialViewController: BaseViewController {
     private let height: CGFloat =  (UIScreen.main.bounds.width - 32 - 10)/2 + 50
     private let lineSpacing: CGFloat = 30
     private let interitemSpacing: CGFloat = 5
-    var data: [Tuttorial] = []
+    var data: [Tutorial] = []
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -88,7 +88,7 @@ extension TutorialViewController: BaseCollectionViewProtocol {
     }
     
     @objc func didSelectItem(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UICollectionViewCell) {
-        guard dataItem is Count else { return }
-        
+        guard let data = dataItem as? Tutorial else { return }
+        self.presenter?.navigateToDetail(tutorial: data)
     }
 }

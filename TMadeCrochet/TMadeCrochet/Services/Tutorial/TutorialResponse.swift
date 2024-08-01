@@ -8,7 +8,7 @@
 import Foundation
 
 struct TutorialResponseData: Codable {
-    var data: [Tuttorial]?
+    var data: [Tutorial]?
     
     enum CodingKeys: String, CodingKey {
         case data
@@ -16,16 +16,16 @@ struct TutorialResponseData: Codable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        data = try? container.decodeIfPresent([Tuttorial].self, forKey: .data)
+        data = try? container.decodeIfPresent([Tutorial].self, forKey: .data)
     }
 }
 
-struct Tuttorial : Codable {
+struct Tutorial : Codable {
     var tutorialName: String?
     var tutorialDes: String?
     var tutorialImage: String?
     var color: String?
-    var list: [TuttorialItem]?
+    var list: [TutorialItem]?
         
     enum CodingKeys: String, CodingKey {
         case tutorialName = "tutorial_name"
@@ -41,11 +41,11 @@ struct Tuttorial : Codable {
         tutorialDes = try? container.decodeIfPresent(String.self, forKey: .tutorialDes)
         tutorialImage = try? container.decodeIfPresent(String.self, forKey: .tutorialImage)
         color = try? container.decodeIfPresent(String.self, forKey: .color)
-        list = try? container.decodeIfPresent([TuttorialItem].self, forKey: .list)
+        list = try? container.decodeIfPresent([TutorialItem].self, forKey: .list)
     }
 }
 
-struct TuttorialItem : Codable {
+struct TutorialItem : Codable {
     var itemName: String?
     var itemDes: String?
     var itemImage: String?

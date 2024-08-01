@@ -26,7 +26,7 @@ class TutorialCollectionCell: BaseCollectionViewCell {
     }
     
     override func setupCell(object: Any) {
-        guard let model = object as? Tuttorial else { return }
+        guard let model = object as? Tutorial else { return }
         self.titleLabel.text = model.tutorialName?.Localizable()
     }
 }

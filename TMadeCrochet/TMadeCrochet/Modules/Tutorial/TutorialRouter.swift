@@ -40,5 +40,8 @@ class TutorialRouter: PresenterToRouterTutorialProtocol {
         return viewController
     }
 
+    func navigateToDetail(tutorial: Tutorial) {
+        ListTutorialRouter().showScreen(tutorial: tutorial)
+    }
 }
 

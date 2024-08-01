@@ -17,6 +17,7 @@ protocol ViewToPresenterTutorialProtocol {
     var view: PresenterToViewTutorialProtocol? { get set }
     var interactor: PresenterToInteractorTutorialProtocol? { get set }
     var router: PresenterToRouterTutorialProtocol? { get set }
+    func navigateToDetail(tutorial: Tutorial)
 }
 
 // MARK: Interactor Input (Presenter -> Interactor)
@@ -31,7 +32,7 @@ protocol InteractorToPresenterTutorialProtocol {
 
 // MARK: Router Input (Presenter -> Router)
 protocol PresenterToRouterTutorialProtocol {
-
+    func navigateToDetail(tutorial: Tutorial)
 }
 
 protocol InteractorToEntityTutorialProtocol {
