@@ -44,8 +44,8 @@ struct AppConstant {
     static var symbolResponseData: SymbolResponseData? {
         get {
             guard let data = UserDefaults.standard.value(forKey: "symbol-response-data") as? Data,
-                  let tfaListResponse = try? PropertyListDecoder().decode(SymbolResponseData.self, from: data) else { return nil }
-            return tfaListResponse
+                  let symbolResponseData = try? PropertyListDecoder().decode(SymbolResponseData.self, from: data) else { return nil }
+            return symbolResponseData
         }
         set {
             guard let data = try? PropertyListEncoder().encode(newValue) else { return }
@@ -56,12 +56,24 @@ struct AppConstant {
     static var countResponseData: CountResponseData? {
         get {
             guard let data = UserDefaults.standard.value(forKey: "count-response-data") as? Data,
-                  let tfaListResponse = try? PropertyListDecoder().decode(CountResponseData.self, from: data) else { return nil }
-            return tfaListResponse
+                  let countResponseData = try? PropertyListDecoder().decode(CountResponseData.self, from: data) else { return nil }
+            return countResponseData
         }
         set {
             guard let data = try? PropertyListEncoder().encode(newValue) else { return }
             UserDefaults.standard.setValue(data, forKey: "count-response-data")
+        }
+    }
+    
+    static var tutorialResponseData: TutorialResponseData? {
+        get {
+            guard let data = UserDefaults.standard.value(forKey: "tutorial-response-data") as? Data,
+                  let tutorialResponseData = try? PropertyListDecoder().decode(TutorialResponseData.self, from: data) else { return nil }
+            return tutorialResponseData
+        }
+        set {
+            guard let data = try? PropertyListEncoder().encode(newValue) else { return }
+            UserDefaults.standard.setValue(data, forKey: "tutorial-response-data")
         }
     }
     

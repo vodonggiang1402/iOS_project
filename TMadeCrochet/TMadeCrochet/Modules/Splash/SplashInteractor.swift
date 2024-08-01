@@ -17,7 +17,10 @@ class SplashInteractor: PresenterToInteractorSplashProtocol {
             AppConstant.symbolResponseData = result
             DataManager.shared.readJSONFromFile(fileName: "count", type: CountResponseData.self) { result in
                 AppConstant.countResponseData = result
-                self.presenter?.saveDataComplete()
+                DataManager.shared.readJSONFromFile(fileName: "tutorial", type: TutorialResponseData.self) { result in
+                    AppConstant.tutorialResponseData = result
+                    self.presenter?.saveDataComplete()
+                }
             }
         }
 
