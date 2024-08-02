@@ -126,6 +126,8 @@
 		7B6358E42C5B74C600B3C782 /* ListTutorialEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6358DD2C5B74C600B3C782 /* ListTutorialEntity.swift */; };
 		7B6358E52C5B74C600B3C782 /* ListTutorialContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6358DE2C5B74C600B3C782 /* ListTutorialContract.swift */; };
 		7B6358E62C5B74C600B3C782 /* ListTutorialInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6358DF2C5B74C600B3C782 /* ListTutorialInteractor.swift */; };
+		7B6358E92C5CBF1D00B3C782 /* ListTutorialCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6358E82C5CBF1D00B3C782 /* ListTutorialCollectionCell.swift */; };
+		7B6358EB2C5CBF2700B3C782 /* ListTutorialCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6358EA2C5CBF2700B3C782 /* ListTutorialCollectionCell.xib */; };
 		7B7686812C4285FC00DBE001 /* count.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686802C4285FC00DBE001 /* count.json */; };
 		7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686822C42874B00DBE001 /* CountResponse.swift */; };
 		7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686852C42913B00DBE001 /* CountCollectionCell.swift */; };
@@ -480,6 +482,8 @@
 		7B6358DD2C5B74C600B3C782 /* ListTutorialEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTutorialEntity.swift; sourceTree = "<group>"; };
 		7B6358DE2C5B74C600B3C782 /* ListTutorialContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTutorialContract.swift; sourceTree = "<group>"; };
 		7B6358DF2C5B74C600B3C782 /* ListTutorialInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTutorialInteractor.swift; sourceTree = "<group>"; };
+		7B6358E82C5CBF1D00B3C782 /* ListTutorialCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTutorialCollectionCell.swift; sourceTree = "<group>"; };
+		7B6358EA2C5CBF2700B3C782 /* ListTutorialCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTutorialCollectionCell.xib; sourceTree = "<group>"; };
 		7B7686802C4285FC00DBE001 /* count.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = count.json; sourceTree = "<group>"; };
 		7B7686822C42874B00DBE001 /* CountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountResponse.swift; sourceTree = "<group>"; };
 		7B7686852C42913B00DBE001 /* CountCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionCell.swift; sourceTree = "<group>"; };
@@ -1220,6 +1224,7 @@
 		7B6358D82C5B728600B3C782 /* ListTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				7B6358E72C5CBF0200B3C782 /* ListTutorialCollectionCell */,
 				7B6358DE2C5B74C600B3C782 /* ListTutorialContract.swift */,
 				7B6358DD2C5B74C600B3C782 /* ListTutorialEntity.swift */,
 				7B6358DF2C5B74C600B3C782 /* ListTutorialInteractor.swift */,
@@ -1229,6 +1234,15 @@
 				7B6358DA2C5B74C500B3C782 /* ListTutorialViewController.swift */,
 			);
 			path = ListTutorial;
+			sourceTree = "<group>";
+		};
+		7B6358E72C5CBF0200B3C782 /* ListTutorialCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				7B6358E82C5CBF1D00B3C782 /* ListTutorialCollectionCell.swift */,
+				7B6358EA2C5CBF2700B3C782 /* ListTutorialCollectionCell.xib */,
+			);
+			path = ListTutorialCollectionCell;
 			sourceTree = "<group>";
 		};
 		7B7686842C42912500DBE001 /* CountCollectionCell */ = {
@@ -1602,6 +1616,7 @@
 				7B4E34A52C3E46F60059167A /* SymbolDetailStoryboard.storyboard in Resources */,
 				7BDB14DC2C4FEFD40081676D /* LanguageTableViewCell.xib in Resources */,
 				7B7686992C4501D600DBE001 /* CountFooterView.xib in Resources */,
+				7B6358EB2C5CBF2700B3C782 /* ListTutorialCollectionCell.xib in Resources */,
 				7B341A262C340B0C0069BD02 /* TitleSection.xib in Resources */,
 				7BF32A0C2C329A7800CD8F18 /* SplashStoryboard.storyboard in Resources */,
 				7B7686882C42914300DBE001 /* CountCollectionCell.xib in Resources */,
@@ -1847,6 +1862,7 @@
 				7BF32A192C33CCD500CD8F18 /* BaseTableViewCell.swift in Sources */,
 				7B6358E32C5B74C600B3C782 /* ListTutorialPresenter.swift in Sources */,
 				7B60B3E12C50C52D008D6A34 /* ContactView.swift in Sources */,
+				7B6358E92C5CBF1D00B3C782 /* ListTutorialCollectionCell.swift in Sources */,
 				7B522EAA2C3262930034EE9D /* SymbolPresenter.swift in Sources */,
 				7B153E5B2C45408800F6718A /* UIViewExtension.swift in Sources */,
 				7B4E34A32C3E46F60059167A /* SymbolDetailPresenter.swift in Sources */,

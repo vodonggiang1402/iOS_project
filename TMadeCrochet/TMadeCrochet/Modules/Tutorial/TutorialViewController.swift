@@ -29,7 +29,7 @@ class TutorialViewController: BaseViewController {
     func setupDataForCollectionView() {
         let itemSize = CGSize(width: width, height: height)
         self.collectionView.dataArray = [[]]
-        self.collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 16, right: 0)
+        self.collectionView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
         self.collectionView.configure(hasPull: false,
                                  hasLoadMore: false,
                                  lineSpacing: lineSpacing,
