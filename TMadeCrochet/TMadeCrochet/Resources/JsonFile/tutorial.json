@@ -1,7 +1,7 @@
 {
     "data" : [
         {
-        "tutorial_name" : "Đồ chơi",
+        "tutorial_name" : "Hướng dẫn móc đồ chơi cơ bản.",
         "tutorial_des" : "",
         "tutorial_image" : "",
         "color" : "F76A89",
@@ -39,7 +39,7 @@
         ]
         },
         {
-        "tutorial_name" : "Túi",
+        "tutorial_name" : "Hướng dẫn móc túi cơ bản.",
         "tutorial_des" : "",
         "tutorial_image" : "",
         "color" : "F76A89",
@@ -65,7 +65,7 @@
         ]
         },
         {
-        "tutorial_name" : "Găng tay",
+        "tutorial_name" : "Hướng dẫn móc găng tay cơ bản.",
         "tutorial_des" : "",
         "tutorial_image" : "",
         "color" : "F76A89",
@@ -85,7 +85,7 @@
         ]
         },
         {
-        "tutorial_name" : "Khăn",
+        "tutorial_name" : "Hướng dẫn móc khăn cơ bản.",
         "tutorial_des" : "",
         "tutorial_image" : "",
         "color" : "F76A89",
@@ -111,7 +111,7 @@
         ]
         },
         {
-        "tutorial_name" : "Áo",
+        "tutorial_name" : "Hướng dẫn móc áo cơ bản.",
         "tutorial_des" : "",
         "tutorial_image" : "",
         "color" : "F76A89",
@@ -137,7 +137,7 @@
         ]
         },
         {
-        "tutorial_name" : "Nón",
+        "tutorial_name" : "Hướng dẫn móc nón cơ bản.",
         "tutorial_des" : "",
         "tutorial_image" : "",
         "color" : "F76A89",
@@ -157,7 +157,7 @@
         ]
         },
         {
-        "tutorial_name" : "Trang trí nhà cửa",
+        "tutorial_name" : "Hướng dẫn móc đồ trang trí nhà cửa cơ bản.",
         "tutorial_des" : "",
         "tutorial_image" : "",
         "color" : "F76A89",
