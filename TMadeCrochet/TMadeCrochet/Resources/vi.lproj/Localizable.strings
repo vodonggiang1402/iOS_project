@@ -130,7 +130,6 @@
 "2sc_into_same_st_crochet_content_2" = "";
 "2sc_into_same_st_crochet_content_3" = "";
 "2sc_into_same_st_crochet_content_4" = "";
-"2sc_into_same_st_crochet_content_5" = "";
 
 "1sc_1ch_1sc_crochet_name" = "1 mũi đơn- 1 bính - 1 mũi đơn chung chân";
 "1sc_1ch_1sc_crochet_description" = "";
@@ -138,7 +137,6 @@
 "1sc_1ch_1sc_crochet_content_2" = "";
 "1sc_1ch_1sc_crochet_content_3" = "";
 "1sc_1ch_1sc_crochet_content_4" = "";
-"1sc_1ch_1sc_crochet_content_5" = "";
 
 "3sc_into_same_st_crochet_name" = "3 mũi đơn chung chân";
 "3sc_into_same_st_crochet_description" = "";
@@ -146,7 +144,6 @@
 "3sc_into_same_st_crochet_content_2" = "";
 "3sc_into_same_st_crochet_content_3" = "";
 "3sc_into_same_st_crochet_content_4" = "";
-"3sc_into_same_st_crochet_content_5" = "";
 
 "2hdcs_into_same_st_crochet_name" = "2 mũi nửa kép chung chân";
 "2hdcs_into_same_st_crochet_description" = "";
@@ -154,7 +151,6 @@
 "2hdcs_into_same_st_crochet_content_2" = "";
 "2hdcs_into_same_st_crochet_content_3" = "";
 "2hdcs_into_same_st_crochet_content_4" = "";
-"2hdcs_into_same_st_crochet_content_5" = "";
 
 "3hdcs_into_same_st_crochet_name" = "3 mũi nửa kép chung chân";
 "3hdcs_into_same_st_crochet_description" = "";
@@ -162,7 +158,6 @@
 "3hdcs_into_same_st_crochet_content_2" = "";
 "3hdcs_into_same_st_crochet_content_3" = "";
 "3hdcs_into_same_st_crochet_content_4" = "";
-"3hdcs_into_same_st_crochet_content_5" = "";
 
 "2dcs_into_same_st_crochet_name" = "2 mũi kép chung chân";
 "2dcs_into_same_st_crochet_description" = "";
@@ -170,7 +165,6 @@
 "2dcs_into_same_st_crochet_content_2" = "";
 "2dcs_into_same_st_crochet_content_3" = "";
 "2dcs_into_same_st_crochet_content_4" = "";
-"2dcs_into_same_st_crochet_content_5" = "";
 
 "1dc_1ch_1dc_crochet_name" = "1 kép - bính - 1 kép chung chân";
 "1dc_1ch_1dc_crochet_description" = "";
@@ -178,7 +172,6 @@
 "1dc_1ch_1dc_crochet_content_2" = "";
 "1dc_1ch_1dc_crochet_content_3" = "";
 "1dc_1ch_1dc_crochet_content_4" = "";
-"1dc_1ch_1dc_crochet_content_5" = "";
 
 "3dc_into_same_st_crochet_name" = "3 mũi kép chung chân";
 "3dc_into_same_st_crochet_description" = "";
@@ -186,7 +179,6 @@
 "3dc_into_same_st_crochet_content_2" = "";
 "3dc_into_same_st_crochet_content_3" = "";
 "3dc_into_same_st_crochet_content_4" = "";
-"3dc_into_same_st_crochet_content_5" = "";
 
 "5dcs_into_same_st_crochet_name" = "5 mũi kép chung chân";
 "5dcs_into_same_st_crochet_description" = "";
@@ -194,7 +186,6 @@
 "5dcs_into_same_st_crochet_content_2" = "";
 "5dcs_into_same_st_crochet_content_3" = "";
 "5dcs_into_same_st_crochet_content_4" = "";
-"5dcs_into_same_st_crochet_content_5" = "";
 
 //mũi giảm
 "sc2tog_crochet_name" = "2 đơn chụm đầu";
@@ -203,7 +194,6 @@
 "sc2tog_crochet_content_2" = "";
 "sc2tog_crochet_content_3" = "";
 "sc2tog_crochet_content_4" = "";
-"sc2tog_crochet_content_5" = "";
 
 "hdc2tog_crochet_name" = "2 mũi nửa kép chụm đầu";
 "hdc2tog_crochet_description" = "";
@@ -211,7 +201,6 @@
 "hdc2tog_crochet_content_2" = "";
 "hdc2tog_crochet_content_3" = "";
 "hdc2tog_crochet_content_4" = "";
-"hdc2tog_crochet_content_5" = "";
 
 "dc2tog_crochet_name" = "2 mũi kép chụm đầu";
 "dc2tog_crochet_description" = "";
@@ -219,7 +208,6 @@
 "dc2tog_crochet_content_2" = "";
 "dc2tog_crochet_content_3" = "";
 "dc2tog_crochet_content_4" = "";
-"dc2tog_crochet_content_5" = "";
 
 "sc3tog_crochet_name" = "3 mũi đơn chụm đầu";
 "sc3tog_crochet_description" = "";
@@ -227,7 +215,12 @@
 "sc3tog_crochet_content_2" = "";
 "sc3tog_crochet_content_3" = "";
 "sc3tog_crochet_content_4" = "";
-"sc3tog_crochet_content_5" = "";
+
+"sc3tog_skipping_the_center_stich_crochet_name" = "3 mũi đơn chụm đầu";
+"sc3tog_skipping_the_center_stich_crochet_description" = "";
+"sc3tog_skipping_the_center_stich_crochet_content_1" = "";
+"sc3tog_skipping_the_center_stich_crochet_content_2" = "";
+"sc3tog_skipping_the_center_stich_crochet_content_3" = "";
 
 "hdc3tog_crochet_name" = "3 mũi nửa kép chụm đầu";
 "hdc3tog_crochet_description" = "";
@@ -235,7 +228,6 @@
 "hdc3tog_crochet_content_2" = "";
 "hdc3tog_crochet_content_3" = "";
 "hdc3tog_crochet_content_4" = "";
-"hdc3tog_crochet_content_5" = "";
 
 "dc3tog_crochet_name" = "3 mũi kép chụm đầu";
 "dc3tog_crochet_description" = "";
@@ -243,7 +235,6 @@
 "dc3tog_crochet_content_2" = "";
 "dc3tog_crochet_content_3" = "";
 "dc3tog_crochet_content_4" = "";
-"dc3tog_crochet_content_5" = "";
 
 //Header title
 "count_screen_header_title" = "Bộ đếm";

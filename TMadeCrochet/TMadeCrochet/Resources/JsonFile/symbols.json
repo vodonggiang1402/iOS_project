@@ -663,6 +663,29 @@
       {
         "is_ads" : true,
         "symbol_id" : "5",
+        "symbol_des" : "sc3tog_skipping_the_center_stich_crochet_description",
+        "symbol_name" : "sc3tog_skipping_the_center_stich_crochet_name",
+        "icon_name" : "ico_hdc3tog",
+        "steps" : [
+          {
+            "content" : "sc3tog_skipping_the_center_stich_crochet_content_1",
+            "image_name" : "sc3tog_skipping_the_center_stich_1"
+          },
+          {
+            "content" : "sc3tog_skipping_the_center_stich_crochet_content_2",
+            "image_name" : "sc3tog_skipping_the_center_stich_2"
+          },
+          {
+            "content" : "sc3tog_skipping_the_center_stich_crochet_content_3",
+            "image_name" : "sc3tog_skipping_the_center_stich_3"
+          }
+        ],
+        "background_color" : "b2d8d8",
+        "video_url" : ""
+      },
+      {
+        "is_ads" : true,
+        "symbol_id" : "6",
         "symbol_des" : "hdc3tog_crochet_description",
         "symbol_name" : "hdc3tog_crochet_name",
         "icon_name" : "ico_hdc3tog",
@@ -685,7 +708,7 @@
       },
       {
         "is_ads" : true,
-        "symbol_id" : "6",
+        "symbol_id" : "7",
         "symbol_des" : "dc3tog_crochet_description",
         "symbol_name" : "dc3tog_crochet_name",
         "icon_name" : "ico_dc3tog",
