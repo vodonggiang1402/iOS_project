@@ -28,17 +28,28 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="xVo-T7-KH5" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7gA-b0-bb7"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="color_fafafa_181818"/>
                         <constraints>
                             <constraint firstItem="GWm-uN-Cck" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-16" id="HqZ-Zk-H9Z"/>
+                            <constraint firstItem="xVo-T7-KH5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ok1-9o-PVJ"/>
                             <constraint firstItem="GWm-uN-Cck" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Pw5-Az-j1j"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xVo-T7-KH5" secondAttribute="bottom" id="a8m-aW-4rQ"/>
+                            <constraint firstItem="xVo-T7-KH5" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="cNA-Me-ZTl"/>
                             <constraint firstItem="GWm-uN-Cck" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="qMB-ol-Oyw"/>
                             <constraint firstItem="GWm-uN-Cck" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="tBf-Sm-cq9"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="xVo-T7-KH5" id="fTM-5w-GvH"/>
                         <outlet property="collectionView" destination="GWm-uN-Cck" id="Lcr-WQ-ekX"/>
                     </connections>
                 </viewController>

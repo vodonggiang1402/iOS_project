@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "double_crochet_2_stiches _together_1.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "double_crochet_2_stiches _together_1 1.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

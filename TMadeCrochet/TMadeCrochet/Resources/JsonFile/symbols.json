@@ -615,15 +615,19 @@
         "steps" : [
           {
             "content" : "dc2tog_crochet_content_1",
-            "image_name" : "crochet_step"
+            "image_name" : "double_crochet_2_stiches _together_1"
           },
           {
             "content" : "dc2tog_crochet_content_2",
-            "image_name" : "crochet_step"
+            "image_name" : "double_crochet_2_stiches _together_2"
           },
           {
             "content" : "dc2tog_crochet_content_3",
-            "image_name" : "crochet_step"
+            "image_name" : "double_crochet_2_stiches _together_3"
+          },
+          {
+            "content" : "dc2tog_crochet_content_4",
+            "image_name" : "double_crochet_2_stiches _together_4"
           }
         ],
         "background_color" : "b2d8d8",
@@ -638,15 +642,19 @@
         "steps" : [
           {
             "content" : "sc3tog_crochet_content_1",
-            "image_name" : "crochet_step"
+            "image_name" : "single_crochet_3_stiches_together_1"
           },
           {
             "content" : "sc3tog_crochet_content_2",
-            "image_name" : "crochet_step"
+            "image_name" : "single_crochet_3_stiches_together_2"
           },
           {
             "content" : "sc3tog_crochet_content_3",
-            "image_name" : "crochet_step"
+            "image_name" : "single_crochet_3_stiches_together_3"
+          },
+          {
+            "content" : "sc3tog_crochet_content_4",
+            "image_name" : "single_crochet_3_stiches_together_4"
           }
         ],
         "background_color" : "b2d8d8",

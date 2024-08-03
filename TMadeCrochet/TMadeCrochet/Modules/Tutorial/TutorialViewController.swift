@@ -7,11 +7,16 @@
 
 import Foundation
 import UIKit
+import GoogleMobileAds
 
-class TutorialViewController: BaseViewController {
+class TutorialViewController: BaseViewController, GADBannerViewDelegate {
     var presenter: ViewToPresenterTutorialProtocol?
     
+    @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var collectionView: BaseCollectionView!
+    
+    private var isMobileAdsStartCalled = false
+    private var isViewDidAppearCalled = false
     
     private let width: CGFloat = (UIScreen.main.bounds.width - 32 - 10)/2
     private let height: CGFloat =  (UIScreen.main.bounds.width - 32 - 10)/2 + 50
@@ -23,13 +28,14 @@ class TutorialViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar(title: "tutorial_screen_header_title".Localizable(), isShowLeft: false)
+        self.loadAdsBanner()
         self.setupDataForCollectionView()
     }
     
     func setupDataForCollectionView() {
         let itemSize = CGSize(width: width, height: height)
         self.collectionView.dataArray = [[]]
-        self.collectionView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
+        self.collectionView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 66, right: 0)
         self.collectionView.configure(hasPull: false,
                                  hasLoadMore: false,
                                  lineSpacing: lineSpacing,
@@ -39,6 +45,17 @@ class TutorialViewController: BaseViewController {
                                  collectionCellClassName: TutorialCollectionCell.className,
                                  baseDelegate: self)
 
+    }
+    
+    func loadAdsBanner() {
+        // Replace this ad unit ID with your own ad unit ID.
+        bannerView.adUnitID = AppConstant.Ads.bannerAdsId
+        bannerView.rootViewController = self
+        bannerView.delegate = self
+        
+        let viewWidth = view.frame.inset(by: view.safeAreaInsets).width
+        bannerView.adSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth)
+        bannerView.load(GADRequest())
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,6 +85,37 @@ class TutorialViewController: BaseViewController {
             self.collectionView.reloadData()
         }
     }
+    
+    // MARK: - GADBannerViewDelegate methods
+
+    func bannerViewDidReceiveAd(_ bannerView: GADBannerView) {
+      print(#function)
+    }
+
+    func bannerView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: Error) {
+      print(#function + ": " + error.localizedDescription)
+    }
+
+    func bannerViewDidRecordClick(_ bannerView: GADBannerView) {
+      print(#function)
+    }
+
+    func bannerViewDidRecordImpression(_ bannerView: GADBannerView) {
+      print(#function)
+    }
+
+    func bannerViewWillPresentScreen(_ bannerView: GADBannerView) {
+      print(#function)
+    }
+
+    func bannerViewWillDismissScreen(_ bannerView: GADBannerView) {
+      print(#function)
+    }
+
+    func bannerViewDidDismissScreen(_ bannerView: GADBannerView) {
+      print(#function)
+    }
+
 }
     
 
