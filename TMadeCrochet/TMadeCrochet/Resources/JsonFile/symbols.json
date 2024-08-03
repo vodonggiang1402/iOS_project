@@ -692,15 +692,19 @@
         "steps" : [
           {
             "content" : "hdc3tog_crochet_content_1",
-            "image_name" : "crochet_step"
+            "image_name" : "hdc_3_tog_1"
           },
           {
             "content" : "hdc3tog_crochet_content_2",
-            "image_name" : "crochet_step"
+            "image_name" : "hdc_3_tog_3"
           },
           {
             "content" : "hdc3tog_crochet_content_3",
-            "image_name" : "crochet_step"
+            "image_name" : "hdc_3_tog_3"
+          },
+          {
+            "content" : "hdc3tog_crochet_content_4",
+            "image_name" : "hdc_3_tog_4"
           }
         ],
         "background_color" : "b2d8d8",
