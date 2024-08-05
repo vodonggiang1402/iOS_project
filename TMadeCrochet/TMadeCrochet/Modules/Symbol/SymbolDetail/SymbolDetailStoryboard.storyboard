@@ -203,6 +203,7 @@
                         <outlet property="stackView" destination="5j6-nG-dDE" id="LWH-TB-Cze"/>
                         <outlet property="titleLabel" destination="qzg-FX-NwZ" id="mdR-zx-Wha"/>
                         <outlet property="videoContainView" destination="UYV-Lo-MTi" id="Olp-Nm-WHe"/>
+                        <outlet property="videoLabel" destination="EdF-nU-BXz" id="LZs-36-jeo"/>
                         <outlet property="videoPlayer" destination="syn-Yj-tTA" id="1rm-t0-A8T"/>
                     </connections>
                 </viewController>

@@ -17,6 +17,7 @@ class SymbolDetailViewController: BaseViewController {
     @IBOutlet weak var stackView: UIStackView!
     
     @IBOutlet weak var videoContainView: UIView!
+    @IBOutlet weak var videoLabel: UILabel!
     @IBOutlet weak var videoPlayer: YouTubePlayerView!
     @IBOutlet weak var playButton: UIButton!
     
@@ -26,6 +27,7 @@ class SymbolDetailViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.closeButton.setTitle("", for: .normal)
+        self.videoLabel.text = "symbol_detail_watch_video".Localizable()
         if let content = self.presenter?.symbol?.symbolDes {
             self.setupContentLabel(content: content)
         }
