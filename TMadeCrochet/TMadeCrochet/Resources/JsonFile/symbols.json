@@ -69,6 +69,10 @@
           {
             "content" : "chain_crochet_content_3",
             "image_name" : "chain_crochet_3"
+          },
+          {
+            "content" : "chain_crochet_content_4",
+            "image_name" : "chain_crochet_4"
           }
         ],
         "background_color" : "FED1B2",
