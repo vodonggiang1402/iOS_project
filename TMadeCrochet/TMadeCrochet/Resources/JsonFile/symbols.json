@@ -37,15 +37,19 @@
         "steps" : [
           {
             "content" : "slip_stich_crochet_content_1",
-            "image_name" : "crochet_step"
+            "image_name" : "slip_stich_1"
           },
           {
             "content" : "slip_stich_crochet_content_2",
-            "image_name" : "crochet_step"
+            "image_name" : "slip_stich_2"
           },
           {
             "content" : "slip_stich_crochet_content_3",
-            "image_name" : "crochet_step"
+            "image_name" : "slip_stich_3"
+          },
+          {
+            "content" : "slip_stich_crochet_content_3",
+            "image_name" : "slip_stich_4"
           }
         ],
         "background_color" : "FED1B2",

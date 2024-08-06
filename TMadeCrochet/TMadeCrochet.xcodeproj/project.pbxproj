@@ -128,6 +128,7 @@
 		7B6358E62C5B74C600B3C782 /* ListTutorialInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6358DF2C5B74C600B3C782 /* ListTutorialInteractor.swift */; };
 		7B6358E92C5CBF1D00B3C782 /* ListTutorialCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6358E82C5CBF1D00B3C782 /* ListTutorialCollectionCell.swift */; };
 		7B6358EB2C5CBF2700B3C782 /* ListTutorialCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6358EA2C5CBF2700B3C782 /* ListTutorialCollectionCell.xib */; };
+		7B6358ED2C62366000B3C782 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6358EC2C62366000B3C782 /* UIImageExtension.swift */; };
 		7B7686812C4285FC00DBE001 /* count.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686802C4285FC00DBE001 /* count.json */; };
 		7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686822C42874B00DBE001 /* CountResponse.swift */; };
 		7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686852C42913B00DBE001 /* CountCollectionCell.swift */; };
@@ -484,6 +485,7 @@
 		7B6358DF2C5B74C600B3C782 /* ListTutorialInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTutorialInteractor.swift; sourceTree = "<group>"; };
 		7B6358E82C5CBF1D00B3C782 /* ListTutorialCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTutorialCollectionCell.swift; sourceTree = "<group>"; };
 		7B6358EA2C5CBF2700B3C782 /* ListTutorialCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTutorialCollectionCell.xib; sourceTree = "<group>"; };
+		7B6358EC2C62366000B3C782 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		7B7686802C4285FC00DBE001 /* count.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = count.json; sourceTree = "<group>"; };
 		7B7686822C42874B00DBE001 /* CountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountResponse.swift; sourceTree = "<group>"; };
 		7B7686852C42913B00DBE001 /* CountCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionCell.swift; sourceTree = "<group>"; };
@@ -1108,6 +1110,7 @@
 				7B522E512C325BAF0034EE9D /* UIViewControllerExtension.swift */,
 				7BF32A0D2C32B21500CD8F18 /* UIColorExtension.swift */,
 				7B60B3E22C511670008D6A34 /* BundleExtension.swift */,
+				7B6358EC2C62366000B3C782 /* UIImageExtension.swift */,
 			);
 			path = UIKitExtension;
 			sourceTree = "<group>";
@@ -1911,6 +1914,7 @@
 				7B4E349F2C3E46F60059167A /* SymbolDetailViewController.swift in Sources */,
 				7BDB14BF2C4E19EE0081676D /* TermViewController.swift in Sources */,
 				7BDB14D62C4FDDF10081676D /* LanguageTableViewCell.swift in Sources */,
+				7B6358ED2C62366000B3C782 /* UIImageExtension.swift in Sources */,
 				7BB995122C3B96DC008EF04B /* CountRouter.swift in Sources */,
 				7B4E34A22C3E46F60059167A /* SymbolDetailContract.swift in Sources */,
 				7BF32A1B2C33CE5500CD8F18 /* UITableViewExtension.swift in Sources */,

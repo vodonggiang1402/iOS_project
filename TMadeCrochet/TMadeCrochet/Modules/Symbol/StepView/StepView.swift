@@ -19,8 +19,10 @@ class StepView: BaseView {
     init(title: String, imageName: String) {
         super.init(frame: .zero)
         self.titleLabel.text = title
-        self.imageView.image = UIImage.init(named: imageName)
+        if let newImage = UIImage.init(named: imageName)?.addWatermark("T-Made") {
+            self.imageView.image = newImage
+        } else {
+            self.imageView.image =  UIImage.init(named: imageName)
+        }
     }
-    
-
 }

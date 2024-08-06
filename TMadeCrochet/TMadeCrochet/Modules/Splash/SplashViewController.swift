@@ -26,6 +26,7 @@ class SplashViewController: BaseViewController {
             self.presenter?.getData()
             return
         }
+        self.presenter?.getData()
         self.handleFlowApp()
     }
     

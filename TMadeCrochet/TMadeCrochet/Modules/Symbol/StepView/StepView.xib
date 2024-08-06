@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepView" customModule="Móc_Đan" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepView" customModule="Moc___Dan" customModuleProvider="target">
             <connections>
                 <outlet property="imageView" destination="6sK-cb-oWJ" id="dhR-Zw-pdM"/>
                 <outlet property="titleLabel" destination="uoZ-FI-UOV" id="dmx-YL-qM2"/>
@@ -19,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Un1-30-Tvf">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Un1-30-Tvf">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QbA-Vh-j73">
@@ -34,10 +34,11 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Icj-99-gOU">
-                            <rect key="frame" x="0.0" y="20.5" width="414" height="200"/>
+                            <rect key="frame" x="0.0" y="30.5" width="414" height="200"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6sK-cb-oWJ">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </imageView>
                             </subviews>
                             <constraints>
@@ -45,10 +46,7 @@
                             </constraints>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6P5-ou-RiL">
-                            <rect key="frame" x="0.0" y="220.5" width="414" height="39.5"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="39.5" id="ktf-Iy-TjQ"/>
-                            </constraints>
+                            <rect key="frame" x="0.0" y="240.5" width="414" height="19.5"/>
                         </stackView>
                     </subviews>
                 </stackView>
