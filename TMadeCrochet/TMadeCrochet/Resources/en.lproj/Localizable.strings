@@ -44,22 +44,23 @@
 //Mũi cơ bản
 "slip_knot_crochet_name" = "Slip knot";
 "slip_knot_crochet_description" = "Trong các hướng dẫn của chart móc thì mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên.";
-"slip_knot_crochet_content_1" = "Đặt kim móc sau sợi len.";
-"slip_knot_crochet_content_2" = "Vòng kim ra phía trước sợi len và ngoặc kim lên để tạo thành 1 vòng tròn.";
-"slip_knot_crochet_content_3" = "Dùng kim lấy len và kéo qua vòng tròn vừa tạo. Kéo sợi len thừa để thắt chặt mũi gút.";
-"slip_knot_crochet_content_4" = "Kéo sợi len thừa để thắt chặt mũi gút.";
+"slip_knot_crochet_content_1" = "To make a starting loop - fold the yarn to make a loop.";
+"slip_knot_crochet_content_2" = "Catch the yarn through the loop.";
+"slip_knot_crochet_content_3" = "Pull it through.";
+"slip_knot_crochet_content_4" = "Pull the ends to tighten the slipknot. Now put this slipknot on the left hand needle.";
 
 "slip_stich_crochet_name" = "Slip stich";
 "slip_stich_crochet_description" = "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…";
-"slip_stich_crochet_content_1" = "Vòng kim ra phía trước sợi len và ngoặc kim lên để tạo thành 1 vòng tròn.";
-"slip_stich_crochet_content_2" = "Dùng kim lấy len và kéo qua vòng tròn vừa tạo. Kéo sợi len thừa để thắt chặt mũi gút.";
-"slip_stich_crochet_content_3" = "Kéo sợi len thừa để thắt chặt mũi gút.";
+"slip_stich_crochet_content_1" = "With yarn in back.";
+"slip_stich_crochet_content_2" = "Yarn over hook and draw through.";
+"slip_stich_crochet_content_3" = "1 slip stitch done. Insert hook into the next st.";
+"slip_stich_crochet_content_4" = "Repeat these steps to continue slip stitch.";
 
 "chain_crochet_name" = "Chain";
 "chain_crochet_description" = "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.";
-"chain_crochet_content_1" = "Dùng kim móc lấy len.";
-"chain_crochet_content_2" = "Kéo lên qua vòng tròn mũi gút.";
-"chain_crochet_content_3" = "Tiếp tục lặp lại 2 bước trên để có được dây bính với số mũi bính cần thiết.";
+"chain_crochet_content_1" = "With hook behind yarn.";
+"chain_crochet_content_2" = "Using left thumb and middle finger.";
+"chain_crochet_content_3" = "Draw yarn through loop.";
 
 "single_crochet_name" = "Single";
 "single_crochet_description" = "Mũi móc đơn có độ cao bằng một mũi bính. Đẻ có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.";
