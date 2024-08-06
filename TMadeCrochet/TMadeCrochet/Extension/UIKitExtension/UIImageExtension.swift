@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIImage {
-    func addWatermark(_ text: String, color: UIColor = UIColor.color_main_app_pink.withAlphaComponent(0.05)) -> UIImage {
+    func addWatermark(_ text: String, color: UIColor = UIColor.color_main_app_pink.withAlphaComponent(0.07)) -> UIImage {
            let fontSize = 20.0
            let stringArray =  [String](repeating: text, count: 100)
            let longString = stringArray.joined(separator: "     ")
