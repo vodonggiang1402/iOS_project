@@ -1248,6 +1248,13 @@
 			path = ListTutorialCollectionCell;
 			sourceTree = "<group>";
 		};
+		7B6358EE2C62F5C800B3C782 /* UpdateInfoView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UpdateInfoView;
+			sourceTree = "<group>";
+		};
 		7B7686842C42912500DBE001 /* CountCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1315,6 +1322,7 @@
 		7BB995162C3BDA11008EF04B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7B6358EE2C62F5C800B3C782 /* UpdateInfoView */,
 				7B153E5C2C45410300F6718A /* CustomView */,
 				7B153E502C453ECF00F6718A /* Helper */,
 				7BB995192C3BDB4D008EF04B /* TitleViewNavigationBar */,
