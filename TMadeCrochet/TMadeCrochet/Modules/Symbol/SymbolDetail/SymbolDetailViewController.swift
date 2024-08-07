@@ -12,8 +12,14 @@ import YouTubePlayer
 
 class SymbolDetailViewController: BaseViewController {
     @IBOutlet weak var closeButton: UIButton!
+    
+    @IBOutlet weak var headerStackView: UIStackView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
+    
     @IBOutlet weak var stackView: UIStackView!
     
     @IBOutlet weak var videoContainView: UIView!
@@ -28,6 +34,22 @@ class SymbolDetailViewController: BaseViewController {
         super.viewDidLoad()
         self.closeButton.setTitle("", for: .normal)
         self.videoLabel.text = "symbol_detail_watch_video".Localizable()
+        
+        if let backgroundColor = self.presenter?.symbol?.backgroundColor {
+            self.headerStackView.backgroundColor = UIColor(hexString: backgroundColor)
+        }
+        if let iconName = self.presenter?.symbol?.iconName, iconName.count > 0 {
+            self.imageView.isHidden = false
+            self.imageView.image = UIImage.init(named: iconName)
+        } else {
+            self.imageView.isHidden = true
+        }
+        
+        if let name = self.presenter?.symbol?.symbolName {
+            self.nameLabel.text = name.Localizable()
+        }
+        
+        
         if let content = self.presenter?.symbol?.symbolDes {
             self.setupContentLabel(content: content)
         }
