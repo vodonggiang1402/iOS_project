@@ -22,6 +22,8 @@
 "delete_text" = "Delete";
 "cancel_text" = "Cancel";
 "ok_text" = "Ok";
+"no_text" = "No";
+"yes_text" = "Yes";
 "save_text" = "Save";
 "add_counter_title" = "Information";
 "add_counter_textfield_place_holder" = "Please enter information";

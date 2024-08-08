@@ -21,6 +21,8 @@
 "delete_text" = "Xoá đếm";
 "cancel_text" = "Bỏ qua";
 "ok_text" = "Ok";
+"no_text" = "Không";
+"yes_text" = "Đồng ý";
 "save_text" = "Lưu";
 "add_counter_title" = "Nhập thông tin";
 "add_counter_textfield_place_holder" = "Vui lòng nhập thông tin";

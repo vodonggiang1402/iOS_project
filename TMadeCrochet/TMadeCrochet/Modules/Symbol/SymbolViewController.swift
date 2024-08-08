@@ -109,10 +109,10 @@ extension SymbolViewController: BaseCollectionViewProtocol {
                ])
         if let isAds = data.isAds, isAds {
             self.currentIndexPath = indexPath
-            PopupHelper.shared.showArlertView(baseViewController: self, title: "unclock_content_by_watching_ads".Localizable(), activeTitle: "Yes", activeAction: {
+            PopupHelper.shared.showArlertView(baseViewController: self, title: "unclock_content_by_watching_ads".Localizable(), activeTitle: "yes_text".Localizable(), activeAction: {
                 PopupHelper.shared.dismissView()
                 self.showAdsView()
-            }, cancelTitle: "No", cancelAction: {})
+            }, cancelTitle: "no_text".Localizable(), cancelAction: {})
         } else {
             self.presenter?.navigateToDetail(symbol: data)
         }
