@@ -158,7 +158,7 @@ extension SymbolViewController: BaseCollectionViewProtocol {
     func footerSize(_ section: Int) -> CGSize {
         switch section {
         case 3:
-            return CGSize(width: UIScreen.main.bounds.width - 32, height: 250)
+            return CGSize(width: UIScreen.main.bounds.width - 32, height: 270)
         default:
             return CGSize(width: 0, height: 0)
         }
