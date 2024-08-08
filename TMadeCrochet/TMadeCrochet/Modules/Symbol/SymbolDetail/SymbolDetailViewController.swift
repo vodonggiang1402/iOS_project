@@ -41,8 +41,10 @@ class SymbolDetailViewController: BaseViewController {
         if let iconName = self.presenter?.symbol?.iconName, iconName.count > 0 {
             self.imageView.isHidden = false
             self.imageView.image = UIImage.init(named: iconName)
+            self.nameLabel.textAlignment = .left
         } else {
             self.imageView.isHidden = true
+            self.nameLabel.textAlignment = .center
         }
         
         if let name = self.presenter?.symbol?.symbolName {
