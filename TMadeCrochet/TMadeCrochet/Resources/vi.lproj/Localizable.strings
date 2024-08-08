@@ -46,74 +46,75 @@
 "slip_knot_crochet_description" = "Trong các hướng dẫn của chart móc thì mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên.";
 "slip_knot_crochet_content_1" = "Đặt kim móc sau sợi len.";
 "slip_knot_crochet_content_2" = "Vòng kim ra phía trước sợi len và ngoặc kim lên để tạo thành 1 vòng tròn.";
-"slip_knot_crochet_content_3" = "Dùng kim lấy len và kéo qua vòng tròn vừa tạo. Kéo sợi len thừa để thắt chặt mũi gút.";
+"slip_knot_crochet_content_3" = "Dùng kim lấy len và kéo qua vòng tròn vừa tạo";
 "slip_knot_crochet_content_4" = "Kéo sợi len thừa để thắt chặt mũi gút.";
 
 "slip_stich_crochet_name" = "Mũi trượt";
-"slip_stich_crochet_description" = "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…";
-"slip_stich_crochet_content_1" = "Vòng kim ra phía trước sợi len và ngoặc kim lên để tạo thành 1 vòng tròn.";
-"slip_stich_crochet_content_2" = "Dùng kim lấy len và kéo qua vòng tròn vừa tạo. Kéo sợi len thừa để thắt chặt mũi gút.";
-"slip_stich_crochet_content_3" = "Kéo sợi len thừa để thắt chặt mũi gút.";
+"slip_stich_crochet_description" = "Sợi nằm phía sau kim móc.";
+"slip_stich_crochet_content_1" = "Dùng kim lấy len và kéo len qua chân móc.";
+"slip_stich_crochet_content_2" = "Hoàn thành 1 mũi trượt. Luồn kim qua chân mũi tiếp theo.";
+"slip_stich_crochet_content_3" = "Lặp lại các bước trên để tiếp tục các mũi trượt.";
 
 "chain_crochet_name" = "Mũi bính";
 "chain_crochet_description" = "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.";
 "chain_crochet_content_1" = "Dùng kim móc lấy len.";
 "chain_crochet_content_2" = "Kéo lên qua vòng tròn mũi gút.";
-"chain_crochet_content_3" = "Tiếp tục lặp lại 2 bước trên để có được dây bính với số mũi bính cần thiết.";
+"chain_crochet_content_3" = "Hoàn thành được 1 mũi bính.";
+"chain_crochet_content_4" = "Tiếp tục lặp lại các bước trên để có được dây bính với số muĩ bính cần thiết."
 
 "single_crochet_name" = "Mũi đơn";
 "single_crochet_description" = "Mũi móc đơn có độ cao bằng một mũi bính. Đẻ có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.";
-"single_crochet_content_1" = "Luồn kim qua mũi bính.";
-"single_crochet_content_2" = "Lấy len và kéo qua để có 2 vòng len trên kim.";
+"single_crochet_content_1" = "Luồn kim qua chân mũi bính thứ 2 của dây bính.";
+"single_crochet_content_2" = "Dùng kim lấy len và kéo len qua chân bính.";
 "single_crochet_content_3" = "Tiếp tục lấy len và kéo len qua cả 2 vòng trên kim.";
 "single_crochet_content_4" = "Hoàn thành được một mũi đơn.";
 
 "half_double_crochet_name" = "Mũi nửa kép";
 "half_double_crochet_description" = "Mũi nữa kép có độ cao bằng 2 lần mũi bính. Mũi kép đơn đầu tiên sẽ được móc vào chân bính thứ 4 của dây bính.";
-"half_double_crochet_content_1" = "Dùng kim móc lấy len, và luồn kim qua chân bính thứ 3 của dây bính.";
+"half_double_crochet_content_1" = "Dùng kim móc lấy len, và luồn kim qua chân bính thứ 4 của dây bính";
 "half_double_crochet_content_2" = "Lấy len và kéo qua chân bính lúc này trên kim sẽ có 3 vòng sợi.";
 "half_double_crochet_content_3" = "Tiếp tục lấy len và kéo len qua cả 3 vòng trên kim.";
-"half_double_crochet_content_4" = "Lặp lại 3 bước trên để được những mũi nửa kép tiếp theo.";
+"half_double_crochet_content_4" = "Hoàn thành 1 mũi nửa kép. Lặp lại 3 bước trên để được những mũi nửa kép tiếp theo.";
 
 "double_crochet_name" = "Mũi kép đơn";
 "double_crochet_description" = "Mũi kép đơn có độ cao bằng 3 lần mũi bính.";
-"double_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua chân bính thứ 5 của dây bính";
-"double_crochet_content_2" = "Lấy len kéo kim móc qua chân bính.";
-"double_crochet_content_3" = "Lấy len và kéo len qua 2 vòng len trên kim.";
-"double_crochet_content_4" = "Lấy len và kéo len qua 2 vòng còn lại trên kim.";
-"double_crochet_content_5" = "Hoàn thành 1 mũi móc kép đơn.";
+"double_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua chân bính thứ 5 của dây bính.";
+"double_crochet_content_2" = "Dùng kim lấy len và kéo len qua chân bính.";
+"double_crochet_content_3" = "Tiếp tục lấy len và kéo len qua 2 vòng đầu tiên trên kim.";
+"double_crochet_content_4" = "Lấy len và kéo len qua 2 vòng còn lại trên kim ";
+"double_crochet_content_5" = "Hoàn thành 1 mũi móc kép đơn";
 
 
 "triple_crochet_name" = "Mũi kép đôi";
-"triple_crochet_description" = "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước";
-"triple_crochet_content_1" = "Dùng kim móc quấn 2 vòng len.";
-"triple_crochet_content_2" = "Sau đó luồn kim qua chân bính thứ 6 của dây bính, lấy len kéo qua chân bính.";
-"triple_crochet_content_3" = "Lấy len và kéo len qua 2 vòng len trên kim.";
-"triple_crochet_content_4" = "Lặp lại lấy len và kéo len qua 2 vòng len trên kim 2 lần nữa.";
+"triple_crochet_description" = "Mũi kép đôi có độ cao bằng 4 lần mũi bính.";
+"triple_crochet_content_1" = "Dùng kim móc quấn 2 vòng len và luồn kim qua chân bính thứ 6 của dây bính.";
+"triple_crochet_content_2" = "Dùng kim lấy len và kéo len qua chân bính.";
+"triple_crochet_content_3" = "Tiếp tục lấy len và kéo len qua 2 vòng đầu tiên trên kim.";
+"triple_crochet_content_4" = "Lặp lại lấy len và kéo len qua 2 vòng len trên kim 2 lần nữa";
 "triple_crochet_content_5" = "Hoàn thành 1 mũi móc kép đôi.";
 
 "double_triple_crochet_name" = "Mũi kép ba";
-"double_triple_crochet_description" = "symbol_des: Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.";
-"double_triple_crochet_content_1" = "Dùng kim móc quấn 3 vòng len.";
-"double_triple_crochet_content_2" = "Sau đó luồn kim qua chân bính thứ 7 của dây bính, lấy len kéo qua chân bính.";
-"double_triple_crochet_content_3" = "Lấy len và kéo len qua 2 vòng len trên kim.";
+"double_triple_crochet_description" = "Mũi kép ba có độ cao bằng 5 lần mũi bính.";
+"double_triple_crochet_content_1" = "Dùng kim móc quấn 3 vòng len và luồn kim qua chân bính thứ 7 của dây bính.";
+"double_triple_crochet_content_2" = "Dùng kim lấy len và kéo len qua chân bính.";
+"double_triple_crochet_content_3" = "Tiếp tục lấy len và kéo len qua 2 vòng đầu tiên trên kim.";
 "double_triple_crochet_content_4" = "Lặp lại lấy len và kéo len qua 2 vòng len trên kim 3 lần nữa.";
 "double_triple_crochet_content_5" = "Hoàn thành 1 mũi móc kép ba.";
 
 
 //Mũi hạt bắp
 "hdc3tog_into_same_st_crochet_name" = "Mũi hạt bắp ( 3 mũi nửa kép)";
-"hdc3tog_into_same_st_crochet_description" = "Mũi hạt bắp ( 3 mũi nửa kép) được hình thành từ 3 mũi nửa kép chưa đầy đủ cùng móc vào 1 chân.";
+"hdc3tog_into_same_st_crochet_description" = "Mũi hạt bắp (3 mũi nửa kép) được hình thành từ 3 mũi nửa kép chưa hoàn chỉnh cùng móc vào 1 chân móc.";
 "hdc3tog_into_same_st_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.";
-"hdc3tog_into_same_st_crochet_content_2" = "Kéo lên qua chân bính được 1 mũi nửa kép chưa hoàn thành, lặp lại thêm 2 lần mũi nửa kép chưa hoàn thành vào chung 1 chân móc.";
+"hdc3tog_into_same_st_crochet_content_2" = "Kéo len qua chân bính được 1 mũi nửa kép chưa hoàn chỉnh, lặp lại thêm 2 lần mũi nửa kép chưa hoàn chỉnh vào chung 1 chân móc";
 "hdc3tog_into_same_st_crochet_content_3" = "Dùng kim lấy len và kéo len qua cả 7 vòng trên kim để chụm thành 1 mũi.";
 "hdc3tog_into_same_st_crochet_content_4" = "Hoàn thành 1 mũi hạt bắp từ 3 mũi nữa kép.";
 
 
 "dc3tog_into_same_st_crochet_name" = "Mũi hạt bắp (3 mũi kép đơn)";
-"dc3tog_into_same_st_crochet_description" = "Mũi hạt bắp (3 mũi kép đơn) được hình thành từ 3 mũi kép chưa đầy đủ cùng móc vào 1 chân.";
+"dc3tog_into_same_st_crochet_description" = "Mũi hạt bắp (3 mũi kép đơn) hình thành từ 3 mũi kép chưa hoàn chỉnh cùng móc vào 1 chân móc.";
 "dc3tog_into_same_st_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.";
-"dc3tog_into_same_st_crochet_content_2" = "Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 2 lần mũi  kép chưa hoàn thành vào chung 1 chân móc";
+"dc3tog_into_same_st_crochet_content_2" = "Kéo len qua chân bính và móc 1 mũi kép chưa hoàn chỉnh, lặp lại thêm 2 lần mũi  kép chưa hoàn chỉnh vào chung 1 chân móc.";
 "dc3tog_into_same_st_crochet_content_3" = "Dùng kim lấy len và kéo len qua cả 4 vòng trên kim để chụm thành 1 mũi";
 "dc3tog_into_same_st_crochet_content_4" = "Hoàn thành 1 mũi hạt bắp từ 3 mũi kép đơn.";
 "dc3tog_into_same_st_crochet_content_5" = "";
@@ -121,7 +122,7 @@
 "dc5tog_into_same_st_crochet_name" = "Mũi hạt bắp (5 mũi kép đơn)";
 "dc5tog_into_same_st_crochet_description" = "Mũi hạt bắp (5 mũi kép đơn) được hình thành từ 5 mũi kép chưa đầy đủ cùng móc vào 1 chân.";
 "dc5tog_into_same_st_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua mặt sau của chân bính.";
-"dc5tog_into_same_st_crochet_content_2" = "Kéo len qua chân bính và móc 1 mũi kép chưa hoàn thành, lặp lại thêm 4 lần mũi kép chưa hoàn thành vào chung 1 chân móc.";
+"dc5tog_into_same_st_crochet_content_2" = "Kéo len qua chân bính và móc 1 mũi kép chưa hoàn chỉnh, lặp lại thêm 4 lần mũi  kép chưa hoàn chỉnh vào chung 1 chân móc.";
 "dc5tog_into_same_st_crochet_content_3" = "Dùng kim lấy len và kéo len qua cả 6 vòng trên kim để chụm thành 1 mũi.";
 "dc5tog_into_same_st_crochet_content_4" = "Hoàn thành 1 mũi hạt bắp từ 5 mũi kép đơn";
 
