@@ -4,36 +4,18 @@
         "tutorial_name" : "toy_key_name",
         "tutorial_des" : "",
         "tutorial_image" : "toy_image",
-        "color" : "F76A89",
+        "color" : "FED1B2",
         "list": [
-            {
-                "item_name" : "Hướng dẫn móc cabibara",
-                "item_des" : "",
-                "item_color" : "",
-                "item_image" : ""
-            },
             {
                 "item_name" : "Hướng dẫn móc con chuột",
                 "item_des" : "",
-                "item_color" : "",
+                "item_color" : "FED1B2",
                 "item_image" : ""
             },
             {
-                "item_name" : "Hướng dẫn móc con heo",
-                "item_des" : "",
-                "item_color" : "",
-                "item_image" : ""
-            },
-            {
-                "item_name" : "Hướng dẫn móc con mèo",
-                "item_des" : "",
-                "item_color" : "",
-                "item_image" : ""
-            },
-            {
-                "item_name" : "Hướng dẫn móc con chó",
-                "item_des" : "",
-                "item_color" : "",
+                "item_name" : "Hướng dẫn móc chú chó Henry",
+                "item_des" : "Chú chó Henry là nhân vật nổi tiếng trên mạng, nhận được sự yêu mến từ hàng ngàn người trên khắp thế giới.",
+                "item_color" : "FED1B2",
                 "item_image" : ""
             }
         ]
@@ -42,24 +24,18 @@
         "tutorial_name" : "bag_key_name",
         "tutorial_des" : "",
         "tutorial_image" : "bag_image",
-        "color" : "F76A89",
+        "color" : "088DA5",
         "list": [
-            {
-                "item_name" : "Hướng dẫn móc túi chéo",
-                "item_des" : "",
-                "item_color" : "",
-                "item_image" : ""
-            },
             {
                 "item_name" : "Hướng dẫn móc túi đeo vai",
                 "item_des" : "",
-                "item_color" : "",
+                "item_color" : "088DA5",
                 "item_image" : ""
             },
             {
                 "item_name" : "Hướng dẫn móc túi cầm tay",
                 "item_des" : "",
-                "item_color" : "",
+                "item_color" : "088DA5",
                 "item_image" : ""
             }
         ]
@@ -68,18 +44,18 @@
         "tutorial_name" : "glove_key_name",
         "tutorial_des" : "",
         "tutorial_image" : "glove_image",
-        "color" : "F76A89",
+        "color" : "52BF90",
         "list": [
             {
-                "item_name" : "Hướng dẫn móc găng tay mèo",
+                "item_name" : "Hướng dẫn móc găng tay noel",
                 "item_des" : "",
-                "item_color" : "",
+                "item_color" : "52BF90",
                 "item_image" : ""
             },
             {
                 "item_name" : "Hướng dẫn móc găng tay trái dâu",
                 "item_des" : "",
-                "item_color" : "",
+                "item_color" : "52BF90",
                 "item_image" : ""
             }
         ]
@@ -88,24 +64,18 @@
         "tutorial_name" : "scarf_key_name",
         "tutorial_des" : "",
         "tutorial_image" : "scarf_image",
-        "color" : "F76A89",
+        "color" : "FFCC5C",
         "list": [
             {
                 "item_name" : "Hướng dẫn móc khăn choàng cổ",
                 "item_des" : "",
-                "item_color" : "",
-                "item_image" : ""
-            },
-            {
-                "item_name" : "Hướng dẫn móc khăn tay",
-                "item_des" : "",
-                "item_color" : "",
+                "item_color" : "FFCC5C",
                 "item_image" : ""
             },
             {
                 "item_name" : "Hướng dẫn móc khăn trùm đầu",
                 "item_des" : "",
-                "item_color" : "",
+                "item_color" : "FFCC5C",
                 "item_image" : ""
             }
         ]
@@ -114,24 +84,18 @@
         "tutorial_name" : "sweater_key_name",
         "tutorial_des" : "",
         "tutorial_image" : "sweater_image",
-        "color" : "F76A89",
+        "color" : "7FBFBF",
         "list": [
             {
                 "item_name" : "Hướng dẫn móc áo croptop",
                 "item_des" : "",
-                "item_color" : "",
+                "item_color" : "7FBFBF",
                 "item_image" : ""
             },
             {
-                "item_name" : "Hướng dẫn móc áo lưới",
+                "item_name" : "Hướng dẫn móc áo lưới đi biển",
                 "item_des" : "",
-                "item_color" : "",
-                "item_image" : ""
-            },
-            {
-                "item_name" : "Hướng dẫn móc áo đi biển",
-                "item_des" : "",
-                "item_color" : "",
+                "item_color" : "7FBFBF",
                 "item_image" : ""
             }
         ]
@@ -140,18 +104,18 @@
         "tutorial_name" : "woolly_hat_key_name",
         "tutorial_des" : "",
         "tutorial_image" : "woolly_hat_image",
-        "color" : "F76A89",
+        "color" : "D62D20",
         "list": [
             {
-                "item_name" : "Hướng dẫn móc nón len",
+                "item_name" : "Hướng dẫn móc nón len noel",
                 "item_des" : "",
-                "item_color" : "",
+                "item_color" : "D62D20",
                 "item_image" : ""
             },
             {
                 "item_name" : "Hướng dẫn móc nón cho bé",
                 "item_des" : "",
-                "item_color" : "",
+                "item_color" : "D62D20",
                 "item_image" : ""
             }
         ]
@@ -165,13 +129,13 @@
             {
                 "item_name" : "Hướng dẫn móc đồ úp ly",
                 "item_des" : "",
-                "item_color" : "",
+                "item_color" : "F76A89",
                 "item_image" : ""
             },
             {
                 "item_name" : "Hướng dẫn móc khăn trải bàn",
                 "item_des" : "",
-                "item_color" : "",
+                "item_color" : "F76A89",
                 "item_image" : ""
             }
         ]

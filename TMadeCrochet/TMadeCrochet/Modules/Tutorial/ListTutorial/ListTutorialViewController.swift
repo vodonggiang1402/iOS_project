@@ -124,7 +124,7 @@ extension ListTutorialViewController: BaseCollectionViewProtocol {
     }
     
     @objc func setupCell(_ indexPath: IndexPath, _ dataItem: Any, _ cell: BaseCollectionViewCell) {
-        if let cell = cell as? TutorialCollectionCell {
+        if let cell = cell as? ListTutorialCollectionCell {
             cell.setupCell(object: dataItem)
         }
     }
