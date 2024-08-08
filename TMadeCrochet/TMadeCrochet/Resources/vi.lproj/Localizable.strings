@@ -37,6 +37,9 @@
 "puff_stitches" = "Mũi hạt bắp";
 "increases_stitches" = "Mũi tăng";
 "decreases_stitches" = "Mũi giảm";
+"blo_flo_stitches" = "Mũi BLO & FLO";
+
+
 "step_text" = "Bước %d";
 //Mũi cơ bản
 "slip_knot_crochet_name" = "Mũi gút";

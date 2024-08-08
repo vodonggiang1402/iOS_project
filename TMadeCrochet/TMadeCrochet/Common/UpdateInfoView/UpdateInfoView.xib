@@ -11,22 +11,47 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UpdateInfoView" id="HtI-ur-YcK" customClass="UpdateInfoView" customModule="Moc___Dan" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNI-ug-qWI">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="update_image" translatesAutoresizingMaskIntoConstraints="NO" id="fKc-zC-mgP">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wOh-Bp-d0O">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ozK-xe-tkk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_symbol_5" translatesAutoresizingMaskIntoConstraints="NO" id="ktM-A7-jS7">
+                                            <rect key="frame" x="0.0" y="0.0" width="20" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="8ki-C2-mkt"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYW-dd-OVH">
+                                            <rect key="frame" x="30" y="0.0" width="384" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="update_image" translatesAutoresizingMaskIntoConstraints="NO" id="fKc-zC-mgP">
+                                    <rect key="frame" x="0.0" y="50" width="414" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="dMO-kN-FzZ"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="fKc-zC-mgP" secondAttribute="trailing" id="eSq-QN-PEf"/>
-                        <constraint firstItem="fKc-zC-mgP" firstAttribute="leading" secondItem="gNI-ug-qWI" secondAttribute="leading" id="jHM-1X-PYa"/>
-                        <constraint firstAttribute="bottom" secondItem="fKc-zC-mgP" secondAttribute="bottom" id="x4b-vL-dds"/>
-                        <constraint firstItem="fKc-zC-mgP" firstAttribute="top" secondItem="gNI-ug-qWI" secondAttribute="top" id="ya8-Ge-1HV"/>
+                        <constraint firstAttribute="trailing" secondItem="wOh-Bp-d0O" secondAttribute="trailing" id="CB3-fu-t9K"/>
+                        <constraint firstItem="wOh-Bp-d0O" firstAttribute="leading" secondItem="gNI-ug-qWI" secondAttribute="leading" id="NwM-re-gX3"/>
+                        <constraint firstItem="wOh-Bp-d0O" firstAttribute="top" secondItem="gNI-ug-qWI" secondAttribute="top" id="dEn-KY-RXh"/>
+                        <constraint firstAttribute="bottom" secondItem="wOh-Bp-d0O" secondAttribute="bottom" id="lj4-8q-4Wt"/>
                     </constraints>
                 </view>
             </subviews>
@@ -39,11 +64,13 @@
             </constraints>
             <connections>
                 <outlet property="containView" destination="gNI-ug-qWI" id="Fwh-UF-hB5"/>
+                <outlet property="titleLabel" destination="PYW-dd-OVH" id="QzR-ze-yYq"/>
             </connections>
             <point key="canvasLocation" x="45.801526717557252" y="19.718309859154932"/>
         </collectionReusableView>
     </objects>
     <resources>
+        <image name="ico_symbol_5" width="20" height="20"/>
         <image name="update_image" width="414" height="200"/>
     </resources>
 </document>

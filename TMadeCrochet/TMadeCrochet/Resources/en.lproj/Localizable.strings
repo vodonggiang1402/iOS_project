@@ -39,6 +39,7 @@
 "puff_stitches" = "Puff stitch - Popcorn stitch";
 "increases_stitches" = "Increases stitches";
 "decreases_stitches" = "Decreases stitches";
+"blo_flo_stitches" = "BLO & FLO stitches";
 
 "step_text" = "Step %d";
 //Mũi cơ bản

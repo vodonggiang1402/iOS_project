@@ -139,6 +139,9 @@ extension SymbolViewController: BaseCollectionViewProtocol {
           switch indexPath.section {
           case 3:
                 let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: UpdateInfoView.className, for: indexPath)
+                if let footerView = footerView as? UpdateInfoView {
+                    footerView.setupView(text: "blo_flo_stitches".Localizable(), imageStr: "ico_symbol_5")
+                }
                 return footerView
           default:
               return UICollectionReusableView()
@@ -155,7 +158,7 @@ extension SymbolViewController: BaseCollectionViewProtocol {
     func footerSize(_ section: Int) -> CGSize {
         switch section {
         case 3:
-            return CGSize(width: UIScreen.main.bounds.width - 32, height: 200)
+            return CGSize(width: UIScreen.main.bounds.width - 32, height: 250)
         default:
             return CGSize(width: 0, height: 0)
         }
