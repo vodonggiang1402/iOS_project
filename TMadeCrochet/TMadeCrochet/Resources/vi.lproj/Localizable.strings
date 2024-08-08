@@ -221,13 +221,13 @@
 "sc3tog_crochet_content_1" = "Luồn kim vào chân móc của hàng trước và lấy len.";
 "sc3tog_crochet_content_2" = "Lặp lại bước vừa rồi cho 2 chân móc tiếp theo.";
 "sc3tog_crochet_content_3" = "Ta được 3 mũi đơn chưa hoàn chỉnh. Dùng kim lấy len và kéo len qua cả 4 vòng len trên kim.";
-"sc3tog_crochet_content_4" = "Hoàn thanh 1 mũi móc sc3tog ( 3 mũi đơn chụm đầu).";
+"sc3tog_crochet_content_4" = "Hoàn thành 1 mũi móc sc3tog (3 mũi đơn chụm đầu).";
 
 "sc3tog_skipping_the_center_stich_crochet_name" = "3 mũi đơn chụm đầu";
 "sc3tog_skipping_the_center_stich_crochet_description" = "";
 "sc3tog_skipping_the_center_stich_crochet_content_1" = "Luồn kim vào chân móc thứ nhất và thứ 3 của hàng trước và lấy len.";
 "sc3tog_skipping_the_center_stich_crochet_content_2" = "Ta được 2 mũi móc đơn chưa hoàn chỉnh. Dùng kim lấy len và kéo len qua cả 3 vòng len trên kim.";
-"sc3tog_skipping_the_center_stich_crochet_content_3" = "Hoàn thành 1 mũi móc sc3tog ( bỏ qua chân móc ở giữa).";
+"sc3tog_skipping_the_center_stich_crochet_content_3" = "Hoàn thành 1 mũi móc sc3tog (bỏ qua chân móc ở giữa).";
 
 "hdc3tog_crochet_name" = "3 mũi nửa kép chụm đầu";
 "hdc3tog_crochet_description" = "";
