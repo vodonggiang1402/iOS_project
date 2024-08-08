@@ -40,6 +40,7 @@ class SymbolViewController: BaseViewController {
                                  collectionCellClassName: SymbolCollectionCell.className,
                                  baseDelegate: self)
         self.collectionView.register(UINib(nibName: SymbolHeaderView.className, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SymbolHeaderView.className)
+        self.collectionView.register(UINib(nibName: UpdateInfoView.className, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: UpdateInfoView.className)
     }
     
     func loadData() {
@@ -134,6 +135,14 @@ extension SymbolViewController: BaseCollectionViewProtocol {
                return headerView
            }
             return UICollectionReusableView()
+       case UICollectionView.elementKindSectionFooter:
+          switch indexPath.section {
+          case 3:
+                let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: UpdateInfoView.className, for: indexPath)
+                return footerView
+          default:
+              return UICollectionReusableView()
+          }
          default:
             return UICollectionReusableView()
         }
@@ -141,5 +150,14 @@ extension SymbolViewController: BaseCollectionViewProtocol {
     
     func headerSize(_ section: Int) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width - 32, height: 70)
+    }
+    
+    func footerSize(_ section: Int) -> CGSize {
+        switch section {
+        case 3:
+            return CGSize(width: UIScreen.main.bounds.width - 32, height: 200)
+        default:
+            return CGSize(width: 0, height: 0)
+        }
     }
 }

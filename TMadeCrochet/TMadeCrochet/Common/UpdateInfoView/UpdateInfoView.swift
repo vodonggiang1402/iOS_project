@@ -14,7 +14,6 @@ import UIKit
 class UpdateInfoView: BaseCollectionReusableView {
     @IBOutlet weak var containView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +22,5 @@ class UpdateInfoView: BaseCollectionReusableView {
     
     override func setupView(text: String, imageStr: String) {
         self.titleLabel.text = text
-        self.imageView.image = UIImage.init(named: imageStr)
     }
 }

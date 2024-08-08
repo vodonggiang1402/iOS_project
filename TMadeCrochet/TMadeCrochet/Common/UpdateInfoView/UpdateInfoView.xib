@@ -4,67 +4,46 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SymbolHeaderView" id="HtI-ur-YcK" customClass="UpdateInfoView" customModule="Moc___Dan" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UpdateInfoView" id="HtI-ur-YcK" customClass="UpdateInfoView" customModule="Moc___Dan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNI-ug-qWI">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lMw-fF-iEe">
-                            <rect key="frame" x="0.0" y="34" width="414" height="20"/>
-                            <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_symbol_list" translatesAutoresizingMaskIntoConstraints="NO" id="e0A-VE-k20">
-                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="20" id="dGh-2C-XGv"/>
-                                    </constraints>
-                                </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mũi Cơ Bản" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYl-iR-Urz">
-                                    <rect key="frame" x="30" y="0.0" width="384" height="20"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <color key="textColor" name="color_7f7f7f_565656"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="update_image" translatesAutoresizingMaskIntoConstraints="NO" id="fKc-zC-mgP">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="lMw-fF-iEe" secondAttribute="bottom" constant="16" id="Vfx-Vy-ZoL"/>
-                        <constraint firstItem="lMw-fF-iEe" firstAttribute="leading" secondItem="gNI-ug-qWI" secondAttribute="leading" id="bje-pg-GXW"/>
-                        <constraint firstAttribute="trailing" secondItem="lMw-fF-iEe" secondAttribute="trailing" id="dKp-vF-JYV"/>
-                        <constraint firstItem="lMw-fF-iEe" firstAttribute="top" secondItem="gNI-ug-qWI" secondAttribute="top" constant="34" id="lZd-Rb-0fe"/>
+                        <constraint firstAttribute="trailing" secondItem="fKc-zC-mgP" secondAttribute="trailing" id="eSq-QN-PEf"/>
+                        <constraint firstItem="fKc-zC-mgP" firstAttribute="leading" secondItem="gNI-ug-qWI" secondAttribute="leading" id="jHM-1X-PYa"/>
+                        <constraint firstAttribute="bottom" secondItem="fKc-zC-mgP" secondAttribute="bottom" id="x4b-vL-dds"/>
+                        <constraint firstItem="fKc-zC-mgP" firstAttribute="top" secondItem="gNI-ug-qWI" secondAttribute="top" id="ya8-Ge-1HV"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="LrV-0U-UfM"/>
             <constraints>
-                <constraint firstItem="gNI-ug-qWI" firstAttribute="trailing" secondItem="LrV-0U-UfM" secondAttribute="trailing" id="0OD-jc-8Li"/>
-                <constraint firstItem="gNI-ug-qWI" firstAttribute="leading" secondItem="LrV-0U-UfM" secondAttribute="leading" id="BZW-w2-v2b"/>
-                <constraint firstItem="gNI-ug-qWI" firstAttribute="top" secondItem="HtI-ur-YcK" secondAttribute="top" id="TYr-NF-4iv"/>
-                <constraint firstAttribute="bottom" secondItem="gNI-ug-qWI" secondAttribute="bottom" id="U2h-LM-anf"/>
+                <constraint firstItem="gNI-ug-qWI" firstAttribute="leading" secondItem="LrV-0U-UfM" secondAttribute="leading" id="Ley-lT-Xlf"/>
+                <constraint firstAttribute="bottom" secondItem="gNI-ug-qWI" secondAttribute="bottom" id="OAG-NC-mUe"/>
+                <constraint firstItem="gNI-ug-qWI" firstAttribute="top" secondItem="HtI-ur-YcK" secondAttribute="top" id="nOi-QO-qHJ"/>
+                <constraint firstItem="gNI-ug-qWI" firstAttribute="trailing" secondItem="LrV-0U-UfM" secondAttribute="trailing" id="xhD-D9-gcW"/>
             </constraints>
             <connections>
-                <outlet property="containView" destination="gNI-ug-qWI" id="sgv-f1-Zd2"/>
-                <outlet property="imageView" destination="e0A-VE-k20" id="Y1P-HH-1e3"/>
-                <outlet property="titleLabel" destination="BYl-iR-Urz" id="FDA-9h-0oX"/>
+                <outlet property="containView" destination="gNI-ug-qWI" id="Fwh-UF-hB5"/>
             </connections>
-            <point key="canvasLocation" x="46.564885496183201" y="19.718309859154932"/>
+            <point key="canvasLocation" x="45.801526717557252" y="19.718309859154932"/>
         </collectionReusableView>
     </objects>
     <resources>
-        <image name="ico_symbol_list" width="20" height="20"/>
-        <namedColor name="color_7f7f7f_565656">
-            <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="update_image" width="414" height="200"/>
     </resources>
 </document>
