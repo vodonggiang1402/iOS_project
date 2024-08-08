@@ -10,7 +10,7 @@ import UIKit
 
 
 class TutorialCollectionCell: BaseCollectionViewCell {
-    
+    @IBOutlet weak var imageContainView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -18,6 +18,9 @@ class TutorialCollectionCell: BaseCollectionViewCell {
         super.awakeFromNib()
         self.imageView.layer.cornerRadius = 8.0
         self.imageView.layer.masksToBounds = true
+        
+        self.imageContainView.layer.cornerRadius = 8.0
+        self.imageContainView.layer.masksToBounds = true
     }
     
     override func setupCell(object: Any) {
@@ -28,5 +31,6 @@ class TutorialCollectionCell: BaseCollectionViewCell {
         } else {
             self.imageView.image = UIImage.init(named: "toy_image")
         }
+        self.imageContainView.backgroundColor = UIColor(hexString: model.color ?? "")
     }
 }

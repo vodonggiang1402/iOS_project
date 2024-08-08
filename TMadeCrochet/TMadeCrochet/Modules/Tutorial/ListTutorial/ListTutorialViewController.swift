@@ -130,6 +130,9 @@ extension ListTutorialViewController: BaseCollectionViewProtocol {
     }
     
     @objc func didSelectItem(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UICollectionViewCell) {
-        guard let data = dataItem as? Tutorial else { return }
+        guard let data = dataItem as? TutorialItem else { return }
+        if let urlId = data.itemUrl, urlId.count > 0 {
+            self.openYoutube(withId: urlId)
+        }
     }
 }

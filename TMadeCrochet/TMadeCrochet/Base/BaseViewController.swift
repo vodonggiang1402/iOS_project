@@ -241,4 +241,16 @@ class BaseViewController: UIViewController, ViewControllerInNavigation, GADFullS
     func updateDataWhenAdsHiden() {
         
     }
+    
+    func openYoutube(withId: String) {
+        let appURL = NSURL(string: "youtube://www.youtube.com/watch?v=\(withId)")!
+        let webURL = NSURL(string: "https://www.youtube.com/watch?v=\(withId)")!
+        let application = UIApplication.shared
+        if application.canOpenURL(appURL as URL) {
+           application.open(appURL as URL)
+        } else {
+           // if Youtube app is not installed, open URL inside Safari
+           application.open(webURL as URL)
+        }
+    }
 }

@@ -21,9 +21,21 @@
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="A3Y-b6-hBF">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog_image" translatesAutoresizingMaskIntoConstraints="NO" id="AF2-Ms-ZJr">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1g-x9-yIR">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toy_image" translatesAutoresizingMaskIntoConstraints="NO" id="AF2-Ms-ZJr">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="AF2-Ms-ZJr" secondAttribute="bottom" id="FkQ-Qa-iV7"/>
+                                    <constraint firstItem="AF2-Ms-ZJr" firstAttribute="leading" secondItem="P1g-x9-yIR" secondAttribute="leading" id="WAM-fh-cyf"/>
+                                    <constraint firstItem="AF2-Ms-ZJr" firstAttribute="top" secondItem="P1g-x9-yIR" secondAttribute="top" id="fX4-BX-Fsx"/>
+                                    <constraint firstAttribute="trailing" secondItem="AF2-Ms-ZJr" secondAttribute="trailing" id="ivf-uM-TSi"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9Z-Ef-XnX">
                                 <rect key="frame" x="0.0" y="200" width="200" height="50"/>
                                 <subviews>
@@ -54,6 +66,7 @@
                 </constraints>
             </collectionViewCellContentView>
             <connections>
+                <outlet property="imageContainView" destination="P1g-x9-yIR" id="eeI-QZ-k7u"/>
                 <outlet property="imageView" destination="AF2-Ms-ZJr" id="5IZ-H2-Wo7"/>
                 <outlet property="titleLabel" destination="5aO-pF-nCM" id="EDj-I3-vHR"/>
             </connections>
@@ -61,7 +74,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="dog_image" width="400" height="400"/>
+        <image name="toy_image" width="400" height="400"/>
         <namedColor name="color_7f7f7f_565656">
             <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
