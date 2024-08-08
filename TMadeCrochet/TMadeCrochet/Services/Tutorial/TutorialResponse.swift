@@ -50,12 +50,14 @@ struct TutorialItem : Codable {
     var itemDes: String?
     var itemImage: String?
     var itemColor: String?
+    var itemUrl: String?
     
     enum CodingKeys: String, CodingKey {
         case itemName = "item_name"
         case itemDes = "item_des"
         case itemImage = "item_image"
         case itemColor = "item_color"
+        case itemUrl = "item_url"
     }
     
     init(from decoder: Decoder) throws {
@@ -64,5 +66,6 @@ struct TutorialItem : Codable {
         itemDes = try? container.decodeIfPresent(String.self, forKey: .itemDes)
         itemImage = try? container.decodeIfPresent(String.self, forKey: .itemImage)
         itemColor = try? container.decodeIfPresent(String.self, forKey: .itemColor)
+        itemUrl = try? container.decodeIfPresent(String.self, forKey: .itemUrl)
     }
 }
