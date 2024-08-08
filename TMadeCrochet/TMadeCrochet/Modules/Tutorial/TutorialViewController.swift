@@ -23,6 +23,7 @@ class TutorialViewController: BaseViewController, GADBannerViewDelegate {
     private let lineSpacing: CGFloat = 30
     private let interitemSpacing: CGFloat = 5
     var data: [Tutorial] = []
+    var currentTutorial: Tutorial?
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -30,6 +31,7 @@ class TutorialViewController: BaseViewController, GADBannerViewDelegate {
         self.setupNavigationBar(title: "tutorial_screen_header_title".Localizable(), isShowLeft: false)
         self.loadAdsBanner()
         self.setupDataForCollectionView()
+        self.startGoogleMobileAdsSDK()
     }
     
     func setupDataForCollectionView() {
@@ -115,6 +117,12 @@ class TutorialViewController: BaseViewController, GADBannerViewDelegate {
     func bannerViewDidDismissScreen(_ bannerView: GADBannerView) {
       print(#function)
     }
+    
+    override func updateDataWhenAdsHiden() {
+        if let data = self.currentTutorial {
+            self.presenter?.navigateToDetail(tutorial: data)
+        }
+    }
 
 }
     
@@ -137,6 +145,19 @@ extension TutorialViewController: BaseCollectionViewProtocol {
     
     @objc func didSelectItem(_ indexPath: IndexPath, _ dataItem: Any, _ cell: UICollectionViewCell) {
         guard let data = dataItem as? Tutorial else { return }
-        self.presenter?.navigateToDetail(tutorial: data)
+        self.currentTutorial = data
+        if let count = AppConstant.countShowAdsWhenOpenTutorial, count > 0 {
+            if count >= AppConstant.adsTurorialCount {
+                self.showAds()
+                AppConstant.countShowAdsWhenOpenTutorial = 1
+            } else {
+                let newCount = count + 1
+                AppConstant.countShowAdsWhenOpenTutorial = newCount
+                self.presenter?.navigateToDetail(tutorial: data)
+            }
+        } else {
+            AppConstant.countShowAdsWhenOpenTutorial = 1
+            self.presenter?.navigateToDetail(tutorial: data)
+        }
     }
 }

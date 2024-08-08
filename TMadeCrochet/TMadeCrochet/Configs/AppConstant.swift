@@ -15,6 +15,7 @@ struct AppConstant {
     static let contentTextSize: CGFloat = 16
     static let testDeviceIdentifiers = "83e18d4b12a81912a807ce957ab91419"
     static let globalCount = 3
+    static let adsTurorialCount = 5
     static let mailContact = "tmadeapp@gmail.com"
     static let phoneContact = "+84357798368"
     static let youtubeContact = "tmade-0705"
@@ -34,6 +35,11 @@ struct AppConstant {
     static var countShowAdsOpenApp: Int? {
         get { UserDefaults.standard.value(forKey: "count-show-ads-open-app") as? Int }
         set { UserDefaults.standard.setValue(newValue, forKey: "count-show-ads-open-app") }
+    }
+    
+    static var countShowAdsWhenOpenTutorial: Int? {
+        get { UserDefaults.standard.value(forKey: "count-show-ads-when-open-tutorial") as? Int }
+        set { UserDefaults.standard.setValue(newValue, forKey: "count-show-ads-when-open-tutorial") }
     }
     
     static var isFirstTime: Bool {

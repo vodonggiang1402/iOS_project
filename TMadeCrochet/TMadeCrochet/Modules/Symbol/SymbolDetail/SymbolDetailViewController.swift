@@ -52,9 +52,10 @@ class SymbolDetailViewController: BaseViewController {
         }
         
         
-        if let content = self.presenter?.symbol?.symbolDes {
+        if let content = self.presenter?.symbol?.symbolDes, content.count > 0 {
             self.setupContentLabel(content: content)
         }
+        
         if let steps = self.presenter?.symbol?.steps, steps.count > 0 {
             self.setupStackView(steps: steps)
         }
