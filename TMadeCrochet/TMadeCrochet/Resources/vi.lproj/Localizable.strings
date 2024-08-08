@@ -242,7 +242,7 @@
 //Header title
 "count_screen_header_title" = "Bộ đếm";
 "symbol_screen_header_title" = "Mũi móc";
-"tutorial_screen_header_title" = "Hướng dẫn";
+"tutorial_screen_header_title" = "Hướng dẫn cơ bản";
 "setting_screen_header_title" = "Cài đặt";
 "language_screen_header_title" = "Ngôn ngữ ứng dụng";
 "term_screen_header_title" = "Điều khoản hoạt động";
@@ -254,3 +254,11 @@
 
 "symbol_detail_watch_video" = "Xem video hướng dẫn";
 "updating_text" = "ĐANG CẬP NHẬT...";
+
+"toy_key_name" = "Hướng dẫn móc đồ chơi cơ bản.";
+"bag_key_name" = "Hướng dẫn móc túi cơ bản.";
+"glove_key_name" = "Hướng dẫn móc găng tay cơ bản.";
+"scarf_key_name" = "Hướng dẫn móc khăn cơ bản.";
+"sweater_key_name" = "Hướng dẫn móc áo cơ bản.";
+"woolly_hat_key_name" = "Hướng dẫn móc nón cơ bản.";
+"doormat_key_name" = "Hướng dẫn móc đồ trang trí nhà cửa cơ bản.";

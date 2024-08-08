@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,27 +21,14 @@
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="A3Y-b6-hBF">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esV-aI-KY5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog_image" translatesAutoresizingMaskIntoConstraints="NO" id="AF2-Ms-ZJr">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hat" translatesAutoresizingMaskIntoConstraints="NO" id="AF2-Ms-ZJr">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="AF2-Ms-ZJr" firstAttribute="leading" secondItem="esV-aI-KY5" secondAttribute="leading" id="1Fn-eJ-rVt"/>
-                                    <constraint firstAttribute="trailing" secondItem="AF2-Ms-ZJr" secondAttribute="trailing" id="K3y-D2-K8b"/>
-                                    <constraint firstAttribute="height" constant="200" id="Mhp-fA-3jv"/>
-                                    <constraint firstAttribute="bottom" secondItem="AF2-Ms-ZJr" secondAttribute="bottom" id="Tkn-Be-wsN"/>
-                                    <constraint firstItem="AF2-Ms-ZJr" firstAttribute="top" secondItem="esV-aI-KY5" secondAttribute="top" id="byv-kn-zHU"/>
-                                </constraints>
-                            </view>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9Z-Ef-XnX">
                                 <rect key="frame" x="0.0" y="200" width="200" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Áo" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aO-pF-nCM">
-                                        <rect key="frame" x="5" y="0.0" width="190" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" name="color_7f7f7f_565656"/>
                                         <nil key="highlightedColor"/>
@@ -50,10 +36,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="5aO-pF-nCM" secondAttribute="trailing" constant="5" id="938-Nu-2WU"/>
+                                    <constraint firstAttribute="trailing" secondItem="5aO-pF-nCM" secondAttribute="trailing" id="938-Nu-2WU"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ngp-ja-e1V"/>
                                     <constraint firstAttribute="bottom" secondItem="5aO-pF-nCM" secondAttribute="bottom" id="WPJ-1S-F9w"/>
                                     <constraint firstItem="5aO-pF-nCM" firstAttribute="top" secondItem="U9Z-Ef-XnX" secondAttribute="top" id="Wkh-Sg-3nz"/>
-                                    <constraint firstItem="5aO-pF-nCM" firstAttribute="leading" secondItem="U9Z-Ef-XnX" secondAttribute="leading" constant="5" id="oC8-kd-jtP"/>
+                                    <constraint firstItem="5aO-pF-nCM" firstAttribute="leading" secondItem="U9Z-Ef-XnX" secondAttribute="leading" id="oC8-kd-jtP"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -67,7 +54,6 @@
                 </constraints>
             </collectionViewCellContentView>
             <connections>
-                <outlet property="imageContainView" destination="esV-aI-KY5" id="E3t-CK-urL"/>
                 <outlet property="imageView" destination="AF2-Ms-ZJr" id="5IZ-H2-Wo7"/>
                 <outlet property="titleLabel" destination="5aO-pF-nCM" id="EDj-I3-vHR"/>
             </connections>
@@ -75,12 +61,9 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="hat" width="400" height="267"/>
+        <image name="dog_image" width="400" height="400"/>
         <namedColor name="color_7f7f7f_565656">
             <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

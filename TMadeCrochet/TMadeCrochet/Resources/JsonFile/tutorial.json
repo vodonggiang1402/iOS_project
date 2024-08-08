@@ -1,9 +1,9 @@
 {
     "data" : [
         {
-        "tutorial_name" : "Hướng dẫn móc đồ chơi cơ bản.",
+        "tutorial_name" : "toy_key_name",
         "tutorial_des" : "",
-        "tutorial_image" : "",
+        "tutorial_image" : "toy_image",
         "color" : "F76A89",
         "list": [
             {
@@ -39,9 +39,9 @@
         ]
         },
         {
-        "tutorial_name" : "Hướng dẫn móc túi cơ bản.",
+        "tutorial_name" : "bag_key_name",
         "tutorial_des" : "",
-        "tutorial_image" : "",
+        "tutorial_image" : "bag_image",
         "color" : "F76A89",
         "list": [
             {
@@ -65,9 +65,9 @@
         ]
         },
         {
-        "tutorial_name" : "Hướng dẫn móc găng tay cơ bản.",
+        "tutorial_name" : "glove_key_name",
         "tutorial_des" : "",
-        "tutorial_image" : "",
+        "tutorial_image" : "glove_image",
         "color" : "F76A89",
         "list": [
             {
@@ -85,9 +85,9 @@
         ]
         },
         {
-        "tutorial_name" : "Hướng dẫn móc khăn cơ bản.",
+        "tutorial_name" : "scarf_key_name",
         "tutorial_des" : "",
-        "tutorial_image" : "",
+        "tutorial_image" : "scarf_image",
         "color" : "F76A89",
         "list": [
             {
@@ -111,9 +111,9 @@
         ]
         },
         {
-        "tutorial_name" : "Hướng dẫn móc áo cơ bản.",
+        "tutorial_name" : "sweater_key_name",
         "tutorial_des" : "",
-        "tutorial_image" : "",
+        "tutorial_image" : "sweater_image",
         "color" : "F76A89",
         "list": [
             {
@@ -137,9 +137,9 @@
         ]
         },
         {
-        "tutorial_name" : "Hướng dẫn móc nón cơ bản.",
+        "tutorial_name" : "woolly_hat_key_name",
         "tutorial_des" : "",
-        "tutorial_image" : "",
+        "tutorial_image" : "woolly_hat_image",
         "color" : "F76A89",
         "list": [
             {
@@ -157,9 +157,9 @@
         ]
         },
         {
-        "tutorial_name" : "Hướng dẫn móc đồ trang trí nhà cửa cơ bản.",
+        "tutorial_name" : "doormat_key_name",
         "tutorial_des" : "",
-        "tutorial_image" : "",
+        "tutorial_image" : "doormat_image",
         "color" : "F76A89",
         "list": [
             {

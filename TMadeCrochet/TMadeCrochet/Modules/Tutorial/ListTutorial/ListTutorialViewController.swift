@@ -24,7 +24,9 @@ class ListTutorialViewController: BaseViewController, GADBannerViewDelegate {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNavigationBar(title: "tutorial_screen_header_title".Localizable(), isShowLeft: true)
+        if let tutorial = self.presenter?.tutorial {
+            self.setupNavigationBar(title:  tutorial.tutorialName?.Localizable() ??  "tutorial_screen_header_title".Localizable(), isShowLeft: true)
+        }
         self.loadAdsBanner()
         self.setupDataForCollectionView()
     }

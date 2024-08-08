@@ -243,7 +243,7 @@
 //Header title
 "count_screen_header_title" = "Counter";
 "symbol_screen_header_title" = "Stitches";
-"tutorial_screen_header_title" = "Tutorial";
+"tutorial_screen_header_title" = "Basic tutorial";
 "setting_screen_header_title" = "Setting";
 "language_screen_header_title" = "Language Application";
 "term_screen_header_title" = "Term Application";
@@ -254,3 +254,11 @@
 "contact_screent_title_text" = "If you have any questions or suggestions, please contact us.";
 "symbol_detail_watch_video" = "Watch video";
 "updating_text" = "UPDATING...";
+
+"toy_key_name" = "Hướng dẫn móc đồ chơi cơ bản.";
+"bag_key_name" = "Hướng dẫn móc túi cơ bản.";
+"glove_key_name" = "Hướng dẫn móc găng tay cơ bản.";
+"scarf_key_name" = "Hướng dẫn móc khăn cơ bản.";
+"sweater_key_name" = "Hướng dẫn móc áo cơ bản.";
+"woolly_hat_key_name" = "Hướng dẫn móc nón cơ bản.";
+"doormat_key_name" = "Hướng dẫn móc đồ trang trí nhà cửa cơ bản.";

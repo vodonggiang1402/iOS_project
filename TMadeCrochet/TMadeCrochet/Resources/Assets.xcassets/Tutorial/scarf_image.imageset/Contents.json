@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "banner.svg",
+      "filename" : "scarf_image.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "banner 1.svg",
+      "filename" : "scarf_image 1.svg",
       "idiom" : "universal"
     }
   ],
