@@ -257,12 +257,12 @@
 "symbol_detail_watch_video" = "Watch video";
 "updating_text" = "UPDATING...";
 
-"toy_key_name" = "Hướng dẫn móc đồ chơi cơ bản.";
-"bag_key_name" = "Hướng dẫn móc túi cơ bản.";
-"glove_key_name" = "Hướng dẫn móc găng tay cơ bản.";
-"scarf_key_name" = "Hướng dẫn móc khăn cơ bản.";
-"sweater_key_name" = "Hướng dẫn móc áo cơ bản.";
-"woolly_hat_key_name" = "Hướng dẫn móc nón cơ bản.";
-"doormat_key_name" = "Hướng dẫn móc đồ trang trí nhà cửa cơ bản.";
-"tips_key_name" = "Hướng dẫn các mẹo trong móc len.";
+"toy_key_name" = "Hướng dẫn móc đồ chơi.";
+"bag_key_name" = "Hướng dẫn móc túi.";
+"glove_key_name" = "Hướng dẫn móc găng tay.";
+"scarf_key_name" = "Hướng dẫn móc khăn.";
+"sweater_key_name" = "Hướng dẫn móc áo.";
+"woolly_hat_key_name" = "Hướng dẫn móc nón.";
+"doormat_key_name" = "Hướng dẫn móc đồ trang trí nhà cửa.";
+"tips_key_name" = "Các mẹo trong móc len.";
 "unclock_content_by_watching_ads" = "Unclock content by watching ads?";

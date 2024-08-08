@@ -16,7 +16,7 @@ class ListTutorialViewController: BaseViewController, GADBannerViewDelegate {
     @IBOutlet weak var bannerView: GADBannerView!
     
     private let width: CGFloat = UIScreen.main.bounds.width
-    private let height: CGFloat =  150
+    private let height: CGFloat =  320
     private let lineSpacing: CGFloat = 30
     private let interitemSpacing: CGFloat = 5
     var data: [TutorialItem] = []
