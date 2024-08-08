@@ -77,6 +77,12 @@ class SymbolViewController: BaseViewController {
             self.loadData()
         }
     }
+    
+    func showAdsView() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.showAds()
+        }
+    }
 }
     
 
@@ -103,7 +109,10 @@ extension SymbolViewController: BaseCollectionViewProtocol {
                ])
         if let isAds = data.isAds, isAds {
             self.currentIndexPath = indexPath
-            self.showAds()
+            PopupHelper.shared.showArlertView(baseViewController: self, title: "unclock_content_by_watching_ads".Localizable(), activeTitle: "Yes", activeAction: {
+                PopupHelper.shared.dismissView()
+                self.showAdsView()
+            }, cancelTitle: "No", cancelAction: {})
         } else {
             self.presenter?.navigateToDetail(symbol: data)
         }

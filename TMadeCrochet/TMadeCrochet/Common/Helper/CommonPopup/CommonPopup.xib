@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonPopup" customModule="Móc_Đan" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonPopup" customModule="Moc___Dan" customModuleProvider="target">
             <connections>
                 <outlet property="activeButton" destination="fhL-nm-dUu" id="1WX-rj-X6f"/>
                 <outlet property="backView" destination="anW-Xd-H6U" id="7lY-w3-Orb"/>
@@ -79,7 +79,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Ry-Qk-emj">
                                     <rect key="frame" x="0.0" y="44" width="382" height="78"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUX-Ha-yH7" customClass="InLineTextField" customModule="Móc_Đan" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUX-Ha-yH7" customClass="InLineTextField" customModule="Moc___Dan" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="382" height="78"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -136,7 +136,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fO1-XE-Rrx">
                                     <rect key="frame" x="0.0" y="12" width="382" height="56"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXy-li-u3s" customClass="StyleButton" customModule="Móc_Đan" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXy-li-u3s" customClass="StyleButton" customModule="Moc___Dan" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="186" height="56"/>
                                             <color key="backgroundColor" name="color_fafafa_181818"/>
                                             <constraints>
@@ -161,7 +161,7 @@
                                                 <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="Ogu-TL-mDi"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-nm-dUu" customClass="StyleButton" customModule="Móc_Đan" customModuleProvider="target">
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-nm-dUu" customClass="StyleButton" customModule="Moc___Dan" customModuleProvider="target">
                                             <rect key="frame" x="196" y="0.0" width="186" height="56"/>
                                             <color key="backgroundColor" name="color_background_main"/>
                                             <constraints>

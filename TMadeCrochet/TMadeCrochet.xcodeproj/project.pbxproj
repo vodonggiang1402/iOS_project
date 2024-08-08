@@ -131,6 +131,8 @@
 		7B6358ED2C62366000B3C782 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6358EC2C62366000B3C782 /* UIImageExtension.swift */; };
 		7B6358F02C63150600B3C782 /* UpdateInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6358EF2C63150600B3C782 /* UpdateInfoView.swift */; };
 		7B6358F22C63151200B3C782 /* UpdateInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6358F12C63151200B3C782 /* UpdateInfoView.xib */; };
+		7B6A5A042C64BBE300098924 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A5A032C64BBE300098924 /* AlertView.swift */; };
+		7B6A5A062C64BC0F00098924 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6A5A052C64BC0F00098924 /* AlertView.xib */; };
 		7B7686812C4285FC00DBE001 /* count.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7686802C4285FC00DBE001 /* count.json */; };
 		7B7686832C42874B00DBE001 /* CountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686822C42874B00DBE001 /* CountResponse.swift */; };
 		7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7686852C42913B00DBE001 /* CountCollectionCell.swift */; };
@@ -490,6 +492,8 @@
 		7B6358EC2C62366000B3C782 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		7B6358EF2C63150600B3C782 /* UpdateInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInfoView.swift; sourceTree = "<group>"; };
 		7B6358F12C63151200B3C782 /* UpdateInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateInfoView.xib; sourceTree = "<group>"; };
+		7B6A5A032C64BBE300098924 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		7B6A5A052C64BC0F00098924 /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		7B7686802C4285FC00DBE001 /* count.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = count.json; sourceTree = "<group>"; };
 		7B7686822C42874B00DBE001 /* CountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountResponse.swift; sourceTree = "<group>"; };
 		7B7686852C42913B00DBE001 /* CountCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCollectionCell.swift; sourceTree = "<group>"; };
@@ -611,6 +615,7 @@
 		7B153E502C453ECF00F6718A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7B6A5A022C64BBB200098924 /* AlertView */,
 				7B153E532C453F3B00F6718A /* CommonPopup */,
 				7B153E512C453EDC00F6718A /* PopupHelper.swift */,
 			);
@@ -1261,6 +1266,15 @@
 			path = UpdateInfoView;
 			sourceTree = "<group>";
 		};
+		7B6A5A022C64BBB200098924 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				7B6A5A032C64BBE300098924 /* AlertView.swift */,
+				7B6A5A052C64BC0F00098924 /* AlertView.xib */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
 		7B7686842C42912500DBE001 /* CountCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1663,6 +1677,7 @@
 				7B4E34912C3D04630059167A /* SymbolCollectionCell.xib in Resources */,
 				7B341A212C33FDE70069BD02 /* MainTableCell.xib in Resources */,
 				7BDB14BD2C4E19EE0081676D /* TermStoryboard.storyboard in Resources */,
+				7B6A5A062C64BC0F00098924 /* AlertView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1949,6 +1964,7 @@
 				7B522E722C32626E0034EE9D /* MainContract.swift in Sources */,
 				7B3419E42C33CFD30069BD02 /* SlackLoadingAnimator.swift in Sources */,
 				7B6358E22C5B74C600B3C782 /* ListTutorialRouter.swift in Sources */,
+				7B6A5A042C64BBE300098924 /* AlertView.swift in Sources */,
 				7B7686862C42913B00DBE001 /* CountCollectionCell.swift in Sources */,
 				7BB995012C3B96CF008EF04B /* SettingPresenter.swift in Sources */,
 				7BDB14A02C4E19E10081676D /* ContactEntity.swift in Sources */,

@@ -50,20 +50,21 @@
 "slip_knot_crochet_content_4" = "Kéo sợi len thừa để thắt chặt mũi gút.";
 
 "slip_stich_crochet_name" = "Mũi trượt";
-"slip_stich_crochet_description" = "Sợi nằm phía sau kim móc.";
-"slip_stich_crochet_content_1" = "Dùng kim lấy len và kéo len qua chân móc.";
-"slip_stich_crochet_content_2" = "Hoàn thành 1 mũi trượt. Luồn kim qua chân mũi tiếp theo.";
-"slip_stich_crochet_content_3" = "Lặp lại các bước trên để tiếp tục các mũi trượt.";
+"slip_stich_crochet_description" = "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng.";
+"slip_stich_crochet_content_1" = "Sợi nằm phía sau kim móc.";
+"slip_stich_crochet_content_2" = "Dùng kim lấy len và kéo len qua chân móc.";
+"slip_stich_crochet_content_3" = "Hoàn thành 1 mũi trượt. Luồn kim qua chân mũi tiếp theo.";
+"slip_stich_crochet_content_4" = "Lặp lại các bước trên để tiếp tục các mũi trượt.";
 
 "chain_crochet_name" = "Mũi bính";
 "chain_crochet_description" = "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.";
 "chain_crochet_content_1" = "Dùng kim móc lấy len.";
-"chain_crochet_content_2" = "Kéo lên qua vòng tròn mũi gút.";
+"chain_crochet_content_2" = "Kéo len qua vòng tròn mũi gút.";
 "chain_crochet_content_3" = "Hoàn thành được 1 mũi bính.";
-"chain_crochet_content_4" = "Tiếp tục lặp lại các bước trên để có được dây bính với số muĩ bính cần thiết.";
+"chain_crochet_content_4" = "Tiếp tục lặp lại các bước trên để có được dây bính với số mũi bính cần thiết.";
 
 "single_crochet_name" = "Mũi đơn";
-"single_crochet_description" = "Mũi móc đơn có độ cao bằng một mũi bính. Đẻ có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.";
+"single_crochet_description" = "Mũi móc đơn có độ cao bằng một mũi bính. Để có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.";
 "single_crochet_content_1" = "Luồn kim qua chân mũi bính thứ 2 của dây bính.";
 "single_crochet_content_2" = "Dùng kim lấy len và kéo len qua chân bính.";
 "single_crochet_content_3" = "Tiếp tục lấy len và kéo len qua cả 2 vòng trên kim.";
@@ -138,7 +139,7 @@
 "1sc_1ch_1sc_crochet_name" = "1 mũi đơn- 1 bính - 1 mũi đơn chung chân";
 "1sc_1ch_1sc_crochet_description" = "";
 "1sc_1ch_1sc_crochet_content_1" = "Móc 1 mũi đơn vào chân mũi móc của hàng trước đó và dùng kim lấy len.";
-"1sc_1ch_1sc_crochet_content_2" = "Móc 1 mũi bính và sau đó luồn kim và cùng chân mũi vừa rồi.";
+"1sc_1ch_1sc_crochet_content_2" = "Móc 1 mũi bính và sau đó luồn kim vào cùng chân mũi vừa rồi.";
 "1sc_1ch_1sc_crochet_content_3" = "Lấy len và móc 1 mũi móc đơn.";
 "1sc_1ch_1sc_crochet_content_4" = "2 mũi móc đơn và 1 mũi bính cùng 1 chân móc. Đã tăng thêm 2 mũi móc.";
 
@@ -264,3 +265,4 @@
 "woolly_hat_key_name" = "Hướng dẫn móc nón cơ bản.";
 "doormat_key_name" = "Hướng dẫn móc đồ trang trí nhà cửa cơ bản.";
 "tips_key_name" = "Hướng dẫn các mẹo trong móc len.";
+"unclock_content_by_watching_ads" = "Xem quảng cáo để tiếp tục?";

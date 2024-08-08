@@ -32,4 +32,27 @@ class PopupHelper {
         self.destinationViewController = popupVC
         baseViewController.present(popupVC, animated: true)
     }
+    
+    func showArlertView(baseViewController: UIViewController,
+                                  title: String? = "",
+                                  activeTitle: String?,
+                                  activeAction: Action?,
+                                  cancelTitle: String?,
+                                  cancelAction: Action? ) {
+        let popupVC = AlertView.init(nibName: "AlertView", bundle: nil)
+        popupVC.load()
+        popupVC.setTitleHeader(title)
+        popupVC.setActiveButton(activeTitle)
+        popupVC.setActiveButton(activeAction)
+        popupVC.setCancelButton(cancelTitle)
+        popupVC.setCancelButton(cancelAction)
+        popupVC.modalPresentationStyle = .overFullScreen
+        popupVC.modalTransitionStyle = .crossDissolve
+        self.destinationViewController = popupVC
+        baseViewController.present(popupVC, animated: true)
+    }
+    
+    func dismissView(){
+        self.destinationViewController?.dismiss(animated: false)
+    }
 }
