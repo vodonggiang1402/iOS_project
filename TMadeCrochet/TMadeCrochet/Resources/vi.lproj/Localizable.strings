@@ -60,7 +60,7 @@
 "chain_crochet_content_1" = "Dùng kim móc lấy len.";
 "chain_crochet_content_2" = "Kéo lên qua vòng tròn mũi gút.";
 "chain_crochet_content_3" = "Hoàn thành được 1 mũi bính.";
-"chain_crochet_content_4" = "Tiếp tục lặp lại các bước trên để có được dây bính với số muĩ bính cần thiết."
+"chain_crochet_content_4" = "Tiếp tục lặp lại các bước trên để có được dây bính với số muĩ bính cần thiết.";
 
 "single_crochet_name" = "Mũi đơn";
 "single_crochet_description" = "Mũi móc đơn có độ cao bằng một mũi bính. Đẻ có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.";

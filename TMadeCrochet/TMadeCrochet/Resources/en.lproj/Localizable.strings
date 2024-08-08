@@ -44,68 +44,68 @@
 "step_text" = "Step %d";
 //Mũi cơ bản
 "slip_knot_crochet_name" = "Slip knot";
-"slip_knot_crochet_description" = "Trong các hướng dẫn của chart móc thì mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên.";
+"slip_knot_crochet_description" = "";
 "slip_knot_crochet_content_1" = "To make a starting loop - fold the yarn to make a loop.";
 "slip_knot_crochet_content_2" = "Catch the yarn through the loop.";
 "slip_knot_crochet_content_3" = "Pull it through.";
 "slip_knot_crochet_content_4" = "Pull the ends to tighten the slipknot. Now put this slipknot on the left hand needle.";
 
 "slip_stich_crochet_name" = "Slip stich";
-"slip_stich_crochet_description" = "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng…";
+"slip_stich_crochet_description" = "";
 "slip_stich_crochet_content_1" = "With yarn in back.";
 "slip_stich_crochet_content_2" = "Yarn over hook and draw through.";
 "slip_stich_crochet_content_3" = "1 slip stitch done. Insert hook into the next st.";
 "slip_stich_crochet_content_4" = "Repeat these steps to continue slip stitch.";
 
 "chain_crochet_name" = "Chain";
-"chain_crochet_description" = "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.";
+"chain_crochet_description" = "";
 "chain_crochet_content_1" = "With hook behind yarn.";
 "chain_crochet_content_2" = "Using left thumb and middle finger.";
 "chain_crochet_content_3" = "Draw yarn through loop.";
 
 "single_crochet_name" = "Single";
-"single_crochet_description" = "Mũi móc đơn có độ cao bằng một mũi bính. Đẻ có thể bắt đầu mũi đơn bạn cần chuẩn bị một hàng với ít nhất 2 mũi bính. Mũi móc đơn đầu tiên được móc vào mũi bính thứ 2 của dây bính.";
-"single_crochet_content_1" = "Luồn kim qua mũi bính.";
-"single_crochet_content_2" = "Lấy len và kéo qua để có 2 vòng len trên kim.";
-"single_crochet_content_3" = "Tiếp tục lấy len và kéo len qua cả 2 vòng trên kim.";
-"single_crochet_content_4" = "Hoàn thành được một mũi đơn.";
+"single_crochet_description" = "";
+"single_crochet_content_1" = "Insert hook into the back loop of chain st.";
+"single_crochet_content_2" = "Yarn over hook as shown from back to front and draw through loop.";
+"single_crochet_content_3" = "Yarn over hook again and draw through both loops on hook.";
+"single_crochet_content_4" = "1sc (single crochet) done.";
 
 "half_double_crochet_name" = "Half double";
-"half_double_crochet_description" = "Mũi nữa kép có độ cao bằng 2 lần mũi bính. Mũi kép đơn đầu tiên sẽ được móc vào chân bính thứ 4 của dây bính.";
-"half_double_crochet_content_1" = "Dùng kim móc lấy len, và luồn kim qua chân bính thứ 3 của dây bính.";
-"half_double_crochet_content_2" = "Lấy len và kéo qua chân bính lúc này trên kim sẽ có 3 vòng sợi.";
-"half_double_crochet_content_3" = "Tiếp tục lấy len và kéo len qua cả 3 vòng trên kim.";
-"half_double_crochet_content_4" = "Lặp lại 3 bước trên để được những mũi nửa kép tiếp theo.";
+"half_double_crochet_description" = "";
+"half_double_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain st.";
+"half_double_crochet_content_2" = "Yarn over hook and draw through loop as shown.";
+"half_double_crochet_content_3" = "Yarn over hook again and draw through all three loops on hook.";
+"half_double_crochet_content_4" = "1hdc (half - double crochet) done.";
 
 "double_crochet_name" = "Double";
-"double_crochet_description" = "Mũi kép đơn có độ cao bằng 3 lần mũi bính.";
-"double_crochet_content_1" = "Dùng kim móc lấy len và luồn kim qua chân bính thứ 5 của dây bính";
-"double_crochet_content_2" = "Lấy len kéo kim móc qua chân bính.";
-"double_crochet_content_3" = "Lấy len và kéo len qua 2 vòng len trên kim.";
-"double_crochet_content_4" = "Lấy len và kéo len qua 2 vòng còn lại trên kim.";
-"double_crochet_content_5" = "Hoàn thành 1 mũi móc kép đơn.";
+"double_crochet_description" = "";
+"double_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain st.";
+"double_crochet_content_2" = "Yarn over hook and draw through loop as shown.";
+"double_crochet_content_3" = "Yarn over hook again and draw through two loops on hook.";
+"double_crochet_content_4" = "Yarn over hook once more and draw through remaining two loops on hook.";
+"double_crochet_content_5" = "1dc (double crochet) done";
 
 
 "triple_crochet_name" = "Triple";
-"triple_crochet_description" = "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước";
-"triple_crochet_content_1" = "Dùng kim móc quấn 2 vòng len.";
-"triple_crochet_content_2" = "Sau đó luồn kim qua chân bính thứ 6 của dây bính, lấy len kéo qua chân bính.";
-"triple_crochet_content_3" = "Lấy len và kéo len qua 2 vòng len trên kim.";
-"triple_crochet_content_4" = "Lặp lại lấy len và kéo len qua 2 vòng len trên kim 2 lần nữa.";
-"triple_crochet_content_5" = "Hoàn thành 1 mũi móc kép đôi.";
+"triple_crochet_description" = "";
+"triple_crochet_content_1" = "Yarn over hook twice and insert hook into the back loop of chain st.";
+"triple_crochet_content_2" = "Yarn over hook and draw through loop.";
+"triple_crochet_content_3" = "Yarn over hook and draw through first twoo loops on hook.";
+"triple_crochet_content_4" = "Yarn over hook and draw through first two loops on hook two more times.";
+"triple_crochet_content_5" = "1tr (treble crochet) done";
 
 "double_triple_crochet_name" = "Double triple";
-"double_triple_crochet_description" = "symbol_des: Mũi móc đơn được viết tắt là SC, mũi này có kí hiệu là X hoặc + , mũi này có một đặc điểm là độ cao của chúng ngang bằng với mũi bính.";
-"double_triple_crochet_content_1" = "Dùng kim móc quấn 3 vòng len.";
-"double_triple_crochet_content_2" = "Sau đó luồn kim qua chân bính thứ 7 của dây bính, lấy len kéo qua chân bính.";
-"double_triple_crochet_content_3" = "Lấy len và kéo len qua 2 vòng len trên kim.";
-"double_triple_crochet_content_4" = "Lặp lại lấy len và kéo len qua 2 vòng len trên kim 3 lần nữa.";
-"double_triple_crochet_content_5" = "Hoàn thành 1 mũi móc kép ba.";
+"double_triple_crochet_description" = "";
+"double_triple_crochet_content_1" = "Wrap yarn around hook three times and insert hook into the back loop of chain st.";
+"double_triple_crochet_content_2" = "Yarn over hook and draw through loop.";
+"double_triple_crochet_content_3" = "Yarn over hook again and draw through first two loops on hook.";
+"double_triple_crochet_content_4" = "Repeat the previous step three more times.";
+"double_triple_crochet_content_5" = "1dtr ( double- treble crochet) done.";
 
 
 //Mũi hạt bắp
 "hdc3tog_into_same_st_crochet_name" = "hdc3tog into same st";
-"hdc3tog_into_same_st_crochet_description" = "Mũi hạt bắp ( 3 mũi nửa kép) được hình thành từ 3 mũi nửa kép chưa đầy đủ cùng móc vào 1 chân.";
+"hdc3tog_into_same_st_crochet_description" = "";
 "hdc3tog_into_same_st_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain st.";
 "hdc3tog_into_same_st_crochet_content_2" = "Work an incomplete hdc. Work 2 more incomplete hdcs into the same st.";
 "hdc3tog_into_same_st_crochet_content_3" = "Yarn over hook and draw through 7 loops on hook all at once.";
@@ -113,14 +113,14 @@
 
 
 "dc3tog_into_same_st_crochet_name" = "dc3tog into same st";
-"dc3tog_into_same_st_crochet_description" = "Mũi hạt bắp (3 mũi kép đơn) được hình thành từ 3 mũi kép chưa đầy đủ cùng móc vào 1 chân.";
+"dc3tog_into_same_st_crochet_description" = "";
 "dc3tog_into_same_st_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain st.";
 "dc3tog_into_same_st_crochet_content_2" = "Work an incomplete hdc. Work 2 more incomplete hdcs into the same st.";
 "dc3tog_into_same_st_crochet_content_3" = "Yarn over hook and draw through 4 loops on hook all at once.";
 "dc3tog_into_same_st_crochet_content_4" = "This completes as dc3tog into same stitch.";
 
 "dc5tog_into_same_st_crochet_name" = "dc5tog into same st";
-"dc5tog_into_same_st_crochet_description" = "Mũi hạt bắp (5 mũi kép đơn) được hình thành từ 5 mũi kép chưa đầy đủ cùng móc vào 1 chân.";
+"dc5tog_into_same_st_crochet_description" = "";
 "dc5tog_into_same_st_crochet_content_1" = "Yarn over hook and insert hook into the back loop of chain st.";
 "dc5tog_into_same_st_crochet_content_2" = "Work an incomplete hdc. Work 4 more incomplete hdcs into the same st.";
 "dc5tog_into_same_st_crochet_content_3" = "Yarn over hook and draw through 6 loops on hook all at once.";

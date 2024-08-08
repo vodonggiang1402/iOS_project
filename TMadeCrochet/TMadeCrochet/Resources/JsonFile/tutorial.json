@@ -4,19 +4,19 @@
         "tutorial_name" : "tips_key_name",
         "tutorial_des" : "",
         "tutorial_image" : "tips_image",
-        "color" : "F76A89",
+        "color" : "FFA500",
         "list": [
             {
                 "item_name" : "Hướng dẫn kỹ thuật kết thúc hàng tinh tế",
                 "item_des" : "Mô tả: \nKhi xuất hiện cụm từ fasten off trong chart móc tiếng Anh, các bạn áp dụng ngay kỹ thuật này nhé.",
-                "item_color" : "F76A89",
+                "item_color" : "FFA500",
                 "item_image" : "",
                 "item_url" : "UxbRYPuL1js"
             },
             {
                 "item_name" : "Hướng dẫn kỹ thuật tản mũi",
                 "item_des" : "Mô tả: \nKỹ thuật này giúp các bạn có thể móc được 1 hình tròn hoàn hảo",
-                "item_color" : "F76A89",
+                "item_color" : "FFA500",
                 "item_image" : "",
                 "item_url" : "6mkKwNXCo1o"
             }
