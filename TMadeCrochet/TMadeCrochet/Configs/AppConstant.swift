@@ -15,6 +15,7 @@ struct AppConstant {
     static let contentTextSize: CGFloat = 16
     static let testDeviceIdentifiers = "83e18d4b12a81912a807ce957ab91419"
     static let globalCount = 5
+    static let adsOpenAppCount = 3
     static let adsTurorialCount = 5
     static let globalVideoCount = 5
     static let mailContact = "tmadeapp@gmail.com"

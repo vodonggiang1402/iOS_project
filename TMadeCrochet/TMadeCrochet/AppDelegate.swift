@@ -34,22 +34,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if Configs.share.env == .dev {
             GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [AppConstant.testDeviceIdentifiers]
         }
+        
         return true
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
-      // Show the app open ad when the app is foregrounded.
-        if let count = AppConstant.countShowAdsOpenApp, count > 0 {
-            if count >= AppConstant.globalCount {
-                tabbarViewController?.loadAds()
-                AppConstant.countShowAdsOpenApp = 1
-            } else {
-                let newCount = count + 1
-                AppConstant.countShowAdsOpenApp = newCount
-            }
-        } else {
-            AppConstant.countShowAdsOpenApp = 1
-        }
+      
+    }
+    
+    func showAdsOpenApp() {
+        // Show the app open ad when the app is foregrounded.
+          if let count = AppConstant.countShowAdsOpenApp, count > 0 {
+              if count >= AppConstant.adsOpenAppCount {
+                  tabbarViewController?.loadAds()
+                  AppConstant.countShowAdsOpenApp = 1
+              } else {
+                  let newCount = count + 1
+                  AppConstant.countShowAdsOpenApp = newCount
+              }
+          } else {
+              AppConstant.countShowAdsOpenApp = 1
+          }
     }
     
     func setRootScreen() {
@@ -57,6 +62,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           "start_app": "SetupRootView"
         ])
         SplashRouter().setupRootView()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            self.showAdsOpenApp()
+        }
     }
 
 }
