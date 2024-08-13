@@ -17,7 +17,7 @@ protocol ViewToPresenterSymbolProtocol {
     var view: PresenterToViewSymbolProtocol? { get set }
     var interactor: PresenterToInteractorSymbolProtocol? { get set }
     var router: PresenterToRouterSymbolProtocol? { get set }
-    func navigateToDetail(symbol: Symbol)
+    func navigateToDetail(symbol: Symbol, currentIndexPath: IndexPath)
 }
 
 // MARK: Interactor Input (Presenter -> Interactor)
@@ -32,7 +32,7 @@ protocol InteractorToPresenterSymbolProtocol {
 
 // MARK: Router Input (Presenter -> Router)
 protocol PresenterToRouterSymbolProtocol {
-    func navigateToDetail(symbol: Symbol)
+    func navigateToDetail(symbol: Symbol, currentIndexPath: IndexPath)
 }
 
 protocol InteractorToEntitySymbolProtocol {

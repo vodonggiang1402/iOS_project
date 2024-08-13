@@ -19,6 +19,7 @@ protocol ViewToPresenterSymbolDetailProtocol {
     var router: PresenterToRouterSymbolDetailProtocol? { get set }
     
     var symbol: Symbol? { get set }
+    var currentIndexPath: IndexPath? { get set }
 }
 
 // MARK: Interactor Input (Presenter -> Interactor)

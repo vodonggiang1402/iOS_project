@@ -22,11 +22,10 @@ class SplashViewController: BaseViewController {
         versionLabel.font = UIFont.systemFont(ofSize: 15)
         versionLabel.text = String.init(format:"%@ %@", "app_version".Localizable(), AppConstant.appVersion)
         self.loadingView.startAnimating()
-        guard AppConstant.isFirstTime else {
+        guard AppConstant.updateDataVersion1_0_1 else {
             self.presenter?.getData()
             return
         }
-        self.presenter?.getData()
         self.handleFlowApp()
     }
     
@@ -41,7 +40,7 @@ class SplashViewController: BaseViewController {
     func handleFlowApp() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             self.loadingView.stopAnimating()
-            AppConstant.isFirstTime = true
+            AppConstant.updateDataVersion1_0_1 = true
             self.presenter?.navigateToRootMain()
         }
     }

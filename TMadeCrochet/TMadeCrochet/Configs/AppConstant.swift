@@ -14,8 +14,9 @@ struct AppConstant {
     static let headerTitleSize2: CGFloat = 17
     static let contentTextSize: CGFloat = 16
     static let testDeviceIdentifiers = "83e18d4b12a81912a807ce957ab91419"
-    static let globalCount = 3
+    static let globalCount = 5
     static let adsTurorialCount = 5
+    static let globalVideoCount = 5
     static let mailContact = "tmadeapp@gmail.com"
     static let phoneContact = "+84357798368"
     static let youtubeContact = "tmade-0705"
@@ -45,6 +46,11 @@ struct AppConstant {
     static var isFirstTime: Bool {
         get { UserDefaults.standard.bool(forKey: "is-first-time") }
         set { UserDefaults.standard.setValue(newValue, forKey: "is-first-time") }
+    }
+    
+    static var updateDataVersion1_0_1: Bool {
+        get { UserDefaults.standard.bool(forKey: "update-data-version-1-0-1") }
+        set { UserDefaults.standard.setValue(newValue, forKey: "update-data-version-1-0-1") }
     }
     
     static var symbolResponseData: SymbolResponseData? {

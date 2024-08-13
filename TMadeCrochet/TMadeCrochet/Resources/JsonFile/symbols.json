@@ -26,7 +26,8 @@
           }
         ],
         "background_color" : "FED1B2",
-        "video_url" : "https://youtu.be/74ENxwwCjDk"
+        "video_url" : "https://youtu.be/74ENxwwCjDk",
+        "video_count": 0
       },
       {
         "is_ads" : false,
@@ -53,7 +54,8 @@
           }
         ],
         "background_color" : "FED1B2",
-        "video_url" : "https://youtu.be/gDyKYmipdBI"
+        "video_url" : "https://youtu.be/gDyKYmipdBI",
+        "video_count": 0
       },
       {
         "is_ads" : false,
@@ -80,7 +82,8 @@
           }
         ],
         "background_color" : "FED1B2",
-        "video_url" : "https://youtu.be/EEPOzXwPIgI"
+        "video_url" : "https://youtu.be/EEPOzXwPIgI",
+        "video_count": 0
       },
       {
         "is_ads" : false,
@@ -107,7 +110,8 @@
           }
         ],
         "background_color" : "FED1B2",
-        "video_url" : "https://youtu.be/8Qq_T5kgLB4"
+        "video_url" : "https://youtu.be/8Qq_T5kgLB4",
+        "video_count": 0
       },
       {
         "is_ads" : false,
@@ -134,7 +138,8 @@
           }
         ],
         "background_color" : "FED1B2",
-        "video_url" : "https://youtu.be/spqe7T5IzxU"
+        "video_url" : "https://youtu.be/spqe7T5IzxU",
+        "video_count": 0
       },
       {
         "is_ads" : false,
@@ -165,7 +170,8 @@
           }
         ],
         "background_color" : "FED1B2",
-        "video_url" : "https://youtu.be/u9pQyVxT-Wg"
+        "video_url" : "https://youtu.be/u9pQyVxT-Wg",
+        "video_count": 0
       },
       {
         "is_ads" : false,
@@ -196,7 +202,8 @@
           }
         ],
         "background_color" : "FED1B2",
-        "video_url" : "https://youtu.be/-FVV05678l4"
+        "video_url" : "https://youtu.be/-FVV05678l4",
+        "video_count": 0
       },
       {
         "is_ads" : false,
@@ -227,7 +234,8 @@
           }
         ],
         "background_color" : "FED1B2",
-        "video_url" : "https://youtu.be/GL5MQ5LqFc4"
+        "video_url" : "https://youtu.be/GL5MQ5LqFc4",
+        "video_count": 0
       }
     ],
     [
@@ -256,7 +264,8 @@
           }
         ],
         "background_color" : "a8dfc7",
-        "video_url" : "https://youtu.be/iFD9_kI2ALw"
+        "video_url" : "https://youtu.be/iFD9_kI2ALw",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -283,7 +292,8 @@
           }
         ],
         "background_color" : "a8dfc7",
-        "video_url" : "https://youtu.be/XwtTpsl7p44"
+        "video_url" : "https://youtu.be/XwtTpsl7p44",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -310,7 +320,8 @@
           }
         ],
         "background_color" : "a8dfc7",
-        "video_url" : "https://youtu.be/TIGjO4_CbqI"
+        "video_url" : "https://youtu.be/TIGjO4_CbqI",
+        "video_count": 0
       }
     ],
     [
@@ -339,7 +350,8 @@
           }
         ],
         "background_color" : "ffeabd",
-        "video_url" : "https://youtu.be/gis0jkKOqGU"
+        "video_url" : "https://youtu.be/gis0jkKOqGU",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -366,7 +378,8 @@
           }
         ],
         "background_color" : "ffeabd",
-        "video_url" : "https://youtu.be/WaoBLmKV5f4"
+        "video_url" : "https://youtu.be/WaoBLmKV5f4",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -393,7 +406,8 @@
           }
         ],
         "background_color" : "ffeabd",
-        "video_url" : "https://youtu.be/pf6msfWXQNg"
+        "video_url" : "https://youtu.be/pf6msfWXQNg",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -420,7 +434,8 @@
           }
         ],
         "background_color" : "ffeabd",
-        "video_url" : "https://youtu.be/H7u1PYNDn9Y"
+        "video_url" : "https://youtu.be/H7u1PYNDn9Y",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -447,7 +462,8 @@
           }
         ],
         "background_color" : "ffeabd",
-        "video_url" : "https://youtu.be/HIxV315C_Ck"
+        "video_url" : "https://youtu.be/HIxV315C_Ck",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -474,7 +490,8 @@
           }
         ],
         "background_color" : "ffeabd",
-        "video_url" : "https://youtu.be/YEArDBkjigk"
+        "video_url" : "https://youtu.be/YEArDBkjigk",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -501,7 +518,8 @@
           }
         ],
         "background_color" : "ffeabd",
-        "video_url" : "https://youtu.be/tTVj8RrCTx8"
+        "video_url" : "https://youtu.be/tTVj8RrCTx8",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -528,7 +546,8 @@
           }
         ],
         "background_color" : "ffeabd",
-        "video_url" : "https://youtu.be/glT_y5HBBcI"
+        "video_url" : "https://youtu.be/glT_y5HBBcI",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -555,7 +574,8 @@
           }
         ],
         "background_color" : "ffeabd",
-        "video_url" : "https://youtu.be/LFEvHhuDD3k"
+        "video_url" : "https://youtu.be/LFEvHhuDD3k",
+        "video_count": 0
       }
     ],
     [
@@ -584,7 +604,8 @@
           }
         ],
         "background_color" : "b2d8d8",
-        "video_url" : "https://youtu.be/7EJqz_IMPUw"
+        "video_url" : "https://youtu.be/7EJqz_IMPUw",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -611,7 +632,8 @@
           }
         ],
         "background_color" : "b2d8d8",
-        "video_url" : "https://youtu.be/Kpz7zgb-oX4"
+        "video_url" : "https://youtu.be/Kpz7zgb-oX4",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -638,7 +660,8 @@
           }
         ],
         "background_color" : "b2d8d8",
-        "video_url" : "https://youtu.be/odV5gN47bmU"
+        "video_url" : "https://youtu.be/odV5gN47bmU",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -665,7 +688,8 @@
           }
         ],
         "background_color" : "b2d8d8",
-        "video_url" : "https://youtu.be/XlCxAphT0-o"
+        "video_url" : "https://youtu.be/XlCxAphT0-o",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -688,7 +712,8 @@
           }
         ],
         "background_color" : "b2d8d8",
-        "video_url" : "https://youtu.be/fKIwsHR3QyA"
+        "video_url" : "https://youtu.be/fKIwsHR3QyA",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -715,7 +740,8 @@
           }
         ],
         "background_color" : "b2d8d8",
-        "video_url" : "https://youtu.be/gCT7g7dVUYw"
+        "video_url" : "https://youtu.be/gCT7g7dVUYw",
+        "video_count": 0
       },
       {
         "is_ads" : true,
@@ -742,7 +768,8 @@
           }
         ],
         "background_color" : "b2d8d8",
-        "video_url" : "https://youtu.be/Fq2gJFZgRKo"
+        "video_url" : "https://youtu.be/Fq2gJFZgRKo",
+        "video_count": 0
       }
     ]
   ]

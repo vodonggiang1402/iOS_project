@@ -33,7 +33,7 @@ struct Symbol : Codable {
     var backgroundColor: String?
     var isAds: Bool?
     var steps: [SymbolStep]?
-    
+    var videoCount: Int?
     enum CodingKeys: String, CodingKey {
         case symbolId = "symbol_id"
         case symbolName = "symbol_name"
@@ -43,6 +43,7 @@ struct Symbol : Codable {
         case isAds = "is_ads"
         case steps = "steps"
         case backgroundColor = "background_color"
+        case videoCount = "video_count"
     }
     
     init(from decoder: Decoder) throws {
@@ -55,6 +56,7 @@ struct Symbol : Codable {
         isAds = try? container.decodeIfPresent(Bool.self, forKey: .isAds)
         steps = try? container.decodeIfPresent([SymbolStep].self, forKey: .steps)
         backgroundColor = try? container.decodeIfPresent(String.self, forKey: .backgroundColor)
+        videoCount = try? container.decodeIfPresent(Int.self, forKey: .videoCount)
     }
 }
 

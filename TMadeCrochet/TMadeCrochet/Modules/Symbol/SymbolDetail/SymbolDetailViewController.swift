@@ -10,7 +10,8 @@ import UIKit
 import AVKit
 import YouTubePlayer
 
-class SymbolDetailViewController: BaseViewController {
+class SymbolDetailViewController: BaseViewController, YouTubePlayerDelegate {
+
     @IBOutlet weak var closeButton: UIButton!
     
     @IBOutlet weak var headerStackView: UIStackView!
@@ -28,6 +29,8 @@ class SymbolDetailViewController: BaseViewController {
     @IBOutlet weak var playButton: UIButton!
     
     var presenter: ViewToPresenterSymbolDetailProtocol?
+    
+    var isChangeData: Bool = false
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -59,10 +62,27 @@ class SymbolDetailViewController: BaseViewController {
         if let steps = self.presenter?.symbol?.steps, steps.count > 0 {
             self.setupStackView(steps: steps)
         }
-        self.playButton.setTitle("", for: .normal)
-        self.playButton.backgroundColor = UIColor.white.withAlphaComponent(0.8)
+        self.configVideo()
         self.loadVideo()
         self.startGoogleMobileAdsSDK()
+    }
+    
+    func configVideo() {
+        if self.isHideAdsButton() {
+            self.playButton.isHidden = true
+        } else {
+            self.playButton.isHidden = false
+            self.playButton.setTitle("", for: .normal)
+            self.playButton.backgroundColor = UIColor.white.withAlphaComponent(0.8)
+        }
+        
+    }
+    
+    func isHideAdsButton() -> Bool {
+        if let videoCount = self.presenter?.symbol?.videoCount, videoCount == 0 {
+            return false
+        }
+        return true
     }
     
     func loadVideo() {
@@ -81,13 +101,34 @@ class SymbolDetailViewController: BaseViewController {
                 videoPlayer.loadVideoURL(url)
             }
         }
+        videoPlayer.delegate = self
     }
     
     @IBAction func playButtonAction(_ sender: Any) {
         self.showAds()
     }
+    
+    func updateVideoCount() {
+        self.isChangeData = true
+        if let symbolResponseData = AppConstant.symbolResponseData, var array = symbolResponseData.data, array.count > 0, let tempIndex = self.presenter?.currentIndexPath {
+            if array[tempIndex.section].count > tempIndex.row, let videoCount = array[tempIndex.section][tempIndex.row].videoCount, videoCount < AppConstant.globalVideoCount {
+                array[tempIndex.section][tempIndex.row].videoCount = (array[tempIndex.section][tempIndex.row].videoCount ?? 0) + 1
+                self.playButton.isHidden = true
+            } else {
+                array[tempIndex.section][tempIndex.row].videoCount = 0
+                self.playButton.isHidden = false
+                self.playButton.setTitle("", for: .normal)
+                self.playButton.backgroundColor = UIColor.white.withAlphaComponent(0.8)
+            }
+            AppConstant.symbolResponseData = SymbolResponseData.init(newData: array)
+        }
+    }
 
     override func updateDataWhenAdsHiden() {
+        self.playVideo()
+    }
+    
+    func playVideo() {
         if videoPlayer.ready {
             if videoPlayer.playerState != YouTubePlayerState.Playing {
                 videoPlayer.play()
@@ -120,6 +161,11 @@ class SymbolDetailViewController: BaseViewController {
 
     @IBAction func closeButtonAction(_ sender: Any) {
         self.dismiss(animated: true)
+        if self.isChangeData {
+            NotificationCenter.default
+                .post(name: NSNotification.Name("com.tmadecrochet.reloadData"),
+                      object: nil)
+        }
     }
     
     func setupContentLabel(content: String) {
@@ -133,6 +179,20 @@ class SymbolDetailViewController: BaseViewController {
                 stackView.addArrangedSubview(StepView.init(title: String.init(format: "%@: %@", String.init(format:"step_text".Localizable(), index + 1), element.content?.Localizable() ?? ""), imageName: element.imageName?.Localizable() ?? ""))
             }
         }
+    }
+    
+    func playerReady(_ videoPlayer: YouTubePlayer.YouTubePlayerView) {
+        
+    }
+    
+    func playerStateChanged(_ videoPlayer: YouTubePlayer.YouTubePlayerView, playerState: YouTubePlayer.YouTubePlayerState) {
+        if playerState == .Paused || playerState == .Ended {
+            self.updateVideoCount()
+        }
+    }
+    
+    func playerQualityChanged(_ videoPlayer: YouTubePlayer.YouTubePlayerView, playbackQuality: YouTubePlayer.YouTubePlaybackQuality) {
+        
     }
 }
     

@@ -36,7 +36,7 @@ class TabbarRouter: PresenterToRouterTabbarProtocol {
         viewController.presenter?.router = TabbarRouter()
         viewController.presenter?.view = viewController
         viewController.presenter?.interactor = TabbarInteractor()
-        viewController.setupTabbarItems(items: [.count, .symbol, .tutorial, .setting])
+        viewController.setupTabbarItems(items: [.symbol, .count, .tutorial, .setting])
         return viewController
     }
     

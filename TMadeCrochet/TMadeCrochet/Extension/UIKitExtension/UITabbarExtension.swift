@@ -57,9 +57,9 @@ enum TabBarItem {
     
     var rawIndex: Int {
         switch self {
-        case .count:
-            return 0
         case .symbol:
+            return 0
+        case .count:
             return 1
         case .tutorial:
             return 2

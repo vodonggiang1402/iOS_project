@@ -9,29 +9,29 @@ import Foundation
 import UIKit
 
 class SymbolDetailRouter: PresenterToRouterSymbolDetailProtocol {
-    func showScreen(symbol: Symbol) {
-        let destinationVC = self.createModule(symbol: symbol)
+    func showScreen(symbol: Symbol, currentIndexPath: IndexPath) {
+        let destinationVC = self.createModule(symbol: symbol, currentIndexPath: currentIndexPath)
         destinationVC.hidesBottomBarWhenPushed = true
         UIViewController().getRootTabbarViewController().pushViewController(destinationVC, animated: true)
     }
     
-    func showScreenAsModal(symbol: Symbol) {
-        let destinationVC = createModule(symbol: symbol)
+    func showScreenAsModal(symbol: Symbol, currentIndexPath: IndexPath) {
+        let destinationVC = createModule(symbol: symbol, currentIndexPath: currentIndexPath)
         destinationVC.getRootTabbarViewController().topViewController?.modalPresentationStyle = .pageSheet
         destinationVC.getRootTabbarViewController().topViewController?.present(destinationVC, animated: true)
     }
 
-    func setupRootView(symbol: Symbol) {
+    func setupRootView(symbol: Symbol, currentIndexPath: IndexPath) {
         guard let appdelegate = UIApplication.shared.delegate as? AppDelegate,
               let window = appdelegate.window else { return }
 
-        let destinationVC = self.createModule(symbol: symbol)
+        let destinationVC = self.createModule(symbol: symbol, currentIndexPath: currentIndexPath)
         window.rootViewController = UINavigationController.init(rootViewController: destinationVC)
         window.makeKeyAndVisible()
     }
 
     // MARK: Static methods
-    func createModule(symbol: Symbol) -> UIViewController {
+    func createModule(symbol: Symbol, currentIndexPath: IndexPath) -> UIViewController {
         let storyboard = UIStoryboard(name: "SymbolDetailStoryboard", bundle: nil)
         let viewController = storyboard.instantiateViewController(viewControllerType:SymbolDetailViewController.self)
 
@@ -39,6 +39,7 @@ class SymbolDetailRouter: PresenterToRouterSymbolDetailProtocol {
         let entity: InteractorToEntitySymbolDetailProtocol = SymbolDetailEntity()
         viewController.presenter = presenter
         viewController.presenter?.symbol = symbol
+        viewController.presenter?.currentIndexPath = currentIndexPath
         viewController.presenter?.router = SymbolDetailRouter()
         viewController.presenter?.view = viewController
         viewController.presenter?.interactor = SymbolDetailInteractor()

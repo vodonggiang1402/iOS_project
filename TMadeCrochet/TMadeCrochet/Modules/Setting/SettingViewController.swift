@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import StoreKit
 
 class SettingViewController: BaseViewController {
     var presenter: ViewToPresenterSettingProtocol?
@@ -76,7 +77,7 @@ extension SettingViewController: SettingViewDelegate {
     }
     
     func rateViewNormalTap() {
-        
+        rateApp()
     }
     
     func shareApp() {
@@ -114,5 +115,16 @@ extension SettingViewController: SettingViewDelegate {
           
           activityViewController.isModalInPresentation = true
           self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    func rateApp() {
+        let appID = "6560104490"
+        let urlStr = "https://itunes.apple.com/app/id\(appID)?action=write-review"
+        guard let url = URL(string: urlStr), UIApplication.shared.canOpenURL(url) else { return }
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url) // openURL(_:) is deprecated from iOS 10.
+        }
     }
 }

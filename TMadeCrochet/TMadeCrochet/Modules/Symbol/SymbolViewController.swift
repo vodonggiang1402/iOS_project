@@ -43,7 +43,7 @@ class SymbolViewController: BaseViewController {
         self.collectionView.register(UINib(nibName: UpdateInfoView.className, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: UpdateInfoView.className)
     }
     
-    func loadData() {
+    @objc func loadData() {
         if let symbolResponseData = AppConstant.symbolResponseData, let array = symbolResponseData.data, array.count > 0 {
             self.data = array
             self.collectionView.dataArray = self.data
@@ -53,6 +53,11 @@ class SymbolViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(loadData),
+            name: NSNotification.Name("com.tmadecrochet.reloadData"),
+            object: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -62,7 +67,7 @@ class SymbolViewController: BaseViewController {
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        
+        NotificationCenter.default.removeObserver(self)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -114,7 +119,8 @@ extension SymbolViewController: BaseCollectionViewProtocol {
                 self.showAdsView()
             }, cancelTitle: "no_text".Localizable(), cancelAction: {})
         } else {
-            self.presenter?.navigateToDetail(symbol: data)
+            self.presenter?.navigateToDetail(symbol: data, currentIndexPath: self.currentIndexPath)
+            
         }
     }
     
