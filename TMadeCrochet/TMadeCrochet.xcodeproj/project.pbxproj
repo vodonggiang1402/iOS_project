@@ -2180,7 +2180,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TMadeCrochet/Configs/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Moc & Dan";
+				INFOPLIST_KEY_CFBundleDisplayName = "Moc & Dan (Dev)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
