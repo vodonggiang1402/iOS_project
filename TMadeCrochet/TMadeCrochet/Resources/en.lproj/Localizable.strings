@@ -64,6 +64,7 @@
 "chain_crochet_content_1" = "With hook behind yarn.";
 "chain_crochet_content_2" = "Using left thumb and middle finger.";
 "chain_crochet_content_3" = "Draw yarn through loop.";
+"chain_crochet_content_4" = "3 sts worked. Continue working the required number of sts (by counting sts made below hook).";
 
 "single_crochet_name" = "Single";
 "single_crochet_description" = "";
@@ -85,7 +86,7 @@
 "double_crochet_content_2" = "Yarn over hook and draw through loop as shown.";
 "double_crochet_content_3" = "Yarn over hook again and draw through two loops on hook.";
 "double_crochet_content_4" = "Yarn over hook once more and draw through remaining two loops on hook.";
-"double_crochet_content_5" = "1dc (double crochet) done";
+"double_crochet_content_5" = "1dc (double crochet) done.";
 
 
 "triple_crochet_name" = "Triple";
@@ -94,7 +95,7 @@
 "triple_crochet_content_2" = "Yarn over hook and draw through loop.";
 "triple_crochet_content_3" = "Yarn over hook and draw through first twoo loops on hook.";
 "triple_crochet_content_4" = "Yarn over hook and draw through first two loops on hook two more times.";
-"triple_crochet_content_5" = "1tr (treble crochet) done";
+"triple_crochet_content_5" = "1tr (triple crochet) done.";
 
 "double_triple_crochet_name" = "Double triple";
 "double_triple_crochet_description" = "";
@@ -102,7 +103,7 @@
 "double_triple_crochet_content_2" = "Yarn over hook and draw through loop.";
 "double_triple_crochet_content_3" = "Yarn over hook again and draw through first two loops on hook.";
 "double_triple_crochet_content_4" = "Repeat the previous step three more times.";
-"double_triple_crochet_content_5" = "1dtr ( double- treble crochet) done.";
+"double_triple_crochet_content_5" = "1dtr (double-triple crochet) done.";
 
 
 //Mũi hạt bắp
@@ -135,20 +136,21 @@
 "2sc_into_same_st_crochet_content_1" = "Work 1 sc into the top loops of st from the pre row.";
 "2sc_into_same_st_crochet_content_2" = "Yarn over hook and draw through.";
 "2sc_into_same_st_crochet_content_3" = "Work 1 more sc into the same st.";
-"2sc_into_same_st_crochet_content_4" = "2 sc worked into same st. 1 st increased.";
+"2sc_into_same_st_crochet_content_4" = "2sc worked into same st. 1 st increased.";
 
 "1sc_1ch_1sc_crochet_name" = "(1sc-1ch-1sc) into same st";
 "1sc_1ch_1sc_crochet_description" = "";
-"1sc_1ch_1sc_crochet_content_1" = "Work 1 sc into the top loops of st from the pre row and yarn over hook.";
+"1sc_1ch_1sc_crochet_content_1" = "Work 1sc into the top loops of st from the pre row and yarn over hook.";
 "1sc_1ch_1sc_crochet_content_2" = "Make 1 chain and then insert hook into the same st.";
 "1sc_1ch_1sc_crochet_content_3" = "Draw through and work a sc.";
-"1sc_1ch_1sc_crochet_content_4" = "2 scs with 1 ch worked into same st. 2 sts increased.";
+"1sc_1ch_1sc_crochet_content_4" = "2scs with 1ch worked into same st. 2sts increased.";
 
 "3sc_into_same_st_crochet_name" = "3sc into same st";
 "3sc_into_same_st_crochet_description" = "";
-"3sc_into_same_st_crochet_content_1" = "Work 1 sc into the top loops of st from the pre row.";
+"3sc_into_same_st_crochet_content_1" = "Work 1sc into the top loops of st from the pre row.";
 "3sc_into_same_st_crochet_content_2" = "Work one more sc into the same st.";
 "3sc_into_same_st_crochet_content_3" = "Work 1 more sc into the same st.";
+"3sc_into_same_st_crochet_content_4" = "3sc worked into same st. 2 sts increased.";
 
 "2hdcs_into_same_st_crochet_name" = "2hdcs into same st";
 "2hdcs_into_same_st_crochet_description" = "";
@@ -198,7 +200,7 @@
 "sc2tog_crochet_content_1" = "Insert hook into the both loops of the prev row as shown and yarn over hook.";
 "sc2tog_crochet_content_2" = "Draw through. Repeat by inserting hook into next st and yarn over hook and draw through.";
 "sc2tog_crochet_content_3" = "This makes two incomplete scs. Yarn over and draw through 3 loops on hook all at once.";
-"sc2tog_crochet_content_4" = "This completes a sc2tog";
+"sc2tog_crochet_content_4" = "This completes a sc2tog.";
 
 "hdc2tog_crochet_name" = "half-double crochet 2 stitches together hdc2tog";
 "hdc2tog_crochet_description" = "";
@@ -223,7 +225,7 @@
 
 "sc3tog_skipping_the_center_stich_crochet_name" = "sc3tog(skipping the center st)";
 "sc3tog_skipping_the_center_stich_crochet_description" = "";
-"sc3tog_skipping_the_center_stich_crochet_content_1" = "Insert hook into the both loops of the first of three sts";
+"sc3tog_skipping_the_center_stich_crochet_content_1" = "Insert hook into the both loops of the first of three sts.";
 "sc3tog_skipping_the_center_stich_crochet_content_2" = "This makes two incomplete scs. Yarn over and draw through all 3 loops on hook at once.";
 "sc3tog_skipping_the_center_stich_crochet_content_3" = "This completes a sc3tog.";
 
@@ -240,7 +242,7 @@
 "dc3tog_crochet_content_1" = "Yarn over and insert hook into the back loop of chain st and work an incomplete dc.";
 "dc3tog_crochet_content_2" = "Work 2 more incomplete dc in each of the next 2 sts.";
 "dc3tog_crochet_content_3" = "Yarn over hook and draw through all 4 loops on hook at once.";
-"dc3tog_crochet_content_4" = "This completes a dc3tog";
+"dc3tog_crochet_content_4" = "This completes a dc3tog.";
 
 //Header title
 "count_screen_header_title" = "Counter";
