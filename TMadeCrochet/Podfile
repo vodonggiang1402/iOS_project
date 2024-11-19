@@ -13,6 +13,7 @@ def shared_pods
   pod 'Firebase'
   pod 'FirebaseAnalytics'
   pod 'FirebaseCrashlytics'
+  pod 'FirebaseMessaging'
   
 end
 
