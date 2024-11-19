@@ -45,7 +45,7 @@
 "step_text" = "Bước %d";
 //Mũi cơ bản
 "slip_knot_crochet_name" = "Mũi gút";
-"slip_knot_crochet_description" = "Trong các hướng dẫn của chart móc thì mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên.";
+"stitch_slip_knot_crochet_description" = "Trong các hướng dẫn của chart móc thì mũi gút(slip knot) thường không được viết và chúng không tính là mũi đầu tiên.";
 "slip_knot_crochet_content_1" = "Đặt kim móc sau sợi len.";
 "slip_knot_crochet_content_2" = "Vòng kim ra phía trước sợi len và ngoặc kim lên để tạo thành 1 vòng tròn.";
 "slip_knot_crochet_content_3" = "Dùng kim lấy len và kéo qua vòng tròn vừa tạo.";
