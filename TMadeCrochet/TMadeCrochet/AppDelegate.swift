@@ -11,6 +11,7 @@ import Firebase
 import FirebaseCore
 import FirebaseCrashlytics
 import FirebaseAnalytics
+import FirebaseMessaging
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,10 +31,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use Firebase library to configure APIs
         FirebaseApp.configure()
         
+        // 2
+        FirebaseConfiguration.shared.setLoggerLevel(.min)
+        
+        Messaging.messaging().delegate = self
+        
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         if Configs.share.env == .dev {
             GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [AppConstant.testDeviceIdentifiers]
         }
+        
+        // 1
+        UNUserNotificationCenter.current().delegate = self
+        // 2
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(
+          options: authOptions) { _, _ in }
+        // 3
+        application.registerForRemoteNotifications()
         
         return true
     }
@@ -66,6 +81,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.showAdsOpenApp()
         }
     }
+    
+    func application(
+      _ application: UIApplication,
+      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
+    ) {
+      Messaging.messaging().apnsToken = deviceToken
+    }
 
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+  func userNotificationCenter(
+    _ center: UNUserNotificationCenter,
+    willPresent notification: UNNotification,
+    withCompletionHandler completionHandler:
+    @escaping (UNNotificationPresentationOptions) -> Void
+  ) {
+    completionHandler([[.banner, .sound]])
+  }
+
+  func userNotificationCenter(
+    _ center: UNUserNotificationCenter,
+    didReceive response: UNNotificationResponse,
+    withCompletionHandler completionHandler: @escaping () -> Void
+  ) {
+    completionHandler()
+  }
+}
+
+extension AppDelegate: MessagingDelegate {
+  func messaging(
+    _ messaging: Messaging,
+    didReceiveRegistrationToken fcmToken: String?
+  ) {
+    let tokenDict = ["token": fcmToken ?? ""]
+    NotificationCenter.default.post(
+      name: Notification.Name("FCMToken"),
+      object: nil,
+      userInfo: tokenDict)
+  }
+}
