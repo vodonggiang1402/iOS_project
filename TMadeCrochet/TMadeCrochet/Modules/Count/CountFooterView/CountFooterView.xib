@@ -33,14 +33,13 @@
                                     <color key="textColor" name="color_7f7f7f_565656"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gY-Ei-YxK">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gY-Ei-YxK">
                                     <rect key="frame" x="282" y="0.0" width="100" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="100" id="RfD-4B-0yd"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="Thêm">
+                                    <state key="normal" image="ico_add_counter">
                                         <color key="titleColor" name="color_background_main"/>
                                     </state>
                                     <connections>
@@ -76,6 +75,7 @@
         </collectionReusableView>
     </objects>
     <resources>
+        <image name="ico_add_counter" width="20" height="20"/>
         <image name="ico_count_sub" width="20" height="50"/>
         <namedColor name="color_7f7f7f_565656">
             <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
