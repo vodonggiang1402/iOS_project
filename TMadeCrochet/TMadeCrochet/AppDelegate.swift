@@ -34,8 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 2
         FirebaseConfiguration.shared.setLoggerLevel(.min)
         
-        Messaging.messaging().delegate = self
-        
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         if Configs.share.env == .dev {
             GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [AppConstant.testDeviceIdentifiers]
@@ -49,6 +47,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           options: authOptions) { _, _ in }
         // 3
         application.registerForRemoteNotifications()
+        
+        
+        Messaging.messaging().delegate = self
         
         return true
     }
