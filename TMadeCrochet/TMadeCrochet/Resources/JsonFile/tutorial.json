@@ -7,32 +7,61 @@
         "color" : "FFA500",
         "list": [
             {
-                "item_name" : "Hướng dẫn kỹ thuật kết thúc hàng tinh tế",
+                "item_name" : "Hướng dẫn kỹ thuật kết thúc hàng tinh tế.",
                 "item_des" : "Mô tả: Khi xuất hiện cụm từ fasten off trong chart móc tiếng Anh, các bạn áp dụng ngay kỹ thuật này nhé.",
                 "item_color" : "FFA500",
                 "item_image" : "",
                 "item_url" : "UxbRYPuL1js"
             },
             {
-                "item_name" : "Hướng dẫn kỹ thuật tản mũi",
+                "item_name" : "Hướng dẫn kỹ thuật tản mũi.",
                 "item_des" : "Mô tả: Kỹ thuật này giúp các bạn có thể móc được 1 hình tròn hoàn hảo",
                 "item_color" : "FFA500",
                 "item_image" : "",
                 "item_url" : "6mkKwNXCo1o"
             },
             {
-                "item_name" : "Hướng dẫn kỹ thuật giảm mũi tàng hình",
+                "item_name" : "Hướng dẫn kỹ thuật giảm mũi tàng hình.",
                 "item_des" : "Mô tả: Kỹ thuật này giúp các bạn có thể giảm mũi không hề bị nhô lên trên bề mặt sản phẩm, mà nằm bằng với các mũi móc khác.",
                 "item_color" : "FFA500",
                 "item_image" : "",
                 "item_url" : "_RonpB9lGJk"
             },
             {
-                "item_name" : "Hướng dẫn kỹ thuật tăng mũi tàng hình",
+                "item_name" : "Hướng dẫn kỹ thuật tăng mũi tàng hình.",
                 "item_des" : "Kỹ thuật này giúp các bạn có thể khéo léo tăng được chân mũi cho hàng tiếp theo mà vẫn không làm rộng chân mũi.",
                 "item_color" : "FFA500",
                 "item_image" : "",
                 "item_url" : "_aD0YNJhMlA"
+            }
+        ]
+        },
+        {
+        "tutorial_name" : "noel_key_name",
+        "tutorial_des" : "",
+        "tutorial_image" : "noel_image",
+        "color" : "FFA500",
+        "list": [
+            {
+                "item_name" : "Hướng dẫn móc cây thông noel.",
+                "item_des" : "Mô tả: Những cây thông Noel đẹp mắt, rực rỡ được làm từ các cuộn len đầy màu sắc, giấy bìa.",
+                "item_color" : "FFA500",
+                "item_image" : "",
+                "item_url" : "tLVa29PKcGM"
+            },
+            {
+                "item_name" : "Crochet Christmas Tree.",
+                "item_des" : "Mô tả: Mùa noel sắp đến rồi! Cùng mình móc cây thông Noel nhé.",
+                "item_color" : "FFA500",
+                "item_image" : "",
+                "item_url" : "L5f1PGB6xqk"
+            },
+            {
+                "item_name" : "Crochet Christmas Tree - Hướng Dẫn Móc Cây Thông Noel Đơn Giản Nhất ",
+                "item_des" : "Mô tả: Hướng dẫn móc cây thông noel đơn giản nhất.",
+                "item_color" : "FFA500",
+                "item_image" : "",
+                "item_url" : "UFghSDkHYnw"
             }
         ]
         },
