@@ -49,7 +49,7 @@ struct AppConstant {
         set { UserDefaults.standard.setValue(newValue, forKey: "is-first-time") }
     }
     
-    static var updateDataVersion1_0_1: Bool {
+    static var updateDataVersion1_0_2: Bool {
         get { UserDefaults.standard.bool(forKey: "update-data-version-1-0-2") }
         set { UserDefaults.standard.setValue(newValue, forKey: "update-data-version-1-0-2") }
     }
