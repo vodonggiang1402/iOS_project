@@ -51,12 +51,12 @@
 "slip_knot_crochet_content_3" = "Dùng kim lấy len và kéo qua vòng tròn vừa tạo.";
 "slip_knot_crochet_content_4" = "Kéo sợi len thừa để thắt chặt mũi gút.";
 
-"slip_stich_crochet_name" = "Mũi trượt";
-"slip_stich_crochet_description" = "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng.";
-"slip_stich_crochet_content_1" = "Sợi nằm phía sau kim móc.";
-"slip_stich_crochet_content_2" = "Dùng kim lấy len và kéo len qua chân móc.";
-"slip_stich_crochet_content_3" = "Hoàn thành 1 mũi trượt. Luồn kim qua chân mũi tiếp theo.";
-"slip_stich_crochet_content_4" = "Lặp lại các bước trên để tiếp tục các mũi trượt.";
+"slip_stitch_crochet_name" = "Mũi trượt";
+"slip_stitch_crochet_description" = "Được viết tắt là SL hoặc ST, mũi này sẽ giúp bạn dời kim đến mũi mong muốn nào đó bất kỳ trên hàng móc. Mũi này thường được sử dụng để kết thúc một vòng tròn, hay giảm độ cao của hàng.";
+"slip_stitch_crochet_content_1" = "Sợi nằm phía sau kim móc.";
+"slip_stitch_crochet_content_2" = "Dùng kim lấy len và kéo len qua chân móc.";
+"slip_stitch_crochet_content_3" = "Hoàn thành 1 mũi trượt. Luồn kim qua chân mũi tiếp theo.";
+"slip_stitch_crochet_content_4" = "Lặp lại các bước trên để tiếp tục các mũi trượt.";
 
 "chain_crochet_name" = "Mũi bính";
 "chain_crochet_description" = "Mũi bính được tính là mũi móc len cơ bản đầu tiên đối với bất kỳ các loại sản phẩm nào, được viết tắt là ch. Ký hiệu của mũi bính là hình oval nằm ngang. Và để bắt đầu một mũi bính bạn cần phải tạo mũi gút trước.";
@@ -222,11 +222,11 @@
 "sc3tog_crochet_content_3" = "Ta được 3 mũi đơn chưa hoàn chỉnh. Dùng kim lấy len và kéo len qua cả 4 vòng len trên kim.";
 "sc3tog_crochet_content_4" = "Hoàn thành 1 mũi móc sc3tog (3 mũi đơn chụm đầu).";
 
-"sc3tog_skipping_the_center_stich_crochet_name" = "3 mũi đơn chụm đầu";
-"sc3tog_skipping_the_center_stich_crochet_description" = "";
-"sc3tog_skipping_the_center_stich_crochet_content_1" = "Luồn kim vào chân móc thứ nhất và thứ 3 của hàng trước và lấy len.";
-"sc3tog_skipping_the_center_stich_crochet_content_2" = "Ta được 2 mũi móc đơn chưa hoàn chỉnh. Dùng kim lấy len và kéo len qua cả 3 vòng len trên kim.";
-"sc3tog_skipping_the_center_stich_crochet_content_3" = "Hoàn thành 1 mũi móc sc3tog (bỏ qua chân móc ở giữa).";
+"sc3tog_skipping_the_center_stitch_crochet_name" = "3 mũi đơn chụm đầu";
+"sc3tog_skipping_the_center_stitch_crochet_description" = "";
+"sc3tog_skipping_the_center_stitch_crochet_content_1" = "Luồn kim vào chân móc thứ nhất và thứ 3 của hàng trước và lấy len.";
+"sc3tog_skipping_the_center_stitch_crochet_content_2" = "Ta được 2 mũi móc đơn chưa hoàn chỉnh. Dùng kim lấy len và kéo len qua cả 3 vòng len trên kim.";
+"sc3tog_skipping_the_center_stitch_crochet_content_3" = "Hoàn thành 1 mũi móc sc3tog (bỏ qua chân móc ở giữa).";
 
 "hdc3tog_crochet_name" = "3 mũi nửa kép chụm đầu";
 "hdc3tog_crochet_description" = "";

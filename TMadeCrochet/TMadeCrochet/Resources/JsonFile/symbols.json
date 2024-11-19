@@ -33,24 +33,24 @@
         "is_ads" : false,
         "symbol_id" : "2",
         "symbol_des" : "slip_stitch_crochet_description",
-        "symbol_name" : "slip_stich_crochet_name",
-        "icon_name" : "slip_stich_crochet",
+        "symbol_name" : "slip_stitch_crochet_name",
+        "icon_name" : "slip_stitch_crochet",
         "steps" : [
           {
-            "content" : "slip_stich_crochet_content_1",
-            "image_name" : "slip_stich_1"
+            "content" : "slip_stitch_crochet_content_1",
+            "image_name" : "slip_stitch_1"
           },
           {
-            "content" : "slip_stich_crochet_content_2",
-            "image_name" : "slip_stich_2"
+            "content" : "slip_stitch_crochet_content_2",
+            "image_name" : "slip_stitch_2"
           },
           {
-            "content" : "slip_stich_crochet_content_3",
-            "image_name" : "slip_stich_3"
+            "content" : "slip_stitch_crochet_content_3",
+            "image_name" : "slip_stitch_3"
           },
           {
-            "content" : "slip_stich_crochet_content_4",
-            "image_name" : "slip_stich_4"
+            "content" : "slip_stitch_crochet_content_4",
+            "image_name" : "slip_stitch_4"
           }
         ],
         "background_color" : "FED1B2",
@@ -588,19 +588,19 @@
         "steps" : [
           {
             "content" : "sc2tog_crochet_content_1",
-            "image_name" : "single_crochet_2_stiches_together_1"
+            "image_name" : "single_crochet_2_stitches_together_1"
           },
           {
             "content" : "sc2tog_crochet_content_2",
-            "image_name" : "single_crochet_2_stiches_together_2"
+            "image_name" : "single_crochet_2_stitches_together_2"
           },
           {
             "content" : "sc2tog_crochet_content_3",
-            "image_name" : "single_crochet_2_stiches_together_3"
+            "image_name" : "single_crochet_2_stitches_together_3"
           },
           {
             "content" : "sc2tog_crochet_content_4",
-            "image_name" : "single_crochet_2_stiches_together_4"
+            "image_name" : "single_crochet_2_stitches_together_4"
           }
         ],
         "background_color" : "b2d8d8",
@@ -616,19 +616,19 @@
         "steps" : [
           {
             "content" : "hdc2tog_crochet_content_1",
-            "image_name" : "haft_double_crochet_2_stiches_together_1"
+            "image_name" : "haft_double_crochet_2_stitches_together_1"
           },
           {
             "content" : "hdc2tog_crochet_content_2",
-            "image_name" : "haft_double_crochet_2_stiches_together_2"
+            "image_name" : "haft_double_crochet_2_stitches_together_2"
           },
           {
             "content" : "hdc2tog_crochet_content_3",
-            "image_name" : "haft_double_crochet_2_stiches_together_3"
+            "image_name" : "haft_double_crochet_2_stitches_together_3"
           },
           {
             "content" : "hdc2tog_crochet_content_4",
-            "image_name" : "haft_double_crochet_2_stiches_together_4"
+            "image_name" : "haft_double_crochet_2_stitches_together_4"
           }
         ],
         "background_color" : "b2d8d8",
@@ -644,19 +644,19 @@
         "steps" : [
           {
             "content" : "dc2tog_crochet_content_1",
-            "image_name" : "double_crochet_2_stiches _together_1"
+            "image_name" : "double_crochet_2_stitches _together_1"
           },
           {
             "content" : "dc2tog_crochet_content_2",
-            "image_name" : "double_crochet_2_stiches _together_2"
+            "image_name" : "double_crochet_2_stitches _together_2"
           },
           {
             "content" : "dc2tog_crochet_content_3",
-            "image_name" : "double_crochet_2_stiches _together_3"
+            "image_name" : "double_crochet_2_stitches _together_3"
           },
           {
             "content" : "dc2tog_crochet_content_4",
-            "image_name" : "double_crochet_2_stiches _together_4"
+            "image_name" : "double_crochet_2_stitches _together_4"
           }
         ],
         "background_color" : "b2d8d8",
@@ -672,19 +672,19 @@
         "steps" : [
           {
             "content" : "sc3tog_crochet_content_1",
-            "image_name" : "single_crochet_3_stiches_together_1"
+            "image_name" : "single_crochet_3_stitches_together_1"
           },
           {
             "content" : "sc3tog_crochet_content_2",
-            "image_name" : "single_crochet_3_stiches_together_2"
+            "image_name" : "single_crochet_3_stitches_together_2"
           },
           {
             "content" : "sc3tog_crochet_content_3",
-            "image_name" : "single_crochet_3_stiches_together_3"
+            "image_name" : "single_crochet_3_stitches_together_3"
           },
           {
             "content" : "sc3tog_crochet_content_4",
-            "image_name" : "single_crochet_3_stiches_together_4"
+            "image_name" : "single_crochet_3_stitches_together_4"
           }
         ],
         "background_color" : "b2d8d8",
@@ -694,21 +694,21 @@
       {
         "is_ads" : true,
         "symbol_id" : "5",
-        "symbol_des" : "sc3tog_skipping_the_center_stich_crochet_description",
-        "symbol_name" : "sc3tog_skipping_the_center_stich_crochet_name",
+        "symbol_des" : "sc3tog_skipping_the_center_stitch_crochet_description",
+        "symbol_name" : "sc3tog_skipping_the_center_stitch_crochet_name",
         "icon_name" : "ico_sc3tog",
         "steps" : [
           {
-            "content" : "sc3tog_skipping_the_center_stich_crochet_content_1",
-            "image_name" : "sc3tog_skipping_the_center_stich_1"
+            "content" : "sc3tog_skipping_the_center_stitch_crochet_content_1",
+            "image_name" : "sc3tog_skipping_the_center_stitch_1"
           },
           {
-            "content" : "sc3tog_skipping_the_center_stich_crochet_content_2",
-            "image_name" : "sc3tog_skipping_the_center_stich_2"
+            "content" : "sc3tog_skipping_the_center_stitch_crochet_content_2",
+            "image_name" : "sc3tog_skipping_the_center_stitch_2"
           },
           {
-            "content" : "sc3tog_skipping_the_center_stich_crochet_content_3",
-            "image_name" : "sc3tog_skipping_the_center_stich_3"
+            "content" : "sc3tog_skipping_the_center_stitch_crochet_content_3",
+            "image_name" : "sc3tog_skipping_the_center_stitch_3"
           }
         ],
         "background_color" : "b2d8d8",
