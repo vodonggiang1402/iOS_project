@@ -111,7 +111,6 @@
 		7B60B3E02C50C52D008D6A34 /* ContactView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3DE2C50C52D008D6A34 /* ContactView.xib */; };
 		7B60B3E12C50C52D008D6A34 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3DF2C50C52D008D6A34 /* ContactView.swift */; };
 		7B60B3E32C511670008D6A34 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3E22C511670008D6A34 /* BundleExtension.swift */; };
-		7B60B3E52C5213E6008D6A34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3E42C5213E6008D6A34 /* GoogleService-Info.plist */; };
 		7B60B3EA2C522A4A008D6A34 /* term.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7B60B3E92C522A4A008D6A34 /* term.rtf */; };
 		7B60B3EC2C526BAD008D6A34 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3EB2C526BAD008D6A34 /* Configs.swift */; };
 		7B60B3EE2C526BC1008D6A34 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60B3ED2C526BC1008D6A34 /* Enviroment.swift */; };
@@ -216,6 +215,7 @@
 		7BF32A282C33CF0A00CD8F18 /* CRRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A212C33CF0A00CD8F18 /* CRRefreshExtension.swift */; };
 		7BF32A292C33CF0A00CD8F18 /* CRRefreshProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A222C33CF0A00CD8F18 /* CRRefreshProtocol.swift */; };
 		7BF32A2A2C33CF0A00CD8F18 /* CRRefreshAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF32A232C33CF0A00CD8F18 /* CRRefreshAnimator.swift */; };
+		7BF3539A2CEC701500DCBF34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BF353992CEC701500DCBF34 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -470,7 +470,6 @@
 		7B60B3DE2C50C52D008D6A34 /* ContactView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactView.xib; sourceTree = "<group>"; };
 		7B60B3DF2C50C52D008D6A34 /* ContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		7B60B3E22C511670008D6A34 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
-		7B60B3E42C5213E6008D6A34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B60B3E92C522A4A008D6A34 /* term.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = term.rtf; sourceTree = "<group>"; };
 		7B60B3EB2C526BAD008D6A34 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		7B60B3ED2C526BC1008D6A34 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
@@ -578,6 +577,7 @@
 		7BF32A212C33CF0A00CD8F18 /* CRRefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshExtension.swift; sourceTree = "<group>"; };
 		7BF32A222C33CF0A00CD8F18 /* CRRefreshProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshProtocol.swift; sourceTree = "<group>"; };
 		7BF32A232C33CF0A00CD8F18 /* CRRefreshAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshAnimator.swift; sourceTree = "<group>"; };
+		7BF353992CEC701500DCBF34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E703A5F3BEFCB44849A92EC /* Pods-TMadeCrochet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMadeCrochet.release.xcconfig"; path = "Target Support Files/Pods-TMadeCrochet/Pods-TMadeCrochet.release.xcconfig"; sourceTree = "<group>"; };
 		8F01D6EEC97D787D255D7FE4 /* Pods_TMadeCrochetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMadeCrochetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8161D2FB1FE0FE07E1A8C66 /* Pods-TMadeCrochet-TMadeCrochetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMadeCrochet-TMadeCrochetUITests.debug.xcconfig"; path = "Target Support Files/Pods-TMadeCrochet-TMadeCrochetUITests/Pods-TMadeCrochet-TMadeCrochetUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -669,8 +669,8 @@
 		7B153E6F2C4B09B700F6718A /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				7BF353992CEC701500DCBF34 /* GoogleService-Info.plist */,
 				7B60B3F32C526E03008D6A34 /* BuildConfigurations */,
-				7B60B3E42C5213E6008D6A34 /* GoogleService-Info.plist */,
 				7B522E0F2C32511C0034EE9D /* Info.plist */,
 				7B60B3EB2C526BAD008D6A34 /* Configs.swift */,
 				7B60B3ED2C526BC1008D6A34 /* Enviroment.swift */,
@@ -1670,12 +1670,12 @@
 				7B341AA72C3512880069BD02 /* symbols.json in Resources */,
 				7B6358F22C63151200B3C782 /* UpdateInfoView.xib in Resources */,
 				7BB9951D2C3BDB5B008EF04B /* TitleViewNavigationBar.xib in Resources */,
-				7B60B3E52C5213E6008D6A34 /* GoogleService-Info.plist in Resources */,
 				7B522E7F2C3262740034EE9D /* PatternStoryboard.storyboard in Resources */,
 				7B522E752C32626E0034EE9D /* MainStoryboard.storyboard in Resources */,
 				7B522EAD2C3262930034EE9D /* SymbolStoryboard.storyboard in Resources */,
 				7B4E34912C3D04630059167A /* SymbolCollectionCell.xib in Resources */,
 				7B341A212C33FDE70069BD02 /* MainTableCell.xib in Resources */,
+				7BF3539A2CEC701500DCBF34 /* GoogleService-Info.plist in Resources */,
 				7BDB14BD2C4E19EE0081676D /* TermStoryboard.storyboard in Resources */,
 				7B6A5A062C64BC0F00098924 /* AlertView.xib in Resources */,
 			);
