@@ -50,8 +50,8 @@ struct AppConstant {
     }
     
     static var updateDataVersion1_0_1: Bool {
-        get { UserDefaults.standard.bool(forKey: "update-data-version-1-0-1") }
-        set { UserDefaults.standard.setValue(newValue, forKey: "update-data-version-1-0-1") }
+        get { UserDefaults.standard.bool(forKey: "update-data-version-1-0-2") }
+        set { UserDefaults.standard.setValue(newValue, forKey: "update-data-version-1-0-2") }
     }
     
     static var symbolResponseData: SymbolResponseData? {
