@@ -28,6 +28,7 @@ class SymbolDetailViewController: BaseViewController, YouTubePlayerDelegate {
     var presenter: ViewToPresenterSymbolDetailProtocol?
     
     var isChangeData: Bool = false
+    var isBackAction: Bool = false
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -64,6 +65,12 @@ class SymbolDetailViewController: BaseViewController, YouTubePlayerDelegate {
         self.configVideo()
         self.loadVideo()
         self.startGoogleMobileAdsSDK()
+    }
+    
+    // MARK: - NavigationBar Action
+    override func tappedLeftBarButton(sender : UIButton) {
+        self.isBackAction = true
+        self.showAdsView()
     }
     
     func configVideo() {
@@ -104,7 +111,7 @@ class SymbolDetailViewController: BaseViewController, YouTubePlayerDelegate {
     }
     
     @IBAction func playButtonAction(_ sender: Any) {
-        self.showAds()
+        self.showAdsView()
     }
     
     func updateVideoCount() {
@@ -124,7 +131,11 @@ class SymbolDetailViewController: BaseViewController, YouTubePlayerDelegate {
     }
 
     override func updateDataWhenAdsHiden() {
-        self.playVideo()
+        if self.isBackAction == true {
+            self.navigationController?.popViewController(animated: true)
+        } else {
+            self.playVideo()
+        }
     }
     
     func playVideo() {
@@ -192,6 +203,12 @@ class SymbolDetailViewController: BaseViewController, YouTubePlayerDelegate {
     
     func playerQualityChanged(_ videoPlayer: YouTubePlayer.YouTubePlayerView, playbackQuality: YouTubePlayer.YouTubePlaybackQuality) {
         
+    }
+    
+    func showAdsView() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.showAds()
+        }
     }
 }
     
