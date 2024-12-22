@@ -103,7 +103,7 @@ class SymbolDetailViewController: BaseViewController, YouTubePlayerDelegate {
                 "fs": "0",
                 "playsinline" : "0"
                 ] as YouTubePlayerView.YouTubePlayerParameters
-            if let url = URL(string: videoUrl) {
+            if let url = URL(string: "https://youtu.be/\(videoUrl)") {
                 videoPlayer.loadVideoURL(url)
             }
         }
@@ -139,14 +139,20 @@ class SymbolDetailViewController: BaseViewController, YouTubePlayerDelegate {
     }
     
     func playVideo() {
-        if videoPlayer.ready {
-            if videoPlayer.playerState != YouTubePlayerState.Playing {
-                videoPlayer.play()
-                self.playButton.isHidden = true
-            } else {
-                self.playButton.isHidden = false
-                videoPlayer.pause()
-            }
+        if let videoUrl = self.presenter?.symbol?.videoUrl {
+            self.openYoutubeApp(withId: videoUrl);
+        }
+    }
+    
+    func openYoutubeApp(withId: String) {
+        let appURL = NSURL(string: "youtube://www.youtube.com/watch?v=\(withId)")!
+        let webURL = NSURL(string: "https://www.youtube.com/watch?v=\(withId)")!
+        let application = UIApplication.shared
+        if application.canOpenURL(appURL as URL) {
+           application.open(appURL as URL)
+        } else {
+           // if Youtube app is not installed, open URL inside Safari
+           application.open(webURL as URL)
         }
     }
     
