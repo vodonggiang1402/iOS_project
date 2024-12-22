@@ -771,6 +771,288 @@
         "video_url" : "Fq2gJFZgRKo",
         "video_count": 0
       }
+    ],
+    [
+        {
+          "is_ads" : true,
+          "symbol_id" : "1",
+          "symbol_des" : "sc_into_ws_loop_only_working_back_and_forth_crochet_description",
+          "symbol_name" : "sc_into_ws_loop_only_working_back_and_forth_crochet_name",
+          "icon_name" : "ico_sc_into_ws_loop_only_working_back_and_forth",
+          "steps" : [
+            {
+              "content" : "sc_into_ws_loop_only_working_back_and_forth_crochet_content_1",
+              "image_name" : "sc_into_ws_loop_only_working_back_and_forth_1"
+            },
+            {
+              "content" : "sc_into_ws_loop_only_working_back_and_forth_crochet_content_2",
+              "image_name" : "sc_into_ws_loop_only_working_back_and_forth_2"
+            },
+            {
+              "content" : "sc_into_ws_loop_only_working_back_and_forth_crochet_content_3",
+              "image_name" : "sc_into_ws_loop_only_working_back_and_forth_3"
+            },
+            {
+              "content" : "sc_into_ws_loop_only_working_back_and_forth_crochet_content_4",
+              "image_name" : "sc_into_ws_loop_only_working_back_and_forth_4"
+            }
+          ],
+          "background_color" : "de564c",
+          "video_url" : "Fq2gJFZgRKo",
+          "video_count": 0
+        },
+        {
+          "is_ads" : true,
+          "symbol_id" : "1",
+          "symbol_des" : "sc_into_blo_working_in_the_round_crochet_description",
+          "symbol_name" : "sc_into_blo_working_in_the_round_crochet_name",
+          "icon_name" : "ico_sc_into_blo_working_in_the_round",
+          "steps" : [
+            {
+              "content" : "sc_into_blo_working_in_the_round_crochet_content_1",
+              "image_name" : "sc_into_blo_working_in_the_round_1"
+            },
+            {
+              "content" : "sc_into_blo_working_in_the_round_crochet_content_2",
+              "image_name" : "sc_into_blo_working_in_the_round_2"
+            },
+            {
+              "content" : "sc_into_blo_working_in_the_round_crochet_content_3",
+              "image_name" : "sc_into_blo_working_in_the_round_3"
+            },
+            {
+              "content" : "sc_into_blo_working_in_the_round_crochet_content_4",
+              "image_name" : "sc_into_blo_working_in_the_round_4"
+            }
+          ],
+          "background_color" : "de564c",
+          "video_url" : "Fq2gJFZgRKo",
+          "video_count": 0
+        },
+        {
+          "is_ads" : true,
+          "symbol_id" : "1",
+          "symbol_des" : "sc_into_blo_working_back_and_forth_crochet_description",
+          "symbol_name" : "sc_into_blo_working_back_and_forth_crochet_name",
+          "icon_name" : "ico_sc_into_blo_working_back_and_forth",
+          "steps" : [
+            {
+              "content" : "sc_into_blo_working_back_and_forth_crochet_content_1",
+              "image_name" : "sc_into_blo_working_back_and_forth_1"
+            },
+            {
+              "content" : "sc_into_blo_working_back_and_forth_crochet_content_2",
+              "image_name" : "sc_into_blo_working_back_and_forth_2"
+            },
+            {
+              "content" : "sc_into_blo_working_back_and_forth_crochet_content_3",
+              "image_name" : "sc_into_blo_working_back_and_forth_3"
+            },
+            {
+              "content" : "sc_into_blo_working_back_and_forth_crochet_content_4",
+              "image_name" : "sc_into_blo_working_back_and_forth_4"
+            }
+          ],
+          "background_color" : "de564c",
+          "video_url" : "Fq2gJFZgRKo",
+          "video_count": 0
+        },
+        {
+          "is_ads" : true,
+          "symbol_id" : "1",
+          "symbol_des" : "hdc_into_blo_working_in_the_round_crochet_description",
+          "symbol_name" : "hdc_into_blo_working_in_the_round_crochet_name",
+          "icon_name" : "ico_hdc_into_blo_working_in_the_round",
+          "steps" : [
+            {
+              "content" : "hdc_into_blo_working_in_the_round_crochet_content_1",
+              "image_name" : "hdc_into_blo_working_in_the_round_1"
+            },
+            {
+              "content" : "hdc_into_blo_working_in_the_round_crochet_content_2",
+              "image_name" : "hdc_into_blo_working_in_the_round_2"
+            },
+            {
+              "content" : "hdc_into_blo_working_in_the_round_crochet_content_3",
+              "image_name" : "hdc_into_blo_working_in_the_round_3"
+            },
+            {
+              "content" : "hdc_into_blo_working_in_the_round_crochet_content_4",
+              "image_name" : "hdc_into_blo_working_in_the_round_4"
+            }
+          ],
+          "background_color" : "de564c",
+          "video_url" : "Fq2gJFZgRKo",
+          "video_count": 0
+        },
+        {
+          "is_ads" : true,
+          "symbol_id" : "1",
+          "symbol_des" : "dc_into_blo_working_in_the_round_crochet_description",
+          "symbol_name" : "dc_into_blo_working_in_the_round_crochet_name",
+          "icon_name" : "ico_dc_into_blo_working_in_the_round",
+          "steps" : [
+            {
+              "content" : "dc_into_blo_working_in_the_round_crochet_content_1",
+              "image_name" : "dc_into_blo_working_in_the_round_1"
+            },
+            {
+              "content" : "dc_into_blo_working_in_the_round_crochet_content_2",
+              "image_name" : "dc_into_blo_working_in_the_round_2"
+            },
+            {
+              "content" : "dc_into_blo_working_in_the_round_crochet_content_3",
+              "image_name" : "dc_into_blo_working_in_the_round_3"
+            },
+            {
+              "content" : "dc_into_blo_working_in_the_round_crochet_content_4",
+              "image_name" : "dc_into_blo_working_in_the_round_4"
+            }
+          ],
+          "background_color" : "de564c",
+          "video_url" : "Fq2gJFZgRKo",
+          "video_count": 0
+        },
+        {
+          "is_ads" : true,
+          "symbol_id" : "1",
+          "symbol_des" : "ch3_picot_crochet_description",
+          "symbol_name" : "ch3_picot_crochet_name",
+          "icon_name" : "ico_ch3_picot",
+          "steps" : [
+            {
+              "content" : "ch3_picot_crochet_content_1",
+              "image_name" : "ch3_picot_1"
+            },
+            {
+              "content" : "ch3_picot_crochet_content_2",
+              "image_name" : "ch3_picot_2"
+            },
+            {
+              "content" : "ch3_picot_crochet_content_3",
+              "image_name" : "ch3_picot_3"
+            },
+            {
+              "content" : "ch3_picot_crochet_content_4",
+              "image_name" : "ch3_picot_4"
+            }
+          ],
+          "background_color" : "de564c",
+          "video_url" : "Fq2gJFZgRKo",
+          "video_count": 0
+        },
+        {
+          "is_ads" : true,
+          "symbol_id" : "1",
+          "symbol_des" : "ch3_sl_st_picot_onto_sc_crochet_description",
+          "symbol_name" : "ch3_sl_st_picot_onto_sc_crochet_name",
+          "icon_name" : "ico_ch3_sl_st_picot_onto_sc",
+          "steps" : [
+            {
+              "content" : "ch3_sl_st_picot_onto_sc_crochet_content_1",
+              "image_name" : "ch3_sl_st_picot_onto_sc_1"
+            },
+            {
+              "content" : "ch3_sl_st_picot_onto_sc_crochet_content_2",
+              "image_name" : "ch3_sl_st_picot_onto_sc_2"
+            },
+            {
+              "content" : "ch3_sl_st_picot_onto_sc_crochet_content_3",
+              "image_name" : "ch3_sl_st_picot_onto_sc_3"
+            },
+            {
+              "content" : "ch3_sl_st_picot_onto_sc_crochet_content_4",
+              "image_name" : "ch3_sl_st_picot_onto_sc_4"
+            }
+          ],
+          "background_color" : "de564c",
+          "video_url" : "Fq2gJFZgRKo",
+          "video_count": 0
+        },
+        {
+          "is_ads" : true,
+          "symbol_id" : "1",
+          "symbol_des" : "ch3_sc_picot_crochet_description",
+          "symbol_name" : "ch3_sc_picot_crochet_name",
+          "icon_name" : "ico_ch3_sc_picot",
+          "steps" : [
+            {
+              "content" : "ch3_sc_picot_crochet_content_1",
+              "image_name" : "ch3_sc_picot_1"
+            },
+            {
+              "content" : "ch3_sc_picot_crochet_content_2",
+              "image_name" : "ch3_sc_picot_2"
+            },
+            {
+              "content" : "ch3_sc_picot_crochet_content_3",
+              "image_name" : "ch3_sc_picot_3"
+            },
+            {
+              "content" : "ch3_sc_picot_crochet_content_4",
+              "image_name" : "ch3_sc_picot_4"
+            }
+          ],
+          "background_color" : "de564c",
+          "video_url" : "Fq2gJFZgRKo",
+          "video_count": 0
+        },
+        {
+          "is_ads" : true,
+          "symbol_id" : "1",
+          "symbol_des" : "ch3_sl_st_picot_onto_dc_crochet_description",
+          "symbol_name" : "ch3_sl_st_picot_onto_dc_crochet_name",
+          "icon_name" : "ico_ch3_sl_st_picot_onto_dc",
+          "steps" : [
+            {
+              "content" : "ch3_sl_st_picot_onto_dc_crochet_content_1",
+              "image_name" : "ch3_sl_st_picot_onto_dc_1"
+            },
+            {
+              "content" : "ch3_sl_st_picot_onto_dc_crochet_content_2",
+              "image_name" : "ch3_sl_st_picot_onto_dc_2"
+            },
+            {
+              "content" : "ch3_sl_st_picot_onto_dc_crochet_content_3",
+              "image_name" : "ch3_sl_st_picot_onto_dc_3"
+            },
+            {
+              "content" : "ch3_sl_st_picot_onto_dc_crochet_content_4",
+              "image_name" : "ch3_sl_st_picot_onto_dc_4"
+            }
+          ],
+          "background_color" : "de564c",
+          "video_url" : "Fq2gJFZgRKo",
+          "video_count": 0
+        },
+        {
+          "is_ads" : true,
+          "symbol_id" : "1",
+          "symbol_des" : "ch3_sl_st_picot_between_ch_sts_crochet_description",
+          "symbol_name" : "ch3_sl_st_picot_between_ch_sts_crochet_name",
+          "icon_name" : "ico_ch3_sl_st_picot_between_ch_sts",
+          "steps" : [
+            {
+              "content" : "ch3_sl_st_picot_between_ch_sts_crochet_content_1",
+              "image_name" : "ch3_sl_st_picot_between_ch_sts_1"
+            },
+            {
+              "content" : "ch3_sl_st_picot_between_ch_sts_crochet_content_2",
+              "image_name" : "ch3_sl_st_picot_between_ch_sts_2"
+            },
+            {
+              "content" : "ch3_sl_st_picot_between_ch_sts_crochet_content_3",
+              "image_name" : "ch3_sl_st_picot_between_ch_sts_3"
+            },
+            {
+              "content" : "ch3_sl_st_picot_between_ch_sts_crochet_content_4",
+              "image_name" : "ch3_sl_st_picot_between_ch_sts_4"
+            }
+          ],
+          "background_color" : "de564c",
+          "video_url" : "Fq2gJFZgRKo",
+          "video_count": 0
+        }
     ]
   ]
 }

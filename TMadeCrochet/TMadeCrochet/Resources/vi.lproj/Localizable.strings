@@ -40,7 +40,7 @@
 "increases_stitches" = "Mũi tăng";
 "decreases_stitches" = "Mũi giảm";
 "blo_flo_stitches" = "Mũi BLO & FLO";
-
+"crossed_stitches_cables" = "Crossed stitches, cables";
 
 "step_text" = "Bước %d";
 //Mũi cơ bản
@@ -241,6 +241,77 @@
 "dc3tog_crochet_content_2" = "Móc 1 mũi  kép chưa hoàn chỉnh sau đó móc thêm 2 mũi kép chưa hoàn chỉnh nữa.";
 "dc3tog_crochet_content_3" = "Dùng kim lấy len và kéo qua cả 4 vòng len trên kim.";
 "dc3tog_crochet_content_4" = "Hoàn thành 1 mũi dc3tog (3 mũi kép chụm đầu).";
+
+//Crossed stitches, cables
+"sc_into_ws_loop_only_working_back_and_forth_crochet_name" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_description" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_1" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_2" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_3" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_4" = "";
+
+"sc_into_blo_working_in_the_round_crochet_name" = "";
+"sc_into_blo_working_in_the_round_crochet_description" = "";
+"sc_into_blo_working_in_the_round_crochet_content_1" = "";
+"sc_into_blo_working_in_the_round_crochet_content_2" = "";
+"sc_into_blo_working_in_the_round_crochet_content_3" = "";
+"sc_into_blo_working_in_the_round_crochet_content_4" = "";
+
+"sc_into_blo_working_back_and_forth_crochet_name" = "";
+"sc_into_blo_working_back_and_forth_crochet_description" = "";
+"sc_into_blo_working_back_and_forth_crochet_content_1" = "";
+"sc_into_blo_working_back_and_forth_crochet_content_2" = "";
+"sc_into_blo_working_back_and_forth_crochet_content_3" = "";
+"sc_into_blo_working_back_and_forth_crochet_content_4" = "";
+
+"hdc_into_blo_working_in_the_round_crochet_name" = "";
+"hdc_into_blo_working_in_the_round_crochet_description" = "";
+"hdc_into_blo_working_in_the_round_crochet_content_1" = "";
+"hdc_into_blo_working_in_the_round_crochet_content_2" = "";
+"hdc_into_blo_working_in_the_round_crochet_content_3" = "";
+"hdc_into_blo_working_in_the_round_crochet_content_4" = "";
+
+"dc_into_blo_working_in_the_round_crochet_name" = "";
+"dc_into_blo_working_in_the_round_crochet_description" = "";
+"dc_into_blo_working_in_the_round_crochet_content_1" = "";
+"dc_into_blo_working_in_the_round_crochet_content_2" = "";
+"dc_into_blo_working_in_the_round_crochet_content_3" = "";
+"dc_into_blo_working_in_the_round_crochet_content_4" = "";
+
+"ch3_picot_crochet_name" = "";
+"ch3_picot_crochet_description" = "";
+"ch3_picot_crochet_content_1" = "";
+"ch3_picot_crochet_content_2" = "";
+"ch3_picot_crochet_content_3" = "";
+"ch3_picot_crochet_content_4" = "";
+
+"ch3_sl_st_picot_onto_sc_crochet_name" = "";
+"ch3_sl_st_picot_onto_sc_crochet_description" = "";
+"ch3_sl_st_picot_onto_sc_crochet_content_1" = "";
+"ch3_sl_st_picot_onto_sc_crochet_content_2" = "";
+"ch3_sl_st_picot_onto_sc_crochet_content_3" = "";
+"ch3_sl_st_picot_onto_sc_crochet_content_4" = "";
+
+"ch3_sc_picot_crochet_name" = "";
+"ch3_sc_picot_crochet_description" = "";
+"ch3_sc_picot_crochet_content_1" = "";
+"ch3_sc_picot_crochet_content_2" = "";
+"ch3_sc_picot_crochet_content_3" = "";
+"ch3_sc_picot_crochet_content_4" = "";
+
+"ch3_sl_st_picot_onto_dc_crochet_name" = "";
+"ch3_sl_st_picot_onto_dc_crochet_description" = "";
+"ch3_sl_st_picot_onto_dc_crochet_content_1" = "";
+"ch3_sl_st_picot_onto_dc_crochet_content_2" = "";
+"ch3_sl_st_picot_onto_dc_crochet_content_3" = "";
+"ch3_sl_st_picot_onto_dc_crochet_content_4" = "";
+
+"ch3_sl_st_picot_between_ch_sts_crochet_name" = "";
+"ch3_sl_st_picot_between_ch_sts_crochet_description" = "";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_1" = "";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_2" = "";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_3" = "";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_4" = "";
 
 //Header title
 "count_screen_header_title" = "Bộ đếm";

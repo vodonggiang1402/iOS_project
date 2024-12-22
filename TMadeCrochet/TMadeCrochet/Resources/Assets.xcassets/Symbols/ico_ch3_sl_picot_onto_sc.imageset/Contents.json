@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "ico_ch3_sl_picot_onto_sc.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "ico_ch3_sl_picot_onto_sc 1.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

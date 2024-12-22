@@ -143,6 +143,9 @@ extension SymbolViewController: BaseCollectionViewProtocol {
                     case 3:
                         headerView.setupView(text: "decreases_stitches".Localizable(), imageStr: "ico_symbol_4")
                         break
+                    case 4:
+                        headerView.setupView(text: "blo_flo_stitches".Localizable(), imageStr: "ico_symbol_5")
+                        break
                     default:
                         headerView.setupView(text: "basic_stitches".Localizable(), imageStr: "ico_symbol_1")
                     }
@@ -155,7 +158,7 @@ extension SymbolViewController: BaseCollectionViewProtocol {
           case 3:
                 let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: UpdateInfoView.className, for: indexPath)
                 if let footerView = footerView as? UpdateInfoView {
-                    footerView.setupView(text: "blo_flo_stitches".Localizable(), imageStr: "ico_symbol_5")
+                    footerView.setupView(text: "crossed_stitches_cables".Localizable(), imageStr: "ico_symbol_6")
                 }
                 return footerView
           default:

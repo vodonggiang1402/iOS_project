@@ -25,7 +25,7 @@ class ListTutorialCollectionCell: BaseCollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.videoBtn.setTitle("", for: .normal)
-        self.videoBtn.backgroundColor = UIColor.white.withAlphaComponent(0.8)
+        self.videoBtn.backgroundColor = UIColor.white.withAlphaComponent(0.5)
     }
     
     func loadVideo(linkId: String) {
