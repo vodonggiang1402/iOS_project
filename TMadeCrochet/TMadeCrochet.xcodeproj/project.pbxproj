@@ -2178,7 +2178,7 @@
 				CODE_SIGN_ENTITLEMENTS = TMadeCrochet/TMadeCrochet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = S3KCS74MJ4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2197,7 +2197,7 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/swift",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENDPOINT_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmadecrochet.dev;
 				PRODUCT_NAME = "Moc & Dan";
@@ -2223,7 +2223,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution: Giang Vo (S3KCS74MJ4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: Giang Vo (S3KCS74MJ4)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.3;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = S3KCS74MJ4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2243,7 +2243,7 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/swift",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ENDPOINT_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmadecrochet.release;
 				PRODUCT_NAME = "Moc & Dan";

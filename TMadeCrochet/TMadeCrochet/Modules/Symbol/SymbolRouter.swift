@@ -41,7 +41,7 @@ class SymbolRouter: PresenterToRouterSymbolProtocol {
     }
 
     func navigateToDetail(symbol: Symbol, currentIndexPath: IndexPath) {
-        SymbolDetailRouter().showScreenAsModal(symbol: symbol, currentIndexPath: currentIndexPath)
+        SymbolDetailRouter().showScreen(symbol: symbol, currentIndexPath: currentIndexPath)
     }
 }
 

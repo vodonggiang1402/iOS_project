@@ -12,13 +12,10 @@ import YouTubePlayer
 
 class SymbolDetailViewController: BaseViewController, YouTubePlayerDelegate {
 
-    @IBOutlet weak var closeButton: UIButton!
-    
     @IBOutlet weak var headerStackView: UIStackView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     
     @IBOutlet weak var stackView: UIStackView!
@@ -35,7 +32,9 @@ class SymbolDetailViewController: BaseViewController, YouTubePlayerDelegate {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.closeButton.setTitle("", for: .normal)
+        
+        self.setupNavigationBar(title: "symbol_detail_screen_header_title".Localizable(), isShowLeft: true)
+        
         self.videoLabel.text = "symbol_detail_watch_video".Localizable()
         
         if let backgroundColor = self.presenter?.symbol?.backgroundColor {

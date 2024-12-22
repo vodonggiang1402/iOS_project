@@ -247,6 +247,7 @@
 //Header title
 "count_screen_header_title" = "Counter";
 "symbol_screen_header_title" = "Stitches";
+"symbol_detail_screen_header_title" = "Stitches detail";
 "tutorial_screen_header_title" = "Basic tutorial";
 "setting_screen_header_title" = "Setting";
 "language_screen_header_title" = "Language Application";

@@ -245,6 +245,7 @@
 //Header title
 "count_screen_header_title" = "Bộ đếm";
 "symbol_screen_header_title" = "Mũi móc";
+"symbol_detail_screen_header_title" = "Chi tiết mũi móc";
 "tutorial_screen_header_title" = "Hướng dẫn cơ bản";
 "setting_screen_header_title" = "Cài đặt";
 "language_screen_header_title" = "Ngôn ngữ ứng dụng";
