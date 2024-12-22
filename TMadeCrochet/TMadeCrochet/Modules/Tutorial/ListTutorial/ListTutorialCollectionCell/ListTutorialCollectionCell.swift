@@ -9,14 +9,23 @@ import Foundation
 import UIKit
 import YouTubePlayer
 
+protocol ListTutorialCollectionCellDelegate: AnyObject {
+    func videoBtnAction(videoId: String)
+}
+
 class ListTutorialCollectionCell: BaseCollectionViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var desLabel: UILabel!
     @IBOutlet weak var videoPlayer: YouTubePlayerView!
+    @IBOutlet weak var videoBtn: UIButton!
+    weak var delegate: ListTutorialCollectionCellDelegate?
+    var currentItem: TutorialItem?
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.videoBtn.setTitle("", for: .normal)
+        self.videoBtn.backgroundColor = UIColor.white.withAlphaComponent(0.8)
     }
     
     func loadVideo(linkId: String) {
@@ -37,8 +46,15 @@ class ListTutorialCollectionCell: BaseCollectionViewCell {
     
     override func setupCell(object: Any) {
         guard let model = object as? TutorialItem else { return }
+        self.currentItem = model
         self.titleLabel.text = model.itemName?.Localizable()
         self.desLabel.text = model.itemDes?.Localizable()
         self.loadVideo(linkId: model.itemUrl ?? "")
+    }
+    
+    @IBAction func videoBtnTapped(_ sender: Any) {
+        if let videoId = self.currentItem?.itemUrl {
+            self.delegate?.videoBtnAction(videoId: videoId)
+        }
     }
 }

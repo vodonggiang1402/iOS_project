@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import GoogleMobileAds
 
-class ListTutorialViewController: BaseViewController, GADBannerViewDelegate {
+class ListTutorialViewController: BaseViewController, GADBannerViewDelegate, ListTutorialCollectionCellDelegate {
     var presenter: ViewToPresenterListTutorialProtocol?
     
     @IBOutlet weak var collectionView: BaseCollectionView!
@@ -110,6 +110,9 @@ class ListTutorialViewController: BaseViewController, GADBannerViewDelegate {
       print(#function)
     }
 
+    func videoBtnAction(videoId: String) {
+        self.openYoutube(withId: videoId)
+    }
 }
     
 
@@ -125,6 +128,7 @@ extension ListTutorialViewController: BaseCollectionViewProtocol {
     
     @objc func setupCell(_ indexPath: IndexPath, _ dataItem: Any, _ cell: BaseCollectionViewCell) {
         if let cell = cell as? ListTutorialCollectionCell {
+            cell.delegate = self
             cell.setupCell(object: dataItem)
         }
     }

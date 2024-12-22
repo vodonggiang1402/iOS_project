@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,11 +22,33 @@
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YMe-oO-gFt">
                         <rect key="frame" x="16" y="0.0" width="382" height="320"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tF3-QU-89r" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yqw-dX-vF0">
                                 <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tF3-QU-89r" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBl-57-0xS">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ico_play"/>
+                                        <connections>
+                                            <action selector="videoBtnTapped:" destination="dI7-Jb-DG1" eventType="touchUpInside" id="chh-5G-Gh8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="xZ5-cu-xBX"/>
+                                    <constraint firstAttribute="bottom" secondItem="bBl-57-0xS" secondAttribute="bottom" id="BJW-oh-jbh"/>
+                                    <constraint firstItem="tF3-QU-89r" firstAttribute="top" secondItem="Yqw-dX-vF0" secondAttribute="top" id="Bqa-5x-dug"/>
+                                    <constraint firstAttribute="height" constant="200" id="QDo-SW-3pQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="tF3-QU-89r" secondAttribute="trailing" id="ffg-KL-ySZ"/>
+                                    <constraint firstItem="bBl-57-0xS" firstAttribute="leading" secondItem="Yqw-dX-vF0" secondAttribute="leading" id="hoX-ia-P8a"/>
+                                    <constraint firstItem="tF3-QU-89r" firstAttribute="leading" secondItem="Yqw-dX-vF0" secondAttribute="leading" id="j4O-gi-EJA"/>
+                                    <constraint firstAttribute="trailing" secondItem="bBl-57-0xS" secondAttribute="trailing" id="qJ9-gd-EIt"/>
+                                    <constraint firstItem="bBl-57-0xS" firstAttribute="top" secondItem="Yqw-dX-vF0" secondAttribute="top" id="sdQ-dr-gER"/>
+                                    <constraint firstAttribute="bottom" secondItem="tF3-QU-89r" secondAttribute="bottom" id="zck-YR-fP0"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0w-6t-Whk">
@@ -80,17 +103,22 @@
             <connections>
                 <outlet property="desLabel" destination="M7O-uX-BcE" id="5OS-D5-cZe"/>
                 <outlet property="titleLabel" destination="WRX-zH-uAR" id="rBX-ZQ-x7Y"/>
+                <outlet property="videoBtn" destination="bBl-57-0xS" id="gRt-Do-u0u"/>
                 <outlet property="videoPlayer" destination="tF3-QU-89r" id="d3K-4u-uUE"/>
             </connections>
             <point key="canvasLocation" x="13.043478260869566" y="19.419642857142858"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="ico_play" width="50" height="50"/>
         <namedColor name="color_7f7f7f_565656">
             <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_a3a3a3_6e6e6e">
             <color red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
