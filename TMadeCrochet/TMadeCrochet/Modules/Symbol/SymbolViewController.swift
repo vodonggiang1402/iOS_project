@@ -155,7 +155,7 @@ extension SymbolViewController: BaseCollectionViewProtocol {
             return UICollectionReusableView()
        case UICollectionView.elementKindSectionFooter:
           switch indexPath.section {
-          case 3:
+          case 4:
                 let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: UpdateInfoView.className, for: indexPath)
                 if let footerView = footerView as? UpdateInfoView {
                     footerView.setupView(text: "crossed_stitches_cables".Localizable(), imageStr: "ico_symbol_6")
@@ -175,7 +175,7 @@ extension SymbolViewController: BaseCollectionViewProtocol {
     
     func footerSize(_ section: Int) -> CGSize {
         switch section {
-        case 3:
+        case 4:
             return CGSize(width: UIScreen.main.bounds.width - 32, height: 270)
         default:
             return CGSize(width: 0, height: 0)
