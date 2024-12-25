@@ -251,6 +251,10 @@
 "sc_into_ws_loop_only_working_back_and_forth_crochet_content_2" = "";
 "sc_into_ws_loop_only_working_back_and_forth_crochet_content_3" = "";
 "sc_into_ws_loop_only_working_back_and_forth_crochet_content_4" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_5" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_6" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_7" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_8" = "";
 
 "sc_into_blo_working_in_the_round_crochet_name" = "sc into blo (working in the round)";
 "sc_into_blo_working_in_the_round_crochet_description" = "";
@@ -258,6 +262,8 @@
 "sc_into_blo_working_in_the_round_crochet_content_2" = "";
 "sc_into_blo_working_in_the_round_crochet_content_3" = "";
 "sc_into_blo_working_in_the_round_crochet_content_4" = "";
+"sc_into_blo_working_in_the_round_crochet_content_5" = "";
+"sc_into_blo_working_in_the_round_crochet_content_6" = "";
 
 "sc_into_blo_working_back_and_forth_crochet_name" = "sc into blo (working back and forth)";
 "sc_into_blo_working_back_and_forth_crochet_description" = "";
@@ -265,6 +271,8 @@
 "sc_into_blo_working_back_and_forth_crochet_content_2" = "";
 "sc_into_blo_working_back_and_forth_crochet_content_3" = "";
 "sc_into_blo_working_back_and_forth_crochet_content_4" = "";
+"sc_into_blo_working_back_and_forth_crochet_content_5" = "";
+"sc_into_blo_working_back_and_forth_crochet_content_6" = "";
 
 "hdc_into_blo_working_in_the_round_crochet_name" = "hdc into blo (working in the round)";
 "hdc_into_blo_working_in_the_round_crochet_description" = "";
@@ -306,7 +314,6 @@
 "ch3_sl_st_picot_onto_dc_crochet_content_1" = "";
 "ch3_sl_st_picot_onto_dc_crochet_content_2" = "";
 "ch3_sl_st_picot_onto_dc_crochet_content_3" = "";
-"ch3_sl_st_picot_onto_dc_crochet_content_4" = "";
 
 "ch3_sl_st_picot_between_ch_sts_crochet_name" = "ch3 sl st picot (between ch sts)";
 "ch3_sl_st_picot_between_ch_sts_crochet_description" = "";
@@ -314,6 +321,8 @@
 "ch3_sl_st_picot_between_ch_sts_crochet_content_2" = "";
 "ch3_sl_st_picot_between_ch_sts_crochet_content_3" = "";
 "ch3_sl_st_picot_between_ch_sts_crochet_content_4" = "";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_5" = "";
+
 
 //Header title
 "count_screen_header_title" = "Counter";

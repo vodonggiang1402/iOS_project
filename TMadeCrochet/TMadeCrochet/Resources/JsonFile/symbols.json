@@ -839,6 +839,14 @@
             {
               "content" : "sc_into_blo_working_in_the_round_crochet_content_4",
               "image_name" : "sc_into_blo_working_in_the_round_4"
+            },
+            {
+              "content" : "sc_into_blo_working_in_the_round_crochet_content_5",
+              "image_name" : "sc_into_blo_working_in_the_round_5"
+            },
+            {
+              "content" : "sc_into_blo_working_in_the_round_crochet_content_6",
+              "image_name" : "sc_into_blo_working_in_the_round_6"
             }
           ],
           "background_color" : "99bbcd",
@@ -867,6 +875,14 @@
             {
               "content" : "sc_into_blo_working_back_and_forth_crochet_content_4",
               "image_name" : "sc_into_blo_working_back_and_forth_4"
+            },
+            {
+              "content" : "sc_into_blo_working_back_and_forth_crochet_content_5",
+              "image_name" : "sc_into_blo_working_back_and_forth_5"
+            },
+            {
+              "content" : "sc_into_blo_working_back_and_forth_crochet_content_6",
+              "image_name" : "sc_into_blo_working_back_and_forth_6"
             }
           ],
           "background_color" : "99bbcd",
@@ -1031,10 +1047,6 @@
             {
               "content" : "ch3_sl_st_picot_onto_dc_crochet_content_3",
               "image_name" : "ch3_sl_st_picot_onto_dc_3"
-            },
-            {
-              "content" : "ch3_sl_st_picot_onto_dc_crochet_content_4",
-              "image_name" : "ch3_sl_st_picot_onto_dc_4"
             }
           ],
           "background_color" : "99bbcd",
@@ -1063,6 +1075,10 @@
             {
               "content" : "ch3_sl_st_picot_between_ch_sts_crochet_content_4",
               "image_name" : "ch3_sl_st_picot_between_ch_sts_4"
+            },
+            {
+              "content" : "ch3_sl_st_picot_between_ch_sts_crochet_content_5",
+              "image_name" : "ch3_sl_st_picot_between_ch_sts_5"
             }
           ],
           "background_color" : "99bbcd",
