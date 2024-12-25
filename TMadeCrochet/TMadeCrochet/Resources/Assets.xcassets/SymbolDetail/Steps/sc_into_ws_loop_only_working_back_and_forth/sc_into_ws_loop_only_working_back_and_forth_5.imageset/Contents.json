@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "sc_into_ws_loop_only_working_back_and_forth_5.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "sc_into_ws_loop_only_working_back_and_forth_5 1.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

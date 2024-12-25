@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "ch3_sl_st_picot_between_ch_sts_4.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "ch3_sl_st_picot_between_ch_sts_4 1.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
