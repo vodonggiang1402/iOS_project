@@ -24,7 +24,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ozK-xe-tkk">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_symbol_5" translatesAutoresizingMaskIntoConstraints="NO" id="ktM-A7-jS7">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_symbol_6" translatesAutoresizingMaskIntoConstraints="NO" id="ktM-A7-jS7">
                                             <rect key="frame" x="0.0" y="0.0" width="20" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="20" id="8ki-C2-mkt"/>
@@ -71,7 +71,7 @@
         </collectionReusableView>
     </objects>
     <resources>
-        <image name="ico_symbol_5" width="20" height="20"/>
+        <image name="ico_symbol_6" width="20" height="20"/>
         <image name="update_image" width="414" height="200"/>
         <namedColor name="color_7f7f7f_565656">
             <color red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
