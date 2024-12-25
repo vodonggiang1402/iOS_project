@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "sc_into_blo_working_in_the_round_4.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "sc_into_blo_working_in_the_round_4 1.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
