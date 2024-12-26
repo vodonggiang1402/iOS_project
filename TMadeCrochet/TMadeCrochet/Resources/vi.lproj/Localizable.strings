@@ -276,15 +276,15 @@
 "hdc_into_blo_working_in_the_round_crochet_description" = "";
 "hdc_into_blo_working_in_the_round_crochet_content_1" = "Quấn chỉ quanh kim và luồn kim móc vào blo (chỉ vòng sau).";
 "hdc_into_blo_working_in_the_round_crochet_content_2" = "Quấn chỉ quanh kim và kéo chỉ qua.";
-"hdc_into_blo_working_in_the_round_crochet_content_3" = "Móc một mũi nửa đơn (hdc).";
-"hdc_into_blo_working_in_the_round_crochet_content_4" = "Tiếp tục móc mũi nửa đơn (hdc) vào blo (chỉ vòng sau) đến hết vòng.";
+"hdc_into_blo_working_in_the_round_crochet_content_3" = "Móc một mũi nửa kép (hdc).";
+"hdc_into_blo_working_in_the_round_crochet_content_4" = "Tiếp tục móc mũi nửa kép (hdc) vào blo (chỉ vòng sau) đến hết vòng.";
 
 "dc_into_blo_working_in_the_round_crochet_name" = "Móc mũi kép(dc) vào BLO khi móc theo vòng tròn";
 "dc_into_blo_working_in_the_round_crochet_description" = "";
 "dc_into_blo_working_in_the_round_crochet_content_1" = "Quấn chỉ quanh kim và luồn kim vào blo (chỉ vòng sau).";
 "dc_into_blo_working_in_the_round_crochet_content_2" = "Quấn chỉ quanh kim và kéo chỉ qua.";
-"dc_into_blo_working_in_the_round_crochet_content_3" = "Móc một mũi đôi (dc).";
-"dc_into_blo_working_in_the_round_crochet_content_4" = "Tiếp tục móc mũi đôi (dc) vào blo (chỉ vòng sau) đến hết vòng.";
+"dc_into_blo_working_in_the_round_crochet_content_3" = "Móc một mũi kép (dc).";
+"dc_into_blo_working_in_the_round_crochet_content_4" = "Tiếp tục móc mũi kép (dc) vào blo (chỉ vòng sau) đến hết vòng.";
 
 "ch3_picot_crochet_name" = "Picot chuỗi 3 (ch3 picot)";
 "ch3_picot_crochet_description" = "";
