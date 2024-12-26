@@ -69,8 +69,20 @@ class SymbolDetailViewController: BaseViewController, YouTubePlayerDelegate {
     
     // MARK: - NavigationBar Action
     override func tappedLeftBarButton(sender : UIButton) {
-        self.isBackAction = true
-        self.showAdsView()
+        if let count = AppConstant.countShowAdsWhenBackFromSymbolDetail, count > 0 {
+            if count >= AppConstant.globalBackCount {
+                self.isBackAction = true
+                self.showAdsView()
+                AppConstant.countShowAdsWhenBackFromSymbolDetail = 1
+            } else {
+                let newCount = count + 1
+                AppConstant.countShowAdsWhenBackFromSymbolDetail = newCount
+                self.navigationController?.popViewController(animated: true)
+            }
+        } else {
+            AppConstant.countShowAdsWhenBackFromSymbolDetail = 1
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     
     func configVideo() {

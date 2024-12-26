@@ -247,10 +247,10 @@
 //Crossed stitches, cables
 "sc_into_ws_loop_only_working_back_and_forth_crochet_name" = "sc into ws loop only(working back and forth)";
 "sc_into_ws_loop_only_working_back_and_forth_crochet_description" = "";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_1" = "";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_2" = "";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_3" = "";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_4" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_1" = "Row 1: Work sc across. Make 1 tch (turning chain) to move to row 2 and turn ";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_2" = "Row 2 (WS): Insert hook into flo (front loop only)";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_3" = "Work a sc";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_4" = "Continue working sc into flo (front loop only)";
 "sc_into_ws_loop_only_working_back_and_forth_crochet_content_5" = "";
 "sc_into_ws_loop_only_working_back_and_forth_crochet_content_6" = "";
 "sc_into_ws_loop_only_working_back_and_forth_crochet_content_7" = "";

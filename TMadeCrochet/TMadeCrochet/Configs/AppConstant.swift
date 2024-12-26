@@ -18,11 +18,17 @@ struct AppConstant {
     static let adsOpenAppCount = 3
     static let adsTurorialCount = 5
     static let globalVideoCount = 5
+    static let globalBackCount = 2
     static let mailContact = "tmadeapp@gmail.com"
     static let phoneContact = "+84357798368"
     static let youtubeContact = "tmade-0705"
     static var tmadeAppLink: String { get { return "itms-apps://itunes.apple.com/app//id6560104490" } }
     
+    
+    static var countShowAdsWhenBackFromSymbolDetail: Int? {
+        get { UserDefaults.standard.value(forKey: "count-show-ads-when-back-from-symbol-detail") as? Int }
+        set { UserDefaults.standard.setValue(newValue, forKey: "count-show-ads-when-back-from-symbol-detail") }
+    }
     
     static var countShowAdsWhenAddMoreCount: Int? {
         get { UserDefaults.standard.value(forKey: "count-show-ads-when-add-more-count") as? Int }
