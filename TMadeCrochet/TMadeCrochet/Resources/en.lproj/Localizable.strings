@@ -251,77 +251,77 @@
 "sc_into_ws_loop_only_working_back_and_forth_crochet_content_2" = "Row 2 (WS): Insert hook into flo (front loop only)";
 "sc_into_ws_loop_only_working_back_and_forth_crochet_content_3" = "Work a sc";
 "sc_into_ws_loop_only_working_back_and_forth_crochet_content_4" = "Continue working sc into flo (front loop only)";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_5" = "";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_6" = "";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_7" = "";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_8" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_5" = "After working row 2";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_6" = "Row 3 (RS): Insert hook into blo (back loop only) to work a sc.";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_7" = "Continue working sc into blo (back loop only)";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_8" = "After working row 3";
 
 "sc_into_blo_working_in_the_round_crochet_name" = "sc into blo (working in the round)";
 "sc_into_blo_working_in_the_round_crochet_description" = "";
-"sc_into_blo_working_in_the_round_crochet_content_1" = "";
-"sc_into_blo_working_in_the_round_crochet_content_2" = "";
-"sc_into_blo_working_in_the_round_crochet_content_3" = "";
-"sc_into_blo_working_in_the_round_crochet_content_4" = "";
-"sc_into_blo_working_in_the_round_crochet_content_5" = "";
-"sc_into_blo_working_in_the_round_crochet_content_6" = "";
+"sc_into_blo_working_in_the_round_crochet_content_1" = "Round 2: Make 1 tch and insert hook into blo (back loop only)";
+"sc_into_blo_working_in_the_round_crochet_content_2" = "Work a sc";
+"sc_into_blo_working_in_the_round_crochet_content_3" = "Continue working sc through blo (back loop only)";
+"sc_into_blo_working_in_the_round_crochet_content_4" = "Work until the end of round";
+"sc_into_blo_working_in_the_round_crochet_content_5" = "At the end of round 2";
+"sc_into_blo_working_in_the_round_crochet_content_6" = "Continue working round 3 by repeating steps 1 to 4";
 
 "sc_into_blo_working_back_and_forth_crochet_name" = "sc into blo (working back and forth)";
 "sc_into_blo_working_back_and_forth_crochet_description" = "";
-"sc_into_blo_working_back_and_forth_crochet_content_1" = "";
-"sc_into_blo_working_back_and_forth_crochet_content_2" = "";
-"sc_into_blo_working_back_and_forth_crochet_content_3" = "";
-"sc_into_blo_working_back_and_forth_crochet_content_4" = "";
-"sc_into_blo_working_back_and_forth_crochet_content_5" = "";
-"sc_into_blo_working_back_and_forth_crochet_content_6" = "";
+"sc_into_blo_working_back_and_forth_crochet_content_1" = "After working row 1";
+"sc_into_blo_working_back_and_forth_crochet_content_2" = "Row 2 : Insert hook into blo (back loop only) to work a sc";
+"sc_into_blo_working_back_and_forth_crochet_content_3" = "Continue working sc into blo (back loop only)";
+"sc_into_blo_working_back_and_forth_crochet_content_4" = "2 sts worked. Continue to the end of row";
+"sc_into_blo_working_back_and_forth_crochet_content_5" = "Row 3: Work sc into blo (back loop only) for every st";
+"sc_into_blo_working_back_and_forth_crochet_content_6" = "Work sc through blo (back loop only) for every row";
 
 "hdc_into_blo_working_in_the_round_crochet_name" = "hdc into blo (working in the round)";
 "hdc_into_blo_working_in_the_round_crochet_description" = "";
-"hdc_into_blo_working_in_the_round_crochet_content_1" = "";
-"hdc_into_blo_working_in_the_round_crochet_content_2" = "";
-"hdc_into_blo_working_in_the_round_crochet_content_3" = "";
-"hdc_into_blo_working_in_the_round_crochet_content_4" = "";
+"hdc_into_blo_working_in_the_round_crochet_content_1" = "Yarn over hook and insert hook into blo (back loop only)";
+"hdc_into_blo_working_in_the_round_crochet_content_2" = "Yarn over hook and draw through.";
+"hdc_into_blo_working_in_the_round_crochet_content_3" = "Work a hdc.";
+"hdc_into_blo_working_in_the_round_crochet_content_4" = "Continue working hdc into blo (back loop only) to the end of round";
 
 "dc_into_blo_working_in_the_round_crochet_name" = "dc into blo (working in the round)";
 "dc_into_blo_working_in_the_round_crochet_description" = "";
-"dc_into_blo_working_in_the_round_crochet_content_1" = "";
-"dc_into_blo_working_in_the_round_crochet_content_2" = "";
-"dc_into_blo_working_in_the_round_crochet_content_3" = "";
-"dc_into_blo_working_in_the_round_crochet_content_4" = "";
+"dc_into_blo_working_in_the_round_crochet_content_1" = "Yarn over hook and insert hook into blo (back loop only)";
+"dc_into_blo_working_in_the_round_crochet_content_2" = "Yarn over hook and draw through.";
+"dc_into_blo_working_in_the_round_crochet_content_3" = "Work a dc.";
+"dc_into_blo_working_in_the_round_crochet_content_4" = "Continue working dc into blo (back loop only) to the end of round";
 
 "ch3_picot_crochet_name" = "ch3 picot";
 "ch3_picot_crochet_description" = "";
-"ch3_picot_crochet_content_1" = "";
-"ch3_picot_crochet_content_2" = "";
-"ch3_picot_crochet_content_3" = "";
-"ch3_picot_crochet_content_4" = "";
+"ch3_picot_crochet_content_1" = "After working a sc";
+"ch3_picot_crochet_content_2" = "Yarn over hook and draw through.";
+"ch3_picot_crochet_content_3" = "Yarn over hook and draw through 2 loops";
+"ch3_picot_crochet_content_4" = "This completes a ch 3 picot";
 
 "ch3_sl_st_picot_onto_sc_crochet_name" = "ch3 sl st picot (onto sc)";
 "ch3_sl_st_picot_onto_sc_crochet_description" = "";
-"ch3_sl_st_picot_onto_sc_crochet_content_1" = "";
-"ch3_sl_st_picot_onto_sc_crochet_content_2" = "";
-"ch3_sl_st_picot_onto_sc_crochet_content_3" = "";
-"ch3_sl_st_picot_onto_sc_crochet_content_4" = "";
+"ch3_sl_st_picot_onto_sc_crochet_content_1" = "After working a sc";
+"ch3_sl_st_picot_onto_sc_crochet_content_2" = "Yarn over hook and draw through as show";
+"ch3_sl_st_picot_onto_sc_crochet_content_3" = "This completes a ch3 sl st picot";
+"ch3_sl_st_picot_onto_sc_crochet_content_4" = "Continue by working the next sc";
 
 "ch3_sc_picot_crochet_name" = "ch3 sc picot";
 "ch3_sc_picot_crochet_description" = "";
-"ch3_sc_picot_crochet_content_1" = "";
-"ch3_sc_picot_crochet_content_2" = "";
-"ch3_sc_picot_crochet_content_3" = "";
-"ch3_sc_picot_crochet_content_4" = "";
+"ch3_sc_picot_crochet_content_1" = "After working a sc";
+"ch3_sc_picot_crochet_content_2" = "Yarn over hook and draw through as show";
+"ch3_sc_picot_crochet_content_3" = "Yarn over hook once more and draw through remaining two loops on hook";
+"ch3_sc_picot_crochet_content_4" = "This completes a ch3 picot with sc";
 
 "ch3_sl_st_picot_onto_dc_crochet_name" = "ch3 sl st picot (onto dc)";
 "ch3_sl_st_picot_onto_dc_crochet_description" = "";
-"ch3_sl_st_picot_onto_dc_crochet_content_1" = "";
-"ch3_sl_st_picot_onto_dc_crochet_content_2" = "";
-"ch3_sl_st_picot_onto_dc_crochet_content_3" = "";
+"ch3_sl_st_picot_onto_dc_crochet_content_1" = "After working a dc";
+"ch3_sl_st_picot_onto_dc_crochet_content_2" = "Yarn over hook and draw through as show";
+"ch3_sl_st_picot_onto_dc_crochet_content_3" = "This completes a ch3 sl st picot onto dc";
 
 "ch3_sl_st_picot_between_ch_sts_crochet_name" = "ch3 sl st picot (between ch sts)";
 "ch3_sl_st_picot_between_ch_sts_crochet_description" = "";
-"ch3_sl_st_picot_between_ch_sts_crochet_content_1" = "";
-"ch3_sl_st_picot_between_ch_sts_crochet_content_2" = "";
-"ch3_sl_st_picot_between_ch_sts_crochet_content_3" = "";
-"ch3_sl_st_picot_between_ch_sts_crochet_content_4" = "";
-"ch3_sl_st_picot_between_ch_sts_crochet_content_5" = "";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_1" = "After working ch3";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_2" = "Yarn over hook and draw through as show";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_3" = "A ch3 sl st picot is made between ch sts";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_4" = "Continue working ch2 and 1sc";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_5" = "A picot is made in the middle of a chain mesh";
 
 
 //Header title

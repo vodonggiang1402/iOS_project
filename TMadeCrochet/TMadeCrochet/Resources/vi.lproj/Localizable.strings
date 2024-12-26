@@ -245,73 +245,81 @@
 //Crossed stitches, cables
 "sc_into_ws_loop_only_working_back_and_forth_crochet_name" = "sc into ws loop only(working back and forth)";
 "sc_into_ws_loop_only_working_back_and_forth_crochet_description" = "";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_1" = "";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_2" = "";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_3" = "";
-"sc_into_ws_loop_only_working_back_and_forth_crochet_content_4" = "";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_1" = "Hàng 1: Đan mũi móc đơn (sc) dọc theo hàng. Móc 1 mũi bính (mũi quay đầu) để chuyển sang hàng 2 và xoay sản phẩm.";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_2" = "Hàng 2 (Mặt trái): Luồn kim vào flo (chỉ móc vào vòng trước).";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_3" = "Móc một mũi đơn";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_4" = "Tiếp tục móc mũi đơn vào FLO ( chỉ móc vào vòng trước)";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_5" = "Sau khi móc hàng 2";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_6" = "Hàng 3 ( Mặt phải): luồn kim vào BLO (chỉ móc vào vòng sau) móc một mũi đơn";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_7" = "Tiếp tục móc một mũi đơn vào BLO";
+"sc_into_ws_loop_only_working_back_and_forth_crochet_content_8" = "Sau khi móc hàng thứ 3";
 
 "sc_into_blo_working_in_the_round_crochet_name" = "sc into blo (working in the round)";
 "sc_into_blo_working_in_the_round_crochet_description" = "";
-"sc_into_blo_working_in_the_round_crochet_content_1" = "";
-"sc_into_blo_working_in_the_round_crochet_content_2" = "";
-"sc_into_blo_working_in_the_round_crochet_content_3" = "";
-"sc_into_blo_working_in_the_round_crochet_content_4" = "";
+"sc_into_blo_working_in_the_round_crochet_content_1" = "Hàng 2: Móc 1 mũi bính và luồn kim móc vào BLO ( chỉ móc vào vòng sau)";
+"sc_into_blo_working_in_the_round_crochet_content_2" = "Móc 1 mũi đơn ";
+"sc_into_blo_working_in_the_round_crochet_content_3" = "Tiếp tục móc mũi đơn vào BLO";
+"sc_into_blo_working_in_the_round_crochet_content_4" = "Móc đến khi tới cuối hàng ";
+"sc_into_blo_working_in_the_round_crochet_content_5" = "Kết thúc hàng 2";
+"sc_into_blo_working_in_the_round_crochet_content_6" = "Tiếp tục móc hàng 3 bằng cách lặp lại các bước từ 1 đến 4.";
 
 "sc_into_blo_working_back_and_forth_crochet_name" = "sc into blo (working back and forth)";
 "sc_into_blo_working_back_and_forth_crochet_description" = "";
-"sc_into_blo_working_back_and_forth_crochet_content_1" = "";
-"sc_into_blo_working_back_and_forth_crochet_content_2" = "";
-"sc_into_blo_working_back_and_forth_crochet_content_3" = "";
-"sc_into_blo_working_back_and_forth_crochet_content_4" = "";
+"sc_into_blo_working_back_and_forth_crochet_content_1" = "Sau khi hoàn thành hàng 1.";
+"sc_into_blo_working_back_and_forth_crochet_content_2" = "Hàng 2: Luồn kim móc vào blo (chỉ vòng sau) để móc một mũi đơn (sc).";
+"sc_into_blo_working_back_and_forth_crochet_content_3" = "Tiếp tục móc mũi đơn (sc) vào blo (chỉ vòng sau).";
+"sc_into_blo_working_back_and_forth_crochet_content_4" = "Đã móc được 2 mũi. Tiếp tục đến hết hàng.";
+"sc_into_blo_working_back_and_forth_crochet_content_5" = "Hàng 3: Móc mũi đơn (sc) vào blo (chỉ vòng sau) cho mỗi mũi.";
+"sc_into_blo_working_back_and_forth_crochet_content_6" = "Móc mũi đơn (sc) vào blo (chỉ vòng sau) cho mỗi hàng.";
 
 "hdc_into_blo_working_in_the_round_crochet_name" = "hdc into blo (working in the round)";
 "hdc_into_blo_working_in_the_round_crochet_description" = "";
-"hdc_into_blo_working_in_the_round_crochet_content_1" = "";
-"hdc_into_blo_working_in_the_round_crochet_content_2" = "";
-"hdc_into_blo_working_in_the_round_crochet_content_3" = "";
-"hdc_into_blo_working_in_the_round_crochet_content_4" = "";
+"hdc_into_blo_working_in_the_round_crochet_content_1" = "Quấn chỉ quanh kim và luồn kim móc vào blo (chỉ vòng sau).";
+"hdc_into_blo_working_in_the_round_crochet_content_2" = "Quấn chỉ quanh kim và kéo chỉ qua.";
+"hdc_into_blo_working_in_the_round_crochet_content_3" = "Móc một mũi nửa đơn (hdc).";
+"hdc_into_blo_working_in_the_round_crochet_content_4" = "Tiếp tục móc mũi nửa đơn (hdc) vào blo (chỉ vòng sau) đến hết vòng.";
 
 "dc_into_blo_working_in_the_round_crochet_name" = "dc into blo (working in the round)";
 "dc_into_blo_working_in_the_round_crochet_description" = "";
-"dc_into_blo_working_in_the_round_crochet_content_1" = "";
-"dc_into_blo_working_in_the_round_crochet_content_2" = "";
-"dc_into_blo_working_in_the_round_crochet_content_3" = "";
-"dc_into_blo_working_in_the_round_crochet_content_4" = "";
+"dc_into_blo_working_in_the_round_crochet_content_1" = "Quấn chỉ quanh kim và luồn kim vào blo (chỉ vòng sau).";
+"dc_into_blo_working_in_the_round_crochet_content_2" = "Quấn chỉ quanh kim và kéo chỉ qua.";
+"dc_into_blo_working_in_the_round_crochet_content_3" = "Móc một mũi đôi (dc).";
+"dc_into_blo_working_in_the_round_crochet_content_4" = "Tiếp tục móc mũi đôi (dc) vào blo (chỉ vòng sau) đến hết vòng.";
 
 "ch3_picot_crochet_name" = "ch3 picot";
 "ch3_picot_crochet_description" = "";
-"ch3_picot_crochet_content_1" = "";
-"ch3_picot_crochet_content_2" = "";
-"ch3_picot_crochet_content_3" = "";
-"ch3_picot_crochet_content_4" = "";
+"ch3_picot_crochet_content_1" = "Sau khi móc một mũi đơn (sc).";
+"ch3_picot_crochet_content_2" = "Quấn chỉ quanh kim và kéo chỉ qua.";
+"ch3_picot_crochet_content_3" = "Quấn chỉ quanh kim và kéo chỉ qua 2 vòng.";
+"ch3_picot_crochet_content_4" = "Điều này hoàn thành một picot chuỗi 3 (ch 3 picot).";
 
 "ch3_sl_st_picot_onto_sc_crochet_name" = "ch3 sl st picot (onto sc)";
 "ch3_sl_st_picot_onto_sc_crochet_description" = "";
-"ch3_sl_st_picot_onto_sc_crochet_content_1" = "";
-"ch3_sl_st_picot_onto_sc_crochet_content_2" = "";
-"ch3_sl_st_picot_onto_sc_crochet_content_3" = "";
-"ch3_sl_st_picot_onto_sc_crochet_content_4" = "";
+"ch3_sl_st_picot_onto_sc_crochet_content_1" = "Sau khi móc một mũi đơn (sc).";
+"ch3_sl_st_picot_onto_sc_crochet_content_2" = "Quấn chỉ quanh kim và kéo chỉ qua.";
+"ch3_sl_st_picot_onto_sc_crochet_content_3" = "Quấn chỉ quanh kim và kéo chỉ qua như hình minh họa.";
+"ch3_sl_st_picot_onto_sc_crochet_content_4" = "Điều này hoàn thành một picot chuỗi 3 kết hợp mũi slip (ch3 sl st picot).";
 
 "ch3_sc_picot_crochet_name" = "ch3 sc picot";
 "ch3_sc_picot_crochet_description" = "";
-"ch3_sc_picot_crochet_content_1" = "";
-"ch3_sc_picot_crochet_content_2" = "";
-"ch3_sc_picot_crochet_content_3" = "";
-"ch3_sc_picot_crochet_content_4" = "";
+"ch3_sc_picot_crochet_content_1" = "Sau khi móc một mũi đơn (sc).";
+"ch3_sc_picot_crochet_content_2" = "Quấn chỉ quanh kim và kéo chỉ qua như hình minh họa.";
+"ch3_sc_picot_crochet_content_3" = "Quấn chỉ quanh kim một lần nữa và kéo chỉ qua hai vòng còn lại trên kim.";
+"ch3_sc_picot_crochet_content_4" = "Điều này hoàn thành một picot chuỗi 3 (ch3 picot) với mũi đơn (sc).";
 
 "ch3_sl_st_picot_onto_dc_crochet_name" = "ch3 sl st picot (onto dc)";
 "ch3_sl_st_picot_onto_dc_crochet_description" = "";
-"ch3_sl_st_picot_onto_dc_crochet_content_1" = "";
-"ch3_sl_st_picot_onto_dc_crochet_content_2" = "";
-"ch3_sl_st_picot_onto_dc_crochet_content_3" = "";
-"ch3_sl_st_picot_onto_dc_crochet_content_4" = "";
+"ch3_sl_st_picot_onto_dc_crochet_content_1" = "Sau khi móc một mũi đơn (sc).";
+"ch3_sl_st_picot_onto_dc_crochet_content_2" = "Quấn chỉ quanh kim và kéo chỉ qua như hình minh họa.";
+"ch3_sl_st_picot_onto_dc_crochet_content_3" = "Điều này hoàn thành một picot chuỗi 3 kết hợp mũi slip (ch3 sl st picot) lên mũi đôi (dc).";
 
 "ch3_sl_st_picot_between_ch_sts_crochet_name" = "ch3 sl st picot (between ch sts)";
 "ch3_sl_st_picot_between_ch_sts_crochet_description" = "";
-"ch3_sl_st_picot_between_ch_sts_crochet_content_1" = "";
-"ch3_sl_st_picot_between_ch_sts_crochet_content_2" = "";
-"ch3_sl_st_picot_between_ch_sts_crochet_content_3" = "";
-"ch3_sl_st_picot_between_ch_sts_crochet_content_4" = "";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_1" = "Sau khi móc 3 mũi móc xích ";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_2" = "Quấn chỉ quanh kim và kéo chỉ qua như hình minh họa.";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_3" = "Một picot chuỗi 3 kết hợp mũi slip (ch3 sl st picot) được móc giữa các mũi chuỗi (ch sts).";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_4" = "Tiếp tục móc 2 mũi móc xích (ch2) và 1 mũi đơn (sc).";
+"ch3_sl_st_picot_between_ch_sts_crochet_content_5" = "Một picot được móc ở giữa một lưới chuỗi.";
 
 //Header title
 "count_screen_header_title" = "Bộ đếm";

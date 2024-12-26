@@ -18,7 +18,7 @@ struct AppConstant {
     static let adsOpenAppCount = 3
     static let adsTurorialCount = 5
     static let globalVideoCount = 5
-    static let globalBackCount = 2
+    static let globalBackCount = 3
     static let mailContact = "tmadeapp@gmail.com"
     static let phoneContact = "+84357798368"
     static let youtubeContact = "tmade-0705"
@@ -55,9 +55,9 @@ struct AppConstant {
         set { UserDefaults.standard.setValue(newValue, forKey: "is-first-time") }
     }
     
-    static var updateDataVersion1_0_2: Bool {
-        get { UserDefaults.standard.bool(forKey: "update-data-version-1-0-2") }
-        set { UserDefaults.standard.setValue(newValue, forKey: "update-data-version-1-0-2") }
+    static var updateDataVersion1_0_3: Bool {
+        get { UserDefaults.standard.bool(forKey: "update-data-version-1-0-3") }
+        set { UserDefaults.standard.setValue(newValue, forKey: "update-data-version-1-0-3") }
     }
     
     static var symbolResponseData: SymbolResponseData? {
